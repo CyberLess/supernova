@@ -1,0 +1,83 @@
+.multiply{
+	position: relative;
+	width: 100%;
+	&__top{
+		padding: 5.4rem 7rem;
+		user-select: none;
+		cursor: pointer;
+		border-left: 1px solid transparent;
+		border-right: 1px solid transparent;		
+
+		&-inner{
+			position: relative;
+		}
+	}
+
+	&__name{
+		margin-right: 3rem;
+		overflow: hidden;
+		color: #fff;
+		font-weight: 300;
+		white-space: nowrap;
+	}
+
+	&__list{
+		position: absolute;
+		left: 0;
+		width: 100%;
+		top: 100%;
+		border-left: 1px solid #fff;
+		border-right: 1px solid #fff;
+		background: #151515;
+		visibility: hidden;
+		opacity: 0;
+		transition: ease .2s;
+		&-inner{
+			padding: 0 7rem;
+		}
+		&-item{
+			margin-bottom: 1.5rem;
+		}
+	}
+
+	&__button{
+		margin-top: 3.4rem;
+		margin-left: -1px;
+		width: calc(100% + 2px);
+		// margin-right: -2px;
+	}
+
+	&__arrow{
+		width: 1.4rem;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		margin-top: -.34rem;
+		fill: transparent;
+		stroke: #fff;
+		stroke-width: 1.5;
+	}
+
+	&.is-active{
+		.multiply{
+			&__arrow{
+				transform: rotate(-180deg);
+			}
+			&__list{
+				visibility: visible;
+				opacity: 1;
+			}
+			&__top{
+				background: #151515;
+				border-left-color: #fff;
+				border-right-color: #fff;
+			}
+		}
+	}
+
+	@include max-screen($large_tablet) {
+		&__top{
+			padding: 5.4rem 3rem;
+		}
+	}
+}

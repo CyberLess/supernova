@@ -1,0 +1,589 @@
++b.SECTION.catalog
+	+e.wrap.wrap._small
+		+e.title.h2
+			span.stroke топ 20 
+			| предложений 
+			br
+			| недвижимости
+	+e.wrap.wrap
+		+e.nav.form.FORM(action="")
+			+e.nav-row.flex
+				+e.nav-cell
+					+e.select.multiply__.js-multiply
+						+e.top.js-multiply-nav
+							+e.top-inner.flex
+								+e.name.p Класс жилья
+								+e.arrow
+									+icon('down')
+						+e.list
+							+e.list-inner
+								+e.list-item
+									+e.LABEL.checkbox.checkbox__
+										+e.INPUT.input(type="checkbox" name="class[]" value="Комфорт")
+										+e.SPAN.text.middle
+											+e.SPAN.box
+												+icon('checkbox')
+											| Комфорт
+								+e.list-item
+									+e.LABEL.checkbox.checkbox__
+										+e.INPUT.input(type="checkbox" name="class[]" value="Бизнес")
+										+e.SPAN.text.middle
+											+e.SPAN.box
+												+icon('checkbox')
+											| Бизнес
+								+e.list-item
+									+e.LABEL.checkbox.checkbox__
+										+e.INPUT.input(type="checkbox" name="class[]" value="Премиум")
+										+e.SPAN.text.middle
+											+e.SPAN.box
+												+icon('checkbox')
+											| Премиум
+							+button Подтвердить
+				+e.nav-cell
+					+e.select.multiply__.js-multiply
+						+e.top.js-multiply-nav
+							+e.top-inner.flex
+								+e.name.p Направление
+								+e.arrow
+									+icon('down')
+						+e.list
+							+e.list-inner
+								+e.list-item
+									+e.LABEL.checkbox.checkbox__
+										+e.INPUT.input(type="checkbox" name="direction[]" value="Север")
+										+e.SPAN.text.middle
+											+e.SPAN.box
+												+icon('checkbox')
+											| Север
+								+e.list-item
+									+e.LABEL.checkbox.checkbox__
+										+e.INPUT.input(type="checkbox" name="direction[]" value="Юг")
+										+e.SPAN.text.middle
+											+e.SPAN.box
+												+icon('checkbox')
+											| Юг
+								+e.list-item
+									+e.LABEL.checkbox.checkbox__
+										+e.INPUT.input(type="checkbox" name="direction[]" value="Центр")
+										+e.SPAN.text.middle
+											+e.SPAN.box
+												+icon('checkbox')
+											| Центр
+								+e.list-item
+									+e.LABEL.checkbox.checkbox__
+										+e.INPUT.input(type="checkbox" name="direction[]" value="Запад")
+										+e.SPAN.text.middle
+											+e.SPAN.box
+												+icon('checkbox')
+											| Запад
+								+e.list-item
+									+e.LABEL.checkbox.checkbox__
+										+e.INPUT.input(type="checkbox" name="direction[]" value="Восток")
+										+e.SPAN.text.middle
+											+e.SPAN.box
+												+icon('checkbox')
+											| Восток
+								+e.list-item
+									+e.LABEL.checkbox.checkbox__
+										+e.INPUT.input(type="checkbox" name="direction[]" value="Все")
+										+e.SPAN.text.middle
+											+e.SPAN.box
+												+icon('checkbox')
+											| Все
+							+button Подтвердить
+				+e.nav-cell
+					+e.select.multiply__.js-multiply
+						+e.top.js-multiply-nav
+							+e.top-inner.flex
+								+e.name.p Срок сдачи
+								+e.arrow
+									+icon('down')
+						+e.list
+							+e.list-inner
+								+e.list-item
+									+e.LABEL.checkbox.checkbox__
+										+e.INPUT.input(type="checkbox" name="time[]" value="Сдан")
+										+e.SPAN.text.middle
+											+e.SPAN.box
+												+icon('checkbox')
+											| Сдан
+								+e.list-item
+									+e.LABEL.checkbox.checkbox__
+										+e.INPUT.input(type="checkbox" name="time[]" value="2020")
+										+e.SPAN.text.middle
+											+e.SPAN.box
+												+icon('checkbox')
+											| 2020
+								+e.list-item
+									+e.LABEL.checkbox.checkbox__
+										+e.INPUT.input(type="checkbox" name="time[]" value="2021")
+										+e.SPAN.text.middle
+											+e.SPAN.box
+												+icon('checkbox')
+											| 2021
+								+e.list-item
+									+e.LABEL.checkbox.checkbox__
+										+e.INPUT.input(type="checkbox" name="time[]" value="2022")
+										+e.SPAN.text.middle
+											+e.SPAN.box
+												+icon('checkbox')
+											| 2022
+								+e.list-item
+									+e.LABEL.checkbox.checkbox__
+										+e.INPUT.input(type="checkbox" name="time[]" value="2023")
+										+e.SPAN.text.middle
+											+e.SPAN.box
+												+icon('checkbox')
+											| 2023
+								+e.list-item
+									+e.LABEL.checkbox.checkbox__
+										+e.INPUT.input(type="checkbox" name="time[]" value="Не важно")
+										+e.SPAN.text.middle
+											+e.SPAN.box
+												+icon('checkbox')
+											| Не важно
+							+button Подтвердить
+				+e.nav-cell
+					+e.link.link__.BUTTON Показать на карте
+	+e.list.flex
+		+e.item(data-aos="case-aos")
+			+e.background
+				+e.IMG.bg.object-fit(src="/img/case_1.jpg")
+			+e.item-inner
+				+e.item-logo
+					div
+						+e.IMG(src="/app/img/BUNIN.svg")
+				+e.item-name.p ЛЭК Премиум
+				+e.item-hover
+					+e.content
+						+e.content-name.h6._big Пестеля 6
+						+e.content-company.p Донстрой Лимитед
+						+e.content-text.middle
+							| Дом с апартаментами от 27 м² 
+							br
+							| с гостиничным сервисом на Новом Арбате.
+							br
+							| Сдача — 2019 год.
+					+e.bottom
+						+button('подробнее') подробнее
+						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+		+e.item(data-aos="case-aos")
+			+e.background
+				+e.IMG.bg.object-fit(src="/img/case_2.jpg")
+			+e.item-inner
+				+e.item-logo
+					div
+						+e.IMG(src="/app/img/kurtapp.svg")
+				+e.item-name.p ЮИТ Блэк
+				+e.item-hover
+					+e.content
+						+e.content-name.h6._big Пестеля 6
+						+e.content-company.p Донстрой Лимитед
+						+e.content-text.middle
+							| Дом с апартаментами от 27 м² 
+							br
+							| с гостиничным сервисом на Новом Арбате.
+							br
+							| Сдача — 2019 год.
+					+e.bottom
+						+button('подробнее') подробнее
+						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+		+e.item(data-aos="case-aos")
+			+e.background
+				+e.IMG.bg.object-fit(src="/img/case_1.jpg")
+			+e.item-inner
+				+e.item-logo
+					div
+						+e.IMG(src="/app/img/BUNIN.svg")
+				+e.item-name.p ЛЭК Премиум
+				+e.item-hover
+					+e.content
+						+e.content-name.h6._big Пестеля 6
+						+e.content-company.p Донстрой Лимитед
+						+e.content-text.middle
+							| Дом с апартаментами от 27 м² 
+							br
+							| с гостиничным сервисом на Новом Арбате.
+							br
+							| Сдача — 2019 год.
+					+e.bottom
+						+button('подробнее') подробнее
+						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+		+e.item(data-aos="case-aos")
+			+e.background
+				+e.IMG.bg.object-fit(src="/img/case_3.jpg")
+			+e.item-inner
+				+e.item-logo
+					div
+						+e.IMG(src="/app/img/unona.svg")
+				+e.item-name.p Рейкьямен Золт
+				+e.item-hover
+					+e.content
+						+e.content-name.h6._big Пестеля 6
+						+e.content-company.p Донстрой Лимитед
+						+e.content-text.middle
+							| Дом с апартаментами от 27 м² 
+							br
+							| с гостиничным сервисом на Новом Арбате.
+							br
+							| Сдача — 2019 год.
+					+e.bottom
+						+button('подробнее') подробнее
+						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+		+e.item(data-aos="case-aos")
+			+e.background
+				+e.IMG.bg.object-fit(src="/img/case_4.jpg")
+			+e.item-inner
+				+e.item-logo
+					div
+						+e.IMG(src="/app/img/pestelya.svg")
+				+e.item-name.p Донстрой Лимитед
+				+e.item-hover
+					+e.content
+						+e.content-name.h6._big Пестеля 6
+						+e.content-company.p Донстрой Лимитед
+						+e.content-text.middle
+							| Дом с апартаментами от 27 м² 
+							br
+							| с гостиничным сервисом на Новом Арбате.
+							br
+							| Сдача — 2019 год.
+					+e.bottom
+						+button('подробнее') подробнее
+						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+		+e.item(data-aos="case-aos")
+			+e.background
+				+e.IMG.bg.object-fit(src="/img/case_1.jpg")
+			+e.item-inner
+				+e.item-logo
+					div
+						+e.IMG(src="/app/img/BUNIN.svg")
+				+e.item-name.p ЛЭК Премиум
+				+e.item-hover
+					+e.content
+						+e.content-name.h6._big Пестеля 6
+						+e.content-company.p Донстрой Лимитед
+						+e.content-text.middle
+							| Дом с апартаментами от 27 м² 
+							br
+							| с гостиничным сервисом на Новом Арбате.
+							br
+							| Сдача — 2019 год.
+					+e.bottom
+						+button('подробнее') подробнее
+						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+		+e.item(data-aos="case-aos")
+			+e.background
+				+e.IMG.bg.object-fit(src="/img/case_5.jpg")
+			+e.item-inner
+				+e.item-logo
+					div
+						+e.IMG(src="/app/img/gagarin.svg")
+				+e.item-name.p РайфайХаус Корпорейшн
+				+e.item-hover
+					+e.content
+						+e.content-name._big.h4 Гагарин
+						+e.content-company.p Донстрой Лимитед
+						+e.content-text._big.big
+							| Дом с апартаментами от 27 м² 
+							br
+							| с гостиничным сервисом на Новом Арбате.
+							br
+							| Сдача — 2019 год.
+					+e.bottom._big.flex._vertical._justify
+						+button('подробнее') подробнее
+						+e.bottom-presa._big.link__.big.A(href='#') скачать презентацию
+		+e.item(data-aos="case-aos")
+			+e.background
+				+e.IMG.bg.object-fit(src="/img/case_1.jpg")
+			+e.item-inner
+				+e.item-logo
+					div
+						+e.IMG(src="/app/img/BUNIN.svg")
+				+e.item-name.p ЛЭК Премиум
+				+e.item-hover
+					+e.content
+						+e.content-name.h6._big Пестеля 6
+						+e.content-company.p Донстрой Лимитед
+						+e.content-text.middle
+							| Дом с апартаментами от 27 м² 
+							br
+							| с гостиничным сервисом на Новом Арбате.
+							br
+							| Сдача — 2019 год.
+					+e.bottom
+						+button('подробнее') подробнее
+						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+		+e.item(data-aos="case-aos")
+			+e.background
+				+e.IMG.bg.object-fit(src="/img/case_1.jpg")
+			+e.item-inner
+				+e.item-logo
+					div
+						+e.IMG(src="/app/img/BUNIN.svg")
+				+e.item-name.p ЛЭК Премиум
+				+e.item-hover
+					+e.content
+						+e.content-name.h6._big Пестеля 6
+						+e.content-company.p Донстрой Лимитед
+						+e.content-text.middle
+							| Дом с апартаментами от 27 м² 
+							br
+							| с гостиничным сервисом на Новом Арбате.
+							br
+							| Сдача — 2019 год.
+					+e.bottom
+						+button('подробнее') подробнее
+						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+		+e.item(data-aos="case-aos")
+			+e.background
+				+e.IMG.bg.object-fit(src="/img/case_1.jpg")
+			+e.item-inner
+				+e.item-logo
+					div
+						+e.IMG(src="/app/img/BUNIN.svg")
+				+e.item-name.p ЛЭК Премиум
+				+e.item-hover
+					+e.content
+						+e.content-name.h6._big Пестеля 6
+						+e.content-company.p Донстрой Лимитед
+						+e.content-text.middle
+							| Дом с апартаментами от 27 м² 
+							br
+							| с гостиничным сервисом на Новом Арбате.
+							br
+							| Сдача — 2019 год.
+					+e.bottom
+						+button('подробнее') подробнее
+						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+		+e.item(data-aos="case-aos")
+			+e.background
+				+e.IMG.bg.object-fit(src="/img/case_1.jpg")
+			+e.item-inner
+				+e.item-logo
+					div
+						+e.IMG(src="/app/img/BUNIN.svg")
+				+e.item-name.p ЛЭК Премиум
+				+e.item-hover
+					+e.content
+						+e.content-name.h6._big Пестеля 6
+						+e.content-company.p Донстрой Лимитед
+						+e.content-text.middle
+							| Дом с апартаментами от 27 м² 
+							br
+							| с гостиничным сервисом на Новом Арбате.
+							br
+							| Сдача — 2019 год.
+					+e.bottom
+						+button('подробнее') подробнее
+						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+		+e.item(data-aos="case-aos")
+			+e.background
+				+e.IMG.bg.object-fit(src="/img/case_1.jpg")
+			+e.item-inner
+				+e.item-logo
+					div
+						+e.IMG(src="/app/img/BUNIN.svg")
+				+e.item-name.p ЛЭК Премиум
+				+e.item-hover
+					+e.content
+						+e.content-name.h6._big Пестеля 6
+						+e.content-company.p Донстрой Лимитед
+						+e.content-text.middle
+							| Дом с апартаментами от 27 м² 
+							br
+							| с гостиничным сервисом на Новом Арбате.
+							br
+							| Сдача — 2019 год.
+					+e.bottom
+						+button('подробнее') подробнее
+						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+		+e.item(data-aos="case-aos")
+			+e.background
+				+e.IMG.bg.object-fit(src="/img/case_5.jpg")
+			+e.item-inner
+				+e.item-logo
+					div
+						+e.IMG(src="/app/img/gagarin.svg")
+				+e.item-name.p РайфайХаус Корпорейшн
+				+e.item-hover
+					+e.content
+						+e.content-name._big.h4 Гагарин
+						+e.content-company.p Донстрой Лимитед
+						+e.content-text._big.big
+							| Дом с апартаментами от 27 м² 
+							br
+							| с гостиничным сервисом на Новом Арбате.
+							br
+							| Сдача — 2019 год.
+					+e.bottom._big.flex._vertical._justify
+						+button('подробнее') подробнее
+						+e.bottom-presa._big.link__.big.A(href='#') скачать презентацию
+		+e.item(data-aos="case-aos")
+			+e.background
+				+e.IMG.bg.object-fit(src="/img/case_2.jpg")
+			+e.item-inner
+				+e.item-logo
+					div
+						+e.IMG(src="/app/img/kurtapp.svg")
+				+e.item-name.p ЮИТ Блэк
+				+e.item-hover
+					+e.content
+						+e.content-name.h6._big Пестеля 6
+						+e.content-company.p Донстрой Лимитед
+						+e.content-text.middle
+							| Дом с апартаментами от 27 м² 
+							br
+							| с гостиничным сервисом на Новом Арбате.
+							br
+							| Сдача — 2019 год.
+					+e.bottom
+						+button('подробнее') подробнее
+						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+		+e.item(data-aos="case-aos")
+			+e.background
+				+e.IMG.bg.object-fit(src="/img/case_1.jpg")
+			+e.item-inner
+				+e.item-logo
+					div
+						+e.IMG(src="/app/img/BUNIN.svg")
+				+e.item-name.p ЛЭК Премиум
+				+e.item-hover
+					+e.content
+						+e.content-name.h6._big Пестеля 6
+						+e.content-company.p Донстрой Лимитед
+						+e.content-text.middle
+							| Дом с апартаментами от 27 м² 
+							br
+							| с гостиничным сервисом на Новом Арбате.
+							br
+							| Сдача — 2019 год.
+					+e.bottom
+						+button('подробнее') подробнее
+						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+		+e.item(data-aos="case-aos")
+			+e.background
+				+e.IMG.bg.object-fit(src="/img/case_3.jpg")
+			+e.item-inner
+				+e.item-logo
+					div
+						+e.IMG(src="/app/img/unona.svg")
+				+e.item-name.p Рейкьямен Золт
+				+e.item-hover
+					+e.content
+						+e.content-name.h6._big Пестеля 6
+						+e.content-company.p Донстрой Лимитед
+						+e.content-text.middle
+							| Дом с апартаментами от 27 м² 
+							br
+							| с гостиничным сервисом на Новом Арбате.
+							br
+							| Сдача — 2019 год.
+					+e.bottom
+						+button('подробнее') подробнее
+						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+		+e.item(data-aos="case-aos")
+			+e.background
+				+e.IMG.bg.object-fit(src="/img/case_4.jpg")
+			+e.item-inner
+				+e.item-logo
+					div
+						+e.IMG(src="/app/img/pestelya.svg")
+				+e.item-name.p Донстрой Лимитед
+				+e.item-hover
+					+e.content
+						+e.content-name.h6._big Пестеля 6
+						+e.content-company.p Донстрой Лимитед
+						+e.content-text.middle
+							| Дом с апартаментами от 27 м² 
+							br
+							| с гостиничным сервисом на Новом Арбате.
+							br
+							| Сдача — 2019 год.
+					+e.bottom
+						+button('подробнее') подробнее
+						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+		+e.item(data-aos="case-aos")
+			+e.background
+				+e.IMG.bg.object-fit(src="/img/case_1.jpg")
+			+e.item-inner
+				+e.item-logo
+					div
+						+e.IMG(src="/app/img/BUNIN.svg")
+				+e.item-name.p ЛЭК Премиум
+				+e.item-hover
+					+e.content
+						+e.content-name.h6._big Пестеля 6
+						+e.content-company.p Донстрой Лимитед
+						+e.content-text.middle
+							| Дом с апартаментами от 27 м² 
+							br
+							| с гостиничным сервисом на Новом Арбате.
+							br
+							| Сдача — 2019 год.
+					+e.bottom
+						+button('подробнее') подробнее
+						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+		+e.item(data-aos="case-aos")
+			+e.background
+				+e.IMG.bg.object-fit(src="/img/case_5.jpg")
+			+e.item-inner
+				+e.item-logo
+					div
+						+e.IMG(src="/app/img/gagarin.svg")
+				+e.item-name.p РайфайХаус Корпорейшн
+				+e.item-hover
+					+e.content
+						+e.content-name._big.h4 Гагарин
+						+e.content-company.p Донстрой Лимитед
+						+e.content-text._big.big
+							| Дом с апартаментами от 27 м² 
+							br
+							| с гостиничным сервисом на Новом Арбате.
+							br
+							| Сдача — 2019 год.
+					+e.bottom._big.flex._vertical._justify
+						+button('подробнее') подробнее
+						+e.bottom-presa._big.link__.big.A(href='#') скачать презентацию
+		+e.item(data-aos="case-aos")
+			+e.background
+				+e.IMG.bg.object-fit(src="/img/case_1.jpg")
+			+e.item-inner
+				+e.item-logo
+					div
+						+e.IMG(src="/app/img/BUNIN.svg")
+				+e.item-name.p ЛЭК Премиум
+				+e.item-hover
+					+e.content
+						+e.content-name.h6._big Пестеля 6
+						+e.content-company.p Донстрой Лимитед
+						+e.content-text.middle
+							| Дом с апартаментами от 27 м² 
+							br
+							| с гостиничным сервисом на Новом Арбате.
+							br
+							| Сдача — 2019 год.
+					+e.bottom
+						+button('подробнее') подробнее
+						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+		+e.item(data-aos="case-aos")
+			+e.background
+				+e.IMG.bg.object-fit(src="/img/case_1.jpg")
+			+e.item-inner
+				+e.item-logo
+					div
+						+e.IMG(src="/app/img/BUNIN.svg")
+				+e.item-name.p ЛЭК Премиум
+				+e.item-hover
+					+e.content
+						+e.content-name.h6._big Пестеля 6
+						+e.content-company.p Донстрой Лимитед
+						+e.content-text.middle
+							| Дом с апартаментами от 27 м² 
+							br
+							| с гостиничным сервисом на Новом Арбате.
+							br
+							| Сдача — 2019 год.
+					+e.bottom
+						+button('подробнее') подробнее
+						+e.bottom-presa.link__.big.A(href='#') скачать презентацию

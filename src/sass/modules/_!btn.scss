@@ -1,0 +1,28 @@
+.btn{
+	padding-left: 4.6rem;
+	padding-right: 4.6rem;
+	height: 6.5rem;
+	color: #fff;
+	background-color: $pink;
+	cursor: pointer;
+	border: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	letter-spacing: 0.05em;
+	font-size: 2rem;
+	max-width: 100%;
+	font-family: RoadRadio;
+	font-weight: 300;
+
+	&_white{
+		color: #151515;
+		background-color: #fff;
+	}
+
+	@include max-screen($large_mobile) {
+		height: 5rem;
+		font-size: 1.2rem;
+		line-height: 1em;
+	}
+}

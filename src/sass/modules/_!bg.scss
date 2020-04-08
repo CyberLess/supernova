@@ -1,0 +1,14 @@
+.bg{
+	position: absolute;
+	left: 0;
+	top: 0;
+	
+	&_access{
+		width: 1357/1920*100vw;
+		height: 1357/1920*100vw;
+
+		background: url('/img/access.jpg') center no-repeat;
+		background-size: cover;
+		mix-blend-mode: lighten;		
+	}
+}

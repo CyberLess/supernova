@@ -1,0 +1,121 @@
+.access{
+	padding-top: 9.7rem;
+	padding-bottom: 3.3rem;
+
+	background-color: #151515;
+
+	&__title{
+		margin-bottom: 6rem;
+	}
+
+	&__wrap{
+		mix-blend-mode: lighten;
+	}
+
+	&__lock{
+		margin-left: auto;
+		margin-right: auto;
+		width: 7.7rem;
+		margin-bottom: 9rem;
+		fill: transparent;
+		stroke: #fff;
+	}
+
+	&__button{
+		min-width: 35.7rem;
+	}
+
+	&__box{
+
+		width: 1357/1920*100vw;
+		height: 1357/1920*100vw;
+		margin: auto;
+		position: relative;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		flex-wrap: wrap;
+
+		&-inner{
+			z-index: 15;
+			position: relative;
+		}
+
+		&:before{
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: url('/img/access.jpg') center no-repeat;
+			background-size: cover;
+		}
+	}
+
+	@include max-screen($large_tablet) {
+		&__box{
+			width: 90vw;
+			height: 90vw;			
+		}
+	}	
+
+	@include max-screen($small_tablet) {
+		padding-top: 5rem;
+		padding-bottom: 2rem;
+
+		&__title{
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		&__box{
+			margin-left: -2rem;
+			width: 100vw;
+			height: 100vw;	
+			padding-left: 2rem;
+			padding-right: 2rem;
+
+			&-inner{
+				max-width: 100%;
+			}		
+
+
+		}
+	}
+
+	@include max-screen($large_mobile) {
+		&__lock{
+			margin-bottom: 3rem;
+			width: 4.3rem;
+		}
+
+		&__button{
+			min-width: 27.7rem;
+		}
+		&__box{
+			&:before{
+				width: 120%;
+				height: 120%;
+				margin-left: -10%;
+				margin-top: -3%;
+			}			
+		}
+		&__title{
+			width: 100%;
+			font-size: 2rem;
+			margin-bottom: 3rem;
+		}
+	}
+
+	@include max-screen($small_mobile) {
+		&__button{
+			min-width: 0;
+			width: 100%;
+		}
+	}
+}

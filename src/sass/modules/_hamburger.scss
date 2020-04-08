@@ -1,0 +1,14 @@
+.hamburger{
+	&:before,
+	&:after{
+		content: '';
+		display: block;
+		width: 24px;
+		height: 1px;
+		background-color: #fff;
+	}
+
+	&:before{
+		margin-bottom: 7px;
+	}
+}

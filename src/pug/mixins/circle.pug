@@ -1,0 +1,9 @@
+mixin circle(color="#D48232")
+	//- svg(width='84', height='99', viewBox='0 0 84 99', fill='none', xmlns='http://www.w3.org/2000/svg')
+		//- ellipse(rx="45" ry="35" cx="42" cy="50" stroke='url(#paint'+color+'_linear)')
+	svg(width='84', height='99', viewBox='25 25 50 50', fill='none', xmlns='http://www.w3.org/2000/svg')
+		circle(cx="50" cy="50" r="20" stroke='url(#paint'+color+'_linear)')
+		defs
+			lineargradient(x1='50.1644', y1='1.41531', x2='88.4821', y2='40.7685', gradientUnits='userSpaceOnUse' id="paint"+color+"_linear")
+				stop(stop-color=color)
+				stop(offset='1', stop-color=color, stop-opacity='0')

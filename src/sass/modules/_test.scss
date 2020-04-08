@@ -1,0 +1,46 @@
+.test{
+	padding: 30rem 0;
+
+	&__cell{
+		&_left{
+			width: 495/1424*100%;
+			margin-right: 219/1424*100%;
+		}
+
+		&_right{
+			width: 523/1424*100%;
+		}
+	}
+
+	&__title{
+		margin-bottom: 5rem;
+	}
+
+	@include max-screen($small_tablet) {
+	    padding: 15rem 0;
+
+	    &__title{
+	    	margin-bottom: 2rem;
+	    }
+	}
+
+	@include max-screen($large_mobile) {
+
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+
+		&__button{
+			width: 21.5rem;
+		}
+
+		&__cell{
+			width: 100%;
+			margin-right: 0;
+			text-align: center;			
+
+			&_left{
+				margin-bottom: 3.6rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,171 @@
+.benefit{
+	padding-top: 3.3rem;
+	padding-bottom: 7.75rem;
+
+	&__title{
+		margin-bottom: 11.75rem;
+	}
+
+	&__cell{
+		&_left{
+			width: 50%;
+		}
+
+		&_right{
+			width: 27%;
+		}
+	}
+
+	&__item{
+		width: 50%;
+		margin: 3.25rem 0;
+		padding-right: 13.9rem;
+	}
+
+	&__preview{
+		height: 8rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 2.8rem;
+
+		fill: transparent;
+		width: 5.3rem;
+
+		stroke: #fff;
+
+		&_window{
+			width: 5.3rem;
+		}
+
+		&_houses{
+			width: 5.4rem;
+		}
+		&_smile{
+			width: 5.6rem;
+		}
+		&_homekey{
+			margin-left: -.6rem;
+			width: 8rem;
+		}
+	}
+
+	&__name{
+		margin-bottom: 2rem;
+		min-height: 2em;
+	}
+
+	&__text{
+		line-height: 2.6rem;
+	}
+
+	@include max-screen($small_desktop) {
+		&__item{
+			padding-right: 4rem;
+		}
+	}
+
+	@include max-screen($large_tablet) {
+		&__button{
+			width: 100%;
+		}
+		&__cell{
+			&_left{
+				margin-right: 8%;
+			}
+			&_right{
+				width: 35%;
+			}
+		}
+	}
+
+	@include max-screen($small_tablet) {
+		padding-bottom: 3rem;
+		&__title{
+			margin-bottom: 6rem;
+		}
+		&__cell{
+			&_left{
+				width: 55%;
+				margin-right: 3%;
+			}
+			&_right{
+				width: 42%;
+			}
+		}
+	}
+
+	@include max-screen($large_mobile) {
+		&__cell{
+			width: 100%;
+			margin-right: 0;
+
+			&_right{
+				padding-top: 1rem;
+			}
+		}
+
+		&__button{
+			max-width: 100%;
+			width: 320px;
+		}
+
+		&__name{
+			margin-bottom: 1rem;
+		}
+
+		&__preview{
+			height: 4.4rem;
+
+			svg{
+				height: 100%;
+			}
+
+			&_homekey{
+				svg{
+					height: 5.8rem;
+				}
+			}
+		}
+
+		&__item{
+			margin-top: 0;
+			margin-bottom: 4rem;
+		}
+
+		&__title{
+			margin-bottom: 4.4rem;
+		}
+	}
+
+	@include max-screen($small_mobile) {
+		text-align: center;
+
+		&__preview{
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 2rem;
+		}
+
+		&__name{
+			min-height: 0;
+		}
+
+		&__button{
+			width: 215px;
+		}
+
+		&__item{
+			width: 214/280*100%;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 5.5rem;
+			padding-right: 0;
+		}
+
+		&__text{
+			line-height: 1.5rem;
+			font-size: 1.1rem;
+		}
+	}
+}

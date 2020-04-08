@@ -1,0 +1,38 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Главная';
+
+
+//- block body-start
+//- 	script.
+//- 		window.onbeforeunload = function () {
+//- 			window.scrollTo(0, 0);
+//- 		}
+//- 		document.querySelector('body').classList.add("js-lock")
+//- 		document.querySelector('html').classList.add("js-lock")	
+
+//- 	include ../layouts/preloader
+
+block content
+	
+	//- +b.stars-bg
+	//- +b.custom-lines.js-lottie(data-file="lines")
+
+
+
+	include ../layouts/main
+	include ../layouts/categories
+	include ../layouts/team
+	include ../layouts/exclusive
+	include ../layouts/test
+	include ../layouts/catalog
+	include ../layouts/access
+	include ../layouts/benefit
+	include ../layouts/partners
+	include ../layouts/contacts
+
+block scripts
+	script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
+	script(src="http://code.jquery.com/jquery-3.3.1.min.js")
+	script(src="/js/app.js?v=" + Date.now())

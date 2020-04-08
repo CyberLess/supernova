@@ -1,0 +1,27 @@
+.star{
+	
+	overflow: hidden;
+	// width: 20rem;
+	// height: 10rem;
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin-left: -92.16667vw;
+	margin-top: -64.08333vw;
+	// margin-left: 5rem;
+
+	width: 4000/1920*100vw;
+	height: 2000/1920*100vw;
+
+	transform: rotate(-1deg);
+
+	&__inner{
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 200%;
+		border: 1px solid #FFFFFF;
+		border-radius: 50%;
+	}
+}

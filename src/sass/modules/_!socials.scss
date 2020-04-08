@@ -1,0 +1,37 @@
+.socials{
+	&__item{
+		display: block;
+		&:not(:last-child){
+			margin-right: 5rem;
+		}
+	}
+
+	&__link{
+		display: block;
+
+		fill: transparent;
+		stroke: #fff;
+
+		&_vk{
+			width: 3rem;
+		}
+
+		&_wa{
+			width: 2.6rem;
+		}
+
+		&_fb{
+			width: 1.5rem;
+		}
+
+		&_inst{
+			width: 2.6rem;
+		}
+
+		&_tg{
+			width: 2.8rem;
+		}
+	}
+
+
+}

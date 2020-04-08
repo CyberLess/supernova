@@ -1,0 +1,70 @@
+.footer{
+	padding-bottom: 8.8rem;
+	&__cell{
+		width: 20%;
+
+		&_center{
+			text-align: center;
+		}
+
+		&_right{
+			text-align: right;
+		}
+
+		&_big{
+			width: 40%;
+		}
+	}
+
+	&__label{
+		font-family: RoadRadio;
+		margin-bottom: 3.1rem;
+		line-height: 1em;
+	}
+
+	&__logo{
+		width: 27.1rem;
+	}
+
+	&__text{
+		line-height: 3rem; 
+		margin-bottom: .9rem;
+		font-weight: 300;
+	}
+
+	&__socials{
+		margin-bottom: 5rem;
+	}
+
+	&__polit{
+		font-weight: 300;
+		display: inline-block;
+		color: $pink;
+		margin-bottom: 2.7rem;
+		line-height: 4.1rem;
+	}
+
+	&__creator{
+		display: inline-block;
+		font-weight: 300;
+		
+	}
+
+	&__list{
+
+		&-item{
+			display: block;
+		}
+
+		&-link{
+			display: inline-block;
+			font-weight: 300;
+			line-height: 3.2rem;
+		}
+	}
+
+
+	@include max-screen($small_tablet) {
+		display: none;
+	}
+}

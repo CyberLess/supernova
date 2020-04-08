@@ -1,0 +1,130 @@
+.contacts{
+	padding-bottom: 11.4rem;
+	padding-top: 6.4rem;
+
+	&__map{
+		height: 65rem;
+		border-radius: 10px;
+		overflow: hidden;
+	}
+
+	&__box{
+		position: relative;
+	}
+
+	&__inside{
+		position: absolute;
+		top: 0;
+		margin-top: 13.8rem;
+		left: 14rem;
+		right: 14rem;
+
+
+	}
+
+	&__inner{
+		text-align: center;
+		// padding: 2.9rem;
+		width: 100%;
+	}
+
+	&__text{
+		line-height: 2rem;
+		font-weight: 300;
+
+	}
+
+	&__arrow{
+		width: 7rem;
+		margin: auto;
+		fill: transparent;
+		stroke: #fff;
+		margin-top: 2.2rem;
+	}
+
+	&__title{
+		font-weight: normal;
+		margin-bottom: 1.4rem;
+	}
+
+	&__list{
+		padding-top: 1.6rem;
+		text-align: center;
+
+		&-item{
+			line-height: 1.7rem;
+			font-weight: 300;
+
+			&:not(:last-child){
+				margin-bottom: 2rem;
+			}
+		}
+	}
+
+	&__manager{
+		width: 100%;
+		height: 17.2rem;
+		width: 315/375*100%;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		margin-bottom: 2.9rem;
+		border-bottom-right-radius: 120px;
+		border-bottom-left-radius: 120px;
+
+		&-image{
+		}
+		// display: block;
+		// margin: auto;
+		// margin-top: 2.6rem;
+		// margin-bottom: 2.9rem;
+		// width: 315/375*100%;
+		// &+.contacts{
+		// 	&__inner{
+		// 		padding-top: 0;
+		// 	}
+		// }
+	}
+
+	&__circle{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 37.5rem;
+		height: 37.5rem;
+		border-radius: 50%;
+		overflow: hidden;
+
+		
+
+		color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		// flex-direction: column;
+		flex-wrap: wrap;
+
+		&_contacts{
+			background: #191919;
+		}
+
+		&_recall{
+			background-color: $pink;
+		}
+
+		&_top{
+			align-items: flex-start;
+		}
+
+		&_right{
+			left: auto;
+			right: 0;
+
+		}
+	}
+
+
+	@include max-screen($small_tablet) {
+		display: none;
+	}
+}

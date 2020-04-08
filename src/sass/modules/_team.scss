@@ -1,0 +1,17 @@
+.team{
+	padding: 10rem 0;
+
+	@include max-screen($large_tablet) {
+		padding: 7rem 0;
+	}
+
+	@include max-screen($large_mobile) {
+		padding-top: 2.5rem;
+		padding-bottom: 2.5rem;
+
+		&__wrap{
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}

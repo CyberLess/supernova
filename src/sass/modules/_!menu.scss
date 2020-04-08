@@ -1,0 +1,14 @@
+.menu{
+	&__item{
+		display: block;
+
+		&:not(:last-child){
+			margin-right: 7.6rem;
+		}
+	}
+
+	&__link{
+		display: block;
+		
+	}
+}

@@ -1,0 +1,139 @@
+.exclusive{
+	padding: 10rem 0;
+
+	&__title{
+		margin-bottom: 10rem;
+	}
+
+	&__cell{
+		width: 25%;
+		padding-right: 1.5rem;
+	}
+
+	&__preview{
+		height: 6.2rem;
+		margin-bottom: 2.9rem;
+		fill: transparent;
+		stroke: #fff;
+		display: flex;
+		align-items: center;
+
+		.icon, img{
+			max-height: 100%;
+			margin: auto;
+		}
+
+		&_loupe{
+			margin-left: -1.5rem;
+			width: 6.2rem;
+
+		}
+
+		&_decoration{
+			width: 4.5rem;
+		}
+
+		&_doc{
+			width: 4rem;
+		}
+
+		&_docs{
+			width: 4.8rem;
+		}
+	}
+
+	&__text{
+		line-height: 2.5rem;
+	}
+
+	&__circle{
+		&_first{
+			transform: rotate3d(0,-3,-5,-245deg);
+		}
+		&_second{
+		    margin-left: -6rem;
+		    margin-top: -6rem;
+			transform: rotate3d(-9,-1,-10,-245deg);
+		}
+		&_third{
+			transform: rotate3d(0,-3,-5,-245deg);
+		}
+		&_fourth{
+		    margin-left: -6rem;
+		    margin-top: -6rem;
+		    transform: rotate3d(6,-6,-2,-305deg);
+		}
+	}
+
+	@include max-screen($large_tablet) {
+		padding: 7rem 0;
+
+		&__row{
+			justify-content: space-between;
+		}
+		&__cell{
+			width: auto;
+			max-width: 23%;
+			padding-right: 0;
+		}
+	}
+
+	@include max-screen($large_mobile) {
+		padding-top: 2.5rem;
+		padding-bottom: 2.5rem;
+
+	}
+
+	@include max-screen($small_tablet) {
+		&__title{
+			margin-bottom: 6rem;
+		}
+		&__cell{
+			width: 50%;
+			margin-bottom: 40px;
+			max-width: none;
+			padding-right: 0;
+		}
+	}
+
+	@include max-screen($large_mobile) {
+		text-align: center;	
+		padding-bottom: 0;
+		
+		&__title{
+			margin-bottom: 5.7rem;
+		}
+
+		&__preview{
+			margin-left: auto;
+			margin-right: auto;
+			height: 4rem;
+			width: 100%;
+			margin-bottom: 2.5rem;
+			text-align: center;
+
+			&_loupe{
+				height: 6.7rem;
+			}
+			&_docs{
+				height: 4.6rem;
+			}
+		}
+
+		&__text{
+			line-height: 1.5rem;
+		}
+
+		&__cell{
+			width: 100%;
+			margin-bottom: 5.5rem;
+		}
+
+		&__circle{
+			&_second, &_fourth{
+			    margin-left: -4rem;
+			    margin-top: -4rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,9 @@
+.stroke{
+	-webkit-text-stroke-width: .1rem;
+	-webkit-text-stroke-color: #fff;
+	color: transparent;
+
+	@include max-screen($large_mobile) {
+		-webkit-text-stroke-width: 0.5px;
+	}
+}
