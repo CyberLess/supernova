@@ -8,6 +8,8 @@
 			+e.cell._left.flex
 				+e.item
 					+e.preview._window
+						+e.circle._first.circle
+							+circle("#AAAC24")
 						+icon('window')
 					+e.name.h6
 						| Принцип одного окна
@@ -15,6 +17,8 @@
 						| Решаем задачу клиента за 1 визит (покупка, продажа, ипотека, страхование)
 				+e.item
 					+e.preview._houses
+						+e.circle._second.circle
+							+circle("#D48232")
 						+icon('houses')
 					+e.name.h6
 						| 0% комиссия
@@ -22,6 +26,8 @@
 						| Квартиры напрямую у застройщика, без переплат
 				+e.item
 					+e.preview._smile
+						+e.circle._third.circle
+							+circle("#D25171")
 						+icon('smile')
 					+e.name.h6
 						| Честность и забота
@@ -29,6 +35,8 @@
 						| Ценим каждого клиента, подбираем, как для себя
 				+e.item
 					+e.preview._homekey
+						+e.circle._fourth.circle
+							+circle("#00758D")
 						+icon('homekey')
 					+e.name.h6
 						| Ипотека
@@ -37,6 +45,9 @@
 			+e.cell._right
 				+e.button.orbit-button__.A(href="#")
 					+e.border
+						+e.border-wrap
+							svg(viewBox="0 0 100 100")
+								circle(cx="50" cy="50" r="49")
 					+e.bottom
 					+e.inner
 						+e.center

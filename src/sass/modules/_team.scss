@@ -1,6 +1,7 @@
 .team{
 	padding: 10rem 0;
 
+
 	@include max-screen($large_tablet) {
 		padding: 7rem 0;
 	}

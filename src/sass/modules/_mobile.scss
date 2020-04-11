@@ -1,0 +1,50 @@
+.mobile{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: calc(100% + 10rem);
+	z-index: 500;
+	padding-bottom: 10rem;
+	background: #151515;
+
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	transition: ease .25s;
+	opacity: 0;
+	visibility: hidden;
+
+	&.is-active{
+		opacity: 1;
+		visibility: visible;
+	}
+
+	&__bottom{
+		&-part{
+			&:not(:last-child){
+				margin-bottom: 2rem;
+			}
+		}
+	}
+
+	&__phone{
+
+	}
+
+	&__list{
+		margin-bottom: 7rem;
+
+		&-item{
+			display: block;
+		}
+
+		&-link{
+			display: block;
+			line-height: 4.7rem;
+
+		}
+	}
+}

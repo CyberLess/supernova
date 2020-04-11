@@ -1,5 +1,6 @@
 import Inputmask from "inputmask";
 import validate from 'jquery-validation';
+import { panel } from "./panel";
 import { config } from "../config";
 
 var forms = {
@@ -20,17 +21,29 @@ var forms = {
 
 		toggle: ($item) => {
 
+			let ww = $(window).width();
+
 			let $another = $('.js-multiply').not($item);
 
 			forms.multiply.close($another);
-			
-			$item.toggleClass('is-active');
+		
+			if(ww <= 580){
+				panel.open($item.data('panel'))
+			}else{
+				$item.toggleClass('is-active');
+			}
 
 		},
 
 		open: ($item) => {
 
-			$item.addClass('is-active')
+			let ww = $(window).width();
+
+			if(ww <= 580){
+				panel.open($item.data('panel'))
+			}else{
+				$item.addClass('is-active')
+			}
 
 		},
 

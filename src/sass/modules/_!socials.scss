@@ -33,5 +33,40 @@
 		}
 	}
 
+	@include max-screen($large_tablet) {
+		&__item{
+			&:not(:last-child){
+				margin-right: 2.5rem;
+			}
+		}
+	}
 
+	@include max-screen($large_mobile) {
+		&__item{
+			&:not(:last-child){
+				margin-right: 3rem;
+			}
+		}
+		&__link{
+			&_vk{
+				width: 2.6rem;
+			}
+
+			&_wa{
+				width: 2.2rem;
+			}
+
+			&_fb{
+				width: 1.5rem;
+			}
+
+			&_inst{
+				width: 2.2rem;
+			}
+
+			&_tg{
+				width: 2.4rem;
+			}
+		}
+	}
 }

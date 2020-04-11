@@ -59,6 +59,7 @@
 	}
 
 	&.is-active{
+		z-index: 50;
 		.multiply{
 			&__arrow{
 				transform: rotate(-180deg);
@@ -75,9 +76,58 @@
 		}
 	}
 
+	&.is-static{
+		.multiply{
+			&__list{
+				position: static;
+				border: none;
+				background: transparent;
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+		
+	}
+
 	@include max-screen($large_tablet) {
 		&__top{
 			padding: 5.4rem 3rem;
+		}
+	}
+
+	@include max-screen($small_tablet) {
+		border-top: 1px solid transparent;
+
+		&.is-active{
+			border-top-color: #fff;
+		}
+		&__top{
+			padding: 2.4rem 3rem;
+		}
+
+		&__name{
+			&_big{
+				font-size: 1.4rem;
+				
+			}
+		}
+
+		&__list{
+			&-inner{
+				padding: 0 3.4rem;
+			}
+		}
+	}
+
+	@include max-screen($large_mobile) {
+		&__top{
+			padding: 1.9rem 0rem;
+		}
+		&__list{
+			padding-bottom: 1rem;
+			&-inner{
+				padding: 0;
+			}
 		}
 	}
 }

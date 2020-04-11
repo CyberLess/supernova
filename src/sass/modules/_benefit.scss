@@ -22,12 +22,32 @@
 		padding-right: 13.9rem;
 	}
 
+	&__circle{
+		&_first{
+		    transform: rotate3d(2,-10,4,-224deg);
+		}
+
+		&_second{
+			transform: rotate3d(-11,-10,4,-124deg);
+		}
+
+		&_third{
+			transform: rotate3d(-2,-10,4,-124deg);
+		}
+
+		&_fourth{
+		    transform: rotate3d(0,-2,1,-230deg);
+		}
+	}
+
 	&__preview{
 		height: 8rem;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		margin-bottom: 2.8rem;
+
+		position: relative;
 
 		fill: transparent;
 		width: 5.3rem;

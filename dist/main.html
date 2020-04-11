@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>Главная</title>
-    <link rel="stylesheet" href="/app/css/app.css?v=1586374134021">
+    <link rel="stylesheet" href="/app/css/app.css?v=1586630989253">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -24,6 +24,182 @@
         </svg>
     </div>
     <main>
+        <div class="panel" id="catalog-panel">
+            <div class="panel__inner">
+                <div class="panel__close hamburger is-active js-panel-close">
+                    <div class="hamburger__line"></div>
+                    <div class="hamburger__line"></div>
+                </div>
+                <div class="panel__wrap wrap">
+                    <div class="panel__title h2"><span class="stroke">топ 20 </span>предложений
+                        <br>недвижимости</div>
+                    <form class="panel__nav form" action="">
+                        <div class="panel__nav-row flex">
+                            <div class="panel__nav-cell">
+                                <div class="panel__select multiply is-static">
+                                    <div class="multiply__top">
+                                        <div class="multiply__top-inner flex">
+                                            <div class="multiply__name multiply__name_big p">Класс жилья</div>
+                                            <div class="multiply__arrow">
+                                                <svg class="icon icon-down" viewBox="0 0 16 9">
+                                                    <use xlink:href="/app/icons/sprite.svg#down"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="multiply__list">
+                                        <div class="multiply__list-inner">
+                                            <div class="multiply__list-item">
+                                                <label class="multiply__checkbox checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="class[]" value="Комфорт" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Комфорт</span>
+                                                </label>
+                                            </div>
+                                            <div class="multiply__list-item">
+                                                <label class="multiply__checkbox checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="class[]" value="Бизнес" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Бизнес</span>
+                                                </label>
+                                            </div>
+                                            <div class="multiply__list-item">
+                                                <label class="multiply__checkbox checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="class[]" value="Премиум" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Премиум</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel__nav-cell">
+                                <div class="panel__select multiply is-static">
+                                    <div class="multiply__top">
+                                        <div class="multiply__top-inner flex">
+                                            <div class="multiply__name multiply__name_big p">Направление</div>
+                                            <div class="multiply__arrow">
+                                                <svg class="icon icon-down" viewBox="0 0 16 9">
+                                                    <use xlink:href="/app/icons/sprite.svg#down"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="multiply__list">
+                                        <div class="multiply__list-inner">
+                                            <div class="multiply__list-item">
+                                                <label class="multiply__checkbox checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="direction[]" value="Север" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Север</span>
+                                                </label>
+                                            </div>
+                                            <div class="multiply__list-item">
+                                                <label class="multiply__checkbox checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="direction[]" value="Юг" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Юг</span>
+                                                </label>
+                                            </div>
+                                            <div class="multiply__list-item">
+                                                <label class="multiply__checkbox checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="direction[]" value="Центр" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Центр</span>
+                                                </label>
+                                            </div>
+                                            <div class="multiply__list-item">
+                                                <label class="multiply__checkbox checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="direction[]" value="Запад" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Запад</span>
+                                                </label>
+                                            </div>
+                                            <div class="multiply__list-item">
+                                                <label class="multiply__checkbox checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="direction[]" value="Восток" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Восток</span>
+                                                </label>
+                                            </div>
+                                            <div class="multiply__list-item">
+                                                <label class="multiply__checkbox checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="direction[]" value="Все" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Все</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel__nav-cell">
+                                <div class="panel__select multiply is-static">
+                                    <div class="multiply__top">
+                                        <div class="multiply__top-inner flex">
+                                            <div class="multiply__name multiply__name_big p">Срок сдачи</div>
+                                            <div class="multiply__arrow">
+                                                <svg class="icon icon-down" viewBox="0 0 16 9">
+                                                    <use xlink:href="/app/icons/sprite.svg#down"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="multiply__list">
+                                        <div class="multiply__list-inner">
+                                            <div class="multiply__list-item">
+                                                <label class="multiply__checkbox checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="time[]" value="Сдан" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Сдан</span>
+                                                </label>
+                                            </div>
+                                            <div class="multiply__list-item">
+                                                <label class="multiply__checkbox checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="time[]" value="2020" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>2020</span>
+                                                </label>
+                                            </div>
+                                            <div class="multiply__list-item">
+                                                <label class="multiply__checkbox checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="time[]" value="2021" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>2021</span>
+                                                </label>
+                                            </div>
+                                            <div class="multiply__list-item">
+                                                <label class="multiply__checkbox checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="time[]" value="2022" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>2022</span>
+                                                </label>
+                                            </div>
+                                            <div class="multiply__list-item">
+                                                <label class="multiply__checkbox checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="time[]" value="2023" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>2023</span>
+                                                </label>
+                                            </div>
+                                            <div class="multiply__list-item">
+                                                <label class="multiply__checkbox checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="time[]" value="Не важно" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Не важно</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="panel__bottom">
+                <div class="panel__wrap wrap">
+                    <div class="panel__row flex">
+                        <div class="panel__cell"><a class="panel__button btn btn_white js-panel-close" href="#"><span class="btn__text"> отменить</span></a>
+                        </div>
+                        <div class="panel__cell"><a class="panel__button btn js-panel-close" href="#"><span class="btn__text"> применить</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="mobile">
+            <div class="mobile__center">
+                <ul class="mobile__list">
+                    <li class="mobile__list-item"><a class="mobile__list-link middle" href="#">Услуги</a>
+                    </li>
+                    <li class="mobile__list-item"><a class="mobile__list-link middle" href="#">О нас</a>
+                    </li>
+                    <li class="mobile__list-item"><a class="mobile__list-link middle" href="#">Отзывы</a>
+                    </li>
+                    <li class="mobile__list-item"><a class="mobile__list-link middle" href="#">Контакты</a>
+                    </li>
+                </ul>
+                <div class="mobile__bottom">
+                    <div class="mobile__bottom-part"><a class="mobile__phone h6 h6_big" href="tel:+74594583693">+7 459 458 36 93</a>
+                    </div>
+                    <div class="mobile__bottom-part">
+                        <div class="mobile__recall p">Обратный звонок</div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <header class="header is-fluid">
             <div class="header__wrap wrap">
                 <div class="header__row flex flex_vertical flex_justify">
@@ -44,12 +220,16 @@
                     <div class="header__cell header__cell_right flex flex_vertical flex_right"><a class="header__phone phone h5" href="tel:+74594583693">+7 459 458 36 93</a><a class="header__link middle" href="#">Обратный звонок</a>
                     </div>
                     <div class="header__cell header__cell_hamburger">
-                        <div class="hamburger"></div>
+                        <div class="hamburger js-mobile">
+                            <div class="hamburger__line"></div>
+                            <div class="hamburger__line"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
         <section class="main" data-aos="main-aos">
+            <div class="custom-lines js-lottie" data-file="lines"></div>
             <div class="main__wrap wrap">
                 <div class="main__title h1"><span class="string is-center"><span class="word"> <span>Эксперты&nbsp;</span></span><span class="word"> <span>рынка&nbsp;</span></span><span class="word"> <span>недвижимости&nbsp;</span></span><span class="word stroke"> <span>Санкт-ПетерБурга&nbsp;</span></span>
                     </span>
@@ -125,12 +305,18 @@
             <div class="categories__wrap wrap">
                 <div class="categories__list flex">
                     <div class="categories__item categories__item_darkpink">
+                        <a class="categories__link js-categories" href="#" target="_blank"></a>
+                        <div class="categories__bg js-categories-close"></div>
                         <div class="categories__item-inner">
                             <div class="categories__item-part categories__item-part_default">
                                 <div class="categories__name h4">купить</div>
                             </div>
                             <div class="categories__item-part categories__item-part_hidden">
-                                <div class="categories__name h4">купить</div>
+                                <div class="categories__close hamburger is-active js-categories-close">
+                                    <div class="hamburger__line"></div>
+                                    <div class="hamburger__line"></div>
+                                </div>
+                                <div class="categories__name categories__name_big h4">купить</div>
                                 <div class="categories__text middle">Бесплатная услуга</div>
                                 <div class="categories__text middle">Подбор из&nbsp;150 лучших домов
                                     <br>от&nbsp;20 надежных застройщиковь</div>
@@ -138,34 +324,46 @@
                                     <svg class="icon icon-arrow" viewBox="0 0 72 26">
                                         <use xlink:href="/app/icons/sprite.svg#arrow"></use>
                                     </svg>
-                                </div>
+                                </div><a class="categories__mobile-link p flex flex_vertical" href="#" target="_blank">Подробнее<span><svg class="icon icon-arrow" viewBox="0 0 72 26"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
                             </div>
                         </div>
                     </div>
                     <div class="categories__item categories__item_orange">
+                        <a class="categories__link js-categories" href="#" target="_blank"></a>
+                        <div class="categories__bg js-categories-close"></div>
                         <div class="categories__item-inner">
                             <div class="categories__item-part categories__item-part_default">
                                 <div class="categories__name h4">продать</div>
                             </div>
                             <div class="categories__item-part categories__item-part_hidden">
-                                <div class="categories__name h4">продать</div>
+                                <div class="categories__close hamburger is-active js-categories-close">
+                                    <div class="hamburger__line"></div>
+                                    <div class="hamburger__line"></div>
+                                </div>
+                                <div class="categories__name categories__name_big h4">продать</div>
                                 <div class="categories__text categories__text_totop middle">Продажа квартиры за&nbsp;30 дней
                                     <br>по&nbsp;лучшей цене</div>
                                 <div class="categories__arrow">
                                     <svg class="icon icon-arrow" viewBox="0 0 72 26">
                                         <use xlink:href="/app/icons/sprite.svg#arrow"></use>
                                     </svg>
-                                </div>
+                                </div><a class="categories__mobile-link p flex flex_vertical" href="#" target="_blank">Подробнее<span><svg class="icon icon-arrow" viewBox="0 0 72 26"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
                             </div>
                         </div>
                     </div>
                     <div class="categories__item categories__item_green">
+                        <a class="categories__link js-categories" href="#" target="_blank"></a>
+                        <div class="categories__bg js-categories-close"></div>
                         <div class="categories__item-inner">
                             <div class="categories__item-part categories__item-part_default">
                                 <div class="categories__name h4">квартира в&nbsp;зачет</div>
                             </div>
                             <div class="categories__item-part categories__item-part_hidden">
-                                <div class="categories__name h4">квартира
+                                <div class="categories__close hamburger is-active js-categories-close">
+                                    <div class="hamburger__line"></div>
+                                    <div class="hamburger__line"></div>
+                                </div>
+                                <div class="categories__name categories__name_big h4">квартира
                                     <br>в&nbsp;зачет</div>
                                 <div class="categories__text categories__text_totop middle">Обмен старой квартиры
                                     <br>на&nbsp;новую</div>
@@ -173,17 +371,23 @@
                                     <svg class="icon icon-arrow" viewBox="0 0 72 26">
                                         <use xlink:href="/app/icons/sprite.svg#arrow"></use>
                                     </svg>
-                                </div>
+                                </div><a class="categories__mobile-link p flex flex_vertical" href="#" target="_blank">Подробнее<span><svg class="icon icon-arrow" viewBox="0 0 72 26"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
                             </div>
                         </div>
                     </div>
                     <div class="categories__item categories__item_pink">
+                        <a class="categories__link js-categories" href="#" target="_blank"></a>
+                        <div class="categories__bg js-categories-close"></div>
                         <div class="categories__item-inner">
                             <div class="categories__item-part categories__item-part_default">
                                 <div class="categories__name h4">ипотека</div>
                             </div>
                             <div class="categories__item-part categories__item-part_hidden">
-                                <div class="categories__name h4">ипотека</div>
+                                <div class="categories__close hamburger is-active js-categories-close">
+                                    <div class="hamburger__line"></div>
+                                    <div class="hamburger__line"></div>
+                                </div>
+                                <div class="categories__name categories__name_big h4">ипотека</div>
                                 <div class="categories__text middle">Бесплатная услуга</div>
                                 <div class="categories__text middle">Подбор ипотечной программы
                                     <br>от&nbsp;25 банков-партнеров. Ставки
@@ -192,17 +396,23 @@
                                     <svg class="icon icon-arrow" viewBox="0 0 72 26">
                                         <use xlink:href="/app/icons/sprite.svg#arrow"></use>
                                     </svg>
-                                </div>
+                                </div><a class="categories__mobile-link p flex flex_vertical" href="#" target="_blank">Подробнее<span><svg class="icon icon-arrow" viewBox="0 0 72 26"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
                             </div>
                         </div>
                     </div>
                     <div class="categories__item categories__item_blue">
+                        <a class="categories__link js-categories" href="#" target="_blank"></a>
+                        <div class="categories__bg js-categories-close"></div>
                         <div class="categories__item-inner">
                             <div class="categories__item-part categories__item-part_default">
                                 <div class="categories__name h4">инвестиции</div>
                             </div>
                             <div class="categories__item-part categories__item-part_hidden">
-                                <div class="categories__name h4">инвестиции</div>
+                                <div class="categories__close hamburger is-active js-categories-close">
+                                    <div class="hamburger__line"></div>
+                                    <div class="hamburger__line"></div>
+                                </div>
+                                <div class="categories__name categories__name_big h4">инвестиции</div>
                                 <div class="categories__text middle">Бесплатная услуга</div>
                                 <div class="categories__text middle">Выгодные вложения в&nbsp;недвижимость
                                     <br>с&nbsp;рентабельностью до&nbsp;30% годовых</div>
@@ -210,17 +420,23 @@
                                     <svg class="icon icon-arrow" viewBox="0 0 72 26">
                                         <use xlink:href="/app/icons/sprite.svg#arrow"></use>
                                     </svg>
-                                </div>
+                                </div><a class="categories__mobile-link p flex flex_vertical" href="#" target="_blank">Подробнее<span><svg class="icon icon-arrow" viewBox="0 0 72 26"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
                             </div>
                         </div>
                     </div>
                     <div class="categories__item categories__item_purple">
+                        <a class="categories__link js-categories" href="#" target="_blank"></a>
+                        <div class="categories__bg js-categories-close"></div>
                         <div class="categories__item-inner">
                             <div class="categories__item-part categories__item-part_default">
                                 <div class="categories__name h4">коммерция</div>
                             </div>
                             <div class="categories__item-part categories__item-part_hidden">
-                                <div class="categories__name h4">коммерция</div>
+                                <div class="categories__close hamburger is-active js-categories-close">
+                                    <div class="hamburger__line"></div>
+                                    <div class="hamburger__line"></div>
+                                </div>
+                                <div class="categories__name categories__name_big h4">коммерция</div>
                                 <div class="categories__text middle">Бесплатная услуга</div>
                                 <div class="categories__text middle">Подбор коммерческой
                                     <br>недвижимости для&nbsp;
@@ -229,7 +445,7 @@
                                     <svg class="icon icon-arrow" viewBox="0 0 72 26">
                                         <use xlink:href="/app/icons/sprite.svg#arrow"></use>
                                     </svg>
-                                </div>
+                                </div><a class="categories__mobile-link p flex flex_vertical" href="#" target="_blank">Подробнее<span><svg class="icon icon-arrow" viewBox="0 0 72 26"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></a>
                             </div>
                         </div>
                     </div>
@@ -341,6 +557,7 @@
             </div>
         </section>
         <section class="test">
+            <div class="test__lines custom-lines js-lottie" data-file="lines"></div>
             <div class="test__wrap wrap wrap_small">
                 <div class="test__row flex flex_vertical">
                     <div class="test__cell test__cell_left">
@@ -349,7 +566,7 @@
                         </div>
                         <div class="test__text big">и&nbsp;получите пошаговую инструкцию, как сэкономить <span class="pink">260 000 ₽ </span>при&nbsp;покупке квартиры, а&nbsp;также <span class="pink">390 000 ₽ </span>на&nbsp;процентах по&nbsp;ипотеке</div>
                     </div>
-                    <div class="test__cell test__cell_right"><a class="test__button orbit-button" href="#"><span class="orbit-button__border"></span><span class="orbit-button__bottom"></span><span class="orbit-button__inner"><span class="orbit-button__center"><span class="orbit-button__part is-desktop"><span class="orbit-button__bold">Пройди тест</span><span class="orbit-button__text p">И получи скидку</span></span><span class="orbit-button__part is-mobile"><span class="orbit-button__bold"> Получить<br>скидки</span></span><span class="orbit-button__arrow"><svg class="icon icon-arrow" viewBox="0 0 72 26"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></span></span></a>
+                    <div class="test__cell test__cell_right"><a class="test__button orbit-button" href="#"><span class="orbit-button__border"><span class="orbit-button__border-wrap"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="49"></circle></svg></span></span><span class="orbit-button__bottom"></span><span class="orbit-button__inner"><span class="orbit-button__center"><span class="orbit-button__part is-desktop"><span class="orbit-button__bold">Пройди тест</span><span class="orbit-button__text p">И получи скидку</span></span><span class="orbit-button__part is-mobile"><span class="orbit-button__bold"> Получить<br>скидки</span></span><span class="orbit-button__arrow"><svg class="icon icon-arrow" viewBox="0 0 72 26"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></span></span></a>
                     </div>
                 </div>
             </div>
@@ -363,7 +580,7 @@
                 <form class="catalog__nav form" action="">
                     <div class="catalog__nav-row flex">
                         <div class="catalog__nav-cell">
-                            <div class="catalog__select multiply js-multiply">
+                            <div class="catalog__select multiply js-multiply" data-panel="catalog-panel">
                                 <div class="multiply__top js-multiply-nav">
                                     <div class="multiply__top-inner flex">
                                         <div class="multiply__name p">Класс жилья</div>
@@ -396,7 +613,7 @@
                             </div>
                         </div>
                         <div class="catalog__nav-cell">
-                            <div class="catalog__select multiply js-multiply">
+                            <div class="catalog__select multiply js-multiply" data-panel="catalog-panel">
                                 <div class="multiply__top js-multiply-nav">
                                     <div class="multiply__top-inner flex">
                                         <div class="multiply__name p">Направление</div>
@@ -444,7 +661,7 @@
                             </div>
                         </div>
                         <div class="catalog__nav-cell">
-                            <div class="catalog__select multiply js-multiply">
+                            <div class="catalog__select multiply js-multiply" data-panel="catalog-panel">
                                 <div class="multiply__top js-multiply-nav">
                                     <div class="multiply__top-inner flex">
                                         <div class="multiply__name p">Срок сдачи</div>
@@ -1092,6 +1309,17 @@
                     <div class="benefit__cell benefit__cell_left flex">
                         <div class="benefit__item">
                             <div class="benefit__preview benefit__preview_window">
+                                <div class="benefit__circle benefit__circle_first circle">
+                                    <svg width="84" height="99" viewBox="25 25 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="20" stroke="url(#paint#AAAC24_linear)"></circle>
+                                        <defs>
+                                            <lineargradient x1="50.1644" y1="1.41531" x2="88.4821" y2="40.7685" gradientUnits="userSpaceOnUse" id="paint#AAAC24_linear">
+                                                <stop stop-color="#AAAC24"></stop>
+                                                <stop offset="1" stop-color="#AAAC24" stop-opacity="0"></stop>
+                                            </lineargradient>
+                                        </defs>
+                                    </svg>
+                                </div>
                                 <svg class="icon icon-window" viewBox="0 0 53 55">
                                     <use xlink:href="/app/icons/sprite.svg#window"></use>
                                 </svg>
@@ -1101,6 +1329,17 @@
                         </div>
                         <div class="benefit__item">
                             <div class="benefit__preview benefit__preview_houses">
+                                <div class="benefit__circle benefit__circle_second circle">
+                                    <svg width="84" height="99" viewBox="25 25 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="20" stroke="url(#paint#D48232_linear)"></circle>
+                                        <defs>
+                                            <lineargradient x1="50.1644" y1="1.41531" x2="88.4821" y2="40.7685" gradientUnits="userSpaceOnUse" id="paint#D48232_linear">
+                                                <stop stop-color="#D48232"></stop>
+                                                <stop offset="1" stop-color="#D48232" stop-opacity="0"></stop>
+                                            </lineargradient>
+                                        </defs>
+                                    </svg>
+                                </div>
                                 <svg class="icon icon-houses" viewBox="0 0 55 56">
                                     <use xlink:href="/app/icons/sprite.svg#houses"></use>
                                 </svg>
@@ -1110,6 +1349,17 @@
                         </div>
                         <div class="benefit__item">
                             <div class="benefit__preview benefit__preview_smile">
+                                <div class="benefit__circle benefit__circle_third circle">
+                                    <svg width="84" height="99" viewBox="25 25 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="20" stroke="url(#paint#D25171_linear)"></circle>
+                                        <defs>
+                                            <lineargradient x1="50.1644" y1="1.41531" x2="88.4821" y2="40.7685" gradientUnits="userSpaceOnUse" id="paint#D25171_linear">
+                                                <stop stop-color="#D25171"></stop>
+                                                <stop offset="1" stop-color="#D25171" stop-opacity="0"></stop>
+                                            </lineargradient>
+                                        </defs>
+                                    </svg>
+                                </div>
                                 <svg class="icon icon-smile" viewBox="0 0 56 63">
                                     <use xlink:href="/app/icons/sprite.svg#smile"></use>
                                 </svg>
@@ -1119,6 +1369,17 @@
                         </div>
                         <div class="benefit__item">
                             <div class="benefit__preview benefit__preview_homekey">
+                                <div class="benefit__circle benefit__circle_fourth circle">
+                                    <svg width="84" height="99" viewBox="25 25 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="20" stroke="url(#paint#00758D_linear)"></circle>
+                                        <defs>
+                                            <lineargradient x1="50.1644" y1="1.41531" x2="88.4821" y2="40.7685" gradientUnits="userSpaceOnUse" id="paint#00758D_linear">
+                                                <stop stop-color="#00758D"></stop>
+                                                <stop offset="1" stop-color="#00758D" stop-opacity="0"></stop>
+                                            </lineargradient>
+                                        </defs>
+                                    </svg>
+                                </div>
                                 <svg class="icon icon-homekey" viewBox="0 0 81 81">
                                     <use xlink:href="/app/icons/sprite.svg#homekey"></use>
                                 </svg>
@@ -1127,12 +1388,16 @@
                             <div class="benefit__text p">Получаем одобрение ипотеки в&nbsp;95% случаев</div>
                         </div>
                     </div>
-                    <div class="benefit__cell benefit__cell_right"><a class="benefit__button orbit-button" href="#"><span class="orbit-button__border"></span><span class="orbit-button__bottom"></span><span class="orbit-button__inner"><span class="orbit-button__center"><span class="orbit-button__bold">записаться на&nbsp;консультацию</span><span class="orbit-button__text p">по&nbsp;любым вопросам</span><span class="orbit-button__arrow"><svg class="icon icon-arrow" viewBox="0 0 72 26"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></span></span></a>
+                    <div class="benefit__cell benefit__cell_right"><a class="benefit__button orbit-button" href="#"><span class="orbit-button__border"><span class="orbit-button__border-wrap"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="49"></circle></svg></span></span><span class="orbit-button__bottom"></span><span class="orbit-button__inner"><span class="orbit-button__center"><span class="orbit-button__bold">записаться на&nbsp;консультацию</span><span class="orbit-button__text p">по&nbsp;любым вопросам</span><span class="orbit-button__arrow"><svg class="icon icon-arrow" viewBox="0 0 72 26"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></span></span></a>
                     </div>
                 </div>
             </div>
         </section>
         <section class="group">
+            <section class="partners partners_without">
+                <div class="partners__title h2">наши <span class="stroke">партнеры</span>
+                </div>
+            </section>
             <section class="partners">
                 <div class="partners__wrap wrap">
                     <div class="partners__box">
@@ -1210,10 +1475,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section class="partners partners_without">
-                <div class="partners__title h2">наши <span class="stroke">партнеры</span>
                 </div>
             </section>
         </section>
@@ -1337,7 +1598,7 @@
     <div class="modals modals_recall mfp-hide" id="recall"></div>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/app/js/app.js?v=1586374134122"></script>
+    <script src="/app/js/app.js?v=1586630989427"></script>
 </body>
 
 </html>

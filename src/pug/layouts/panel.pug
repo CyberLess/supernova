@@ -1,0 +1,152 @@
++b.panel#catalog-panel
+	+e.inner
+		+e.close.hamburger__.is-active.js-panel-close
+			+e.line
+			+e.line
+		+e.wrap.wrap
+			+e.title.h2
+				span.stroke топ 20 
+				| предложений 
+				br
+				| недвижимости
+			+e.nav.form.FORM(action="")
+				+e.nav-row.flex
+					+e.nav-cell
+						+e.select.multiply__.is-static
+							+e.top
+								+e.top-inner.flex
+									+e.name._big.p Класс жилья
+									+e.arrow
+										+icon('down')
+							+e.list
+								+e.list-inner
+									+e.list-item
+										+e.LABEL.checkbox.checkbox__
+											+e.INPUT.input(type="checkbox" name="class[]" value="Комфорт")
+											+e.SPAN.text.middle
+												+e.SPAN.box
+													+icon('checkbox')
+												| Комфорт
+									+e.list-item
+										+e.LABEL.checkbox.checkbox__
+											+e.INPUT.input(type="checkbox" name="class[]" value="Бизнес")
+											+e.SPAN.text.middle
+												+e.SPAN.box
+													+icon('checkbox')
+												| Бизнес
+									+e.list-item
+										+e.LABEL.checkbox.checkbox__
+											+e.INPUT.input(type="checkbox" name="class[]" value="Премиум")
+											+e.SPAN.text.middle
+												+e.SPAN.box
+													+icon('checkbox')
+												| Премиум
+					+e.nav-cell
+						+e.select.multiply__.is-static
+							+e.top
+								+e.top-inner.flex
+									+e.name._big.p Направление
+									+e.arrow
+										+icon('down')
+							+e.list
+								+e.list-inner
+									+e.list-item
+										+e.LABEL.checkbox.checkbox__
+											+e.INPUT.input(type="checkbox" name="direction[]" value="Север")
+											+e.SPAN.text.middle
+												+e.SPAN.box
+													+icon('checkbox')
+												| Север
+									+e.list-item
+										+e.LABEL.checkbox.checkbox__
+											+e.INPUT.input(type="checkbox" name="direction[]" value="Юг")
+											+e.SPAN.text.middle
+												+e.SPAN.box
+													+icon('checkbox')
+												| Юг
+									+e.list-item
+										+e.LABEL.checkbox.checkbox__
+											+e.INPUT.input(type="checkbox" name="direction[]" value="Центр")
+											+e.SPAN.text.middle
+												+e.SPAN.box
+													+icon('checkbox')
+												| Центр
+									+e.list-item
+										+e.LABEL.checkbox.checkbox__
+											+e.INPUT.input(type="checkbox" name="direction[]" value="Запад")
+											+e.SPAN.text.middle
+												+e.SPAN.box
+													+icon('checkbox')
+												| Запад
+									+e.list-item
+										+e.LABEL.checkbox.checkbox__
+											+e.INPUT.input(type="checkbox" name="direction[]" value="Восток")
+											+e.SPAN.text.middle
+												+e.SPAN.box
+													+icon('checkbox')
+												| Восток
+									+e.list-item
+										+e.LABEL.checkbox.checkbox__
+											+e.INPUT.input(type="checkbox" name="direction[]" value="Все")
+											+e.SPAN.text.middle
+												+e.SPAN.box
+													+icon('checkbox')
+												| Все
+					+e.nav-cell
+						+e.select.multiply__.is-static
+							+e.top
+								+e.top-inner.flex
+									+e.name._big.p Срок сдачи
+									+e.arrow
+										+icon('down')
+							+e.list
+								+e.list-inner
+									+e.list-item
+										+e.LABEL.checkbox.checkbox__
+											+e.INPUT.input(type="checkbox" name="time[]" value="Сдан")
+											+e.SPAN.text.middle
+												+e.SPAN.box
+													+icon('checkbox')
+												| Сдан
+									+e.list-item
+										+e.LABEL.checkbox.checkbox__
+											+e.INPUT.input(type="checkbox" name="time[]" value="2020")
+											+e.SPAN.text.middle
+												+e.SPAN.box
+													+icon('checkbox')
+												| 2020
+									+e.list-item
+										+e.LABEL.checkbox.checkbox__
+											+e.INPUT.input(type="checkbox" name="time[]" value="2021")
+											+e.SPAN.text.middle
+												+e.SPAN.box
+													+icon('checkbox')
+												| 2021
+									+e.list-item
+										+e.LABEL.checkbox.checkbox__
+											+e.INPUT.input(type="checkbox" name="time[]" value="2022")
+											+e.SPAN.text.middle
+												+e.SPAN.box
+													+icon('checkbox')
+												| 2022
+									+e.list-item
+										+e.LABEL.checkbox.checkbox__
+											+e.INPUT.input(type="checkbox" name="time[]" value="2023")
+											+e.SPAN.text.middle
+												+e.SPAN.box
+													+icon('checkbox')
+												| 2023
+									+e.list-item
+										+e.LABEL.checkbox.checkbox__
+											+e.INPUT.input(type="checkbox" name="time[]" value="Не важно")
+											+e.SPAN.text.middle
+												+e.SPAN.box
+													+icon('checkbox')
+												| Не важно
+	+e.bottom
+		+e.wrap.wrap
+			+e.row.flex
+				+e.cell
+					+button(class="_white js-panel-close") отменить
+				+e.cell
+					+button(class="js-panel-close") применить

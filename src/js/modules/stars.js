@@ -14,7 +14,7 @@ var stars = {
 		    width = document.body.clientWidth,
 		    height = document.body.clientHeight;
 		var stars = [],
-		    number = 250,
+		    number = 200,
 		    i = 0,
 		    distance;
 

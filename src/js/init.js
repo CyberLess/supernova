@@ -2,6 +2,7 @@
 import { defaults } from "./modules/defaults";
 import { forms } from "./modules/forms";
 import { stars } from "./modules/stars";
+import { panel } from "./modules/panel";
 // import { lines } from "./modules/lines";
 // import { scrolling } from "./modules/scrolling";
 import { svglottie } from "./modules/lottie";
@@ -17,6 +18,7 @@ App.prototype.init = () => {
 	// preloader.init();
 	defaults.init();
 	forms.init();
+	panel.init();
 	stars.init();
 	// lines.init();
 	// scrolling.init();

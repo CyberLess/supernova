@@ -28,6 +28,16 @@ var partners = {
 
 	position: () => {
 
+		// if($(window).width() > 580){
+		// 	partners.vars.step = (2 * Math.PI) / partners.dom.items.length;
+		// 	partners.vars.rotation = 585 - (45 * (partners.dom.items.length - 1));
+		// }else{
+		// 	partners.vars.step = (2 * Math.PI) / 6;
+		// 	partners.vars.rotation = 585 - (45 * (6 - 1));
+		// }
+
+		config.log("partners.vars.step", partners.vars.step)
+
 		partners.dom.items.each( (index, el) => {
 
 			let radius = (partners.dom.container.width() * 1.25 - $(el).height()) / 2,
@@ -55,8 +65,12 @@ var partners = {
 
 		// partners.dom.items.find('img').on('load', defaults.logoLoading)
 
-		partners.setup();
-		partners.position();
+
+
+		$(window).on('load resize', e => {
+			partners.setup();
+			partners.position();			
+		})
 	
 	}
 

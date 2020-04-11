@@ -1,5 +1,10 @@
 .test{
 	padding: 30rem 0;
+	position: relative;
+	
+	&__lines{
+		transform: scaleX(-1);
+	}
 
 	&__cell{
 		&_left{

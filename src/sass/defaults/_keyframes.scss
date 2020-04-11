@@ -13,6 +13,16 @@
         // transform: skewX(0deg);
     }
 }
+
+@keyframes orbitButton {
+    from {
+     transform: rotateZ(0deg);
+    }
+    to {
+     transform: rotateZ(360deg);
+    } 
+}
+
 @keyframes rotate {
     100% {
         transform: rotate(360deg);
