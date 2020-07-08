@@ -61,6 +61,19 @@
 			display: inline-block;
 			font-weight: 300;
 			line-height: 3.2rem;
+			position: relative;
+
+			&:before{
+				content: '';
+				display: none;
+				position: absolute;
+				right: 0;
+				height: 100%;
+				top: 0;
+				width: 100%;
+				z-index: -1;
+				background: url('/img/right_arrow.svg') right center no-repeat;
+			}
 		}
 	}
 
@@ -88,8 +101,12 @@
 				height: 4.5rem;
 				font-size: 1.4rem;
 				width: 100%;
-				background: url('/img/right_arrow.svg') right center no-repeat;
+				
 				font-weight: 300;
+
+				&:before{
+					display: block;
+				}
 
 			}
 		}

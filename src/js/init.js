@@ -5,7 +5,7 @@ import { stars } from "./modules/stars";
 import { panel } from "./modules/panel";
 // import { lines } from "./modules/lines";
 // import { scrolling } from "./modules/scrolling";
-import { svglottie } from "./modules/lottie";
+// import { svglottie } from "./modules/lottie";
 import { modals } from "./modules/modals";
 import { map } from "./modules/map";
 import { partners } from "./modules/partners";
@@ -22,7 +22,7 @@ App.prototype.init = () => {
 	stars.init();
 	// lines.init();
 	// scrolling.init();
-	svglottie.init();
+	// svglottie.init();
 	partners.init();
 	map.init();
 	modals.init();

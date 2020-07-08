@@ -31,7 +31,7 @@ gulp.task('browserSync', cb => {
 		notify: false,
 	}, cb);
 
-    gulp.watch(path.watch.css, gulp.series('sass'));
+    gulp.watch(path.watch.css, { delay: 1000 }, gulp.series('sass'));
     gulp.watch(path.watch.js, gulp.series('js'));
     gulp.watch(path.watch.html, gulp.series('pug', 'pageList'));
     gulp.watch(path.watch.img, gulp.series('imageCompress'));
