@@ -1,0 +1,7 @@
+mixin play(href="#")
+	+e.A.play.play__.js-modal(href='#popup-video' data-youtube=href)&attributes(attributes)
+		+e.SPAN.btn
+			+icon('play')
+		+e.SPAN.text 
+			if block
+				block

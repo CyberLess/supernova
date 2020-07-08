@@ -65,13 +65,13 @@ module.exports = (gulp, plugins, browserSync) => {
 		                return match;
 
 		        })) 
-		        .pipe(plugins.replace(/(?:^|[^а-яёА-ЯЁ0-9_])(в|без|а|до|из|к|я|на|по|о|от|перед|при|через|с|у|за|над|об|под|про|для|и|или|со)(?:^|[^а-яёА-ЯЁ0-9_])/g, match => {
+		        /*.pipe(plugins.replace(/(?:^|[^а-яёА-ЯЁ0-9_])(в|без|а|до|из|к|я|на|по|о|от|перед|при|через|с|у|за|над|об|под|про|для|и|или|со)(?:^|[^а-яёА-ЯЁ0-9_])/g, match => {
 
 		            var newText = (match.slice(-1) == " ") ? match.substr(0, match.length-1) + '&nbsp;' : match;
 
 		            return newText;
 
-		        }))    
+		        }))*/  
 		        .pipe(plugins.htmlPrettify({indent_char: ' ', indent_size: 4}))
 		        .pipe(gulp.dest(path.build.html)) 
 		        // .pipe(browserSync.stream());

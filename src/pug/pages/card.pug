@@ -13,3 +13,45 @@ block content
 				+e.A.item(href='#') Планировки и цены
 				+e.A.item(href='#') Как купить
 				+e.A.item(href='#') Коммерция
+	+b.card-bg
+	+b.card-main
+		+e.wrap.wrap._middle
+			+e.H1.title.h2
+				span.string.is-center
+					span.word 
+						span Жилой комплекс 
+					br
+					span.word.stroke 
+						span какой то
+			+e.desc.p
+				| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+			+e.bottom.flex._vertical._justify
+				+button Подберите квартиру
+				+play('https://www.youtube.com/embed/tWkodax0vKE')
+					| Посмотрите 
+					br
+					| видео о "ЖК"
+	+b.SECTION.gallery
+		+e.slider.slider__.js-slider.owl-carousel
+			+slide('card__slide1.jpg')
+				h4 Парковая зона
+				p
+					| ХХХХ м2 зеленых насаждений и газонов 4 
+					br
+					| маршрута на 3,5 км прогулочных тропинок
+			+slide('card__slide1.jpg')
+				h4 Парковая зона
+				p
+					| ХХХХ м2 зеленых насаждений и газонов 4 
+					br
+					| маршрута на 3,5 км прогулочных тропинок
+			+slide('card__slide1.jpg')
+				h4 Парковая зона
+				p
+					| ХХХХ м2 зеленых насаждений и газонов 4 
+					br
+					| маршрута на 3,5 км прогулочных тропинок
+		+e.hide-nav
+			include ../layouts/owl-nav
+		+e.wrap.wrap._middle
+			+e.line

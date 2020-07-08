@@ -1,3 +1,17 @@
 .sub-menu {
 	font-size: 1.5rem;
+	line-height: 14/15*1;
+	margin-top: 3rem;
+	&__list {
+		border-top: 2px solid rgba(#fff, .3);
+		padding-top: 5rem;
+	}
+	&__item {
+		&:not(:last-child) {
+			margin-right: 5rem;
+		}
+	}
+	@include max-screen($large_mobile) {
+		display: none;
+	}
 }

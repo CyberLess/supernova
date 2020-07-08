@@ -1,0 +1,38 @@
+.card {
+	&-bg {
+		background: url(/img/card__bg.png) top no-repeat;
+		background-size: auto 100%;
+		min-height: 100rem;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+	}
+	&-main {
+		margin-top: 26rem;
+		min-height: 52rem;
+		padding-bottom: 10rem;
+		margin-bottom: 5rem;
+		&__desc {
+			margin-top: 4rem;
+			max-width: 57rem;
+		}
+		&__bottom {
+			margin-top: 3.5rem;
+		}
+	}
+	@include max-screen($large_mobile) {
+		&-bg {
+			min-height: 70vh;
+		}
+		&-main {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-top: 0;
+			padding: 5rem 0 8rem 0;
+			min-height: calc( 70vh - 6.3rem );
+		}
+	}
+}
