@@ -1,0 +1,15 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Карточка';
+
+block content
+	+b.sub-menu
+		+e.wrap.wrap
+			+e.list.flex._center
+				+e.A.item(href='#') О комплексе
+				+e.A.item(href='#') Презентация
+				+e.A.item(href='#') На карте
+				+e.A.item(href='#') Планировки и цены
+				+e.A.item(href='#') Как купить
+				+e.A.item(href='#') Коммерция
