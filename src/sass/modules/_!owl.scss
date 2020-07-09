@@ -37,18 +37,20 @@
 	
 	&-dots {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: center;
 		height: 0;
-		transform: translateY(5rem);
+		transform: translateY(4.5rem);
+		margin: auto;
+		padding-left: 1rem;
 		.owl-dot {
-			width: 10px;
-			height: 10px;
+			width: 7px;
+			height: 7px;
 			border: 1px solid #fff!important;
 			border-radius: 100%;
 			transition: ease .2s;
-			&:not(:last-child) {
-				margin-right: 1rem;
-			}
+			margin-right: .7rem;
+			margin-top: .7rem;
 			&.active {
 				border-color: $pink!important;
 				background-color: $pink!important;

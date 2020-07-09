@@ -59,7 +59,7 @@ block content
 		+e.wrap.wrap._middle
 			+e.row.flex._justify
 				+e.content
-					+e.H1.title.h2
+					+e.H2.title.h2
 						span.string.is-center
 							span.word 
 								span Описание
@@ -102,3 +102,110 @@ block content
 								| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus.
 							p
 								| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus.
+	+b.SECTION.presentation._first
+		+e.wrap.wrap._middle
+			+e.row.flex._justify._vertical
+				+e.left
+					+e.IMG.img._first(src="/img/presentation__img1.png")
+				+e.right
+					+e.H2.title.h2
+						span.string.is-center
+							span.word 
+								span Презентация ЖК 
+							br
+							span.word.stroke 
+								span "НАЗВАНИЕ"
+					+e.desc.p20
+						| Планировки, цены, инфраструктура, 
+						br
+						| все в одной pdf презентации.
+					+button(href="#") Скачать
+					
+	include ../layouts/geography
+	
+	+b.SECTION.apartments
+		+e.wrap.wrap
+			+e.H2.title.h2.css-text-center
+				span.string.is-center
+					span.word 
+						span Квартиры в ЖК 
+					span.word.stroke 
+						span "название"
+			+e.filter.flex
+				+e.filter-column
+					+radio('1 Комнатные')(name="quantity" checked)
+				+e.filter-column
+					+radio('2 Комнатные')(name="quantity")
+				+e.filter-column
+					+radio('3+ Комнатные')(name="quantity")
+				+e.filter-column
+					+button(href="#" class="_transparent") Подобрать квартиру
+		+e.list.flex
+			+apartments-item('card__img.jpg', '1', '43,9')
+			+apartments-item('card__img.jpg', '1', '41,9', 'С отделкой')
+			+apartments-item('card__img.jpg', '1', '43,9')
+			+apartments-item('card__img.jpg', '1', '41,9', 'С отделкой')
+			+apartments-item('card__img.jpg', '1', '43,9')
+			+apartments-item('card__img.jpg', '1', '41,9', 'С отделкой')
+			+apartments-item('card__img.jpg', '1', '43,9')
+			+apartments-item('card__img.jpg', '1', '41,9', 'С отделкой')
+			+apartments-item('card__img.jpg', '1', '43,9')
+			+apartments-item('card__img.jpg', '1', '41,9', 'С отделкой')
+			+apartments-item('card__img.jpg', '1', '43,9')
+			+apartments-item('card__img.jpg', '1', '41,9', 'С отделкой')
+		+e.hide-nav
+			include ../layouts/owl-nav
+	
+	+b.SECTION.gallery
+		+e.slider.slider__.js-slider.owl-carousel
+			+slide('card__slide1.jpg')
+				h4 Большие кухни‐гостиные
+				p
+					| Идеальное пространство для совместного проведения времени.
+					br
+					| Здесь можно устраивать и вечерние семейные посиделки, и шумные вечеринки с друзьями
+			+slide('card__slide1.jpg')
+				h4 Большие кухни‐гостиные
+				p
+					| Идеальное пространство для совместного проведения времени.
+					br
+					| Здесь можно устраивать и вечерние семейные посиделки, и шумные вечеринки с друзьями
+			+slide('card__slide1.jpg')
+				h4 Большие кухни‐гостиные
+				p
+					| Идеальное пространство для совместного проведения времени.
+					br
+					| Здесь можно устраивать и вечерние семейные посиделки, и шумные вечеринки с друзьями
+		+e.hide-nav
+			include ../layouts/owl-nav
+		+e.wrap.wrap._middle
+			+e.line
+	
+	include ../layouts/discount
+	
+	+b.SECTION.presentation._second
+		+e.wrap.wrap
+			+e.row.flex._justify._vertical
+				+e.left._second
+					+e.IMG.img._second(src="/img/presentation__img2.png")
+				+e.right._second
+					+e.H2.title.h3
+						span.string.is-center
+							span.word.stroke 
+								span топ 10 предложений
+							br
+							span.word 
+								span
+									| по коммерческим помещениям
+					+e.desc.p20
+						| и зарабатывайте от 5% до 38% 
+						br
+						| в год, от вложенной сумы
+					+button(href="#") Получить
+					
+	include ../layouts/docs
+
+//- block scripts
+	script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
+	script(src="https://code.jquery.com/jquery-3.3.1.min.js")
+	script(src="/js/app.js?v=" + Date.now())

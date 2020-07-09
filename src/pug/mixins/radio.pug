@@ -1,0 +1,5 @@
+mixin radio(text)
+	+e.LABEL.radio.radio__
+		+e.INPUT.input(type="radio", value=`${text}`)&attributes(attributes)
+		+e.icon
+		+e.SPAN.text.p !{text}

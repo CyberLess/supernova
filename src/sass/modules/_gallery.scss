@@ -47,7 +47,9 @@
 @include max-screen($large_mobile) {
 	.gallery {
 		&__line {
-			margin-top: 3rem;
+			margin-top: 2rem;
+			height: 1px;
+			background: rgba(#fff, .2);
 		}
 		&__hide-nav {
 			display: block;

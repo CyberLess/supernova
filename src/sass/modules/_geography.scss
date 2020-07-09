@@ -1,0 +1,27 @@
+.geography {
+	padding-top: 5rem;
+	&__map {
+		height: 55rem;
+		margin-top: 7rem;
+		overflow: hidden;
+		border-radius: 5px;
+	}
+	&__bottom {
+		padding: 4.5rem 0;
+		border-bottom: 1px solid rgba(#fff, .2);
+	}
+	@include max-screen($small_tablet) {
+		padding-top: 15rem;
+	}
+	@include max-screen($large_mobile) {
+		padding-top: 10rem;
+		&__wrap {
+			//padding-left: 0;
+			//padding-right: 0;
+		}
+		&__map {
+			height: 35rem;
+			margin-top: 3.5rem;
+		}
+	}
+}

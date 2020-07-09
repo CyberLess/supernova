@@ -14,10 +14,20 @@
 	max-width: 100%;
 	font-family: RoadRadio;
 	font-weight: 300;
+	transition: ease .2s;
 
 	&_white{
 		color: #151515;
 		background-color: #fff;
+	}
+	
+	&_transparent {
+		background: none;
+		color: $pink;
+		&:hover {
+			background: $pink;
+			color: #fff;
+		}
 	}
 
 	@include max-screen($large_mobile) {
@@ -26,5 +36,9 @@
 		line-height: 1em;
 		padding-left: 3rem;
 		padding-right: 3rem;
+		&_transparent {
+			background: $pink;
+			color: #fff;
+		}
 	}
 }

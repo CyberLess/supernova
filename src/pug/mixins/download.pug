@@ -1,0 +1,7 @@
+mixin download(href="#")
+	+e.A.download.download__(href=href)&attributes(attributes)
+		+e.text
+			if block
+				block
+		+e.icon
+			+icon('download')

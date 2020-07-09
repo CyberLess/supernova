@@ -2,7 +2,18 @@ import "owl.carousel";
 import { config } from "../config";
 
 var slider = {
+	
+	apartments: () => {
+		$('.apartments__list').each(function(){
+			if( $(window).innerWidth() < 580 ) {
+				$(this).addClass('js-slider owl-carousel owl-loaded');
+			}
+		});
+	},
 	init: () => {
+		
+		slider.apartments();
+		
 		$('.js-slider').each(function(){
 			
 			let prev = $(this).find('.owl-arrow_prev');
@@ -47,6 +58,7 @@ var slider = {
 			owl.trigger(dir + '.owl.carousel', [500]);
 
 		});
+		
 	}
 };
 

@@ -37,6 +37,7 @@
 	&__icon {
 		font-size: 3rem;
 		line-height: .5;
+		margin-left: 1.5rem;
 		&:before {
 			content: '+';
 		}
@@ -50,6 +51,11 @@
 	}
 	@include max-screen($large_mobile) {
 		padding-left: 0;
+		&__item {
+			&:not(:first-child) {
+				border-top-width: 1px;
+			}
+		}
 		&__head {
 			padding: 2rem 0;
 		}

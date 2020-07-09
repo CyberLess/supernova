@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>Карточка</title>
-    <link rel="stylesheet" href="/app/css/app.css?v=1594280706841">
+    <link rel="stylesheet" href="/app/css/app.css?v=1594313042476">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -345,7 +345,7 @@
             <div class="concept__wrap wrap wrap_middle">
                 <div class="concept__row flex flex_justify">
                     <div class="concept__content">
-                        <h1 class="concept__title h2"><span class="string is-center"><span class="word"> <span>Описание</span></span><br><span class="word stroke"> <span>концепта ЖК</span></span></span></h1>
+                        <h2 class="concept__title h2"><span class="string is-center"><span class="word"> <span>Описание</span></span><br><span class="word stroke"> <span>концепта ЖК</span></span></span></h2>
                         <div class="concept__desc p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis
                             dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</div>
                     </div>
@@ -452,6 +452,675 @@
                 </div>
             </div>
         </section>
+        <section class="presentation presentation_first">
+            <div class="presentation__wrap wrap wrap_middle">
+                <div class="presentation__row flex flex_justify flex_vertical">
+                    <div class="presentation__left">
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/presentation__img1.webp">
+                                <img src="/app/img/presentation__img1.png" class="presentation__img presentation__img_first" alt="" role="presentation" />
+                        </picture>
+                    </div>
+                    <div class="presentation__right">
+                        <h2 class="presentation__title h2"><span class="string is-center"><span class="word"> <span>Презентация ЖК </span></span><br><span class="word stroke"> <span>"НАЗВАНИЕ"</span></span></span></h2>
+                        <div class="presentation__desc p20">Планировки, цены, инфраструктура,
+                            <br>все в одной pdf презентации.</div><a class="presentation__button btn" href="#"><span class="btn__text"> Скачать</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="geography">
+            <div class="geography__wrap wrap">
+                <h2 class="geography__title h2 css-text-center"><span class="string is-center"><span class="word"> <span>География </span></span><span class="word stroke"> <span>"объекта"</span></span></span></h2>
+                <!--+e.map#map(data-lat="55.751574" data-lon="37.573856")-->
+                <div class="geography__bottom flex flex_center"><a class="geography__button btn js-modal" href="#recall"><span class="btn__text"> Записаться на просмотр</span></a>
+                </div>
+            </div>
+        </section>
+        <section class="apartments">
+            <div class="apartments__wrap wrap">
+                <h2 class="apartments__title h2 css-text-center"><span class="string is-center"><span class="word"> <span>Квартиры в ЖК </span></span><span class="word stroke"> <span>"название"</span></span></span></h2>
+                <div class="apartments__filter flex">
+                    <div class="apartments__filter-column">
+                        <label class="apartments__radio radio">
+                            <input class="radio__input" type="radio" value="1 Комнатные" name="quantity" checked="checked" /><span class="radio__icon"></span><span class="radio__text p">1 Комнатные</span>
+                        </label>
+                    </div>
+                    <div class="apartments__filter-column">
+                        <label class="apartments__radio radio">
+                            <input class="radio__input" type="radio" value="2 Комнатные" name="quantity" /><span class="radio__icon"></span><span class="radio__text p">2 Комнатные</span>
+                        </label>
+                    </div>
+                    <div class="apartments__filter-column">
+                        <label class="apartments__radio radio">
+                            <input class="radio__input" type="radio" value="3+ Комнатные" name="quantity" /><span class="radio__icon"></span><span class="radio__text p">3+ Комнатные</span>
+                        </label>
+                    </div>
+                    <div class="apartments__filter-column"><a class="apartments__button btn btn_transparent" href="#"><span class="btn__text"> Подобрать квартиру</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="apartments__list flex">
+                <div class="apartments__item apartments-item">
+                    <div class="apartments-item__preview">
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/card__img.webp">
+                                <img src="/app/img/card__img.jpg" />
+                        </picture>
+                    </div>
+                    <div class="apartments-item__bottom flex flex_justify">
+                        <div class="apartments-item__quantity">
+                            <div class="apartments-item__quantity-text p">1</div>
+                            <div class="apartments-item__quantity-icon">
+                                <svg class="icon icon-cube" viewBox="0 0 20 35">
+                                    <use xlink:href="/app/icons/sprite.svg#cube"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="apartments-item__area">
+                            <div class="apartments-item__area-text p">43,9 м2</div>
+                            <div class="apartments-item__area-icon">
+                                <svg class="icon icon-area" viewBox="0 0 37 38">
+                                    <use xlink:href="/app/icons/sprite.svg#area"></use>
+                                </svg>
+                            </div>
+                        </div><a class="apartments-item__button btn btn_transparent js-modal" href="#buy"><span class="btn__text"> Узнать цену</span></a>
+                    </div>
+                </div>
+                <div class="apartments__item apartments-item">
+                    <div class="apartments-item__preview">
+                        <div class="apartments-item__decoration">
+                            <div class="apartments-item__decoration-icon">
+                                <svg class="icon icon-decoration" viewBox="0 0 28 28">
+                                    <use xlink:href="/app/icons/sprite.svg#decoration"></use>
+                                </svg>
+                            </div>
+                            <div class="apartments-item__decoration-text">С отделкой</div>
+                        </div>
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/card__img.webp">
+                                <img src="/app/img/card__img.jpg" />
+                        </picture>
+                    </div>
+                    <div class="apartments-item__bottom flex flex_justify">
+                        <div class="apartments-item__quantity">
+                            <div class="apartments-item__quantity-text p">1</div>
+                            <div class="apartments-item__quantity-icon">
+                                <svg class="icon icon-cube" viewBox="0 0 20 35">
+                                    <use xlink:href="/app/icons/sprite.svg#cube"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="apartments-item__area">
+                            <div class="apartments-item__area-text p">41,9 м2</div>
+                            <div class="apartments-item__area-icon">
+                                <svg class="icon icon-area" viewBox="0 0 37 38">
+                                    <use xlink:href="/app/icons/sprite.svg#area"></use>
+                                </svg>
+                            </div>
+                        </div><a class="apartments-item__button btn btn_transparent js-modal" href="#buy"><span class="btn__text"> Узнать цену</span></a>
+                    </div>
+                </div>
+                <div class="apartments__item apartments-item">
+                    <div class="apartments-item__preview">
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/card__img.webp">
+                                <img src="/app/img/card__img.jpg" />
+                        </picture>
+                    </div>
+                    <div class="apartments-item__bottom flex flex_justify">
+                        <div class="apartments-item__quantity">
+                            <div class="apartments-item__quantity-text p">1</div>
+                            <div class="apartments-item__quantity-icon">
+                                <svg class="icon icon-cube" viewBox="0 0 20 35">
+                                    <use xlink:href="/app/icons/sprite.svg#cube"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="apartments-item__area">
+                            <div class="apartments-item__area-text p">43,9 м2</div>
+                            <div class="apartments-item__area-icon">
+                                <svg class="icon icon-area" viewBox="0 0 37 38">
+                                    <use xlink:href="/app/icons/sprite.svg#area"></use>
+                                </svg>
+                            </div>
+                        </div><a class="apartments-item__button btn btn_transparent js-modal" href="#buy"><span class="btn__text"> Узнать цену</span></a>
+                    </div>
+                </div>
+                <div class="apartments__item apartments-item">
+                    <div class="apartments-item__preview">
+                        <div class="apartments-item__decoration">
+                            <div class="apartments-item__decoration-icon">
+                                <svg class="icon icon-decoration" viewBox="0 0 28 28">
+                                    <use xlink:href="/app/icons/sprite.svg#decoration"></use>
+                                </svg>
+                            </div>
+                            <div class="apartments-item__decoration-text">С отделкой</div>
+                        </div>
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/card__img.webp">
+                                <img src="/app/img/card__img.jpg" />
+                        </picture>
+                    </div>
+                    <div class="apartments-item__bottom flex flex_justify">
+                        <div class="apartments-item__quantity">
+                            <div class="apartments-item__quantity-text p">1</div>
+                            <div class="apartments-item__quantity-icon">
+                                <svg class="icon icon-cube" viewBox="0 0 20 35">
+                                    <use xlink:href="/app/icons/sprite.svg#cube"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="apartments-item__area">
+                            <div class="apartments-item__area-text p">41,9 м2</div>
+                            <div class="apartments-item__area-icon">
+                                <svg class="icon icon-area" viewBox="0 0 37 38">
+                                    <use xlink:href="/app/icons/sprite.svg#area"></use>
+                                </svg>
+                            </div>
+                        </div><a class="apartments-item__button btn btn_transparent js-modal" href="#buy"><span class="btn__text"> Узнать цену</span></a>
+                    </div>
+                </div>
+                <div class="apartments__item apartments-item">
+                    <div class="apartments-item__preview">
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/card__img.webp">
+                                <img src="/app/img/card__img.jpg" />
+                        </picture>
+                    </div>
+                    <div class="apartments-item__bottom flex flex_justify">
+                        <div class="apartments-item__quantity">
+                            <div class="apartments-item__quantity-text p">1</div>
+                            <div class="apartments-item__quantity-icon">
+                                <svg class="icon icon-cube" viewBox="0 0 20 35">
+                                    <use xlink:href="/app/icons/sprite.svg#cube"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="apartments-item__area">
+                            <div class="apartments-item__area-text p">43,9 м2</div>
+                            <div class="apartments-item__area-icon">
+                                <svg class="icon icon-area" viewBox="0 0 37 38">
+                                    <use xlink:href="/app/icons/sprite.svg#area"></use>
+                                </svg>
+                            </div>
+                        </div><a class="apartments-item__button btn btn_transparent js-modal" href="#buy"><span class="btn__text"> Узнать цену</span></a>
+                    </div>
+                </div>
+                <div class="apartments__item apartments-item">
+                    <div class="apartments-item__preview">
+                        <div class="apartments-item__decoration">
+                            <div class="apartments-item__decoration-icon">
+                                <svg class="icon icon-decoration" viewBox="0 0 28 28">
+                                    <use xlink:href="/app/icons/sprite.svg#decoration"></use>
+                                </svg>
+                            </div>
+                            <div class="apartments-item__decoration-text">С отделкой</div>
+                        </div>
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/card__img.webp">
+                                <img src="/app/img/card__img.jpg" />
+                        </picture>
+                    </div>
+                    <div class="apartments-item__bottom flex flex_justify">
+                        <div class="apartments-item__quantity">
+                            <div class="apartments-item__quantity-text p">1</div>
+                            <div class="apartments-item__quantity-icon">
+                                <svg class="icon icon-cube" viewBox="0 0 20 35">
+                                    <use xlink:href="/app/icons/sprite.svg#cube"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="apartments-item__area">
+                            <div class="apartments-item__area-text p">41,9 м2</div>
+                            <div class="apartments-item__area-icon">
+                                <svg class="icon icon-area" viewBox="0 0 37 38">
+                                    <use xlink:href="/app/icons/sprite.svg#area"></use>
+                                </svg>
+                            </div>
+                        </div><a class="apartments-item__button btn btn_transparent js-modal" href="#buy"><span class="btn__text"> Узнать цену</span></a>
+                    </div>
+                </div>
+                <div class="apartments__item apartments-item">
+                    <div class="apartments-item__preview">
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/card__img.webp">
+                                <img src="/app/img/card__img.jpg" />
+                        </picture>
+                    </div>
+                    <div class="apartments-item__bottom flex flex_justify">
+                        <div class="apartments-item__quantity">
+                            <div class="apartments-item__quantity-text p">1</div>
+                            <div class="apartments-item__quantity-icon">
+                                <svg class="icon icon-cube" viewBox="0 0 20 35">
+                                    <use xlink:href="/app/icons/sprite.svg#cube"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="apartments-item__area">
+                            <div class="apartments-item__area-text p">43,9 м2</div>
+                            <div class="apartments-item__area-icon">
+                                <svg class="icon icon-area" viewBox="0 0 37 38">
+                                    <use xlink:href="/app/icons/sprite.svg#area"></use>
+                                </svg>
+                            </div>
+                        </div><a class="apartments-item__button btn btn_transparent js-modal" href="#buy"><span class="btn__text"> Узнать цену</span></a>
+                    </div>
+                </div>
+                <div class="apartments__item apartments-item">
+                    <div class="apartments-item__preview">
+                        <div class="apartments-item__decoration">
+                            <div class="apartments-item__decoration-icon">
+                                <svg class="icon icon-decoration" viewBox="0 0 28 28">
+                                    <use xlink:href="/app/icons/sprite.svg#decoration"></use>
+                                </svg>
+                            </div>
+                            <div class="apartments-item__decoration-text">С отделкой</div>
+                        </div>
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/card__img.webp">
+                                <img src="/app/img/card__img.jpg" />
+                        </picture>
+                    </div>
+                    <div class="apartments-item__bottom flex flex_justify">
+                        <div class="apartments-item__quantity">
+                            <div class="apartments-item__quantity-text p">1</div>
+                            <div class="apartments-item__quantity-icon">
+                                <svg class="icon icon-cube" viewBox="0 0 20 35">
+                                    <use xlink:href="/app/icons/sprite.svg#cube"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="apartments-item__area">
+                            <div class="apartments-item__area-text p">41,9 м2</div>
+                            <div class="apartments-item__area-icon">
+                                <svg class="icon icon-area" viewBox="0 0 37 38">
+                                    <use xlink:href="/app/icons/sprite.svg#area"></use>
+                                </svg>
+                            </div>
+                        </div><a class="apartments-item__button btn btn_transparent js-modal" href="#buy"><span class="btn__text"> Узнать цену</span></a>
+                    </div>
+                </div>
+                <div class="apartments__item apartments-item">
+                    <div class="apartments-item__preview">
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/card__img.webp">
+                                <img src="/app/img/card__img.jpg" />
+                        </picture>
+                    </div>
+                    <div class="apartments-item__bottom flex flex_justify">
+                        <div class="apartments-item__quantity">
+                            <div class="apartments-item__quantity-text p">1</div>
+                            <div class="apartments-item__quantity-icon">
+                                <svg class="icon icon-cube" viewBox="0 0 20 35">
+                                    <use xlink:href="/app/icons/sprite.svg#cube"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="apartments-item__area">
+                            <div class="apartments-item__area-text p">43,9 м2</div>
+                            <div class="apartments-item__area-icon">
+                                <svg class="icon icon-area" viewBox="0 0 37 38">
+                                    <use xlink:href="/app/icons/sprite.svg#area"></use>
+                                </svg>
+                            </div>
+                        </div><a class="apartments-item__button btn btn_transparent js-modal" href="#buy"><span class="btn__text"> Узнать цену</span></a>
+                    </div>
+                </div>
+                <div class="apartments__item apartments-item">
+                    <div class="apartments-item__preview">
+                        <div class="apartments-item__decoration">
+                            <div class="apartments-item__decoration-icon">
+                                <svg class="icon icon-decoration" viewBox="0 0 28 28">
+                                    <use xlink:href="/app/icons/sprite.svg#decoration"></use>
+                                </svg>
+                            </div>
+                            <div class="apartments-item__decoration-text">С отделкой</div>
+                        </div>
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/card__img.webp">
+                                <img src="/app/img/card__img.jpg" />
+                        </picture>
+                    </div>
+                    <div class="apartments-item__bottom flex flex_justify">
+                        <div class="apartments-item__quantity">
+                            <div class="apartments-item__quantity-text p">1</div>
+                            <div class="apartments-item__quantity-icon">
+                                <svg class="icon icon-cube" viewBox="0 0 20 35">
+                                    <use xlink:href="/app/icons/sprite.svg#cube"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="apartments-item__area">
+                            <div class="apartments-item__area-text p">41,9 м2</div>
+                            <div class="apartments-item__area-icon">
+                                <svg class="icon icon-area" viewBox="0 0 37 38">
+                                    <use xlink:href="/app/icons/sprite.svg#area"></use>
+                                </svg>
+                            </div>
+                        </div><a class="apartments-item__button btn btn_transparent js-modal" href="#buy"><span class="btn__text"> Узнать цену</span></a>
+                    </div>
+                </div>
+                <div class="apartments__item apartments-item">
+                    <div class="apartments-item__preview">
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/card__img.webp">
+                                <img src="/app/img/card__img.jpg" />
+                        </picture>
+                    </div>
+                    <div class="apartments-item__bottom flex flex_justify">
+                        <div class="apartments-item__quantity">
+                            <div class="apartments-item__quantity-text p">1</div>
+                            <div class="apartments-item__quantity-icon">
+                                <svg class="icon icon-cube" viewBox="0 0 20 35">
+                                    <use xlink:href="/app/icons/sprite.svg#cube"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="apartments-item__area">
+                            <div class="apartments-item__area-text p">43,9 м2</div>
+                            <div class="apartments-item__area-icon">
+                                <svg class="icon icon-area" viewBox="0 0 37 38">
+                                    <use xlink:href="/app/icons/sprite.svg#area"></use>
+                                </svg>
+                            </div>
+                        </div><a class="apartments-item__button btn btn_transparent js-modal" href="#buy"><span class="btn__text"> Узнать цену</span></a>
+                    </div>
+                </div>
+                <div class="apartments__item apartments-item">
+                    <div class="apartments-item__preview">
+                        <div class="apartments-item__decoration">
+                            <div class="apartments-item__decoration-icon">
+                                <svg class="icon icon-decoration" viewBox="0 0 28 28">
+                                    <use xlink:href="/app/icons/sprite.svg#decoration"></use>
+                                </svg>
+                            </div>
+                            <div class="apartments-item__decoration-text">С отделкой</div>
+                        </div>
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/card__img.webp">
+                                <img src="/app/img/card__img.jpg" />
+                        </picture>
+                    </div>
+                    <div class="apartments-item__bottom flex flex_justify">
+                        <div class="apartments-item__quantity">
+                            <div class="apartments-item__quantity-text p">1</div>
+                            <div class="apartments-item__quantity-icon">
+                                <svg class="icon icon-cube" viewBox="0 0 20 35">
+                                    <use xlink:href="/app/icons/sprite.svg#cube"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="apartments-item__area">
+                            <div class="apartments-item__area-text p">41,9 м2</div>
+                            <div class="apartments-item__area-icon">
+                                <svg class="icon icon-area" viewBox="0 0 37 38">
+                                    <use xlink:href="/app/icons/sprite.svg#area"></use>
+                                </svg>
+                            </div>
+                        </div><a class="apartments-item__button btn btn_transparent js-modal" href="#buy"><span class="btn__text"> Узнать цену</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="apartments__hide-nav">
+                <div class="apartments__nav owl-nav">
+                    <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
+                        <svg class="icon icon-prev" viewBox="0 0 15 16">
+                            <use xlink:href="/app/icons/sprite.svg#prev"></use>
+                        </svg>
+                    </div>
+                    <div class="owl-nav__owl-arrow owl-arrow owl-arrow_next">
+                        <svg class="icon icon-next" viewBox="0 0 16 16">
+                            <use xlink:href="/app/icons/sprite.svg#next"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="gallery__slider slider js-slider owl-carousel">
+                <div class="slider__slide">
+                    <picture>
+                        <source type="image/webp" srcset="/app/img/card__slide1.webp">
+                            <img src="/app/img/card__slide1.jpg" class="slider__img" alt="" role="presentation" />
+                    </picture>
+                    <div class="slider__row flex flex_justify">
+                        <div class="slider__content content">
+                            <h4>Большие кухни‐гостиные</h4>
+                            <p>Идеальное пространство для совместного проведения времени.
+                                <br>Здесь можно устраивать и вечерние семейные посиделки, и шумные вечеринки с друзьями</p>
+                        </div>
+                        <div class="slider__nav owl-nav">
+                            <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
+                                <svg class="icon icon-prev" viewBox="0 0 15 16">
+                                    <use xlink:href="/app/icons/sprite.svg#prev"></use>
+                                </svg>
+                            </div>
+                            <div class="owl-nav__owl-arrow owl-arrow owl-arrow_next">
+                                <svg class="icon icon-next" viewBox="0 0 16 16">
+                                    <use xlink:href="/app/icons/sprite.svg#next"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__slide">
+                    <picture>
+                        <source type="image/webp" srcset="/app/img/card__slide1.webp">
+                            <img src="/app/img/card__slide1.jpg" class="slider__img" alt="" role="presentation" />
+                    </picture>
+                    <div class="slider__row flex flex_justify">
+                        <div class="slider__content content">
+                            <h4>Большие кухни‐гостиные</h4>
+                            <p>Идеальное пространство для совместного проведения времени.
+                                <br>Здесь можно устраивать и вечерние семейные посиделки, и шумные вечеринки с друзьями</p>
+                        </div>
+                        <div class="slider__nav owl-nav">
+                            <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
+                                <svg class="icon icon-prev" viewBox="0 0 15 16">
+                                    <use xlink:href="/app/icons/sprite.svg#prev"></use>
+                                </svg>
+                            </div>
+                            <div class="owl-nav__owl-arrow owl-arrow owl-arrow_next">
+                                <svg class="icon icon-next" viewBox="0 0 16 16">
+                                    <use xlink:href="/app/icons/sprite.svg#next"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__slide">
+                    <picture>
+                        <source type="image/webp" srcset="/app/img/card__slide1.webp">
+                            <img src="/app/img/card__slide1.jpg" class="slider__img" alt="" role="presentation" />
+                    </picture>
+                    <div class="slider__row flex flex_justify">
+                        <div class="slider__content content">
+                            <h4>Большие кухни‐гостиные</h4>
+                            <p>Идеальное пространство для совместного проведения времени.
+                                <br>Здесь можно устраивать и вечерние семейные посиделки, и шумные вечеринки с друзьями</p>
+                        </div>
+                        <div class="slider__nav owl-nav">
+                            <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
+                                <svg class="icon icon-prev" viewBox="0 0 15 16">
+                                    <use xlink:href="/app/icons/sprite.svg#prev"></use>
+                                </svg>
+                            </div>
+                            <div class="owl-nav__owl-arrow owl-arrow owl-arrow_next">
+                                <svg class="icon icon-next" viewBox="0 0 16 16">
+                                    <use xlink:href="/app/icons/sprite.svg#next"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery__hide-nav">
+                <div class="gallery__nav owl-nav">
+                    <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
+                        <svg class="icon icon-prev" viewBox="0 0 15 16">
+                            <use xlink:href="/app/icons/sprite.svg#prev"></use>
+                        </svg>
+                    </div>
+                    <div class="owl-nav__owl-arrow owl-arrow owl-arrow_next">
+                        <svg class="icon icon-next" viewBox="0 0 16 16">
+                            <use xlink:href="/app/icons/sprite.svg#next"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery__wrap wrap wrap_middle">
+                <div class="gallery__line"></div>
+            </div>
+        </section>
+        <section class="discount">
+            <div class="discount__wrap wrap wrap_middle">
+                <h2 class="discount__title h1 css-text-center"><span class="string is-center"><span class="word"> <span>Покупайте </span></span><br><span class="word stroke"> <span>с выгодой</span></span></span></h2>
+                <div class="discount__row flex">
+                    <div class="discount__left">
+                        <h3 class="discount__desc h3">Скидки</h3>
+                    </div>
+                    <div class="discount__right">
+                        <div class="discount__list flex">
+                            <div class="discount__item">
+                                <div class="discount__item-icon circle-parent">
+                                    <div class="discount__circle circle circle_second">
+                                        <svg width="84" height="99" viewBox="25 25 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="50" cy="50" r="20" stroke="url(#paint#D48232_linear)"></circle>
+                                            <defs>
+                                                <lineargradient x1="50.1644" y1="1.41531" x2="88.4821" y2="40.7685" gradientUnits="userSpaceOnUse" id="paint#D48232_linear">
+                                                    <stop stop-color="#D48232"></stop>
+                                                    <stop offset="1" stop-color="#D48232" stop-opacity="0"></stop>
+                                                </lineargradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <svg class="icon icon-map" viewBox="0 0 64 64">
+                                        <use xlink:href="/app/icons/sprite.svg#map"></use>
+                                    </svg>
+                                </div>
+                                <div class="discount__item-price h4">50 000 <span class="discount__rub"><svg class="icon icon-rub" viewBox="0 0 18 23"><use xlink:href="/app/icons/sprite.svg#rub"></use></svg></span>
+                                </div>
+                                <div class="discount__item-title p20">Иногородним</div>
+                                <div class="discount__item-text p">Покупателям
+                                    <br>с региональной пропиской</div>
+                            </div>
+                            <div class="discount__item">
+                                <div class="discount__item-icon circle-parent">
+                                    <div class="discount__circle circle">
+                                        <svg width="84" height="99" viewBox="25 25 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="50" cy="50" r="20" stroke="url(#paint#00758D_linear)"></circle>
+                                            <defs>
+                                                <lineargradient x1="50.1644" y1="1.41531" x2="88.4821" y2="40.7685" gradientUnits="userSpaceOnUse" id="paint#00758D_linear">
+                                                    <stop stop-color="#00758D"></stop>
+                                                    <stop offset="1" stop-color="#00758D" stop-opacity="0"></stop>
+                                                </lineargradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <svg class="icon icon-partner" viewBox="0 0 60.2 66">
+                                        <use xlink:href="/app/icons/sprite.svg#partner"></use>
+                                    </svg>
+                                </div>
+                                <div class="discount__item-price h4"><span class="discount__before">до </span>350 000<span class="discount__rub"><svg class="icon icon-rub" viewBox="0 0 18 23"><use xlink:href="/app/icons/sprite.svg#rub"></use></svg></span>
+                                </div>
+                                <div class="discount__item-title p20">Партнерская</div>
+                                <div class="discount__item-text p">Сотрудникам
+                                    <br>компаний-партнеров</div>
+                            </div>
+                            <div class="discount__item">
+                                <div class="discount__item-icon circle-parent">
+                                    <div class="discount__circle circle circle_third">
+                                        <svg width="84" height="99" viewBox="25 25 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="50" cy="50" r="20" stroke="url(#paint#D48232_linear)"></circle>
+                                            <defs>
+                                                <lineargradient x1="50.1644" y1="1.41531" x2="88.4821" y2="40.7685" gradientUnits="userSpaceOnUse" id="paint#D48232_linear">
+                                                    <stop stop-color="#D48232"></stop>
+                                                    <stop offset="1" stop-color="#D48232" stop-opacity="0"></stop>
+                                                </lineargradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <svg class="icon icon-roller" viewBox="0 0 64 63">
+                                        <use xlink:href="/app/icons/sprite.svg#roller"></use>
+                                    </svg>
+                                </div>
+                                <div class="discount__item-price h4"><span class="discount__before">до </span>30 %</div>
+                                <div class="discount__item-title p20">Стартовая</div>
+                                <div class="discount__item-text p">На ремонтные работы
+                                    <br>и отделочные материалы</div>
+                            </div>
+                        </div><a class="discount__button btn js-modal" href="#recall"><span class="btn__text"> Узнать о скидках</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="presentation presentation_second">
+            <div class="presentation__wrap wrap">
+                <div class="presentation__row flex flex_justify flex_vertical">
+                    <div class="presentation__left presentation__left_second">
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/presentation__img2.webp">
+                                <img src="/app/img/presentation__img2.png" class="presentation__img presentation__img_second" alt="" role="presentation" />
+                        </picture>
+                    </div>
+                    <div class="presentation__right presentation__right_second">
+                        <h2 class="presentation__title h3"><span class="string is-center"><span class="word stroke"> <span>топ 10 предложений</span></span><br><span class="word"> <span>по коммерческим помещениям</span></span></span></h2>
+                        <div class="presentation__desc p20">и зарабатывайте от 5% до 38%
+                            <br>в год, от вложенной сумы</div><a class="presentation__button btn" href="#"><span class="btn__text"> Получить</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="docs">
+            <div class="docs__wrap wrap wrap_middle">
+                <div class="docs__top flex">
+                    <h2 class="docs__title h2"><span class="string is-center"><span class="word"> <span>Сертификаты</span></span><br><span class="word stroke"> <span>и важные документы</span></span></span></h2>
+                    <div class="docs__desc p">Мы заранее заботимся о спокойствии наших клиентов и перепроверяем все разрешительные документы каждого объекта который добавляем в свой каталог</div>
+                </div>
+                <div class="docs__list">
+                    <div class="docs__item flex flex_vertical flex_justify">
+                        <div class="docs__item-left flex flex_vertical">
+                            <div class="docs__item-icon">
+                                <svg class="icon icon-docsFirst" viewBox="0 0 53 68">
+                                    <use xlink:href="/app/icons/sprite.svg#docsFirst"></use>
+                                </svg>
+                            </div>
+                            <div class="docs__item-text p20">Разрешение
+                                <br>на строительство</div>
+                        </div>
+                        <div class="docs__item-right"><a class="docs__download download" href="#test"><span class="download__text">Скачать</span><span class="download__icon"><svg class="icon icon-download" viewBox="0 0 14 11"><use xlink:href="/app/icons/sprite.svg#download"></use></svg></span></a>
+                        </div>
+                    </div>
+                    <div class="docs__item flex flex_vertical flex_justify">
+                        <div class="docs__item-left flex flex_vertical">
+                            <div class="docs__item-icon">
+                                <svg class="icon icon-docsSecond" viewBox="0 0 53 68">
+                                    <use xlink:href="/app/icons/sprite.svg#docsSecond"></use>
+                                </svg>
+                            </div>
+                            <div class="docs__item-text p20">Проектная
+                                <br>декларация</div>
+                        </div>
+                        <div class="docs__item-right"><a class="docs__download download" href="#test"><span class="download__text">Скачать</span><span class="download__icon"><svg class="icon icon-download" viewBox="0 0 14 11"><use xlink:href="/app/icons/sprite.svg#download"></use></svg></span></a>
+                        </div>
+                    </div>
+                    <div class="docs__item flex flex_vertical flex_justify">
+                        <div class="docs__item-left flex flex_vertical">
+                            <div class="docs__item-icon">
+                                <svg class="icon icon-docsThird" viewBox="0 0 53 69">
+                                    <use xlink:href="/app/icons/sprite.svg#docsThird"></use>
+                                </svg>
+                            </div>
+                            <div class="docs__item-text p20">Свидетельство
+                                <br>на участок</div>
+                        </div>
+                        <div class="docs__item-right"><a class="docs__download download" href="#test"><span class="download__text">Скачать</span><span class="download__icon"><svg class="icon icon-download" viewBox="0 0 14 11"><use xlink:href="/app/icons/sprite.svg#download"></use></svg></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <footer class="footer">
             <div class="footer__wrap wrap">
                 <div class="footer__row flex flex_justify">
@@ -532,7 +1201,7 @@
     </main>
     <div class="modals modals_recall mfp-hide" id="recall"></div>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/app/js/app.js?v=1594280706887"></script>
+    <script src="/app/js/app.js?v=1594313042956"></script>
 </body>
 
 </html>

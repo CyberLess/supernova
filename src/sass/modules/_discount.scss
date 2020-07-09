@@ -1,0 +1,124 @@
+.discount {
+	padding: 20rem 0;
+	&__row {
+		margin-top: 16.5rem;
+	}
+	&__left {
+		width: 25%;
+	}
+	&__right {
+		width: 75%;
+	}
+	&__item {
+		width: 33.33%;
+		&-icon {
+			display: inline-flex;
+			margin-bottom: 5rem;
+			.icon {
+				width: auto;
+				height: 6.4rem;
+				fill: none;
+				stroke: #fff;
+			}
+		}
+		&-price {
+			color: $pink;
+			font-weight: 100;
+			display: flex;
+			align-items: flex-end;
+			margin-bottom: 3rem;
+		}
+		&-title {
+			font-family: 'RoadRadio';
+		}
+		&-text {
+			margin-top: 2rem;
+		}
+	}
+	&__before {
+		font-size: 2rem;
+		line-height: 1.5;
+		font-weight: 300;
+		margin-right: 1rem;
+	}
+	&__rub {
+		fill: $pink;
+		width: 1.8rem;
+		min-width: 1.8rem;
+		height: 1.8rem;
+		margin-left: 1rem;
+		margin-bottom: 1rem;
+	}
+	&__button {
+		width: 33.33%;
+		margin-top: 12rem;
+	}
+	@include max-screen($small_desktop) {
+		&__rub {
+			width: 1.4rem;
+			min-width: 1.4rem;
+			height: 1.4rem;
+			margin-bottom: .7rem;
+		}
+		&__before {
+			font-weight: 100;
+			font-size: 1.5rem;
+			line-height: 1.2;
+		}
+	}
+	@include max-screen($small_tablet) {
+		text-align: center;
+		padding: 15rem 0;
+		&__left, &__right {
+			width: 100%;
+		}
+		&__row {
+			margin-top: 0;
+		}
+		&__desc {
+			text-align: center;
+			margin-top: 3rem;
+		}
+		&__item {
+			margin-top: 6rem;
+			&-price {
+				justify-content: center;
+			}
+			&-icon {
+				margin-bottom: 4rem;
+			}
+		}
+		&__button {
+			width: 33.33%;
+			margin-top: 8rem;
+		}
+	}
+	@include max-screen($large_mobile) {
+		padding: 10rem 0;
+		.circle {
+			width: 12rem;
+			height: 12rem;
+			margin-top: -6rem;
+			margin-left: -6rem;
+		}
+		&__desc {
+			margin-top: 2rem;
+		}
+		&__item {
+			width: 100%;
+			&-icon {
+				margin-bottom: 3rem;
+			}
+			&-price {
+				margin-bottom: 1.5rem;
+			}
+			&-text {
+				margin-top: 1rem;
+			}
+		}
+		&__button {
+			width: auto;
+			margin-top: 6rem;
+		}
+	}
+}

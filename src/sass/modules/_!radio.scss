@@ -1,0 +1,33 @@
+.radio {
+	display: inline-flex;
+	align-items: center;
+	cursor: pointer;
+	&__input {
+		display: none;
+		&:checked + .radio__icon {
+			&:before {
+				opacity: 1;
+			}
+		}
+	}
+	&__icon {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 2rem;
+		min-width: 2rem;
+		margin-right: 2rem;
+		height: 2rem;
+		border: 1px solid #fff;
+		border-radius: 100%;
+		&:before {
+			content: '';
+			display: block;
+			width: .7rem;
+			height: .7rem;
+			background: #fff;
+			border-radius: 100%;
+			opacity: 0;
+		}
+	}
+}

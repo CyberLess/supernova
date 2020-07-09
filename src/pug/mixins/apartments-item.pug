@@ -1,0 +1,19 @@
+mixin apartments-item(image, quantity, area, decoration)
+	+e.item.apartments-item__
+		+e.preview
+			if decoration
+				+e.decoration
+					+e.decoration-icon
+						+icon('decoration')
+					+e.decoration-text !{decoration}
+			img(src=`/img/${image}`)
+		+e.bottom.flex._justify
+			+e.quantity
+				+e.quantity-text.p !{quantity}
+				+e.quantity-icon
+					+icon('cube')
+			+e.area
+				+e.area-text.p !{area} м2
+				+e.area-icon
+					+icon('area')
+			+button(href="#buy" class="_transparent js-modal") Узнать цену

@@ -1,0 +1,96 @@
+.presentation {
+	&_second {
+		padding-bottom: 21rem;
+	}
+	&__left, &__right {
+		width: 50%;
+	}
+	&__img {
+		&_first {
+			max-width: none;
+			width: 1323/668*100%;
+			margin-left: -90%;
+		}
+		&_second {
+			display: block;
+			margin: 0 auto;
+			transform: translateY(-5%);
+		}
+	}
+	&__left {
+		&_second {
+			padding: 0 5% 0 3%;
+		}
+	}
+	&__desc {
+		margin-top: 4rem;
+	}
+	&__button {
+		width: 100%;
+		max-width: 33.5rem;
+		margin-top: 4.5rem;
+	}
+	@include max-screen($large_tablet) {
+		&__left {
+			&_second {
+				padding-left: 0;
+			}
+		}
+	}
+	@include max-screen($small_tablet) {
+		&_second {
+			padding-bottom: 15rem;
+		}
+		&__left:not(.presentation__left_second), &__right:not(.presentation__right_second) {
+			width: 100%;
+		}
+		&__img {
+			&_first {
+				max-width: none;
+				width: 100%;
+				margin-left: 0;
+			}
+		}
+		&__right:not(.presentation__right_second) {
+			padding-left: 40%;
+		}
+	}
+	@include max-screen($large_mobile) {
+		&_first {
+			padding-top: 3rem;
+		}
+		&_second {
+			padding-bottom: 10rem;
+		}
+		&__right {
+			padding-left: 0;
+		}
+		&__img {
+			&_first {
+				width: 110%;
+				margin-right: -10%;
+				transform: rotate(10deg);
+			}
+			&_second {
+				transform: translateY(0);
+			}
+		}
+		&__desc {
+			margin-top: 2rem;
+		}
+		&__button {
+			margin-top: 3rem;
+		}
+		&__left, &__right {
+			&_second {
+				width: 100%;
+			}
+		}
+		&__left {
+			&_second {
+				padding-right: 0;
+				margin-bottom: 3rem;
+			}
+		}
+	}
+}
