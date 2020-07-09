@@ -10,6 +10,7 @@ import { modals } from "./modules/modals";
 import { slider } from "./modules/slider";
 import { map } from "./modules/map";
 import { partners } from "./modules/partners";
+import { accordion } from "./modules/accordion";
 import { config } from "./config";
 
 var App = () => {};
@@ -28,6 +29,7 @@ App.prototype.init = () => {
 	map.init();
 	modals.init();
 	slider.init();
+	accordion.init();
 
 	config.log('app init')
 	

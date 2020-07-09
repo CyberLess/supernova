@@ -1,0 +1,35 @@
+.concept {
+	padding-top: 25rem;
+	&__content {
+		width: 45%;
+		max-width: 52rem;
+	}
+	&__desc {
+		line-height: 35/17*1;
+		margin-top: 4rem;
+	}
+	&__accordion {
+		margin-top: -2rem;
+		width: 710/1336*100%;
+		max-width: 71rem;
+	}
+	
+	@include max-screen($small_tablet) {
+		padding-top: 15rem;
+		&__content {
+			max-width: none;
+			width: 100%;
+		}
+		&__accordion {
+			width: 100%;
+			max-width: none;
+			margin-top: 6rem;
+		}
+	}
+	@include max-screen($large_mobile) {
+		padding-top: 8rem;
+		&__accordion {
+			margin-top: 2rem;
+		}
+	}
+}

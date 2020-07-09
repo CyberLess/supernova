@@ -1,0 +1,9 @@
+mixin accordion-item(title, contentClass)
+	+e.item
+		+e.head
+			+e.number 01
+			+e.title.h5 !{title}
+			+e.icon
+		+e.content.content(class=contentClass)
+			if block
+				block

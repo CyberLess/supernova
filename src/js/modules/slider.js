@@ -36,13 +36,6 @@ var slider = {
 					}
 				}
 			});
-			
-			/*next.click(function() {
-				parent.trigger('next.owl.carousel');
-			})
-			prev.click(function() {
-				parent.trigger('prev.owl.carousel');
-			});*/
 		});
 		
 		$(document).on("click", '.owl-arrow', function() {
