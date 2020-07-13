@@ -1,0 +1,111 @@
+.field {
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	height: 6.5rem;
+	&__input {
+		display: block;
+		width: 100%;
+		background: none;
+		font-size: 2rem;
+		line-height: 1.33;
+		height: 4.5rem;
+		padding-bottom: 1rem;
+		color: #fff;
+		border: 0;
+		border-bottom: 1px solid #fff;
+		transition: ease .2s;
+		position: relative;
+		z-index: 2;
+		&::placeholder {
+			opacity: 0;
+		}
+		&:focus {
+			& + .field__label {
+				top: 0;
+				font-size: 1.4rem;
+			}
+		}
+	}
+	&__label {
+		position: absolute;
+		left: 0;
+		top: 2.2rem;
+		font-size: 2rem;
+		line-height: 1;
+		transition: ease .2s;
+	}
+	&__icon, &__error {
+		position: absolute;
+		opacity: 1;
+		visibility: hidden;
+	}
+	&__icon {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		width: 2.6rem;
+		height: 2.3rem;
+		margin-top: -1rem;
+		fill: none;
+		stroke: $green;
+	}
+	&__error {
+		font-size: 1.4rem;
+		line-height: 1;
+		top: 100%;
+		margin-top: 1.5rem;
+		color: $red;
+		transform: translateY(-1rem);
+		transform: ease .2s;
+	}
+	&.valid {
+		.field__label {
+			font-size: 1.4rem;
+			top: 0;
+		}
+		.field__input {
+			border-color: $green;
+		}
+		.field__icon {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+	&.error {
+		.field__label {
+			font-size: 1.4rem;
+			top: 0;
+		}
+		.field__input {
+			border-color: $red;
+		}
+		.field__error {
+			opacity: 1;
+			visibility: visible;
+			transform: translateY(0);
+		}
+	}
+	
+	@include max-screen($large_mobile) {
+		height: 5.5rem;
+		&__input {
+			font-size: 1.5rem;
+			padding-bottom: .5rem;
+			height: 4rem;
+			&:focus {
+				& + .field__label {
+					font-size: 1.2rem;
+				}
+			}
+		}
+		&__label {
+			font-size: 1.5rem;
+		}
+		&.valid, &.error {
+			.field__label {
+				font-size: 1.2rem;
+			}
+		}
+	}
+}

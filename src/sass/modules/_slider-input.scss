@@ -1,0 +1,67 @@
+.slider-input {
+	&__input {
+		background: none;
+		width: 20rem;
+		border: 0;
+		border-bottom: 2px solid rgba(#fff, .3);
+		font-size: 2.5rem;
+		line-height: 1;
+		padding-bottom: .8rem;
+		&:focus {
+			border-color: rgba(#fff, .6);
+		}
+	}
+	&__center {
+		margin-top: 3rem;
+		height: 2px;
+		background: #fff;
+		position: relative;
+	}
+	&__bottom {
+		margin-top: .9rem;
+	}
+	.ui-slider-range {
+		height: 2px;
+		background: $pink;
+	}
+	.ui-slider-handle {
+		position: absolute;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 1.5rem;
+		height: 1.5rem;
+		background: $pink;
+		cursor: pointer;
+		border-radius: 100%;
+		top: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		transition-property: width, height;
+		transition-duration: .2s, .2s;
+		&:before {
+			content: '';
+			display: none;
+			background: #fff;
+			width: .9rem;
+			height: .9rem;
+			border-radius: 100%;
+		}
+		&:hover, &:active {
+			width: 2.9rem;
+			height: 2.9rem;
+			&:before {
+				display: block;
+			}
+		}
+	}
+	@include max-screen($large_mobile) {
+		&__input {
+			width: 13rem;
+			font-size: 1.6rem;
+			border-bottom-width: 1px;
+		}
+		&__center {
+			margin-top: 2rem;
+		}
+	}
+}

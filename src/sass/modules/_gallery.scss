@@ -28,6 +28,18 @@
 		left: 50%;
 		transform: translateX(-50%);
 	}
+	&__nav {
+		transform: translateY(-11.5rem);
+	}
+	
+	&__bottom {
+		height: 0;
+		&-wrap {
+			display: flex;
+			justify-content: flex-end;
+			max-width: 123rem;
+		}
+	}
 	
 	@include max-screen(900px) {
 		&:before, &:after {
@@ -38,9 +50,9 @@
 			left: auto;
 			transform: translateX(0);
 		}
-	}
-	&__hide-nav {
-		display: none;
+		&__nav {
+			transform: translateY(-9.5rem);
+		}
 	}
 }
 
@@ -51,9 +63,16 @@
 			height: 1px;
 			background: rgba(#fff, .2);
 		}
-		&__hide-nav {
-			display: block;
+		&__nav {
+			transform: translateY(0);
 			margin-top: 3rem;
+		}
+
+		&__bottom {
+			height: auto;
+			&-wrap {
+				display: block;
+			}
 		}
 	}
 }

@@ -1,0 +1,78 @@
++b.SECTION.calc-section
+	+e.wrap.wrap._middle
+		+e.row.flex._justify
+			+e.left
+				+e.H2.title.h3
+					span.string.is-center
+						span.word 
+							span Рассчитайте
+						br
+						span.word.stroke 
+							span ипотеку онлайн
+				+e.calc.calc__
+					+e.slider-input.slider-input__
+						+e.top.flex._justify
+							+e.title.p Стоимость квартиры
+							+e.INPUT.input.js-calc-input.js-calc-price(data-value="35000000",data-step="100000",data-min="1000000",data-max="100000000",value="35 000 000 ₽",data-sign="₽",name="price")
+						+e.center
+						+e.bottom.flex._justify
+							+e.text.p15 1 млн
+							+e.text.p15 10 млн
+					+e.slider-input.slider-input__
+						+e.top.flex._justify
+							+e.title.p Первоначальный взнос
+							+e.INPUT.input.js-calc-input.js-calc-start(data-value="3200000",data-step="50000",data-min="800000",data-max="7200000",value="3 200 000 ₽",data-sign="₽",name="start")
+						+e.center
+						+e.bottom.flex._justify
+							+e.text.p15 800 тыс
+							+e.text.p15 7,2 млн
+					+e.slider-input.slider-input__
+						+e.top.flex._justify
+							+e.title.p Срок
+							+e.INPUT.input.js-calc-input.js-calc-year(data-value="10",data-step="1",data-min="1",data-max="30",value="10 лет",data-sign="лет",name="year")
+						+e.center
+						+e.bottom.flex._justify
+							+e.text.p15 1 год
+							+e.text.p15 30 лет
+			+e.right.css-text-center
+				+e.H3.title2.h5
+					| Автоматический 
+					br
+					| расчет вашей заявки
+				+e.result.flex._justify
+					+e.result-column
+						+e.price
+							span.js-calc-total 103 300
+							+e.SPAN.price-icon
+								+icon('rub')
+						+e.result-text.p Ежемесячный платеж
+					+e.result-column
+						+e.price
+							span.js-calc-all 12 390 517
+							+e.SPAN.price-icon
+								+icon('rub')
+						+e.result-text.p Общая сумма
+				+e.button.orbit-button__.A(href="#")
+					+e.border
+						+e.border-wrap
+							svg(viewBox="0 0 100 100")
+								circle(cx="50" cy="50" r="49")
+					+e.bottom
+					+e.inner
+						+e.center
+							+e.part.is-desktop
+								+e.bold
+									| оставить заявку 
+									br
+									| на консультацию
+							+e.part.is-mobile
+								+e.bold 
+									| оставить заявку 
+									br
+									| на консультацию
+							+e.arrow
+								+icon('arrow')
+				+e.bottom-text.p15.css-text-center
+					| Пример расчета процентной ставки носит исключительно 
+					br
+					| информационный характер и не является публичной офертой

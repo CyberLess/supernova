@@ -1,0 +1,85 @@
+.calc {
+	&-section {
+		padding-bottom: 20.2rem;
+		&__left {
+			width: 47%;
+			max-width: 55.5rem;
+		}
+		&__right {
+			width: 47%;
+			max-width: 55.5rem;
+			padding-top: 4rem;
+		}
+		&__result {
+			margin-top: 9rem;
+		}
+		&__price {
+			font-size: 4.2rem;
+			line-height: 1;
+			color: $pink;
+			margin-bottom: .7rem;
+			font-family: 'RoadRadio';
+			font-weight: 100;
+			&-icon {
+				display: inline-flex;
+				width: 1.8rem;
+				height: 2.3rem;
+				fill: $pink;
+				margin-left: 1rem;
+			}
+		}
+		&__button {
+			margin-top: 9rem;
+		}
+		&__bottom-text {
+			margin-top: 6rem;
+			color: rgba(#fff, .5);
+		}
+	}
+	&__slider-input {
+		margin-top: 8rem;
+	}
+	
+	@include max-screen($small_tablet) {
+		&-section {
+			&__price {
+				font-size: 3.2rem;
+				&-icon {
+					width: 1.5rem;
+					height: 1.7rem;
+				}
+			}
+			&__bottom-text {
+				br {
+					display: none;
+				}
+			}
+		}
+	}
+	@include max-screen($large_mobile) {
+		&-section {
+			padding-bottom: 12rem;
+			&__left, &__right {
+				width: 100%;
+				max-width: none;
+			}
+			&__result {
+				margin-top: 0;
+				padding-top: 1rem;
+				&-column {
+					width: 100%;
+					margin-top: 2rem;
+				}
+			}
+			&__button {
+				margin-top: 4rem;
+			}
+			&__bottom-text {
+				margin-top: 3rem;
+			}
+		}
+		&__slider-input {
+			margin-top: 4rem;
+		}
+	}
+}

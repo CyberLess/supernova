@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>Карточка</title>
-    <link rel="stylesheet" href="/app/css/app.css?v=1594313042476">
+    <link rel="stylesheet" href="/app/css/app.css?v=1594629066656">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -258,18 +258,6 @@
                             <p>ХХХХ м2 зеленых насаждений и газонов 4
                                 <br>маршрута на 3,5 км прогулочных тропинок</p>
                         </div>
-                        <div class="slider__nav owl-nav">
-                            <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
-                                <svg class="icon icon-prev" viewBox="0 0 15 16">
-                                    <use xlink:href="/app/icons/sprite.svg#prev"></use>
-                                </svg>
-                            </div>
-                            <div class="owl-nav__owl-arrow owl-arrow owl-arrow_next">
-                                <svg class="icon icon-next" viewBox="0 0 16 16">
-                                    <use xlink:href="/app/icons/sprite.svg#next"></use>
-                                </svg>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="slider__slide">
@@ -283,18 +271,6 @@
                             <p>ХХХХ м2 зеленых насаждений и газонов 4
                                 <br>маршрута на 3,5 км прогулочных тропинок</p>
                         </div>
-                        <div class="slider__nav owl-nav">
-                            <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
-                                <svg class="icon icon-prev" viewBox="0 0 15 16">
-                                    <use xlink:href="/app/icons/sprite.svg#prev"></use>
-                                </svg>
-                            </div>
-                            <div class="owl-nav__owl-arrow owl-arrow owl-arrow_next">
-                                <svg class="icon icon-next" viewBox="0 0 16 16">
-                                    <use xlink:href="/app/icons/sprite.svg#next"></use>
-                                </svg>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="slider__slide">
@@ -307,33 +283,23 @@
                             <h4>Парковая зона</h4>
                             <p>ХХХХ м2 зеленых насаждений и газонов 4
                                 <br>маршрута на 3,5 км прогулочных тропинок</p>
-                        </div>
-                        <div class="slider__nav owl-nav">
-                            <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
-                                <svg class="icon icon-prev" viewBox="0 0 15 16">
-                                    <use xlink:href="/app/icons/sprite.svg#prev"></use>
-                                </svg>
-                            </div>
-                            <div class="owl-nav__owl-arrow owl-arrow owl-arrow_next">
-                                <svg class="icon icon-next" viewBox="0 0 16 16">
-                                    <use xlink:href="/app/icons/sprite.svg#next"></use>
-                                </svg>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="gallery__hide-nav">
-                <div class="gallery__nav owl-nav">
-                    <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
-                        <svg class="icon icon-prev" viewBox="0 0 15 16">
-                            <use xlink:href="/app/icons/sprite.svg#prev"></use>
-                        </svg>
-                    </div>
-                    <div class="owl-nav__owl-arrow owl-arrow owl-arrow_next">
-                        <svg class="icon icon-next" viewBox="0 0 16 16">
-                            <use xlink:href="/app/icons/sprite.svg#next"></use>
-                        </svg>
+            <div class="gallery__bottom">
+                <div class="gallery__bottom-wrap wrap wrap_middle">
+                    <div class="gallery__nav owl-nav">
+                        <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
+                            <svg class="icon icon-prev" viewBox="0 0 15 16">
+                                <use xlink:href="/app/icons/sprite.svg#prev"></use>
+                            </svg>
+                        </div>
+                        <div class="owl-nav__owl-arrow owl-arrow owl-arrow_next">
+                            <svg class="icon icon-next" viewBox="0 0 16 16">
+                                <use xlink:href="/app/icons/sprite.svg#next"></use>
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -472,7 +438,7 @@
         <section class="geography">
             <div class="geography__wrap wrap">
                 <h2 class="geography__title h2 css-text-center"><span class="string is-center"><span class="word"> <span>География </span></span><span class="word stroke"> <span>"объекта"</span></span></span></h2>
-                <!--+e.map#map(data-lat="55.751574" data-lon="37.573856")-->
+                <div class="geography__map" id="map" data-lat="55.751574" data-lon="37.573856"></div>
                 <div class="geography__bottom flex flex_center"><a class="geography__button btn js-modal" href="#recall"><span class="btn__text"> Записаться на просмотр</span></a>
                 </div>
             </div>
@@ -862,7 +828,7 @@
                     </div>
                 </div>
             </div>
-            <div class="apartments__hide-nav">
+            <div class="apartments__wrap wrap">
                 <div class="apartments__nav owl-nav">
                     <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
                         <svg class="icon icon-prev" viewBox="0 0 15 16">
@@ -875,6 +841,36 @@
                         </svg>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="recall">
+            <div class="recall__wrap wrap wrap_middle">
+                <h2 class="recall__title h2 css-text-center"><span class="string is-center"><span class="word"> <span>Получите</span></span><br><span class="word stroke"> <span>моментальный доступ </span></span><br><span class="word"> <span>к планировкам и ценам</span></span></span></h2>
+                <div class="recall__desc p20 css-text-center">С возможностью онлайн бронирования квартиры</div>
+                <form class="recall__form" action="/app/mail">
+                    <div class="recall__row flex flex_bottom flex_justify">
+                        <div class="recall__field field">
+                            <input class="field__input" name="name" type="text" />
+                            <div class="field__label">Имя</div>
+                            <div class="field__icon">
+                                <svg class="icon icon-sucsess" viewBox="0 0 31 28">
+                                    <use xlink:href="/app/icons/sprite.svg#sucsess"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="recall__field field">
+                            <input class="field__input" name="phone" type="text" />
+                            <div class="field__label">Телефон</div>
+                            <div class="field__icon">
+                                <svg class="icon icon-sucsess" viewBox="0 0 31 28">
+                                    <use xlink:href="/app/icons/sprite.svg#sucsess"></use>
+                                </svg>
+                            </div>
+                            <div class="field__error">Введите телефон!</div>
+                        </div>
+                        <button class="recall__button btn" type="submit">Получить доступ</button>
+                    </div>
+                </form>
             </div>
         </section>
         <section class="gallery">
@@ -890,18 +886,6 @@
                             <p>Идеальное пространство для совместного проведения времени.
                                 <br>Здесь можно устраивать и вечерние семейные посиделки, и шумные вечеринки с друзьями</p>
                         </div>
-                        <div class="slider__nav owl-nav">
-                            <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
-                                <svg class="icon icon-prev" viewBox="0 0 15 16">
-                                    <use xlink:href="/app/icons/sprite.svg#prev"></use>
-                                </svg>
-                            </div>
-                            <div class="owl-nav__owl-arrow owl-arrow owl-arrow_next">
-                                <svg class="icon icon-next" viewBox="0 0 16 16">
-                                    <use xlink:href="/app/icons/sprite.svg#next"></use>
-                                </svg>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="slider__slide">
@@ -915,18 +899,6 @@
                             <p>Идеальное пространство для совместного проведения времени.
                                 <br>Здесь можно устраивать и вечерние семейные посиделки, и шумные вечеринки с друзьями</p>
                         </div>
-                        <div class="slider__nav owl-nav">
-                            <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
-                                <svg class="icon icon-prev" viewBox="0 0 15 16">
-                                    <use xlink:href="/app/icons/sprite.svg#prev"></use>
-                                </svg>
-                            </div>
-                            <div class="owl-nav__owl-arrow owl-arrow owl-arrow_next">
-                                <svg class="icon icon-next" viewBox="0 0 16 16">
-                                    <use xlink:href="/app/icons/sprite.svg#next"></use>
-                                </svg>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="slider__slide">
@@ -939,33 +911,23 @@
                             <h4>Большие кухни‐гостиные</h4>
                             <p>Идеальное пространство для совместного проведения времени.
                                 <br>Здесь можно устраивать и вечерние семейные посиделки, и шумные вечеринки с друзьями</p>
-                        </div>
-                        <div class="slider__nav owl-nav">
-                            <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
-                                <svg class="icon icon-prev" viewBox="0 0 15 16">
-                                    <use xlink:href="/app/icons/sprite.svg#prev"></use>
-                                </svg>
-                            </div>
-                            <div class="owl-nav__owl-arrow owl-arrow owl-arrow_next">
-                                <svg class="icon icon-next" viewBox="0 0 16 16">
-                                    <use xlink:href="/app/icons/sprite.svg#next"></use>
-                                </svg>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="gallery__hide-nav">
-                <div class="gallery__nav owl-nav">
-                    <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
-                        <svg class="icon icon-prev" viewBox="0 0 15 16">
-                            <use xlink:href="/app/icons/sprite.svg#prev"></use>
-                        </svg>
-                    </div>
-                    <div class="owl-nav__owl-arrow owl-arrow owl-arrow_next">
-                        <svg class="icon icon-next" viewBox="0 0 16 16">
-                            <use xlink:href="/app/icons/sprite.svg#next"></use>
-                        </svg>
+            <div class="gallery__bottom">
+                <div class="gallery__bottom-wrap wrap wrap_middle">
+                    <div class="gallery__nav owl-nav">
+                        <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
+                            <svg class="icon icon-prev" viewBox="0 0 15 16">
+                                <use xlink:href="/app/icons/sprite.svg#prev"></use>
+                            </svg>
+                        </div>
+                        <div class="owl-nav__owl-arrow owl-arrow owl-arrow_next">
+                            <svg class="icon icon-next" viewBox="0 0 16 16">
+                                <use xlink:href="/app/icons/sprite.svg#next"></use>
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1032,11 +994,11 @@
                                 <div class="discount__item-icon circle-parent">
                                     <div class="discount__circle circle circle_third">
                                         <svg width="84" height="99" viewBox="25 25 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="50" cy="50" r="20" stroke="url(#paint#D48232_linear)"></circle>
+                                            <circle cx="50" cy="50" r="20" stroke="url(#paint#D25171_linear)"></circle>
                                             <defs>
-                                                <lineargradient x1="50.1644" y1="1.41531" x2="88.4821" y2="40.7685" gradientUnits="userSpaceOnUse" id="paint#D48232_linear">
-                                                    <stop stop-color="#D48232"></stop>
-                                                    <stop offset="1" stop-color="#D48232" stop-opacity="0"></stop>
+                                                <lineargradient x1="50.1644" y1="1.41531" x2="88.4821" y2="40.7685" gradientUnits="userSpaceOnUse" id="paint#D25171_linear">
+                                                    <stop stop-color="#D25171"></stop>
+                                                    <stop offset="1" stop-color="#D25171" stop-opacity="0"></stop>
                                                 </lineargradient>
                                             </defs>
                                         </svg>
@@ -1053,6 +1015,70 @@
                         </div><a class="discount__button btn js-modal" href="#recall"><span class="btn__text"> Узнать о скидках</span></a>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="calc-section">
+            <div class="calc-section__wrap wrap wrap_middle">
+                <div class="calc-section__row flex flex_justify">
+                    <div class="calc-section__left">
+                        <h2 class="calc-section__title h3"><span class="string is-center"><span class="word"> <span>Рассчитайте</span></span><br><span class="word stroke"> <span>ипотеку онлайн</span></span></span></h2>
+                        <div class="calc-section__calc calc">
+                            <div class="calc__slider-input slider-input">
+                                <div class="slider-input__top flex flex_justify">
+                                    <div class="slider-input__title p">Стоимость квартиры</div>
+                                    <input class="slider-input__input js-calc-input js-calc-price" data-value="35000000" data-step="100000" data-min="1000000" data-max="100000000" value="35 000 000 ₽" data-sign="₽" name="price"
+                                    type="text" />
+                                </div>
+                                <div class="slider-input__center"></div>
+                                <div class="slider-input__bottom flex flex_justify">
+                                    <div class="slider-input__text p15">1 млн</div>
+                                    <div class="slider-input__text p15">10 млн</div>
+                                </div>
+                            </div>
+                            <div class="calc__slider-input slider-input">
+                                <div class="slider-input__top flex flex_justify">
+                                    <div class="slider-input__title p">Первоначальный взнос</div>
+                                    <input class="slider-input__input js-calc-input js-calc-start" data-value="3200000" data-step="50000" data-min="800000" data-max="7200000" value="3 200 000 ₽" data-sign="₽" name="start" type="text"
+                                    />
+                                </div>
+                                <div class="slider-input__center"></div>
+                                <div class="slider-input__bottom flex flex_justify">
+                                    <div class="slider-input__text p15">800 тыс</div>
+                                    <div class="slider-input__text p15">7,2 млн</div>
+                                </div>
+                            </div>
+                            <div class="calc__slider-input slider-input">
+                                <div class="slider-input__top flex flex_justify">
+                                    <div class="slider-input__title p">Срок</div>
+                                    <input class="slider-input__input js-calc-input js-calc-year" data-value="10" data-step="1" data-min="1" data-max="30" value="10 лет" data-sign="лет" name="year" type="text" />
+                                </div>
+                                <div class="slider-input__center"></div>
+                                <div class="slider-input__bottom flex flex_justify">
+                                    <div class="slider-input__text p15">1 год</div>
+                                    <div class="slider-input__text p15">30 лет</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calc-section__right css-text-center">
+                        <h3 class="calc-section__title2 h5">Автоматический <br>расчет вашей заявки</h3>
+                        <div class="calc-section__result flex flex_justify">
+                            <div class="calc-section__result-column">
+                                <div class="calc-section__price"><span class="js-calc-total">103 300</span><span class="calc-section__price-icon"><svg class="icon icon-rub" viewBox="0 0 18 23"><use xlink:href="/app/icons/sprite.svg#rub"></use></svg></span>
+                                </div>
+                                <div class="calc-section__result-text p">Ежемесячный платеж</div>
+                            </div>
+                            <div class="calc-section__result-column">
+                                <div class="calc-section__price"><span class="js-calc-all">12 390 517</span><span class="calc-section__price-icon"><svg class="icon icon-rub" viewBox="0 0 18 23"><use xlink:href="/app/icons/sprite.svg#rub"></use></svg></span>
+                                </div>
+                                <div class="calc-section__result-text p">Общая сумма</div>
+                            </div>
+                        </div><a class="calc-section__button orbit-button" href="#"><span class="orbit-button__border"><span class="orbit-button__border-wrap"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="49"></circle></svg></span></span><span class="orbit-button__bottom"></span><span class="orbit-button__inner"><span class="orbit-button__center"><span class="orbit-button__part is-desktop"><span class="orbit-button__bold">оставить заявку <br>на консультацию</span></span><span class="orbit-button__part is-mobile"><span class="orbit-button__bold"> оставить заявку <br>на консультацию</span></span><span class="orbit-button__arrow"><svg class="icon icon-arrow" viewBox="0 0 72 26"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></span></span></a>
+                        <div
+                        class="calc-section__bottom-text p15 css-text-center">Пример расчета процентной ставки носит исключительно
+                            <br>информационный характер и не является публичной офертой</div>
+                </div>
+            </div>
             </div>
         </section>
         <section class="presentation presentation_second">
@@ -1200,8 +1226,9 @@
         </footer>
     </main>
     <div class="modals modals_recall mfp-hide" id="recall"></div>
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/app/js/app.js?v=1594313042956"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="/app/js/app.js?v=1594629066746"></script>
 </body>
 
 </html>

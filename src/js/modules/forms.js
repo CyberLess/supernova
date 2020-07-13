@@ -11,9 +11,9 @@ var forms = {
 		var im = new Inputmask({
 			"mask": "+7 (999) 999-99-99",
 			clearMaskOnLostFocus: true,
-			clearIncomplete: true			
+			clearIncomplete: false	
 		});
-
+		
 		im.mask(selector);
 	},
 
@@ -126,6 +126,12 @@ var forms = {
 				forms.multiply.close(container);
 			}
 		});
+		
+		/*$('.field__input').blur(function(){
+			if( $(this).val().length > 0 ) {
+				$(this).parent().addClass('is-complete');
+			}
+		});*/
 
 	}
 

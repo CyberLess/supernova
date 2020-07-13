@@ -5,10 +5,17 @@
 	&__input {
 		display: none;
 		&:checked + .radio__icon {
+			border-color: $pink;
 			&:before {
 				opacity: 1;
 			}
+			& + .radio__text {
+				color: $pink;
+			}
 		}
+	}
+	&__text {
+		transition: ease .2s;
 	}
 	&__icon {
 		display: inline-flex;
@@ -25,9 +32,14 @@
 			display: block;
 			width: .7rem;
 			height: .7rem;
-			background: #fff;
+			background:  $pink;
 			border-radius: 100%;
 			opacity: 0;
+		}
+	}
+	@include max-screen($large_mobile) {
+		&__text {
+			font-size: 1.3rem;
 		}
 	}
 }

@@ -60,8 +60,7 @@
 	
 	@include max-screen($large_mobile) {
 		&-nav {
-			padding: 0 2rem;
-			width: auto;
+			width: 100%;
 		}
 		&-arrow {
 			width: 5rem;

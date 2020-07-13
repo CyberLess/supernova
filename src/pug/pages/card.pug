@@ -51,8 +51,9 @@ block content
 					| ХХХХ м2 зеленых насаждений и газонов 4 
 					br
 					| маршрута на 3,5 км прогулочных тропинок
-		+e.hide-nav
-			include ../layouts/owl-nav
+		+e.bottom
+			+e.bottom-wrap.wrap._middle
+				include ../layouts/owl-nav
 		+e.wrap.wrap._middle
 			+e.line
 	+b.SECTION.concept
@@ -153,9 +154,29 @@ block content
 			+apartments-item('card__img.jpg', '1', '41,9', 'С отделкой')
 			+apartments-item('card__img.jpg', '1', '43,9')
 			+apartments-item('card__img.jpg', '1', '41,9', 'С отделкой')
-		+e.hide-nav
+		+e.wrap.wrap
 			include ../layouts/owl-nav
 	
+	+b.SECTION.recall
+		+e.wrap.wrap._middle
+			+e.H2.title.h2.css-text-center
+				span.string.is-center
+					span.word 
+						span Получите
+					br
+					span.word.stroke 
+						span моментальный доступ 
+					br
+					span.word 
+						span к планировкам и ценам
+			+e.desc.p20.css-text-center
+				| С возможностью онлайн бронирования квартиры
+			+e.FORM.form(action='/app/mail')
+				+e.row.flex._bottom._justify
+					+field('Имя')(name="name")
+					+field('Телефон', 'Введите телефон!')(name="phone")
+					+e.BUTTON.button.btn__(type="submit") Получить доступ
+					
 	+b.SECTION.gallery
 		+e.slider.slider__.js-slider.owl-carousel
 			+slide('card__slide1.jpg')
@@ -176,12 +197,15 @@ block content
 					| Идеальное пространство для совместного проведения времени.
 					br
 					| Здесь можно устраивать и вечерние семейные посиделки, и шумные вечеринки с друзьями
-		+e.hide-nav
-			include ../layouts/owl-nav
+		+e.bottom
+			+e.bottom-wrap.wrap._middle
+				include ../layouts/owl-nav
 		+e.wrap.wrap._middle
 			+e.line
 	
 	include ../layouts/discount
+	
+	include ../layouts/calc
 	
 	+b.SECTION.presentation._second
 		+e.wrap.wrap
@@ -205,7 +229,7 @@ block content
 					
 	include ../layouts/docs
 
-//- block scripts
+block scripts
 	script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
 	script(src="https://code.jquery.com/jquery-3.3.1.min.js")
 	script(src="/js/app.js?v=" + Date.now())

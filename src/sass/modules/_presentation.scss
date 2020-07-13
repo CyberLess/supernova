@@ -62,7 +62,7 @@
 		&_second {
 			padding-bottom: 10rem;
 		}
-		&__right {
+		&__right:not(.presentation__right_second) {
 			padding-left: 0;
 		}
 		&__img {

@@ -13,6 +13,7 @@
 	}
 	
 	&-item {
+		cursor: pointer;
 		&__preview {
 			position: relative;
 			background: #fff;
@@ -90,6 +91,12 @@
 				font-weight: normal;
 			}
 		}
+		&:hover {
+			.apartments-item__button {
+				background: $pink;
+				color: #fff;
+			}
+		}
 	}
 	&__filter {
 		margin-top: 7rem;
@@ -114,19 +121,20 @@
 	&__radio {
 		margin-left: 40/480*100%;
 	}
-	
 	&__nav {
-		margin-top: 2rem;
-	}
-	&__hide-nav {
 		display: none;
+		margin-top: 2rem;
 		position: relative;
+		padding-bottom: 2rem;
 		&:after {
 			content: '';
 			display: block;
 			height: 1px;
 			background: rgba(#fff, .2);
-			margin: 2rem 2rem 0;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
 		}
 	}
 	
@@ -229,8 +237,8 @@
 				}
 			}
 		}
-		&__hide-nav {
-			display: block;
+		&__nav {
+			display: flex;
 		}
 		.owl-dots {
 			transform: translateY(3.5rem);

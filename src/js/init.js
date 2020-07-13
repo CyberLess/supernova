@@ -11,6 +11,7 @@ import { slider } from "./modules/slider";
 import { map } from "./modules/map";
 import { partners } from "./modules/partners";
 import { accordion } from "./modules/accordion";
+import { calc } from "./modules/calc";
 import { config } from "./config";
 
 var App = () => {};
@@ -30,6 +31,7 @@ App.prototype.init = () => {
 	modals.init();
 	slider.init();
 	accordion.init();
+	calc.init();
 
 	config.log('app init')
 	

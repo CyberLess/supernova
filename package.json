@@ -39,6 +39,8 @@
     "imagemin-jpegtran": "^6.0.0",
     "imagemin-pngquant": "^8.0.0",
     "imagemin-webp": "^5.1.0",
+    "jquery-ui": "^1.12.1",
+    "jquery-ui-touch-punch": "^0.2.3",
     "merge-stream": "^2.0.0",
     "owl.carousel": "^2.3.4",
     "vinyl-ftp": "^0.6.1",
