@@ -2,8 +2,8 @@
 	&-nav {
 		display: flex;
 		justify-content: space-between;
-		width: 17rem;
-		min-width: 17rem;
+		width: 16rem;
+		min-width: 16rem;
 	}
 	&-arrow {
 		display: inline-flex;
@@ -12,7 +12,7 @@
 		width: 7rem;
 		height: 7rem;
 		cursor: pointer;
-		border: 1px solid #fff;
+		border: 1px solid rgba(#fff, .3);
 		border-radius: 100%;
 		transition: ease .2s;
 		cursor: pointer;

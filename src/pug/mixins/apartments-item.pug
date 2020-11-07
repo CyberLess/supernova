@@ -1,12 +1,13 @@
 mixin apartments-item(image, quantity, area, decoration)
-	+e.item.apartments-item__
+	+e.item.apartments-item__.js-modal(data-modal="#apartment")
 		+e.preview
 			if decoration
 				+e.decoration
 					+e.decoration-icon
 						+icon('decoration')
 					+e.decoration-text !{decoration}
-			img(src=`/img/${image}`)
+			+e.preview-img
+				img.object-fit(src=`/img/${image}`)
 		+e.bottom.flex._justify
 			+e.quantity
 				+e.quantity-text.p !{quantity}
@@ -16,4 +17,4 @@ mixin apartments-item(image, quantity, area, decoration)
 				+e.area-text.p !{area} м2
 				+e.area-icon
 					+icon('area')
-			+button(href="#buy" class="_transparent js-modal") Узнать цену
+			+button(href="#" class="_transparent") Узнать цену

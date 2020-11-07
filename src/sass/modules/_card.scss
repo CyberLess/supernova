@@ -10,21 +10,30 @@
 		width: 100%;
 	}
 	&-main {
-		margin-top: 26rem;
-		min-height: 52rem;
+		margin-top: 16.9rem;
+		min-height: 61.5rem;
 		padding-bottom: 10rem;
 		margin-bottom: 5rem;
+		text-align: center;
 		&__desc {
-			margin-top: 4rem;
+			margin-top: 5rem;
 			max-width: 57rem;
+			font-weight: 500;
+			margin-left: auto;
+			margin-right: auto;
 		}
 		&__bottom {
-			margin-top: 3.5rem;
+			margin-top: 10rem;
+		}
+		
+		&__button {
+			width: 32.4rem;
+			margin-right: 5rem;
 		}
 	}
 	@include max-screen($large_mobile) {
 		&-bg {
-			min-height: 70vh;
+			min-height: 60vh;
 		}
 		&-main {
 			display: flex;
@@ -32,7 +41,19 @@
 			justify-content: center;
 			margin-top: 0;
 			padding: 5rem 0 8rem 0;
-			min-height: calc( 70vh - 6.3rem );
+			min-height: inherit;
+			margin-bottom: 20px;
+			&__desc {
+				margin-top: 30px;
+			}
+			&__bottom {
+				margin-top: 40px;
+				flex-wrap: nowrap;
+			}
+			&__button {
+				width: 100%;
+				margin-right: 30px;
+			}
 		}
 	}
 }

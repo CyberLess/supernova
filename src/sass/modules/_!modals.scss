@@ -1,0 +1,287 @@
+.mfp-bg{
+	background-color: rgba(0, 0, 0, 0.302);
+	opacity: 0;
+	transition: ease .7s;
+	&.mfp-ready {
+		opacity: 1;
+	}
+	&.mfp-removing {
+		opacity: 0;
+	}
+}
+.mfp-counter{
+	display: none;
+}
+
+.mfp-image-holder {
+	background-color: rgba(0, 0, 0, 0.702);
+}
+
+.mfp-content{
+	@extend .clear;
+}
+
+
+.mfp-container {
+	padding: 0;
+}
+
+.modals{
+	margin: auto;
+	position: relative;
+	&-apartment {
+		position: relative;
+		margin: auto;
+		background: #151515;
+		max-width: 138.8rem;
+		color: #fff;
+		opacity: 0;
+		transition: ease .5s;
+		transform: translateY(30px);
+		&__left {
+			width: 873/1388*100%;
+		}
+		&__right {
+			width: 515/1388*100%;
+			padding: 16rem 5rem 5.8rem 5rem;
+		}
+		&__preview {
+			position: relative;
+			padding-top: 785/873*100%;
+		}
+		
+		&__decoration {
+			display: inline-flex;
+			align-items: center;
+			height: 4.9rem;
+			padding: 1rem 1.5rem;
+			border: 1px solid rgba(#fff, .2);
+			border-radius: .7rem;
+			&-icon {
+				width: 2.9rem;
+				height: 2.9rem;
+				margin-right: 1rem;
+				fill: $pink;
+			}
+			&-text {
+				font-size: 1.5rem;
+				line-height: 1;
+				font-weight: normal;
+			}
+		}
+		
+		&__quantity, &__area {
+			display: inline-flex;
+			align-items: center;
+			font-size: 2rem;
+			line-height: 1;
+		}
+		
+		&__area {
+			&-icon {
+				width: 3.7rem;
+				height: 3.8rem;
+				fill: none;
+				stroke: #fff;
+				stroke-width: 1px;
+				opacity: .3;
+				margin-right: 2rem;
+			}
+		}
+		
+		&__quantity {
+			&-icon {
+				width: 3.2rem;
+				fill: none;
+				stroke: #fff;
+				stroke-width: 1px;
+				opacity: .2;
+				margin-right: 2rem;
+			}
+		}
+		
+		&__form {
+			padding-top: 3rem;
+		}
+		
+		&__field {
+			margin-top: 4rem;
+		}
+		
+		&__button {
+			margin-top: 12rem;
+			width: 22.4rem;
+		}
+		
+		&__link {
+			display: block;
+			background: none;
+			border: 0;
+			font-size: 1.7rem;
+			line-height: 150%;
+			color: $pink;
+			font-family: 'Gotham';
+			text-decoration: underline;
+			margin-top: 3rem;
+			cursor: pointer;
+		}
+		
+		@include max-screen($large_tablet) {
+			&__right {
+				padding-top: 9rem;
+			}
+		}
+		
+		@include max-screen($small_tablet) {
+			max-width: 55rem;
+			&__left {
+				display: none;
+			}
+			&__right {
+				width: 100%;
+			}
+			
+			&__button {
+				margin-top: 6rem;
+			}
+			
+			&__form {
+				padding-top: 0;
+			}
+		}
+		
+		
+		@include max-screen($large_mobile) {
+			&__right {
+				padding: 60px 2rem 50px;
+			}
+			&__decoration {
+				height: 4rem;
+				padding: .7rem 1.2rem;
+				&-icon {
+					width: 2.2rem;
+					height: 2.2rem;
+					margin-right: 1.2rem;
+				}
+				&-text {
+					font-size: 1.2rem;
+				}
+			}
+			&__quantity, &__area {
+				font-size: 15px;
+			}
+
+			&__area {
+				&-icon {
+					width: 2.7rem;
+					height: 2.8rem;
+					margin-right: 12px;
+				}
+			}
+
+			&__quantity {
+				&-icon {
+					width: 2.2rem;
+					margin-right: 12px;
+				}
+			}
+			
+			&__field {
+				margin-top: 35px;
+			}
+			
+			&__form {
+				margin-top: -10px;
+			}
+			
+			&__button {
+				margin-top: 40px;
+				width: 100%;
+			}
+			&__link {
+				font-size: 15px;
+				text-align: center;
+				width: 100%;
+				margin-top: 20px;
+			}
+		}
+	}
+}
+
+.css-modal-animate{
+	// start state
+
+	overflow: hidden;
+
+	.modals__arrow{
+		opacity: 0;
+	}
+
+	.modals, .mfp-figure{
+		transition: all .5s ease;
+		opacity: 0;
+
+		&_right{
+
+			transform: translate(25rem, 0);
+		}
+
+		&_center{
+			transform: translate(0rem, 25rem);
+		}
+	}
+
+	// animate in
+	&.mfp-ready{
+		.modals__arrow{
+			opacity: 1;
+		}
+		.modals, .mfp-figure{
+			transform: translate(0, 0);
+			opacity: 1;
+		}
+		
+		.modals-right {
+			transform: translateX(0);
+			opacity: 1;
+		}
+		
+		.modals-apartment {
+			opacity: 1;
+			transform: translateY(0);
+			transition-delay: .2s;
+		}
+	}
+
+	// animate out
+	&.mfp-removing{
+		.modals__arrow{
+			opacity: 0;
+		}
+		.modals, .mfp-figure{
+			opacity: 0;
+
+			&_right{
+				transform: translate(25rem, 0);
+			}
+
+			&_center{
+				transform: translate(0rem, 25rem);
+			}
+		}
+		.modals-right {
+			transform: translateX(100%);
+			opacity: 0;
+		}
+		.modals-apartment {
+			opacity: 0;
+			transform: translateY(-30px);
+		}
+	}
+
+	@include max-screen($small_tablet) {
+		.modals, .mfp-figure{
+			transform: translate(0, 0)!important;
+		}
+	}
+}

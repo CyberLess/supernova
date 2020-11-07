@@ -7,51 +7,51 @@
 				br
 				span.word.stroke 
 					span с выгодой
-		+e.row.flex
-			+e.left
-				+e.H3.desc.h3 Скидки
-			+e.right
-				+e.list.flex
-					+e.item
-						+e.item-icon.circle-parent
-							+e.circle.circle._second
-								+circle("#D48232")
-							+icon('map')
-						+e.item-price.h4
-							| 50 000 
-							+e.SPAN.rub
-								+icon('rub')
-						+e.item-title.p20 Иногородним
-						+e.item-text.p
-							| Покупателям 
-							br
-							| с региональной пропиской
-					+e.item
-						+e.item-icon.circle-parent
-							+e.circle.circle
-								+circle("#00758D")
-							+icon('partner')
-						+e.item-price.h4
-							+e.SPAN.before до 
-							| 350 000
-							+e.SPAN.rub
-								+icon('rub')
-						+e.item-title.p20 Партнерская
-						+e.item-text.p
-							| Сотрудникам 
-							br
-							| компаний-партнеров
-					+e.item
-						+e.item-icon.circle-parent
-							+e.circle.circle._third
-								+circle("#D25171")
-							+icon('roller')
-						+e.item-price.h4
-							+e.SPAN.before до 
-							| 30 %
-						+e.item-title.p20 Стартовая
-						+e.item-text.p
-							| На ремонтные работы
-							br
-							| и отделочные материалы
-				+button(href="#recall" class="js-modal") Узнать о скидках
+		+e.list.flex
+			+e.item.flex._center
+				+e.item-wrap
+					+e.item-icon.circle-parent
+						+e.circle.circle._second
+							+circle("#D48232")
+						+icon('map')
+					+e.item-price.h4
+						| 50 000 
+						+e.SPAN.rub
+							+icon('rub')
+					+e.item-title.p20 Иногородним
+					+e.item-text.p
+						| Покупателям 
+						br
+						| с региональной пропиской
+			+e.item.flex._center
+				+e.item-wrap
+					+e.item-icon.circle-parent
+						+e.circle.circle
+							+circle("#00758D")
+						+icon('partner')
+					+e.item-price.h4
+						+e.SPAN.before до 
+						| 350 000
+						+e.SPAN.rub
+							+icon('rub')
+					+e.item-title.p20 Партнерская
+					+e.item-text.p
+						| Сотрудникам 
+						br
+						| компаний-партнеров
+			+e.item.flex._center
+				+e.item-wrap
+					+e.item-icon.circle-parent
+						+e.circle.circle._third
+							+circle("#D25171")
+						+icon('roller')
+					+e.item-price.h4
+						+e.SPAN.before до 
+						| 30 %
+					+e.item-title.p20 Стартовая
+					+e.item-text.p
+						| На ремонтные работы
+						br
+						| и отделочные материалы
+		+e.button-wrap.flex._center
+			+button(href="#recall" class="js-modal") Узнать о скидках

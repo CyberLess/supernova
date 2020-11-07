@@ -1,16 +1,13 @@
 .discount {
 	padding: 20rem 0;
-	&__row {
-		margin-top: 16.5rem;
+	
+	&__list {
+		margin-top: 12rem;
 	}
-	&__left {
-		width: 25%;
-	}
-	&__right {
-		width: 75%;
-	}
+	
 	&__item {
 		width: 33.33%;
+		position: relative;
 		&-icon {
 			display: inline-flex;
 			margin-bottom: 5rem;
@@ -23,16 +20,28 @@
 		}
 		&-price {
 			color: $pink;
-			font-weight: 100;
 			display: flex;
 			align-items: flex-end;
-			margin-bottom: 3rem;
+			margin-bottom: 2rem;
 		}
 		&-title {
 			font-family: 'RoadRadio';
 		}
 		&-text {
 			margin-top: 2rem;
+		}
+		
+		&:not(:first-child) {
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 2px;
+				height: 100%;
+				background: linear-gradient(to bottom, rgba(#fff, 0) 0%, rgba(#fff, .2) 50%, rgba(#fff, 0) 100%);
+			}
 		}
 	}
 	&__before {
@@ -50,7 +59,7 @@
 		margin-bottom: 1rem;
 	}
 	&__button {
-		width: 33.33%;
+		width: 29.5rem;
 		margin-top: 12rem;
 	}
 	@include max-screen($small_desktop) {
@@ -69,10 +78,7 @@
 	@include max-screen($small_tablet) {
 		text-align: center;
 		padding: 15rem 0;
-		&__left, &__right {
-			width: 100%;
-		}
-		&__row {
+		&__list {
 			margin-top: 0;
 		}
 		&__desc {
@@ -106,6 +112,11 @@
 		}
 		&__item {
 			width: 100%;
+			&:not(:first-child) {
+				&:before {
+					display: none;
+				}
+			}
 			&-icon {
 				margin-bottom: 3rem;
 			}

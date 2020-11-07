@@ -1,1 +1,25 @@
-+b.modals._recall.mfp-hide#recall
++b.modals-apartment.mfp-hide#apartment
+	+e.row.flex
+		+e.left
+			+e.preview
+				+e.IMG.preview-img.object-fit(src="/img/apartment__img.jpg")
+		+e.right
+			+e.top.flex._justify._vertical
+				+e.decoration
+					+e.decoration-icon
+						+icon('decoration')
+					+e.decoration-text С отделкой
+				+e.area
+					+e.area-icon
+						+icon('area')
+					+e.area-text 43,9 м2
+				+e.quantity
+					+e.quantity-icon
+						+icon('cube')
+					+e.quantity-text 1
+			+e.FORM.form(action="/app/mail")
+				input.js-subj-input(type="hidden",name="subj", value="Узнать цену")
+				+field('Имя')(name="name")
+				+field('Телефон*', 'Введите телефон!')(name="phone")
+				+button("submit")(class="js-subj-btn") Узнать цену
+				+e.BUTTON.link.js-subj-btn Записаться на просмотр

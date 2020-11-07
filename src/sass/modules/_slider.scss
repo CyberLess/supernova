@@ -1,10 +1,10 @@
 .slider {
 	&__slide {
-		padding: 0 1rem;
-		width: 111rem;
+		padding: 0 1.5rem;
+		width: 133.5rem;
 	}
 	&__row {
-		padding-top: 4rem;
+		padding-top: 5rem;
 		flex-wrap: nowrap;
 		transition: ease .5s;
 		transform: translateY(-30px);
@@ -17,6 +17,9 @@
 			&:not(:last-child) {
 				margin-bottom: 2rem;
 			}
+		}
+		p {
+			color: rgba(#fff, .5);
 		}
 	}
 }

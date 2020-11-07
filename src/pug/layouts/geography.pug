@@ -7,5 +7,9 @@
 				span.word.stroke 
 					span "объекта"
 		+e.map#map(data-lat="55.751574" data-lon="37.573856")
-		+e.bottom.flex._center
-			+button(class="js-modal" href="#recall") Записаться на просмотр
+	+e.wrap.wrap._middle
+		+e.FORM.form(action='/app/mail')
+			+e.row.flex._bottom._justify
+				+field('Имя')(name="name")
+				+field('Телефон*', 'Введите телефон!')(name="phone")
+				+button("submit") Записаться на просмотр

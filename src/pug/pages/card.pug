@@ -25,12 +25,10 @@ block content
 						span какой то
 			+e.desc.p
 				| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
-			+e.bottom.flex._vertical._justify
+			+e.bottom.flex._vertical._center
 				+button Подберите квартиру
 				+play('https://www.youtube.com/embed/tWkodax0vKE')
-					| Посмотрите 
-					br
-					| видео о "ЖК"
+					| Видео о "ЖК"
 	+b.SECTION.gallery
 		+e.slider.slider__.js-slider.owl-carousel
 			+slide('card__slide1.jpg')
@@ -54,8 +52,6 @@ block content
 		+e.bottom
 			+e.bottom-wrap.wrap._middle
 				include ../layouts/owl-nav
-		+e.wrap.wrap._middle
-			+e.line
 	+b.SECTION.concept
 		+e.wrap.wrap._middle
 			+e.row.flex._justify
@@ -134,13 +130,15 @@ block content
 						span "название"
 			+e.filter.flex
 				+e.filter-column
-					+radio('1 Комнатные')(name="quantity" checked)
+					+checkbox('Студия')(name="apartment[]" checked)
 				+e.filter-column
-					+radio('2 Комнатные')(name="quantity")
+					+checkbox('1 комнатная квартира')(name="apartment[]")
 				+e.filter-column
-					+radio('3+ Комнатные')(name="quantity")
+					+checkbox('2 комнатная квартира')(name="apartment[]")
 				+e.filter-column
-					+button(href="#" class="_transparent") Подобрать квартиру
+					+checkbox('2 комнатная квартира')(name="apartment[]")
+				+e.filter-column
+					+button(href="#") Найти квартиру
 		+e.list.flex
 			+apartments-item('card__img.jpg', '1', '43,9')
 			+apartments-item('card__img.jpg', '1', '41,9', 'С отделкой')
@@ -154,8 +152,9 @@ block content
 			+apartments-item('card__img.jpg', '1', '41,9', 'С отделкой')
 			+apartments-item('card__img.jpg', '1', '43,9')
 			+apartments-item('card__img.jpg', '1', '41,9', 'С отделкой')
-		+e.wrap.wrap
-			include ../layouts/owl-nav
+		+e.button-wrap.wrap.flex._center
+			+e.button-center
+				+button(href="#") Показать еще
 	
 	+b.SECTION.recall
 		+e.wrap.wrap._middle
@@ -175,7 +174,7 @@ block content
 				+e.row.flex._bottom._justify
 					+field('Имя')(name="name")
 					+field('Телефон', 'Введите телефон!')(name="phone")
-					+e.BUTTON.button.btn__(type="submit") Получить доступ
+					+button("submit") Получить доступ
 					
 	+b.SECTION.gallery
 		+e.slider.slider__.js-slider.owl-carousel
@@ -200,8 +199,6 @@ block content
 		+e.bottom
 			+e.bottom-wrap.wrap._middle
 				include ../layouts/owl-nav
-		+e.wrap.wrap._middle
-			+e.line
 	
 	include ../layouts/discount
 	

@@ -2,7 +2,7 @@
 	padding-left: 4rem;
 	&__item {
 		&:not(:first-child) {
-			border-top: 2px solid rgba(#FFF, .3);
+			border-top: 1px solid rgba(#FFF, .3);
 		}
 		&.is-active {
 			.accordion__icon {
@@ -30,6 +30,7 @@
 		left: -4rem;
 		top: 50%;
 		margin-top: -.9rem;
+		color: rgba(#fff, .5);
 	}
 	&__title {
 		font-weight: 100;

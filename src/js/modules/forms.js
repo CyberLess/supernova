@@ -107,6 +107,14 @@ var forms = {
 					$input.parent().removeClass('is-focus')
 		 	})		
 	},
+	
+	changeSubj: (e) => {
+		
+		let text = $(e.currentTarget).text();
+		
+		$(e.currentTarget).closest('form').find('.js-subj-input').val(text);
+		
+	},
 
 	init: () => {
 
@@ -126,6 +134,8 @@ var forms = {
 				forms.multiply.close(container);
 			}
 		});
+		
+		$(document).on('click', '.js-subj-btn', forms.changeSubj);
 		
 		/*$('.field__input').blur(function(){
 			if( $(this).val().length > 0 ) {

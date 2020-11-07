@@ -1,0 +1,6 @@
+mixin checkbox(text)
+	+e.LABEL.checkbox.check__
+		+e.INPUT.input(type="checkbox", value=`${text}`)&attributes(attributes)
+		+e.icon
+			+icon('check')
+		+e.SPAN.text.p !{text}
