@@ -4,6 +4,16 @@ append vars
 	- title = 'Карточка';
 
 block content
+	+b.header-line
+		+e.wrap.wrap
+			+e.line
+	+b.breadcrumbs
+		+e.wrap.wrap
+			+e.UL.list
+				+e.LI.item
+					+e.A.link(href="#") Главная
+				+e.LI.item
+					| Жилой комплекс “Снежинка”
 	+b.sub-menu
 		+e.wrap.wrap
 			+e.list.flex._center

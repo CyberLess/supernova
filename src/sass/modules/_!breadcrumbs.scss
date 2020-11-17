@@ -1,0 +1,29 @@
+.breadcrumbs {
+	position: relative;
+	z-index: 5;
+	color: #fff;
+	margin-top: 5rem;
+	font-size: 1.4rem;
+	line-height: 1;
+	letter-spacing: -0.03em;
+	&__list {
+		list-style: none;
+		display: flex;
+	}
+	
+	&__item {
+		&:not(:last-child) {
+			margin-right: .7rem;
+			&:after {
+				content: ' /';
+				margin-left: .3rem;
+			}
+		}
+	}
+	
+	
+	@include max-screen($large_mobile) {
+		font-size: 9px;
+		margin-top: 20px;
+	}
+}

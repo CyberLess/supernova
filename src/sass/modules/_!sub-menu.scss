@@ -1,14 +1,25 @@
 .sub-menu {
 	font-size: 1.5rem;
 	line-height: 14/15*1;
-	margin-top: 3rem;
 	&__list {
-		border-top: 2px solid rgba(#fff, .3);
-		padding-top: 5rem;
+		margin-top: -1.3rem;
 	}
 	&__item {
 		&:not(:last-child) {
 			margin-right: 5rem;
+		}
+	}
+	
+	@include max-screen($small_tablet) {
+		&__list {
+			justify-content: flex-end;
+		}
+		&__item {
+			font-size: 1.4rem;
+			line-height: 1;
+			&:not(:last-child) {
+				margin-right: 1.5rem;
+			}
 		}
 	}
 	@include max-screen($large_mobile) {

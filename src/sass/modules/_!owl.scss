@@ -60,11 +60,19 @@
 	
 	@include max-screen($large_mobile) {
 		&-nav {
-			width: 100%;
+			min-width: inherit;
 		}
 		&-arrow {
-			width: 5rem;
-			height: 5rem;
+			width: 34px;
+			height: 34px;
+			svg {
+				width: 9px;
+				height: 9px;
+				stroke-width: 1.5;
+			}
+			&_next {
+				margin-left: 5px;
+			}
 		}
 	}
 }

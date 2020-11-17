@@ -40,6 +40,17 @@
 		}
 	}
 	
+	&__title {
+		text-align: center;
+	}
+	
+	&__head {
+		margin-bottom: 10rem;
+		.owl-nav {
+			display: none;
+		}
+	}
+	
 	@include max-screen(900px) {
 		&:before, &:after {
 			display: none;
@@ -64,7 +75,7 @@
 		}
 		&__nav {
 			transform: translateY(0);
-			margin-top: 3rem;
+			margin-top: 0;
 		}
 
 		&__bottom {
@@ -72,6 +83,24 @@
 			&-wrap {
 				display: block;
 			}
+		}
+		&__head {
+			margin-bottom: 20px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.owl-nav {
+				display: flex;
+				width: auto;
+				max-width: none;
+			}
+		}
+		&__title {
+			max-width: 205px;
+			text-align: left;
+		}
+		&__bottom {
+			display: none;
 		}
 	}
 }

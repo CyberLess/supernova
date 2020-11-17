@@ -93,6 +93,22 @@
 	}
 
 	@include max-screen($small_tablet) {
-		padding-top: 2.2rem;
+		padding-top: 2rem;
+	}
+}
+
+.header-line {
+	margin-top: 3rem;
+	&__line {
+		height: 2px;
+		background: rgba(#fff, .3);
+		position: relative;
+		z-index: 5;
+	}
+	@include max-screen($large_mobile) {
+		margin-top: 2rem;
+		&__line {
+			height: 1px;
+		}
 	}
 }

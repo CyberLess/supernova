@@ -1,0 +1,183 @@
+.about {
+	&-bg {
+		background: url(/img/about__bg.png) top no-repeat;
+		background-size: auto 100%;
+		min-height: 100rem;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+	}
+	
+	
+	&-main {
+		margin-top: 5.7rem;
+		margin-bottom: 20rem;
+		&__slide {
+			width: 100%;
+		}
+		
+		&__left {
+			width: 50%;
+		}
+		
+		&__right {
+			width: 50%;
+		}
+		
+		&__content {
+			p {
+				line-height: 26/17*1;
+			}
+			p:not(:last-child) {
+				margin-bottom: 3rem;
+			}
+		}
+		
+		
+		&__desc {
+			margin-top: 5rem;
+			font-weight: 100;
+		}
+		
+		&__list {
+			margin-top: 5rem;
+			padding-top: 5rem;
+			border-top: 1px solid rgba(#fff, .3);
+		}
+		
+		&__number {
+			font-size: 2rem;
+			margin-bottom: .3rem;
+			font-weight: bold;
+		}
+		
+		&__item {
+			width: 33.33%;
+			&-desc {
+				text-transform: uppercase;
+				font-size: 1.5;
+			}
+		}
+		.owl-arrow {
+			position: absolute;
+			top: 50%;
+			z-index: 15;
+			margin-top: -6rem;
+			&_prev {
+				left: -14rem;
+			}
+			&_next {
+				right: -14rem;
+			}
+		}
+		
+		&__bottom {
+			margin-top: 10rem;
+			border-bottom: 1px solid rgba(#fff, .3);
+			overflow-x: auto;
+			overflow-y: hidden;
+			flex-wrap: nowrap;
+		}
+		
+		&__year {
+			display: flex;
+			cursor: pointer;
+			transition: ease .2s;
+			font-size: 2.5rem;
+			line-height: 1;
+			color: rgba(#fff, .3);
+			padding-bottom: 4rem;
+			position: relative;
+			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				bottom: -1px;
+				height: 2px;
+				background: $pink;
+				width: 100%;
+				transition: ease .2s;
+				transform: scaleY(0);
+			}
+			&.is-active {
+				color: #fff;
+				&:after {
+					transform: scaleY(1);
+				}
+			}
+		}
+		
+		@include max-screen($large_desktop) {
+			.owl-arrow {
+				&_prev {
+					left: -10rem
+				}
+				&_next {
+					right: -10rem;
+				}
+			}
+		}
+		
+		@include max-screen($large_tablet) {
+			.owl-arrow {
+				position: static;
+				margin-top: -7rem;
+				&_prev {
+					left: -10rem
+				}
+				&_next {
+					right: -10rem;
+				}
+			}
+		}
+		
+		@include max-screen($large_mobile) {
+			margin-top: 30px;
+			margin-bottom: 70px;
+			&__desc {
+				margin-top: 10px;
+			}
+			&__nav {
+				display: none;
+			}
+			&__bottom {
+				margin-top: 47px;
+				justify-content: flex-start;
+			}
+			&__left, &__right {
+				width: 100%;
+			}
+			
+			&__right {
+				margin-top: 20px;
+			}
+			&__content {
+				p:not(:last-child) {
+					margin-bottom: 20px;
+				}
+			}
+			&__list {
+				margin-top: 20px;
+				padding-top: 20px;
+				justify-content: space-between;
+			}
+			&__number {
+				font-size: 16px;
+			}
+			&__item {
+				width: auto;
+				&-desc {
+					font-size: 10px;
+				}
+			}
+			&__year {
+				margin-right: 30px;
+				font-size: 12px;
+				padding-bottom: 10px;
+			}
+		}
+	}
+}
