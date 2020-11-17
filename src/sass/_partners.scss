@@ -1,0 +1,10 @@
+.partner {
+	margin-top: 20rem;
+	position: relative;
+	z-index: 2;
+	&__head {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}

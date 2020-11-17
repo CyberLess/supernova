@@ -40,9 +40,11 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		height: 0;
-		transform: translateY(4.5rem);
+		transform: translateY(3rem);
 		margin: auto;
 		padding-left: 1rem;
+		position: relative;
+		z-index: 5;
 		.owl-dot {
 			width: 7px;
 			height: 7px;
@@ -61,6 +63,7 @@
 	@include max-screen($large_mobile) {
 		&-nav {
 			min-width: inherit;
+			width: auto;
 		}
 		&-arrow {
 			width: 34px;

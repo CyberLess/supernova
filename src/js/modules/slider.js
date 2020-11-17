@@ -100,7 +100,37 @@ var slider = {
 			$('.js-slider-to:nth-child(' +item+ ')').addClass('is-active');
 			
 			console.log(item);
-		})
+		});
+		
+		$('.js-slider-partner').each(function(){
+			
+			let prev = $(this).find('.owl-arrow_prev');
+			let next = $(this).find('.owl-arrow_next');
+			let parent = $(this).closest('.owl-carousel');
+			
+			if ( $(window).innerWidth() < 581 ) {
+				$('.partner__item').unwrap();
+			}
+			
+			$(this).owlCarousel({
+				loop: true,
+				nav: false,
+				dots: false,
+				smartSpeed: 500,
+				items: 1,
+				responsive:{
+					0:{
+						autoWidth: true,
+						smartSpeed: 300,
+					},
+					580:{
+						autoWidth: false,
+						items: 1,
+						smartSpeed: 500,
+					}
+				}
+			});
+		});
 		
 	}
 };

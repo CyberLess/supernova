@@ -83,6 +83,9 @@
 			&-wrap {
 				display: block;
 			}
+			&.is-visible {
+				margin-top: 2rem;
+			}
 		}
 		&__head {
 			margin-bottom: 20px;
@@ -99,7 +102,7 @@
 			max-width: 205px;
 			text-align: left;
 		}
-		&__bottom {
+		&__bottom:not(.is-visible) {
 			display: none;
 		}
 	}
