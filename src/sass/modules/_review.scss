@@ -1,0 +1,281 @@
+.review {
+	margin-top: 20rem;
+	&__head {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__slider {
+		margin-top: 10rem;
+	}
+	
+	&__link {
+		display: inline-flex;
+		align-items: center;
+		color: $pink;
+		text-decoration: underline;
+		margin-top: 2.2rem;
+		&-icon {
+			margin-right: 1.5rem;
+		}
+		.icon-vk {
+			width: 2.4rem;
+			height: 1.6rem;
+			fill: $pink;
+		}
+		.icon-inst {
+			width: 2.2rem;
+			height: 2.2rem;
+			stroke: $pink;
+			fill: none;
+			stroke-width: 1.5;
+		}
+		&-text {
+			font-weight: bold;
+		}
+	}
+	
+	&__content {
+		font-size: 2rem;
+		line-height: 30/20*1;
+		margin-top: 4.5rem;
+		max-width: 60rem;
+		padding-right: 2rem;
+		min-height: 18rem;
+		p {
+			&:not(:last-child) {
+				margin-bottom: 2rem;
+			}
+		}
+	}
+	
+	&__play {
+		margin-top: 5rem;
+	}
+	
+	&-bg {
+		background: url(/img/review__bg.png) top no-repeat;
+		background-size: auto 100%;
+		min-height: 100rem;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+	}
+	&-main {
+		margin-top: 17rem;
+		text-align: center;
+		padding-bottom: 20rem;
+		
+		&__desc {
+			max-width: 57rem;
+			margin: 5rem auto 0 auto;
+		}
+		&__play {
+			margin-top: 10rem;
+		}
+	}
+	&-about {
+		margin-top: 20rem;
+		&__title {
+			text-align: center;
+		}
+		
+		&__slider {
+			margin-top: 10rem;
+		}
+		&__foto {
+			width: 560/1336*100%;
+			position: relative;
+			border-radius: 5px;
+			overflow: hidden;
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(#000, .49);
+			}
+		}
+		&__right {
+			width: 675/1336*100%;
+		}
+		&__ava {
+			position: relative;
+			width: 13.2rem;
+			height: 13.2rem;
+			overflow: hidden;
+			border-radius: 100%;
+			margin-right: 3rem;
+		}
+		
+		&__play {
+			position: absolute;
+			z-index: 2;
+			left: 3rem;
+			bottom: 3rem;
+		}
+		
+		&__head {
+			display: flex;
+			align-items: center;
+		}
+		
+		&__position {
+			margin-top: 1.3rem;
+			color: rgba(#fff, .5);
+		}
+		
+		&__logo {
+			max-width: 10rem;
+			margin-top: 1.8rem;
+			img {
+				width: auto!important;
+			}
+		}
+		
+		&__content {
+			font-size: 2rem;
+			line-height: 30/20*1;
+			margin-top: 5rem;
+			p {
+				&:not(:last-child) {
+					margin-bottom: 2rem;
+				}
+			}
+		}
+		
+		&__nav {
+			margin-top: 5rem;
+			&.is-hidden {
+				display: none;
+			}
+		}
+		&__bottom {
+			.play {
+				display: none;
+			}
+		}
+	}
+	
+	@include max-screen($small_mobile) {
+		margin-top: 80px;
+		&__slider {
+			margin-top: 30px;
+		}
+		&__content {
+			margin-top: 20px;
+			font-size: 12px;
+			line-height: 15px;
+			min-height: inherit;
+		}
+		&__play {
+			margin-top: 30px;
+		}
+		&__nav {
+			position: absolute;
+			bottom: 3px;
+			right: 10px;
+			z-index: 50;
+		}
+		&__link {
+			font-size: 12px;
+			font-weight: normal;
+			margin-top: 10px;
+			&-icon {
+				margin-right: 8px;
+			}
+			.icon-vk {
+				padding-top: .3rem;
+				width: 1.6rem;
+				height: 1.2rem;
+				fill: $pink;
+			}
+			.icon-inst {
+				width: 2.2rem;
+				height: 2.2rem;
+				stroke: $pink;
+				fill: none;
+				stroke-width: 1.5;
+			}
+		}
+		&-bg {
+			min-height: 550px;
+		}
+		&-main {
+			text-align: left;
+			padding-bottom: 80px;
+			margin-bottom: 0;
+			&__desc {
+				margin-top: 20px;
+			}
+			
+			&__play {
+				margin-top: 30px;
+			}
+		}
+		&-about {
+			margin-top: 0;
+			&__slider {
+				margin-top: 30px;
+			}
+			&__title {
+				text-align: left;
+				span {
+					display: block;
+				}
+			}
+			&__foto {
+				display: none;
+			}
+			&__right {
+				width: 100%;
+			}
+			&__ava {
+				width: 80px;
+				height: 80px;
+				margin-right: 20px;
+			}
+			&__position {
+				margin-top: 10px;
+			}
+			&__logo {
+				max-width: 80px;
+				margin-top: 10px;
+			}
+			
+			&__content {
+				margin-top: 20px;
+				font-size: 12px;
+				line-height: 15px;
+			}
+			&__bottom {
+				margin-top: 40px;
+				justify-content: space-between;
+				align-items: center;
+				display: flex;
+				.play {
+					display: inline-flex;
+					position: static;
+				}
+			}
+			&__nav {
+				display: none;
+			}
+			&__nav.is-hidden {
+				display: block;
+				.review-about__nav {
+					display: flex;
+					position: absolute;
+					bottom: 3px;
+					right: 20px;
+					z-index: 50;
+				}
+			}
+		}
+	}
+}

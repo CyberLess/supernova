@@ -80,6 +80,35 @@ var slider = {
 			});
 		});
 		
+		$('.js-slider-review').each(function(){
+			
+			let prev = $(this).find('.owl-arrow_prev');
+			let next = $(this).find('.owl-arrow_next');
+			let parent = $(this).closest('.owl-carousel');
+			
+			$(this).owlCarousel({
+				loop: true,
+				nav: false,
+				dots: false,
+				smartSpeed: 500,
+				items: 2,
+				responsive:{
+					0:{
+						items: 1,
+						smartSpeed: 300,
+						autoHeight: true
+					},
+					580:{
+						smartSpeed: 500,
+						items: 2,
+						autoHeight: false
+					}
+				}
+			});
+		});
+		
+		
+		
 		$(document).on("click", '.owl-arrow', function() {
 
 			let dir = $(this).hasClass('owl-arrow_next') ? 'next' : 'prev';

@@ -312,6 +312,39 @@ block content
 							img(src="/img/partner8.png")
 						+e.item-inner
 	include ../layouts/reward
+	+b.SECTION.gallery
+		+e.wrap.wrap
+			+e.head
+				+e.H2.title.h2
+					span.string.is-center
+						span.word 
+							span Как мы 
+						span.word.stroke 
+							span отдыхаем
+				include ../layouts/owl-nav
+		+e.slider.slider__.js-slider.owl-carousel
+			+slide('card__slide1.jpg')
+				h4 Парковая зона
+				p
+					| ХХХХ м2 зеленых насаждений и газонов 4 
+					br
+					| маршрута на 3,5 км прогулочных тропинок
+			+slide('card__slide1.jpg')
+				h4 Парковая зона
+				p
+					| ХХХХ м2 зеленых насаждений и газонов 4 
+					br
+					| маршрута на 3,5 км прогулочных тропинок
+			+slide('card__slide1.jpg')
+				h4 Парковая зона
+				p
+					| ХХХХ м2 зеленых насаждений и газонов 4 
+					br
+					| маршрута на 3,5 км прогулочных тропинок
+		+e.bottom
+			+e.bottom-wrap.wrap._middle
+				include ../layouts/owl-nav
+	include ../layouts/contacts
 block scripts
 	script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
 	script(src="https://code.jquery.com/jquery-3.3.1.min.js")

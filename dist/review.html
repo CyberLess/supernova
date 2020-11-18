@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>Отзывы</title>
+    <link rel="stylesheet" href="/app/css/app.css?v=1605736752661">
+    <script>
+        function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
+    </script>
+</head>
+
+<body>
+    <div class="hidden">
+        <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="whiteToTransparent">
+                    <stop offset="40%" stop-color="rgba(0,0,0,.1"></stop>
+                    <stop offset="100%" stop-color="rgba(255,255,255,1"></stop>
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
+    <main>
+        <div class="panel" id="catalog-panel">
+            <div class="panel__inner">
+                <div class="panel__close hamburger is-active js-panel-close">
+                    <div class="hamburger__line"></div>
+                    <div class="hamburger__line"></div>
+                </div>
+                <div class="panel__wrap wrap">
+                    <div class="panel__title h2"><span class="stroke">топ 20 </span>предложений
+                        <br>недвижимости</div>
+                    <form class="panel__nav form" action="">
+                        <div class="panel__nav-row flex">
+                            <div class="panel__nav-cell">
+                                <div class="panel__select multiply is-static">
+                                    <div class="multiply__top">
+                                        <div class="multiply__top-inner flex">
+                                            <div class="multiply__name multiply__name_big p">Класс жилья</div>
+                                            <div class="multiply__arrow">
+                                                <svg class="icon icon-down" viewBox="0 0 16 9">
+                                                    <use xlink:href="/app/icons/sprite.svg#down"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="multiply__list">
+                                        <div class="multiply__list-inner">
+                                            <div class="multiply__list-item">
+                                                <label class="multiply__checkbox checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="class[]" value="Комфорт" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Комфорт</span>
+                                                </label>
+                                            </div>
+                                            <div class="multiply__list-item">
+                                                <label class="multiply__checkbox checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="class[]" value="Бизнес" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Бизнес</span>
+                                                </label>
+                                            </div>
+                                            <div class="multiply__list-item">
+                                                <label class="multiply__checkbox checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="class[]" value="Премиум" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Премиум</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel__nav-cell">
+                                <div class="panel__select multiply is-static">
+                                    <div class="multiply__top">
+                                        <div class="multiply__top-inner flex">
+                                            <div class="multiply__name multiply__name_big p">Направление</div>
+                                            <div class="multiply__arrow">
+                                                <svg class="icon icon-down" viewBox="0 0 16 9">
+                                                    <use xlink:href="/app/icons/sprite.svg#down"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="multiply__list">
+                                        <div class="multiply__list-inner">
+                                            <div class="multiply__list-item">
+                                                <label class="multiply__checkbox checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="direction[]" value="Север" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Север</span>
+                                                </label>
+                                            </div>
+                                            <div class="multiply__list-item">
+                                                <label class="multiply__checkbox checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="direction[]" value="Юг" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Юг</span>
+                                                </label>
+                                            </div>
+                                            <div class="multiply__list-item">
+                                                <label class="multiply__checkbox checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="direction[]" value="Центр" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Центр</span>
+                                                </label>
+                                            </div>
+                                            <div class="multiply__list-item">
+                                                <label class="multiply__checkbox checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="direction[]" value="Запад" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Запад</span>
+                                                </label>
+                                            </div>
+                                            <div class="multiply__list-item">
+                                                <label class="multiply__checkbox checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="direction[]" value="Восток" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Восток</span>
+                                                </label>
+                                            </div>
+                                            <div class="multiply__list-item">
+                                                <label class="multiply__checkbox checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="direction[]" value="Все" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Все</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel__nav-cell">
+                                <div class="panel__select multiply is-static">
+                                    <div class="multiply__top">
+                                        <div class="multiply__top-inner flex">
+                                            <div class="multiply__name multiply__name_big p">Срок сдачи</div>
+                                            <div class="multiply__arrow">
+                                                <svg class="icon icon-down" viewBox="0 0 16 9">
+                                                    <use xlink:href="/app/icons/sprite.svg#down"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="multiply__list">
+                                        <div class="multiply__list-inner">
+                                            <div class="multiply__list-item">
+                                                <label class="multiply__checkbox checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="time[]" value="Сдан" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Сдан</span>
+                                                </label>
+                                            </div>
+                                            <div class="multiply__list-item">
+                                                <label class="multiply__checkbox checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="time[]" value="2020" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>2020</span>
+                                                </label>
+                                            </div>
+                                            <div class="multiply__list-item">
+                                                <label class="multiply__checkbox checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="time[]" value="2021" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>2021</span>
+                                                </label>
+                                            </div>
+                                            <div class="multiply__list-item">
+                                                <label class="multiply__checkbox checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="time[]" value="2022" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>2022</span>
+                                                </label>
+                                            </div>
+                                            <div class="multiply__list-item">
+                                                <label class="multiply__checkbox checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="time[]" value="2023" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>2023</span>
+                                                </label>
+                                            </div>
+                                            <div class="multiply__list-item">
+                                                <label class="multiply__checkbox checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="time[]" value="Не важно" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Не важно</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="panel__bottom">
+                <div class="panel__wrap wrap">
+                    <div class="panel__row flex">
+                        <div class="panel__cell"><a class="panel__button btn btn_white js-panel-close"><span class="btn__text"> отменить</span></a>
+                        </div>
+                        <div class="panel__cell"><a class="panel__button btn js-panel-close"><span class="btn__text"> применить</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="mobile">
+            <div class="mobile__center">
+                <ul class="mobile__list">
+                    <li class="mobile__list-item"><a class="mobile__list-link middle" href="#">Услуги</a>
+                    </li>
+                    <li class="mobile__list-item"><a class="mobile__list-link middle" href="#">О нас</a>
+                    </li>
+                    <li class="mobile__list-item"><a class="mobile__list-link middle" href="#">Отзывы</a>
+                    </li>
+                    <li class="mobile__list-item"><a class="mobile__list-link middle" href="#">Контакты</a>
+                    </li>
+                </ul>
+                <div class="mobile__bottom">
+                    <div class="mobile__bottom-part"><a class="mobile__phone h6 h6_big" href="tel:+74594583693">+7 459 458 36 93</a>
+                    </div>
+                    <div class="mobile__bottom-part">
+                        <div class="mobile__recall p">Обратный звонок</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <header class="header is-fluid">
+            <div class="header__wrap wrap">
+                <div class="header__row flex flex_vertical flex_justify">
+                    <div class="header__cell header__cell_left">
+                        <ul class="header__menu menu flex flex_vertical">
+                            <li class="menu__item"><a class="menu__link middle" href="#">Услуги</a>
+                            </li>
+                            <li class="menu__item"><a class="menu__link middle" href="#">О нас</a>
+                            </li>
+                            <li class="menu__item"><a class="menu__link middle" href="#">Отзывы</a>
+                            </li>
+                            <li class="menu__item"><a class="menu__link middle" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__cell header__cell_center"><a class="header__logo logo" href="#"><span class="logo__img js-lottie" data-file="logoDefault"></span><img class="logo__img" src="/app/img/logo_full.svg" alt="" role="presentation"/></a>
+                    </div>
+                    <div class="header__cell header__cell_right flex flex_vertical flex_right"><a class="header__phone phone h5" href="tel:+74594583693">+7 459 458 36 93</a><a class="header__link middle" href="#">Обратный звонок</a>
+                    </div>
+                    <div class="header__cell header__cell_hamburger">
+                        <div class="hamburger js-mobile">
+                            <div class="hamburger__line"></div>
+                            <div class="hamburger__line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="header-line">
+            <div class="header-line__wrap wrap">
+                <div class="header-line__line"></div>
+            </div>
+        </div>
+        <div class="breadcrumbs">
+            <div class="breadcrumbs__wrap wrap">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">Отзывы</li>
+                </ul>
+            </div>
+        </div>
+        <div class="review-bg"></div>
+        <section class="review-main">
+            <div class="review-main__wrap wrap wrap_middle">
+                <h1 class="review-main__title h2"><span class="string is-center"><span class="word"> <span>Отзывы от клиентов </span></span><br><span class="word stroke"> <span>и партнеров</span></span></span></h1>
+                <div class="review-main__desc p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</div>
+                <a class="review-main__play play js-modal" href="#popup-video" data-youtube="https://www.youtube.com/embed/tWkodax0vKE"><span class="play__btn"><svg class="icon icon-play" viewBox="0 0 14 16"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span><span class="play__text"> Все о работе с нами</span>
+                </a>
+            </div>
+        </section>
+        <section class="review-about">
+            <div class="review-about__wrap wrap wrap_middle">
+                <h1 class="review-about__title h2"><span class="string is-center"><span class="word"> <span>Партнеры </span></span><span class="word stroke"> <span>о нас</span></span></span></h1>
+                <div class="review-about__slider js-slider-about owl-carousel">
+                    <div class="review-about__slide">
+                        <div class="review-about__row flex flex_justify flex_start">
+                            <div class="review-about__foto">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/review__foto.webp">
+                                        <img src="/app/img/review__foto.jpg" class="review-about__foto-img" alt="" role="presentation" />
+                                </picture><a class="review-about__play play js-modal" href="#popup-video" data-youtube="https://www.youtube.com/embed/tWkodax0vKE"><span class="play__btn"><svg class="icon icon-play" viewBox="0 0 14 16"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span><span class="play__text"> Видеоотзыв<br>или фото</span></a>
+                            </div>
+                            <div class="review-about__right">
+                                <div class="review-about__head">
+                                    <div class="review-about__ava">
+                                        <picture>
+                                            <source type="image/webp" srcset="/app/img/review__foto.webp">
+                                                <img src="/app/img/review__foto.jpg" class="review-about__ava-img object-fit" alt="" role="presentation" />
+                                        </picture>
+                                    </div>
+                                    <div class="review-about__info">
+                                        <div class="review-about__name h6">Василий васильев</div>
+                                        <div class="review-about__position p">Какой то важный чел</div>
+                                        <div class="review-about__logo">
+                                            <picture>
+                                                <source type="image/webp" srcset="/app/img/partner6.webp">
+                                                    <img src="/app/img/partner6.png" class="review-about__logo-img" alt="" role="presentation" />
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-about__content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus
+                                        et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate.</p>
+                                </div>
+                                <div class="review-about__bottom"><a class="review-about__play play js-modal" href="#popup-video" data-youtube="https://www.youtube.com/embed/tWkodax0vKE"><span class="play__btn"><svg class="icon icon-play" viewBox="0 0 14 16"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span><span class="play__text"> Видеоотзыв<br>или фото</span></a>
+                                    <div
+                                    class="review-about__nav">
+                                        <div class="review-about__nav owl-nav">
+                                            <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
+                                                <svg class="icon icon-prev" viewBox="0 0 15 16">
+                                                    <use xlink:href="/app/icons/sprite.svg#prev"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="owl-nav__owl-arrow owl-arrow owl-arrow_next">
+                                                <svg class="icon icon-next" viewBox="0 0 16 16">
+                                                    <use xlink:href="/app/icons/sprite.svg#next"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-about__slide">
+                    <div class="review-about__row flex flex_justify flex_start">
+                        <div class="review-about__foto">
+                            <picture>
+                                <source type="image/webp" srcset="/app/img/review__foto.webp">
+                                    <img src="/app/img/review__foto.jpg" class="review-about__foto-img" alt="" role="presentation" />
+                            </picture><a class="review-about__play play js-modal" href="#popup-video" data-youtube="https://www.youtube.com/embed/tWkodax0vKE"><span class="play__btn"><svg class="icon icon-play" viewBox="0 0 14 16"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span><span class="play__text"> Видеоотзыв<br>или фото</span></a>
+                        </div>
+                        <div class="review-about__right">
+                            <div class="review-about__head">
+                                <div class="review-about__ava">
+                                    <picture>
+                                        <source type="image/webp" srcset="/app/img/review__foto.webp">
+                                            <img src="/app/img/review__foto.jpg" class="review-about__ava-img object-fit" alt="" role="presentation" />
+                                    </picture>
+                                </div>
+                                <div class="review-about__info">
+                                    <div class="review-about__name h6">Василий васильев</div>
+                                    <div class="review-about__position p">Какой то важный чел</div>
+                                    <div class="review-about__logo">
+                                        <picture>
+                                            <source type="image/webp" srcset="/app/img/partner6.webp">
+                                                <img src="/app/img/partner6.png" class="review-about__logo-img" alt="" role="presentation" />
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-about__content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus
+                                    et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate.</p>
+                            </div>
+                            <div class="review-about__bottom"><a class="review-about__play play js-modal" href="#popup-video" data-youtube="https://www.youtube.com/embed/tWkodax0vKE"><span class="play__btn"><svg class="icon icon-play" viewBox="0 0 14 16"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span><span class="play__text"> Видеоотзыв<br>или фото</span></a>
+                                <div
+                                class="review-about__nav">
+                                    <div class="review-about__nav owl-nav">
+                                        <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
+                                            <svg class="icon icon-prev" viewBox="0 0 15 16">
+                                                <use xlink:href="/app/icons/sprite.svg#prev"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="owl-nav__owl-arrow owl-arrow owl-arrow_next">
+                                            <svg class="icon icon-next" viewBox="0 0 16 16">
+                                                <use xlink:href="/app/icons/sprite.svg#next"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="review-about__nav is-hidden">
+                <div class="review-about__nav owl-nav">
+                    <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
+                        <svg class="icon icon-prev" viewBox="0 0 15 16">
+                            <use xlink:href="/app/icons/sprite.svg#prev"></use>
+                        </svg>
+                    </div>
+                    <div class="owl-nav__owl-arrow owl-arrow owl-arrow_next">
+                        <svg class="icon icon-next" viewBox="0 0 16 16">
+                            <use xlink:href="/app/icons/sprite.svg#next"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="review">
+            <div class="review__wrap wrap wrap_middle">
+                <div class="review__head">
+                    <h1 class="review__title h2"><span class="string is-center"><span class="word"> <span>Отзывы </span></span><span class="word stroke"> <span>наших </span></span><br><span class="word stroke"> <span>клиентов</span></span></span></h1>
+                    <div class="review__nav">
+                        <div class="review__nav owl-nav">
+                            <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
+                                <svg class="icon icon-prev" viewBox="0 0 15 16">
+                                    <use xlink:href="/app/icons/sprite.svg#prev"></use>
+                                </svg>
+                            </div>
+                            <div class="owl-nav__owl-arrow owl-arrow owl-arrow_next">
+                                <svg class="icon icon-next" viewBox="0 0 16 16">
+                                    <use xlink:href="/app/icons/sprite.svg#next"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review__slider js-slider-review owl-carousel">
+                    <div class="review__slide">
+                        <div class="review__name h6">Василий васильев</div><a class="review__link" href="https://vk.com/id9684968" trget="_blank"><span class="review__link-icon"><svg class="icon icon-vk" viewBox="0 0 33 19"><use xlink:href="/app/icons/sprite.svg#vk"></use></svg></span><span class="review__link-text p">https://vk.com/id9684968</span></a>
+                        <div
+                        class="review__content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
+                    </div><a class="review__play play js-img-modal" href="/app/img/letter.jpg"><span class="play__btn"><svg class="icon icon-picture" viewBox="0 0 22 19"><use xlink:href="/app/icons/sprite.svg#picture"></use></svg></span><span class="play__text">Фото отзыв?)</span></a>
+                </div>
+                <div class="review__slide">
+                    <div class="review__name h6">Василий васильев</div><a class="review__link" href="https://vk.com/id9684968" trget="_blank"><span class="review__link-icon"><svg class="icon icon-inst" viewBox="0 0 27 28"><use xlink:href="/app/icons/sprite.svg#inst"></use></svg></span><span class="review__link-text p">https://vk.com/id9684968</span></a>
+                    <div
+                    class="review__content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis
+                            dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate,</p>
+                </div><a class="review__play play js-modal" href="#popup-video" data-youtube="https://www.youtube.com/embed/tWkodax0vKE"><span class="play__btn"><svg class="icon icon-play" viewBox="0 0 14 16"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span><span class="play__text"> Смотреть <br>видеоотзыв</span></a>
+            </div>
+            </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__wrap wrap">
+                <div class="footer__row flex flex_justify">
+                    <div class="footer__cell">
+                        <div class="footer__label p">Главная</div>
+                        <ul class="footer__list">
+                            <li class="footer__list-item"><a class="footer__list-link middle" href="#">О нас</a>
+                            </li>
+                            <li class="footer__list-item"><a class="footer__list-link middle" href="#">Отзывы</a>
+                            </li>
+                            <li class="footer__list-item"><a class="footer__list-link middle" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__cell">
+                        <div class="footer__label p">Услуги</div>
+                        <ul class="footer__list">
+                            <li class="footer__list-item"><a class="footer__list-link middle" href="#">Купить</a>
+                            </li>
+                            <li class="footer__list-item"><a class="footer__list-link middle" href="#">Продать</a>
+                            </li>
+                            <li class="footer__list-item"><a class="footer__list-link middle" href="#">Квартира в зачет</a>
+                            </li>
+                            <li class="footer__list-item"><a class="footer__list-link middle" href="#">Ипотека</a>
+                            </li>
+                            <li class="footer__list-item"><a class="footer__list-link middle" href="#">Инвестиции</a>
+                            </li>
+                            <li class="footer__list-item"><a class="footer__list-link middle" href="#">Коммерция</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__cell footer__cell_center"><a class="footer__logo logo" href="#"><span class="logo__img js-lottie" data-file="logoDefault"></span><img class="logo__img" src="/app/img/logo_full.svg" alt="" role="presentation"/></a>
+                    </div>
+                    <div class="footer__cell footer__cell_big footer__cell_right">
+                        <ul class="footer__socials socials flex flex_vertical flex_right">
+                            <li class="socials__item">
+                                <a class="socials__link socials__link_vk" href="#" target="_blank">
+                                    <svg class="icon icon-vk" viewBox="0 0 33 19">
+                                        <use xlink:href="/app/icons/sprite.svg#vk"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a class="socials__link socials__link_wa" href="#" target="_blank">
+                                    <svg class="icon icon-wa" viewBox="0 0 28 28">
+                                        <use xlink:href="/app/icons/sprite.svg#wa"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a class="socials__link socials__link_fb" href="#" target="_blank">
+                                    <svg class="icon icon-fb" viewBox="0 0 17 31">
+                                        <use xlink:href="/app/icons/sprite.svg#fb"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a class="socials__link socials__link_inst" href="#" target="_blank">
+                                    <svg class="icon icon-inst" viewBox="0 0 27 28">
+                                        <use xlink:href="/app/icons/sprite.svg#inst"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a class="socials__link socials__link_tg" href="#" target="_blank">
+                                    <svg class="icon icon-tg" viewBox="0 0 30 25">
+                                        <use xlink:href="/app/icons/sprite.svg#tg"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul><a class="footer__polit middle" href="#">Политика конфиденциальности</a>
+                        <div class="footer__text middle">© 2020 ООО «Супернова»
+                            <br>Все права защищены</div><a class="footer__creator middle" href="https://karanikola.ru/" target="_blank">Создание сайта - <span class="b">Karanikola</span></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <div class="modals-apartment mfp-hide" id="apartment">
+        <div class="modals-apartment__row flex">
+            <div class="modals-apartment__left">
+                <div class="modals-apartment__preview">
+                    <picture>
+                        <source type="image/webp" srcset="/app/img/apartment__img.webp">
+                            <img src="/app/img/apartment__img.jpg" class="modals-apartment__preview-img object-fit" alt="" role="presentation" />
+                    </picture>
+                </div>
+            </div>
+            <div class="modals-apartment__right">
+                <div class="modals-apartment__top flex flex_justify flex_vertical">
+                    <div class="modals-apartment__decoration">
+                        <div class="modals-apartment__decoration-icon">
+                            <svg class="icon icon-decoration" viewBox="0 0 28 28">
+                                <use xlink:href="/app/icons/sprite.svg#decoration"></use>
+                            </svg>
+                        </div>
+                        <div class="modals-apartment__decoration-text">С отделкой</div>
+                    </div>
+                    <div class="modals-apartment__area">
+                        <div class="modals-apartment__area-icon">
+                            <svg class="icon icon-area" viewBox="0 0 37 38">
+                                <use xlink:href="/app/icons/sprite.svg#area"></use>
+                            </svg>
+                        </div>
+                        <div class="modals-apartment__area-text">43,9 м2</div>
+                    </div>
+                    <div class="modals-apartment__quantity">
+                        <div class="modals-apartment__quantity-icon">
+                            <svg class="icon icon-cube" viewBox="0 0 20 35">
+                                <use xlink:href="/app/icons/sprite.svg#cube"></use>
+                            </svg>
+                        </div>
+                        <div class="modals-apartment__quantity-text">1</div>
+                    </div>
+                </div>
+                <form class="modals-apartment__form" action="/app/mail">
+                    <input class="js-subj-input" type="hidden" name="subj" value="Узнать цену">
+                    <div class="modals-apartment__field field">
+                        <input class="field__input" name="name" type="text" />
+                        <div class="field__label">Имя</div>
+                        <div class="field__icon">
+                            <svg class="icon icon-sucsess" viewBox="0 0 31 28">
+                                <use xlink:href="/app/icons/sprite.svg#sucsess"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="modals-apartment__field field">
+                        <input class="field__input" name="phone" type="text" />
+                        <div class="field__label">Телефон*</div>
+                        <div class="field__icon">
+                            <svg class="icon icon-sucsess" viewBox="0 0 31 28">
+                                <use xlink:href="/app/icons/sprite.svg#sucsess"></use>
+                            </svg>
+                        </div>
+                        <div class="field__error">Введите телефон!</div>
+                    </div>
+                    <button class="modals-apartment__button btn js-subj-btn"><span class="btn__text"> Узнать цену</span>
+                    </button>
+                    <button class="modals-apartment__link js-subj-btn">Записаться на просмотр</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modals-video mfp-hide" id="popup-video">
+        <iframe></iframe>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="/app/js/app.js?v=1605736752730"></script>
+</body>
+
+</html>

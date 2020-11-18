@@ -1,0 +1,139 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Отзывы';
+
+block content
+	+b.header-line
+		+e.wrap.wrap
+			+e.line
+	+b.breadcrumbs
+		+e.wrap.wrap
+			+e.UL.list
+				+e.LI.item
+					+e.A.link(href="#") Главная
+				+e.LI.item
+					| Отзывы
+	+b.review-bg
+	+b.SECTION.review-main
+		+e.wrap.wrap._middle
+			+e.H1.title.h2
+				span.string.is-center
+					span.word 
+						span Отзывы от клиентов 
+					br
+					span.word.stroke 
+						span и партнеров
+			+e.desc.p
+				| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+			+play('https://www.youtube.com/embed/tWkodax0vKE')
+				| Все о работе с нами
+	+b.SECTION.review-about
+		+e.wrap.wrap._middle
+			+e.H1.title.h2
+				span.string.is-center
+					span.word 
+						span Партнеры 
+					span.word.stroke 
+						span о нас
+			+e.slider.js-slider-about.owl-carousel
+				+e.slide
+					+e.row.flex._justify._start
+						+e.foto
+							+e.IMG.foto-img(src="/img/review__foto.jpg")
+							+play('https://www.youtube.com/embed/tWkodax0vKE')
+								| Видеоотзыв
+								br
+								| или фото
+						+e.right
+							+e.head
+								+e.ava
+									+e.IMG.ava-img.object-fit(src="/img/review__foto.jpg")
+								+e.info
+									+e.name.h6 Василий васильев
+									+e.position.p Какой то важный чел
+									+e.logo
+										+e.IMG.logo-img(src="/img/partner6.png")
+							+e.content
+								p
+									| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate.
+							+e.bottom
+								+play('https://www.youtube.com/embed/tWkodax0vKE')
+									| Видеоотзыв
+									br
+									| или фото
+								+e.nav
+									include ../layouts/owl-nav
+				+e.slide
+					+e.row.flex._justify._start
+						+e.foto
+							+e.IMG.foto-img(src="/img/review__foto.jpg")
+							+play('https://www.youtube.com/embed/tWkodax0vKE')
+								| Видеоотзыв
+								br
+								| или фото
+						+e.right
+							+e.head
+								+e.ava
+									+e.IMG.ava-img.object-fit(src="/img/review__foto.jpg")
+								+e.info
+									+e.name.h6 Василий васильев
+									+e.position.p Какой то важный чел
+									+e.logo
+										+e.IMG.logo-img(src="/img/partner6.png")
+							+e.content
+								p
+									| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate.
+							+e.bottom
+								+play('https://www.youtube.com/embed/tWkodax0vKE')
+									| Видеоотзыв
+									br
+									| или фото
+								+e.nav
+									include ../layouts/owl-nav
+			+e.nav.is-hidden
+				include ../layouts/owl-nav
+	+b.SECTION.review
+		+e.wrap.wrap._middle
+			+e.head
+				+e.H1.title.h2
+					span.string.is-center
+						span.word 
+							span Отзывы 
+						span.word.stroke 
+							span наших 
+						br
+						span.word.stroke 
+							span клиентов
+				+e.nav
+					include ../layouts/owl-nav
+			+e.slider.js-slider-review.owl-carousel
+				+e.slide
+					+e.name.h6 Василий васильев
+					+e.A.link(href="https://vk.com/id9684968", trget="_blank")
+						+e.link-icon
+							+icon('vk')
+						+e.link-text.p https://vk.com/id9684968
+					+e.content
+						p
+							| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+					+e.A.play.play__.js-img-modal(href='/app/img/letter.jpg')
+						+e.SPAN.btn
+							+icon('picture')
+						+e.SPAN.text Фото отзыв?)
+				+e.slide
+					+e.name.h6 Василий васильев
+					+e.A.link(href="https://vk.com/id9684968", trget="_blank")
+						+e.link-icon
+							+icon('inst')
+						+e.link-text.p https://vk.com/id9684968
+					+e.content
+						p
+							| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate,
+					+play('https://www.youtube.com/embed/tWkodax0vKE')
+						| Смотреть 
+						br
+						| видеоотзыв
+block scripts
+	script(src="https://code.jquery.com/jquery-3.3.1.min.js")
+	script(src="/js/app.js?v=" + Date.now())

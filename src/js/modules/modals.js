@@ -92,6 +92,21 @@ var modals = {
 				}
 			}, 0);
 		});*/
+		
+		$(".js-img-modal").magnificPopup({
+			type: "image",
+			closeOnContentClick: true,
+			closeBtnInside: true,
+			closeMarkup: '<div class="modals__close close js-close-modal"><svg class="icon icon-close" viewBox="0 0 14 14"><use xlink:href="/app/icons/sprite.svg#close"></use></svg></div>',
+			mainClass: 'css-modal-animate',
+			image: {
+				verticalFit: true,
+			},
+			zoom: {
+				enabled: false,
+				duration: 500, // don't foget to change the duration also in CSS
+			},
+		});
 
 	}
 

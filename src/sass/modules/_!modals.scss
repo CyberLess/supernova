@@ -206,6 +206,29 @@
 			}
 		}
 	}
+	
+	&-video {
+		max-width: 133.36rem;
+		height: 60rem;
+		margin: auto;
+		position: relative;
+		iframe {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			border: 0;
+		}
+		
+		@include max-screen($large_mobile) {
+			height: 320px;
+		}
+	}
+}
+
+img.mfp-img {
+	padding: 0;
 }
 
 .css-modal-animate{
