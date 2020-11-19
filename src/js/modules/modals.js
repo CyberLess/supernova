@@ -80,7 +80,7 @@ var modals = {
 				closeMarkup: '<div class="modals__close close js-close-modal"><svg class="icon icon-close" viewBox="0 0 14 14"><use xlink:href="/app/icons/sprite.svg#close"></use></svg></div>',
 				mainClass: 'css-modal-animate',				
 				items: {
-					src: '#apartment',
+					src: '#popup-form6',
 					type: 'inline'
 				},
 				callbacks: {

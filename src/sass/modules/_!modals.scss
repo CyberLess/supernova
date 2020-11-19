@@ -225,6 +225,108 @@
 			height: 320px;
 		}
 	}
+	
+	&-form {
+		position: fixed;
+		right: 0;
+		top: 0;
+		height: 100%;
+		width: 103.6rem;
+		background: url(/img/form__bg.png) top no-repeat;
+		background-size: auto 100%;
+		display: flex;
+		align-items: center;
+		padding-left: 46rem;
+		
+		transform: translateX(100%);
+		transition: ease .7s;
+		
+		&__img {
+			position: absolute;
+			bottom: 0;
+			pointer-events: none;
+			&_first {
+				width: 69.6rem;
+				left: -29rem;
+			}
+			&_second {
+				width: 67.2rem;
+				left: -18rem;
+			}
+			&_third {
+				width: 54.3rem;
+				left: -10rem;
+			}
+			&_fourth {
+				width: 63.6rem;
+				left: -16rem;
+			}
+			&_fifth {
+				width: 112rem;
+				left: -42em;
+			}
+			&_sixth {
+				width: 112.3rem;
+				left: -40em;
+			}
+		}
+		&__form {
+			max-width: 43.5rem;
+		}
+		
+		&__messengers {
+			margin-top: 5rem;
+			padding-bottom: 2rem;
+		}
+		&__field {
+			margin-top: 3rem;
+		}
+		
+		&__hidden {
+			display: none;
+		}
+		
+		&__button {
+			width: 100%;
+			margin-top: 5rem;
+		}
+		
+		@include max-screen($large_tablet) {
+			&__title {
+				br {
+					display: none;
+				}
+			}
+		}
+		
+		@include max-screen($small_tablet) {
+			
+			padding: 50px 20px!important;
+			&__img {
+				display: none;
+			}
+			&__form {
+				width: 100%;
+				max-width: 45rem;
+				margin: auto;
+			}
+		}
+		
+		@include max-screen($large_desktop) {
+			padding-left: 40rem;
+		}
+		
+		@include max-screen($large_mobile) {
+			width: 100%;
+			&__field {
+				margin-top: 20px;
+			}
+			&__messengers {
+				padding-bottom: 0;
+				margin-top: 30px;
+			}
+		}
+	}
 }
 
 img.mfp-img {
@@ -274,6 +376,10 @@ img.mfp-img {
 			transform: translateY(0);
 			transition-delay: .2s;
 		}
+		
+		.modals-form {
+			transform: translateX(0);
+		}
 	}
 
 	// animate out
@@ -299,6 +405,9 @@ img.mfp-img {
 		.modals-apartment {
 			opacity: 0;
 			transform: translateY(-30px);
+		}
+		.modals-form {
+			transform: translateX(100%);
 		}
 	}
 

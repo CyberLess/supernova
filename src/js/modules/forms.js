@@ -115,6 +115,18 @@ var forms = {
 		$(e.currentTarget).closest('form').find('.js-subj-input').val(text);
 		
 	},
+	
+	toggleEmail: (e) => {
+		
+		let text = $(e.currentTarget).val();
+		
+		if ( text == 'E-mail' ) {
+			$(e.currentTarget).closest('form').find('.js-email').slideDown(300);
+		} else {
+			$(e.currentTarget).closest('form').find('.js-email').slideUp(300);
+		}
+		
+	},
 
 	init: () => {
 
@@ -136,6 +148,8 @@ var forms = {
 		});
 		
 		$(document).on('click', '.js-subj-btn', forms.changeSubj);
+		
+		$(document).on('change', '.js-show-email', forms.toggleEmail);
 		
 		/*$('.field__input').blur(function(){
 			if( $(this).val().length > 0 ) {
