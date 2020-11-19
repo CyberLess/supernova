@@ -1,0 +1,52 @@
+.contact-form {
+	margin-bottom: 20rem;
+	&__title {
+		text-align: center;
+	}
+	&__desc {
+		text-align: center;
+		font-size: 2rem;
+		line-height: 30/20*1;
+		margin-top: 3rem;
+	}
+	&__column {
+		margin-top: 10rem;
+		width: 47.5%;
+	}
+	&__btn-wrap {
+		width: 52%;
+	}
+	&__checkbox {
+		margin-top: 1.5rem;
+	}
+	&__button {
+		width: 100%;
+	}
+	
+	@include max-screen($large_mobile) {
+		margin-bottom: 70px;
+		&__column {
+			width: 100%;
+			margin-top: 10px;
+		}
+		
+		&__file {
+			margin-top: 10px;
+		}
+		&__btn-wrap {
+			width: 100%;
+		}
+		&__button {
+			margin-top: 30px;
+		}
+		&__title {
+			text-align: left;
+		}
+		&__desc {
+			font-size: 12px;
+			line-height: 15px;
+			margin-top: 20px;
+			text-align: left;
+		}
+	}
+}

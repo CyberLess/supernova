@@ -1,0 +1,37 @@
++b.SECTION.contact-form
+	+e.wrap.wrap._middle
+		+e.H1.title.h2
+			span.string.is-center
+				span.word.stroke
+					span Напишите  
+				span.word 
+					span нам! 
+		+e.desc
+			| Работали с нами? Знаете как улучшить нашу 
+			br
+			| компанию? Остались вопросы?
+		+e.FORM.form(action='/app/mail')
+			+e.row.flex._justify
+				+e.column
+					+field('Имя')(name="name")
+				+e.column
+					+field('Телефон', 'Введите телефон!')(name="phone")
+				+e.column
+					+field('Сообщение')(name="mess")
+				+e.column.flex._justify
+					+e.file.file__
+						+e.INPUT.input(type="file")
+						+e.icon
+							+icon('paperclip')
+						+e.text
+							| Прикрепить 
+							br
+							| фото или видео
+					+e.btn-wrap
+						+button("submit") отправить отзыв
+						+e.LABEL.checkbox.checkbox__
+							+e.INPUT.input(type="checkbox" name="polity" value="Согласен с правилами сайта", checked)
+							+e.SPAN.text.middle
+								+e.SPAN.box
+									+icon('checkbox')
+								| Согласен с правилами сайта

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>Отзывы</title>
-    <link rel="stylesheet" href="/app/css/app.css?v=1605736752661">
+    <link rel="stylesheet" href="/app/css/app.css?v=1605787726136">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -412,6 +412,70 @@
             </div>
             </div>
         </section>
+        <section class="contact-form">
+            <div class="contact-form__wrap wrap wrap_middle">
+                <h1 class="contact-form__title h2"><span class="string is-center"><span class="word stroke"><span>Напишите  </span></span><span class="word"> <span>нам! </span></span></span></h1>
+                <div class="contact-form__desc">Работали с нами? Знаете как улучшить нашу
+                    <br>компанию? Остались вопросы?</div>
+                <form class="contact-form__form" action="/app/mail">
+                    <div class="contact-form__row flex flex_justify">
+                        <div class="contact-form__column">
+                            <div class="contact-form__field field">
+                                <input class="field__input" name="name" type="text" />
+                                <div class="field__label">Имя</div>
+                                <div class="field__icon">
+                                    <svg class="icon icon-sucsess" viewBox="0 0 31 28">
+                                        <use xlink:href="/app/icons/sprite.svg#sucsess"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-form__column">
+                            <div class="contact-form__field field">
+                                <input class="field__input" name="phone" type="text" />
+                                <div class="field__label">Телефон</div>
+                                <div class="field__icon">
+                                    <svg class="icon icon-sucsess" viewBox="0 0 31 28">
+                                        <use xlink:href="/app/icons/sprite.svg#sucsess"></use>
+                                    </svg>
+                                </div>
+                                <div class="field__error">Введите телефон!</div>
+                            </div>
+                        </div>
+                        <div class="contact-form__column">
+                            <div class="contact-form__field field">
+                                <input class="field__input" name="mess" type="text" />
+                                <div class="field__label">Сообщение</div>
+                                <div class="field__icon">
+                                    <svg class="icon icon-sucsess" viewBox="0 0 31 28">
+                                        <use xlink:href="/app/icons/sprite.svg#sucsess"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-form__column flex flex_justify">
+                            <div class="contact-form__file file">
+                                <input class="file__input" type="file" />
+                                <div class="file__icon">
+                                    <svg class="icon icon-paperclip" viewBox="0 0 26 28">
+                                        <use xlink:href="/app/icons/sprite.svg#paperclip"></use>
+                                    </svg>
+                                </div>
+                                <div class="file__text">Прикрепить
+                                    <br>фото или видео</div>
+                            </div>
+                            <div class="contact-form__btn-wrap">
+                                <button class="contact-form__button btn"><span class="btn__text"> отправить отзыв</span>
+                                </button>
+                                <label class="contact-form__checkbox checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="polity" value="Согласен с правилами сайта" checked="checked" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Согласен с правилами сайта</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
         <footer class="footer">
             <div class="footer__wrap wrap">
                 <div class="footer__row flex flex_justify">
@@ -559,7 +623,7 @@
         <iframe></iframe>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/app/js/app.js?v=1605736752730"></script>
+    <script src="/app/js/app.js?v=1605787726195"></script>
 </body>
 
 </html>
