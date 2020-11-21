@@ -10,7 +10,7 @@
 		}
 	}
 	
-	@include max-screen($small_tablet) {
+	@include max-screen($large_tablet) {
 		&__list {
 			justify-content: flex-end;
 		}
@@ -18,11 +18,11 @@
 			font-size: 1.4rem;
 			line-height: 1;
 			&:not(:last-child) {
-				margin-right: 1.5rem;
+				margin-right: 2rem;
 			}
 		}
 	}
-	@include max-screen($large_mobile) {
+	@include max-screen($small_tablet) {
 		display: none;
 	}
 }

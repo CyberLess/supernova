@@ -17,7 +17,15 @@ block content
 	+b.about-bg
 	+b.SECTION.about-main
 		+e.wrap.wrap._middle
-			+e.slider.js-slider-about.owl-carousel
+			+e.slider.js-slider-about.js-slider(
+				data-settings=`{
+					"smartSpeed": 500,
+					"items": 1,
+					"center": false,
+					"nav": false,
+					"dots": false,
+					"navContainer": ".js-about-nav"
+				}`)
 				+e.slide
 					+e.row.flex
 						+e.left
@@ -40,13 +48,13 @@ block content
 							+e.list.flex
 								+e.item
 									+e.number 20
-									+e.item-desc.p Сотрудников
+									+e.item-desc.p Сотрудников dsa dsda dds ad asd as ds
 								+e.item
 									+e.number 150
-									+e.item-desc.p Сделок за год
+									+e.item-desc.p Сделок за год dsad as das d as
 								+e.item
 									+e.number 200 млн ₽
-									+e.item-desc.p Сума сделок
+									+e.item-desc.p Сума сделок dsad asd sadas
 				+e.slide
 					+e.row.flex
 						+e.left
@@ -192,8 +200,7 @@ block content
 								+e.item
 									+e.number 200 млн ₽
 									+e.item-desc.p Сума сделок
-			+e.nav
-				include ../layouts/owl-nav
+			+e.nav.js-about-nav.owl-nav
 			+e.bottom.flex._justify
 				+e.year.js-slider-to.is-active 1994/1999
 				+e.year.js-slider-to 2000/2005
@@ -210,8 +217,36 @@ block content
 							span Как мы 
 						span.word.stroke 
 							span работаем
-				include ../layouts/owl-nav
-		+e.slider.slider__.js-slider.owl-carousel
+				+e.nav.js-slider-nav.owl-nav
+		+e.slider.slider__.js-slider(
+				data-settings=`{
+					"smartSpeed": 700,
+					"autoWidth": true,
+					"center": true,
+					"nav": false,
+					"dots": false,
+					"navContainer": ".js-slider-nav",
+					"responsive": {
+						"0": {
+							"autoWidth": false,
+							"center": false,
+							"items": 1,
+							"smartSpeed": 500,
+							"dots": true
+						},
+						"580": {
+							"autoWidth": false,
+							"center": false,
+							"items": 1,
+							"smartSpeed": 500
+						},
+						"1025": {
+							"autoWidth": true,
+							"center": true,
+							"smartSpeed": 700
+						}
+					}
+				}`)
 			+slide('card__slide1.jpg')
 				h4 Парковая зона
 				p
@@ -232,7 +267,7 @@ block content
 					| маршрута на 3,5 км прогулочных тропинок
 		+e.bottom
 			+e.bottom-wrap.wrap._middle
-				include ../layouts/owl-nav
+				+e.nav.js-slider-nav.owl-nav
 	+b.SECTION.partner
 		+e.wrap.wrap._middle
 			+e.head
@@ -243,8 +278,31 @@ block content
 							br
 						span.word.stroke 
 							span партнеры
-				include ../layouts/owl-nav
-			+e.slider.js-slider-partner.owl-carousel
+				+e.nav.js-partner-nav.owl-nav
+			+e.slider.js-slider(
+					data-settings=`{
+						"smartSpeed": 500,
+						"items": 1,
+						"center": false,
+						"nav": false,
+						"margin": 0,
+						"dots": false,
+						"navContainer": ".js-partner-nav",
+						"responsive": {
+							"0": {
+								"autoWidth": true,
+								"center": false,
+								"items": 1,
+								"smartSpeed": 300
+							},
+							"580": {
+								"autoWidth": false,
+								"center": false,
+								"items": 1,
+								"smartSpeed": 500
+							}
+						}
+					}`)
 				+e.list.flex
 					+e.item
 						+e.A.logo(href="#")
@@ -321,8 +379,36 @@ block content
 							span Как мы 
 						span.word.stroke 
 							span отдыхаем
-				include ../layouts/owl-nav
-		+e.slider.slider__.js-slider.owl-carousel
+				+e.nav.js-slider2-nav.owl-nav
+		+e.slider.slider__.js-slider(
+				data-settings=`{
+					"smartSpeed": 700,
+					"autoWidth": true,
+					"center": true,
+					"nav": false,
+					"dots": false,
+					"navContainer": ".js-slider2-nav",
+					"responsive": {
+						"0": {
+							"autoWidth": false,
+							"center": false,
+							"items": 1,
+							"smartSpeed": 500,
+							"dots": true
+						},
+						"580": {
+							"autoWidth": false,
+							"center": false,
+							"items": 1,
+							"smartSpeed": 500
+						},
+						"1025": {
+							"autoWidth": true,
+							"center": true,
+							"smartSpeed": 700
+						}
+					}
+				}`)
 			+slide('card__slide1.jpg')
 				h4 Парковая зона
 				p
@@ -343,7 +429,7 @@ block content
 					| маршрута на 3,5 км прогулочных тропинок
 		+e.bottom
 			+e.bottom-wrap.wrap._middle
-				include ../layouts/owl-nav
+				+e.nav.js-slider2-nav.owl-nav
 	include ../layouts/contacts
 block scripts
 	script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")

@@ -51,7 +51,7 @@
 		}
 	}
 	
-	@include max-screen(900px) {
+	@include max-screen($large_tablet) {
 		&:before, &:after {
 			display: none;
 		}

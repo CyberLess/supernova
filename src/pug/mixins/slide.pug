@@ -1,6 +1,7 @@
 mixin slide(image, contentClass)
 	+e.slide
-		+e.IMG.img(src=`/img/${image}`)
+		+e.preview
+			+e.IMG.img.object-fit(src=`/img/${image}`)
 		+e.row.flex._justify
 			+e.content.content(class=contentClass)
 				block

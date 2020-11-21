@@ -40,14 +40,42 @@ block content
 				+play('https://www.youtube.com/embed/tWkodax0vKE')
 					| Видео о "ЖК"
 	+b.SECTION.gallery
-		+e.slider.slider__.js-slider.owl-carousel
+		+e.slider.slider__.js-slider(
+				data-settings=`{
+					"smartSpeed": 700,
+					"autoWidth": true,
+					"center": true,
+					"nav": false,
+					"dots": false,
+					"navContainer": ".js-slider-nav",
+					"responsive": {
+						"0": {
+							"autoWidth": false,
+							"center": false,
+							"items": 1,
+							"smartSpeed": 500,
+							"dots": true
+						},
+						"580": {
+							"autoWidth": false,
+							"center": false,
+							"items": 1,
+							"smartSpeed": 500
+						},
+						"1025": {
+							"autoWidth": true,
+							"center": true,
+							"smartSpeed": 700
+						}
+					}
+				}`)
 			+slide('card__slide1.jpg')
 				h4 Парковая зона
 				p
 					| ХХХХ м2 зеленых насаждений и газонов 4 
 					br
 					| маршрута на 3,5 км прогулочных тропинок
-			+slide('card__slide1.jpg')
+			+slide('form__bg.jpg')
 				h4 Парковая зона
 				p
 					| ХХХХ м2 зеленых насаждений и газонов 4 
@@ -61,7 +89,7 @@ block content
 					| маршрута на 3,5 км прогулочных тропинок
 		+e.bottom.is-visible
 			+e.bottom-wrap.wrap._middle
-				include ../layouts/owl-nav
+				+e.nav.js-slider-nav.owl-nav
 	+b.SECTION.concept
 		+e.wrap.wrap._middle
 			+e.row.flex._justify
@@ -138,7 +166,7 @@ block content
 						span Квартиры в ЖК 
 					span.word.stroke 
 						span "название"
-			+e.filter.flex
+			+e.FORM.filter.flex(action="#")
 				+e.filter-column
 					+checkbox('Студия')(name="apartment[]" checked)
 				+e.filter-column
@@ -148,7 +176,7 @@ block content
 				+e.filter-column
 					+checkbox('2 комнатная квартира')(name="apartment[]")
 				+e.filter-column
-					+button(href="#") Найти квартиру
+					+button('submit') Найти квартиру
 		+e.list.flex
 			+apartments-item('card__img.jpg', '1', '43,9')
 			+apartments-item('card__img.jpg', '1', '41,9', 'С отделкой')
@@ -187,7 +215,35 @@ block content
 					+button("submit") Получить доступ
 					
 	+b.SECTION.gallery
-		+e.slider.slider__.js-slider.owl-carousel
+		+e.slider.slider__.js-slider(
+				data-settings=`{
+					"smartSpeed": 700,
+					"autoWidth": true,
+					"center": true,
+					"nav": false,
+					"dots": false,
+					"navContainer": ".js-slider2-nav",
+					"responsive": {
+						"0": {
+							"autoWidth": false,
+							"center": false,
+							"items": 1,
+							"smartSpeed": 500,
+							"dots": true
+						},
+						"580": {
+							"autoWidth": false,
+							"center": false,
+							"items": 1,
+							"smartSpeed": 500
+						},
+						"1025": {
+							"autoWidth": true,
+							"center": true,
+							"smartSpeed": 700
+						}
+					}
+				}`)
 			+slide('card__slide1.jpg')
 				h4 Большие кухни‐гостиные
 				p
@@ -208,7 +264,7 @@ block content
 					| Здесь можно устраивать и вечерние семейные посиделки, и шумные вечеринки с друзьями
 		+e.bottom
 			+e.bottom-wrap.wrap._middle
-				include ../layouts/owl-nav
+				+e.nav.js-slider2-nav.owl-nav
 	
 	include ../layouts/discount
 	

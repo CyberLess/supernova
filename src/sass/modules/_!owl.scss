@@ -5,17 +5,18 @@
 		width: 16rem;
 		min-width: 16rem;
 	}
-	&-arrow {
+	&-prev, &-next {
 		display: inline-flex;
 		justify-content: center;
 		align-items: center;
 		width: 7rem;
 		height: 7rem;
 		cursor: pointer;
-		border: 1px solid rgba(#fff, .3);
+		border: 1px solid rgba(#fff, .3)!important;
 		border-radius: 100%;
 		transition: ease .2s;
 		cursor: pointer;
+		background: none;
 		svg {
 			width: 1.7rem;
 			height: 1.7rem;
@@ -23,16 +24,17 @@
 			stroke: #fff;
 			stroke-width: 1px;
 		}
-		&_prev {
-			padding-right: .3rem;
-		}
-		&_next {
-			padding-left: .3rem;
-		}
 		&:hover {
-			background-color: $pink;
-			border-color: $pink;
+			background-color: $pink!important;
+			border-color: $pink!important;
 		}
+	}
+	
+	&-prev {
+		padding-right: .3rem;
+	}
+	&-next {
+		padding-left: .3rem;
 	}
 	
 	&-dots {
@@ -65,7 +67,7 @@
 			min-width: inherit;
 			width: auto;
 		}
-		&-arrow {
+		&-prev, &-next {
 			width: 34px;
 			height: 34px;
 			svg {
@@ -73,9 +75,9 @@
 				height: 9px;
 				stroke-width: 1.5;
 			}
-			&_next {
-				margin-left: 5px;
-			}
+		}
+		&-next {
+			margin-left: 5px;
 		}
 	}
 }

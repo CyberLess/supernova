@@ -7,8 +7,36 @@
 						span Зал 
 					span.word.stroke 
 						span славы
-			include ../layouts/owl-nav
-	+e.slider.js-slider.owl-carousel
+			+e.nav.js-reward-nav.owl-nav
+	+e.slider.js-slider(
+				data-settings=`{
+					"smartSpeed": 700,
+					"autoWidth": true,
+					"center": true,
+					"nav": false,
+					"dots": false,
+					"navContainer": ".js-reward-nav",
+					"responsive": {
+						"0": {
+							"autoWidth": false,
+							"center": false,
+							"items": 1,
+							"smartSpeed": 500,
+							"dots": true
+						},
+						"580": {
+							"autoWidth": false,
+							"center": false,
+							"items": 1,
+							"smartSpeed": 500
+						},
+						"1025": {
+							"autoWidth": true,
+							"center": true,
+							"smartSpeed": 700
+						}
+					}
+				}`)
 		+e.item
 			+e.preview
 				+e.IMG.preview-img(src="/img/reward__img1.png")

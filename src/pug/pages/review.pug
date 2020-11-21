@@ -36,15 +36,59 @@ block content
 						span Партнеры 
 					span.word.stroke 
 						span о нас
-			+e.slider.js-slider-about.owl-carousel
+			+e.slider.js-slider(
+				data-settings=`{
+					"smartSpeed": 500,
+					"items": 1,
+					"center": false,
+					"nav": true,
+					"dots": false,
+					"navContainer": ".js-review1-nav",
+					"responsive": {
+						"0": {
+							"autoHeight": true
+						},
+						"700": {
+							"autoHeight": false
+						}
+					}
+				}`)
 				+e.slide
 					+e.row.flex._justify._start
-						+e.foto
-							+e.IMG.foto-img(src="/img/review__foto.jpg")
-							+play('https://www.youtube.com/embed/tWkodax0vKE')
-								| Видеоотзыв
-								br
-								| или фото
+						+e.left
+							+e.foto
+								+e.IMG.foto-img.object-fit(src="/img/review__foto.jpg")
+								+play('https://www.youtube.com/embed/tWkodax0vKE')
+									| Видеоотзыв
+									br
+									| или фото
+						+e.right
+							+e.head
+								+e.ava
+									+e.IMG.ava-img.object-fit(src="/img/review__foto.jpg")
+								+e.info
+									+e.name.h6 Василий васильев Какой то важный чел Какой то важный чел
+									+e.position.p Какой то важный чел Какой то важный чел Какой то важный чел
+									+e.logo
+										+e.IMG.logo-img(src="/img/partner6.png")
+							+e.content
+								p
+									| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate.
+							+e.bottom
+								+play('https://www.youtube.com/embed/tWkodax0vKE')
+									| Видеоотзыв
+									br
+									| или фото
+								+e.nav.js-review1-nav.owl-nav
+				+e.slide
+					+e.row.flex._justify._start
+						+e.left
+							+e.foto
+								+e.IMG.foto-img.object-fit(src="/img/review__foto.jpg")
+								+play('https://www.youtube.com/embed/tWkodax0vKE')
+									| Видеоотзыв
+									br
+									| или фото
 						+e.right
 							+e.head
 								+e.ava
@@ -62,37 +106,8 @@ block content
 									| Видеоотзыв
 									br
 									| или фото
-								+e.nav
-									include ../layouts/owl-nav
-				+e.slide
-					+e.row.flex._justify._start
-						+e.foto
-							+e.IMG.foto-img(src="/img/review__foto.jpg")
-							+play('https://www.youtube.com/embed/tWkodax0vKE')
-								| Видеоотзыв
-								br
-								| или фото
-						+e.right
-							+e.head
-								+e.ava
-									+e.IMG.ava-img.object-fit(src="/img/review__foto.jpg")
-								+e.info
-									+e.name.h6 Василий васильев
-									+e.position.p Какой то важный чел
-									+e.logo
-										+e.IMG.logo-img(src="/img/partner6.png")
-							+e.content
-								p
-									| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate.
-							+e.bottom
-								+play('https://www.youtube.com/embed/tWkodax0vKE')
-									| Видеоотзыв
-									br
-									| или фото
-								+e.nav
-									include ../layouts/owl-nav
-			+e.nav.is-hidden
-				include ../layouts/owl-nav
+								+e.nav.js-review1-nav.owl-nav
+			+e.nav.is-hidden.js-review1-nav.owl-nav
 	+b.SECTION.review
 		+e.wrap.wrap._middle
 			+e.head
@@ -105,9 +120,26 @@ block content
 						br
 						span.word.stroke 
 							span клиентов
-				+e.nav
-					include ../layouts/owl-nav
-			+e.slider.js-slider-review.owl-carousel
+				+e.nav.js-review2-nav.owl-nav
+			+e.slider.js-slider(
+				data-settings=`{
+					"smartSpeed": 500,
+					"items": 2,
+					"center": false,
+					"nav": true,
+					"dots": false,
+					"navContainer": ".js-review2-nav",
+					"responsive": {
+						"0": {
+							"autoHeight": true,
+							"items": 1
+						},
+						"580": {
+							"autoHeight": false,
+							"items": 2
+						}
+					}
+				}`)
 				+e.slide
 					+e.name.h6 Василий васильев
 					+e.A.link(href="https://vk.com/id9684968", trget="_blank")

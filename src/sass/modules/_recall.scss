@@ -16,7 +16,7 @@
 	}
 	
 	@include max-screen($large_mobile) {
-		padding: 1rem 0 10rem 0;
+		padding: 10rem 0 10rem 0;
 		&__row {
 			margin-top: 0;
 			padding-top: 1rem;

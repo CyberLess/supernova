@@ -22,6 +22,12 @@
 			color: rgba(#fff, .5);
 		}
 	}
+	
+	&__preview {
+		position: relative;
+		padding-top: 626/1112*100%;
+		overflow: hidden;
+	}
 }
 
 .owl-item.center {
@@ -33,10 +39,10 @@
 	}
 }
 
-@include max-screen(900px) {
+@include max-screen($large_tablet) {
 	.slider {
 		&__slide {
-			padding: 0 2rem;
+			padding: 0 7rem;
 			width: auto;
 		}
 		&__content {
@@ -45,6 +51,15 @@
 		&__row {
 			transform: translateY(0);
 			opacity: 1;
+		}
+	}
+}
+
+@include max-screen($small_tablet) {
+	.slider {
+		&__slide {
+			padding: 0 2rem;
+			width: auto;
 		}
 	}
 }

@@ -7,7 +7,7 @@ import { panel } from "./modules/panel";
 // import { scrolling } from "./modules/scrolling";
 // import { svglottie } from "./modules/lottie";
 import { modals } from "./modules/modals";
-import { slider } from "./modules/slider";
+import { sliders } from "./modules/slider";
 import { map } from "./modules/map";
 import { partners } from "./modules/partners";
 import { accordion } from "./modules/accordion";
@@ -29,7 +29,7 @@ App.prototype.init = () => {
 	partners.init();
 	map.init();
 	modals.init();
-	slider.init();
+	sliders.init();
 	accordion.init();
 	calc.init();
 

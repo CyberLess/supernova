@@ -127,6 +127,12 @@ var forms = {
 		}
 		
 	},
+	
+	file: (e) => {
+		let filename = $(e.currentTarget).val().replace(/.*(\/|\\)/, '');
+		
+		$(e.currentTarget).closest('.js-file').find('.js-file-text').html( '<span class="file__name">' + filename + '</span><span  class="file__link">Изменить</span> ' )
+	},
 
 	init: () => {
 
@@ -150,6 +156,8 @@ var forms = {
 		$(document).on('click', '.js-subj-btn', forms.changeSubj);
 		
 		$(document).on('change', '.js-show-email', forms.toggleEmail);
+		
+		$(document).on('change', '.js-file-input', forms.file);
 		
 		/*$('.field__input').blur(function(){
 			if( $(this).val().length > 0 ) {

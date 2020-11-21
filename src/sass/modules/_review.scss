@@ -91,17 +91,21 @@
 		&__slider {
 			margin-top: 10rem;
 		}
-		&__foto {
+		&__left {
 			width: 560/1336*100%;
+		}
+		&__foto {
 			position: relative;
 			border-radius: 5px;
 			overflow: hidden;
+			padding-top: 470/560*100%;
 			&:before {
 				content: '';
 				display: block;
 				position: absolute;
 				left: 0;
 				top: 0;
+				z-index: 2;
 				width: 100%;
 				height: 100%;
 				background: rgba(#000, .49);
@@ -113,6 +117,7 @@
 		&__ava {
 			position: relative;
 			width: 13.2rem;
+			min-width: 13.2rem;
 			height: 13.2rem;
 			overflow: hidden;
 			border-radius: 100%;
@@ -121,7 +126,7 @@
 		
 		&__play {
 			position: absolute;
-			z-index: 2;
+			z-index: 3;
 			left: 3rem;
 			bottom: 3rem;
 		}
@@ -168,7 +173,38 @@
 		}
 	}
 	
-	@include max-screen($small_mobile) {
+	@include max-screen(700px) {
+		&-about {
+			&__left {
+				display: none;
+			}
+			&__right {
+				width: 100%;
+			}
+			&__bottom {
+				margin-top: 40px;
+				justify-content: space-between;
+				align-items: center;
+				display: flex;
+				.play {
+					display: inline-flex;
+					position: static;
+				}
+			}
+			&__nav {
+				display: none;
+			}
+			&__nav.is-hidden {
+				display: flex;
+				position: absolute;
+				bottom: 3px;
+				right: 20px;
+				z-index: 50;
+			}
+		}
+	}
+	
+	@include max-screen($large_mobile) {
 		margin-bottom: 70px;
 		&__slider {
 			margin-top: 30px;
@@ -184,7 +220,7 @@
 		}
 		&__nav {
 			position: absolute;
-			bottom: 3px;
+			bottom: 23px;
 			right: 10px;
 			z-index: 50;
 		}
@@ -235,7 +271,7 @@
 					display: block;
 				}
 			}
-			&__foto {
+			&__left {
 				display: none;
 			}
 			&__right {
@@ -243,11 +279,13 @@
 			}
 			&__ava {
 				width: 80px;
+				min-width: 80px;
 				height: 80px;
 				margin-right: 20px;
 			}
 			&__position {
 				margin-top: 10px;
+				line-height: 1.2;
 			}
 			&__logo {
 				max-width: 80px;
@@ -258,29 +296,6 @@
 				margin-top: 20px;
 				font-size: 12px;
 				line-height: 15px;
-			}
-			&__bottom {
-				margin-top: 40px;
-				justify-content: space-between;
-				align-items: center;
-				display: flex;
-				.play {
-					display: inline-flex;
-					position: static;
-				}
-			}
-			&__nav {
-				display: none;
-			}
-			&__nav.is-hidden {
-				display: block;
-				.review-about__nav {
-					display: flex;
-					position: absolute;
-					bottom: 3px;
-					right: 20px;
-					z-index: 50;
-				}
 			}
 		}
 	}

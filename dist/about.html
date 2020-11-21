@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>О нас</title>
-    <link rel="stylesheet" href="/app/css/app.css?v=1605808124080">
+    <link rel="stylesheet" href="/app/css/app.css?v=1605968689542">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -245,7 +245,14 @@
         <div class="about-bg"></div>
         <section class="about-main">
             <div class="about-main__wrap wrap wrap_middle">
-                <div class="about-main__slider js-slider-about owl-carousel">
+                <div class="about-main__slider js-slider-about js-slider" data-settings="{
+					&quot;smartSpeed&quot;: 500,
+					&quot;items&quot;: 1,
+					&quot;center&quot;: false,
+					&quot;nav&quot;: false,
+					&quot;dots&quot;: false,
+					&quot;navContainer&quot;: &quot;.js-about-nav&quot;
+				}">
                     <div class="about-main__slide">
                         <div class="about-main__row flex">
                             <div class="about-main__left">
@@ -262,15 +269,15 @@
                                 <div class="about-main__list flex">
                                     <div class="about-main__item">
                                         <div class="about-main__number">20</div>
-                                        <div class="about-main__item-desc p">Сотрудников</div>
+                                        <div class="about-main__item-desc p">Сотрудников dsa dsda dds ad asd as ds</div>
                                     </div>
                                     <div class="about-main__item">
                                         <div class="about-main__number">150</div>
-                                        <div class="about-main__item-desc p">Сделок за год</div>
+                                        <div class="about-main__item-desc p">Сделок за год dsad as das d as</div>
                                     </div>
                                     <div class="about-main__item">
                                         <div class="about-main__number">200 млн ₽</div>
-                                        <div class="about-main__item-desc p">Сума сделок</div>
+                                        <div class="about-main__item-desc p">Сума сделок dsad asd sadas</div>
                                     </div>
                                 </div>
                             </div>
@@ -427,20 +434,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="about-main__nav">
-                    <div class="about-main__nav owl-nav">
-                        <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
-                            <svg class="icon icon-prev" viewBox="0 0 15 16">
-                                <use xlink:href="/app/icons/sprite.svg#prev"></use>
-                            </svg>
-                        </div>
-                        <div class="owl-nav__owl-arrow owl-arrow owl-arrow_next">
-                            <svg class="icon icon-next" viewBox="0 0 16 16">
-                                <use xlink:href="/app/icons/sprite.svg#next"></use>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
+                <div class="about-main__nav js-about-nav owl-nav"></div>
                 <div class="about-main__bottom flex flex_justify">
                     <div class="about-main__year js-slider-to is-active">1994/1999</div>
                     <div class="about-main__year js-slider-to">2000/2005</div>
@@ -455,26 +449,44 @@
             <div class="gallery__wrap wrap">
                 <div class="gallery__head">
                     <h2 class="gallery__title h2"><span class="string is-center"><span class="word"> <span>Как мы </span></span><span class="word stroke"> <span>работаем</span></span></span></h2>
-                    <div class="gallery__nav owl-nav">
-                        <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
-                            <svg class="icon icon-prev" viewBox="0 0 15 16">
-                                <use xlink:href="/app/icons/sprite.svg#prev"></use>
-                            </svg>
-                        </div>
-                        <div class="owl-nav__owl-arrow owl-arrow owl-arrow_next">
-                            <svg class="icon icon-next" viewBox="0 0 16 16">
-                                <use xlink:href="/app/icons/sprite.svg#next"></use>
-                            </svg>
-                        </div>
-                    </div>
+                    <div class="gallery__nav js-slider-nav owl-nav"></div>
                 </div>
             </div>
-            <div class="gallery__slider slider js-slider owl-carousel">
+            <div class="gallery__slider slider js-slider" data-settings="{
+					&quot;smartSpeed&quot;: 700,
+					&quot;autoWidth&quot;: true,
+					&quot;center&quot;: true,
+					&quot;nav&quot;: false,
+					&quot;dots&quot;: false,
+					&quot;navContainer&quot;: &quot;.js-slider-nav&quot;,
+					&quot;responsive&quot;: {
+						&quot;0&quot;: {
+							&quot;autoWidth&quot;: false,
+							&quot;center&quot;: false,
+							&quot;items&quot;: 1,
+							&quot;smartSpeed&quot;: 500,
+							&quot;dots&quot;: true
+						},
+						&quot;580&quot;: {
+							&quot;autoWidth&quot;: false,
+							&quot;center&quot;: false,
+							&quot;items&quot;: 1,
+							&quot;smartSpeed&quot;: 500
+						},
+						&quot;1025&quot;: {
+							&quot;autoWidth&quot;: true,
+							&quot;center&quot;: true,
+							&quot;smartSpeed&quot;: 700
+						}
+					}
+				}">
                 <div class="slider__slide">
-                    <picture>
-                        <source type="image/webp" srcset="/app/img/card__slide1.webp">
-                            <img src="/app/img/card__slide1.jpg" class="slider__img" alt="" role="presentation" />
-                    </picture>
+                    <div class="slider__preview">
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/card__slide1.webp">
+                                <img src="/app/img/card__slide1.jpg" class="slider__img object-fit" alt="" role="presentation" />
+                        </picture>
+                    </div>
                     <div class="slider__row flex flex_justify">
                         <div class="slider__content content">
                             <h4>Парковая зона</h4>
@@ -484,10 +496,12 @@
                     </div>
                 </div>
                 <div class="slider__slide">
-                    <picture>
-                        <source type="image/webp" srcset="/app/img/card__slide1.webp">
-                            <img src="/app/img/card__slide1.jpg" class="slider__img" alt="" role="presentation" />
-                    </picture>
+                    <div class="slider__preview">
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/card__slide1.webp">
+                                <img src="/app/img/card__slide1.jpg" class="slider__img object-fit" alt="" role="presentation" />
+                        </picture>
+                    </div>
                     <div class="slider__row flex flex_justify">
                         <div class="slider__content content">
                             <h4>Парковая зона</h4>
@@ -497,10 +511,12 @@
                     </div>
                 </div>
                 <div class="slider__slide">
-                    <picture>
-                        <source type="image/webp" srcset="/app/img/card__slide1.webp">
-                            <img src="/app/img/card__slide1.jpg" class="slider__img" alt="" role="presentation" />
-                    </picture>
+                    <div class="slider__preview">
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/card__slide1.webp">
+                                <img src="/app/img/card__slide1.jpg" class="slider__img object-fit" alt="" role="presentation" />
+                        </picture>
+                    </div>
                     <div class="slider__row flex flex_justify">
                         <div class="slider__content content">
                             <h4>Парковая зона</h4>
@@ -512,18 +528,7 @@
             </div>
             <div class="gallery__bottom">
                 <div class="gallery__bottom-wrap wrap wrap_middle">
-                    <div class="gallery__nav owl-nav">
-                        <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
-                            <svg class="icon icon-prev" viewBox="0 0 15 16">
-                                <use xlink:href="/app/icons/sprite.svg#prev"></use>
-                            </svg>
-                        </div>
-                        <div class="owl-nav__owl-arrow owl-arrow owl-arrow_next">
-                            <svg class="icon icon-next" viewBox="0 0 16 16">
-                                <use xlink:href="/app/icons/sprite.svg#next"></use>
-                            </svg>
-                        </div>
-                    </div>
+                    <div class="gallery__nav js-slider-nav owl-nav"></div>
                 </div>
             </div>
         </section>
@@ -531,20 +536,31 @@
             <div class="partner__wrap wrap wrap_middle">
                 <div class="partner__head">
                     <h2 class="partner__title h2"><span class="string is-center"><span class="word"> <span>Наши  </span><br></span><span class="word stroke"> <span>партнеры</span></span></span></h2>
-                    <div class="partner__nav owl-nav">
-                        <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
-                            <svg class="icon icon-prev" viewBox="0 0 15 16">
-                                <use xlink:href="/app/icons/sprite.svg#prev"></use>
-                            </svg>
-                        </div>
-                        <div class="owl-nav__owl-arrow owl-arrow owl-arrow_next">
-                            <svg class="icon icon-next" viewBox="0 0 16 16">
-                                <use xlink:href="/app/icons/sprite.svg#next"></use>
-                            </svg>
-                        </div>
-                    </div>
+                    <div class="partner__nav js-partner-nav owl-nav"></div>
                 </div>
-                <div class="partner__slider js-slider-partner owl-carousel">
+                <div class="partner__slider js-slider" data-settings="{
+						&quot;smartSpeed&quot;: 500,
+						&quot;items&quot;: 1,
+						&quot;center&quot;: false,
+						&quot;nav&quot;: false,
+						&quot;margin&quot;: 0,
+						&quot;dots&quot;: false,
+						&quot;navContainer&quot;: &quot;.js-partner-nav&quot;,
+						&quot;responsive&quot;: {
+							&quot;0&quot;: {
+								&quot;autoWidth&quot;: true,
+								&quot;center&quot;: false,
+								&quot;items&quot;: 1,
+								&quot;smartSpeed&quot;: 300
+							},
+							&quot;580&quot;: {
+								&quot;autoWidth&quot;: false,
+								&quot;center&quot;: false,
+								&quot;items&quot;: 1,
+								&quot;smartSpeed&quot;: 500
+							}
+						}
+					}">
                     <div class="partner__list flex">
                         <div class="partner__item">
                             <a class="partner__logo" href="#">
@@ -700,21 +716,37 @@
             <div class="reward__wrap wrap wrap_middle">
                 <div class="reward__head">
                     <h1 class="reward__title h2"><span class="string is-center"><span class="word"> <span>Зал </span></span><span class="word stroke"> <span>славы</span></span></span></h1>
-                    <div class="reward__nav owl-nav">
-                        <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
-                            <svg class="icon icon-prev" viewBox="0 0 15 16">
-                                <use xlink:href="/app/icons/sprite.svg#prev"></use>
-                            </svg>
-                        </div>
-                        <div class="owl-nav__owl-arrow owl-arrow owl-arrow_next">
-                            <svg class="icon icon-next" viewBox="0 0 16 16">
-                                <use xlink:href="/app/icons/sprite.svg#next"></use>
-                            </svg>
-                        </div>
-                    </div>
+                    <div class="reward__nav js-reward-nav owl-nav"></div>
                 </div>
             </div>
-            <div class="reward__slider js-slider owl-carousel">
+            <div class="reward__slider js-slider" data-settings="{
+					&quot;smartSpeed&quot;: 700,
+					&quot;autoWidth&quot;: true,
+					&quot;center&quot;: true,
+					&quot;nav&quot;: false,
+					&quot;dots&quot;: false,
+					&quot;navContainer&quot;: &quot;.js-reward-nav&quot;,
+					&quot;responsive&quot;: {
+						&quot;0&quot;: {
+							&quot;autoWidth&quot;: false,
+							&quot;center&quot;: false,
+							&quot;items&quot;: 1,
+							&quot;smartSpeed&quot;: 500,
+							&quot;dots&quot;: true
+						},
+						&quot;580&quot;: {
+							&quot;autoWidth&quot;: false,
+							&quot;center&quot;: false,
+							&quot;items&quot;: 1,
+							&quot;smartSpeed&quot;: 500
+						},
+						&quot;1025&quot;: {
+							&quot;autoWidth&quot;: true,
+							&quot;center&quot;: true,
+							&quot;smartSpeed&quot;: 700
+						}
+					}
+				}">
                 <div class="reward__item">
                     <div class="reward__preview">
                         <picture>
@@ -763,26 +795,44 @@
             <div class="gallery__wrap wrap">
                 <div class="gallery__head">
                     <h2 class="gallery__title h2"><span class="string is-center"><span class="word"> <span>Как мы </span></span><span class="word stroke"> <span>отдыхаем</span></span></span></h2>
-                    <div class="gallery__nav owl-nav">
-                        <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
-                            <svg class="icon icon-prev" viewBox="0 0 15 16">
-                                <use xlink:href="/app/icons/sprite.svg#prev"></use>
-                            </svg>
-                        </div>
-                        <div class="owl-nav__owl-arrow owl-arrow owl-arrow_next">
-                            <svg class="icon icon-next" viewBox="0 0 16 16">
-                                <use xlink:href="/app/icons/sprite.svg#next"></use>
-                            </svg>
-                        </div>
-                    </div>
+                    <div class="gallery__nav js-slider2-nav owl-nav"></div>
                 </div>
             </div>
-            <div class="gallery__slider slider js-slider owl-carousel">
+            <div class="gallery__slider slider js-slider" data-settings="{
+					&quot;smartSpeed&quot;: 700,
+					&quot;autoWidth&quot;: true,
+					&quot;center&quot;: true,
+					&quot;nav&quot;: false,
+					&quot;dots&quot;: false,
+					&quot;navContainer&quot;: &quot;.js-slider2-nav&quot;,
+					&quot;responsive&quot;: {
+						&quot;0&quot;: {
+							&quot;autoWidth&quot;: false,
+							&quot;center&quot;: false,
+							&quot;items&quot;: 1,
+							&quot;smartSpeed&quot;: 500,
+							&quot;dots&quot;: true
+						},
+						&quot;580&quot;: {
+							&quot;autoWidth&quot;: false,
+							&quot;center&quot;: false,
+							&quot;items&quot;: 1,
+							&quot;smartSpeed&quot;: 500
+						},
+						&quot;1025&quot;: {
+							&quot;autoWidth&quot;: true,
+							&quot;center&quot;: true,
+							&quot;smartSpeed&quot;: 700
+						}
+					}
+				}">
                 <div class="slider__slide">
-                    <picture>
-                        <source type="image/webp" srcset="/app/img/card__slide1.webp">
-                            <img src="/app/img/card__slide1.jpg" class="slider__img" alt="" role="presentation" />
-                    </picture>
+                    <div class="slider__preview">
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/card__slide1.webp">
+                                <img src="/app/img/card__slide1.jpg" class="slider__img object-fit" alt="" role="presentation" />
+                        </picture>
+                    </div>
                     <div class="slider__row flex flex_justify">
                         <div class="slider__content content">
                             <h4>Парковая зона</h4>
@@ -792,10 +842,12 @@
                     </div>
                 </div>
                 <div class="slider__slide">
-                    <picture>
-                        <source type="image/webp" srcset="/app/img/card__slide1.webp">
-                            <img src="/app/img/card__slide1.jpg" class="slider__img" alt="" role="presentation" />
-                    </picture>
+                    <div class="slider__preview">
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/card__slide1.webp">
+                                <img src="/app/img/card__slide1.jpg" class="slider__img object-fit" alt="" role="presentation" />
+                        </picture>
+                    </div>
                     <div class="slider__row flex flex_justify">
                         <div class="slider__content content">
                             <h4>Парковая зона</h4>
@@ -805,10 +857,12 @@
                     </div>
                 </div>
                 <div class="slider__slide">
-                    <picture>
-                        <source type="image/webp" srcset="/app/img/card__slide1.webp">
-                            <img src="/app/img/card__slide1.jpg" class="slider__img" alt="" role="presentation" />
-                    </picture>
+                    <div class="slider__preview">
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/card__slide1.webp">
+                                <img src="/app/img/card__slide1.jpg" class="slider__img object-fit" alt="" role="presentation" />
+                        </picture>
+                    </div>
                     <div class="slider__row flex flex_justify">
                         <div class="slider__content content">
                             <h4>Парковая зона</h4>
@@ -820,18 +874,7 @@
             </div>
             <div class="gallery__bottom">
                 <div class="gallery__bottom-wrap wrap wrap_middle">
-                    <div class="gallery__nav owl-nav">
-                        <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
-                            <svg class="icon icon-prev" viewBox="0 0 15 16">
-                                <use xlink:href="/app/icons/sprite.svg#prev"></use>
-                            </svg>
-                        </div>
-                        <div class="owl-nav__owl-arrow owl-arrow owl-arrow_next">
-                            <svg class="icon icon-next" viewBox="0 0 16 16">
-                                <use xlink:href="/app/icons/sprite.svg#next"></use>
-                            </svg>
-                        </div>
-                    </div>
+                    <div class="gallery__nav js-slider2-nav owl-nav"></div>
                 </div>
             </div>
         </section>
@@ -1346,7 +1389,7 @@
     </div>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/app/js/app.js?v=1605808124218"></script>
+    <script src="/app/js/app.js?v=1605968689727"></script>
 </body>
 
 </html>

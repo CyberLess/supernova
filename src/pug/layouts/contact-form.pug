@@ -19,11 +19,11 @@
 				+e.column
 					+field('Сообщение')(name="mess")
 				+e.column.flex._justify
-					+e.file.file__
-						+e.INPUT.input(type="file")
+					+e.file.file__.js-file
+						+e.INPUT.input.js-file-input(type="file", name="file")
 						+e.icon
 							+icon('paperclip')
-						+e.text
+						+e.text.js-file-text
 							| Прикрепить 
 							br
 							| фото или видео

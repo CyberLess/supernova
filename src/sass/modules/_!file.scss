@@ -17,8 +17,25 @@
 		fill: rgba(#fff, .2);
 	}
 	&__text {
-		font-size: 1.6rem;
-		line-height: 130%;
+		font-size: 1.5rem;
+		line-height: 120%;
+		display: flex;
+	}
+	
+	&__name {
+		min-width: 0;
+		max-width: 12rem;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		margin-right: 1rem;
+	}
+	
+	&__link {
+		font-size: 1.4rem;
+		color: $pink;
+		text-decoration: underline;
+		font-weight: 500;
 	}
 	
 	@include max-screen($large_mobile) {

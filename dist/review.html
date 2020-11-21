@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>Отзывы</title>
-    <link rel="stylesheet" href="/app/css/app.css?v=1605808130154">
+    <link rel="stylesheet" href="/app/css/app.css?v=1605968693299">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -254,14 +254,31 @@
         <section class="review-about">
             <div class="review-about__wrap wrap wrap_middle">
                 <h1 class="review-about__title h2"><span class="string is-center"><span class="word"> <span>Партнеры </span></span><span class="word stroke"> <span>о нас</span></span></span></h1>
-                <div class="review-about__slider js-slider-about owl-carousel">
+                <div class="review-about__slider js-slider" data-settings="{
+					&quot;smartSpeed&quot;: 500,
+					&quot;items&quot;: 1,
+					&quot;center&quot;: false,
+					&quot;nav&quot;: true,
+					&quot;dots&quot;: false,
+					&quot;navContainer&quot;: &quot;.js-review1-nav&quot;,
+					&quot;responsive&quot;: {
+						&quot;0&quot;: {
+							&quot;autoHeight&quot;: true
+						},
+						&quot;700&quot;: {
+							&quot;autoHeight&quot;: false
+						}
+					}
+				}">
                     <div class="review-about__slide">
                         <div class="review-about__row flex flex_justify flex_start">
-                            <div class="review-about__foto">
-                                <picture>
-                                    <source type="image/webp" srcset="/app/img/review__foto.webp">
-                                        <img src="/app/img/review__foto.jpg" class="review-about__foto-img" alt="" role="presentation" />
-                                </picture><a class="review-about__play play js-modal" href="#popup-video" data-youtube="https://www.youtube.com/embed/tWkodax0vKE"><span class="play__btn"><svg class="icon icon-play" viewBox="0 0 14 16"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span><span class="play__text"> Видеоотзыв<br>или фото</span></a>
+                            <div class="review-about__left">
+                                <div class="review-about__foto">
+                                    <picture>
+                                        <source type="image/webp" srcset="/app/img/review__foto.webp">
+                                            <img src="/app/img/review__foto.jpg" class="review-about__foto-img object-fit" alt="" role="presentation" />
+                                    </picture><a class="review-about__play play js-modal" href="#popup-video" data-youtube="https://www.youtube.com/embed/tWkodax0vKE"><span class="play__btn"><svg class="icon icon-play" viewBox="0 0 14 16"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span><span class="play__text"> Видеоотзыв<br>или фото</span></a>
+                                </div>
                             </div>
                             <div class="review-about__right">
                                 <div class="review-about__head">
@@ -272,8 +289,8 @@
                                         </picture>
                                     </div>
                                     <div class="review-about__info">
-                                        <div class="review-about__name h6">Василий васильев</div>
-                                        <div class="review-about__position p">Какой то важный чел</div>
+                                        <div class="review-about__name h6">Василий васильев Какой то важный чел Какой то важный чел</div>
+                                        <div class="review-about__position p">Какой то важный чел Какой то важный чел Какой то важный чел</div>
                                         <div class="review-about__logo">
                                             <picture>
                                                 <source type="image/webp" srcset="/app/img/partner6.webp">
@@ -288,31 +305,20 @@
                                 </div>
                                 <div class="review-about__bottom"><a class="review-about__play play js-modal" href="#popup-video" data-youtube="https://www.youtube.com/embed/tWkodax0vKE"><span class="play__btn"><svg class="icon icon-play" viewBox="0 0 14 16"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span><span class="play__text"> Видеоотзыв<br>или фото</span></a>
                                     <div
-                                    class="review-about__nav">
-                                        <div class="review-about__nav owl-nav">
-                                            <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
-                                                <svg class="icon icon-prev" viewBox="0 0 15 16">
-                                                    <use xlink:href="/app/icons/sprite.svg#prev"></use>
-                                                </svg>
-                                            </div>
-                                            <div class="owl-nav__owl-arrow owl-arrow owl-arrow_next">
-                                                <svg class="icon icon-next" viewBox="0 0 16 16">
-                                                    <use xlink:href="/app/icons/sprite.svg#next"></use>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                </div>
+                                    class="review-about__nav js-review1-nav owl-nav"></div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="review-about__slide">
                     <div class="review-about__row flex flex_justify flex_start">
-                        <div class="review-about__foto">
-                            <picture>
-                                <source type="image/webp" srcset="/app/img/review__foto.webp">
-                                    <img src="/app/img/review__foto.jpg" class="review-about__foto-img" alt="" role="presentation" />
-                            </picture><a class="review-about__play play js-modal" href="#popup-video" data-youtube="https://www.youtube.com/embed/tWkodax0vKE"><span class="play__btn"><svg class="icon icon-play" viewBox="0 0 14 16"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span><span class="play__text"> Видеоотзыв<br>или фото</span></a>
+                        <div class="review-about__left">
+                            <div class="review-about__foto">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/review__foto.webp">
+                                        <img src="/app/img/review__foto.jpg" class="review-about__foto-img object-fit" alt="" role="presentation" />
+                                </picture><a class="review-about__play play js-modal" href="#popup-video" data-youtube="https://www.youtube.com/embed/tWkodax0vKE"><span class="play__btn"><svg class="icon icon-play" viewBox="0 0 14 16"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span><span class="play__text"> Видеоотзыв<br>или фото</span></a>
+                            </div>
                         </div>
                         <div class="review-about__right">
                             <div class="review-about__head">
@@ -339,61 +345,39 @@
                             </div>
                             <div class="review-about__bottom"><a class="review-about__play play js-modal" href="#popup-video" data-youtube="https://www.youtube.com/embed/tWkodax0vKE"><span class="play__btn"><svg class="icon icon-play" viewBox="0 0 14 16"><use xlink:href="/app/icons/sprite.svg#play"></use></svg></span><span class="play__text"> Видеоотзыв<br>или фото</span></a>
                                 <div
-                                class="review-about__nav">
-                                    <div class="review-about__nav owl-nav">
-                                        <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
-                                            <svg class="icon icon-prev" viewBox="0 0 15 16">
-                                                <use xlink:href="/app/icons/sprite.svg#prev"></use>
-                                            </svg>
-                                        </div>
-                                        <div class="owl-nav__owl-arrow owl-arrow owl-arrow_next">
-                                            <svg class="icon icon-next" viewBox="0 0 16 16">
-                                                <use xlink:href="/app/icons/sprite.svg#next"></use>
-                                            </svg>
-                                        </div>
-                                    </div>
-                            </div>
+                                class="review-about__nav js-review1-nav owl-nav"></div>
                         </div>
                     </div>
                 </div>
             </div>
             </div>
-            <div class="review-about__nav is-hidden">
-                <div class="review-about__nav owl-nav">
-                    <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
-                        <svg class="icon icon-prev" viewBox="0 0 15 16">
-                            <use xlink:href="/app/icons/sprite.svg#prev"></use>
-                        </svg>
-                    </div>
-                    <div class="owl-nav__owl-arrow owl-arrow owl-arrow_next">
-                        <svg class="icon icon-next" viewBox="0 0 16 16">
-                            <use xlink:href="/app/icons/sprite.svg#next"></use>
-                        </svg>
-                    </div>
-                </div>
-            </div>
+            <div class="review-about__nav is-hidden js-review1-nav owl-nav"></div>
             </div>
         </section>
         <section class="review">
             <div class="review__wrap wrap wrap_middle">
                 <div class="review__head">
                     <h1 class="review__title h2"><span class="string is-center"><span class="word"> <span>Отзывы </span></span><span class="word stroke"> <span>наших </span></span><br><span class="word stroke"> <span>клиентов</span></span></span></h1>
-                    <div class="review__nav">
-                        <div class="review__nav owl-nav">
-                            <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
-                                <svg class="icon icon-prev" viewBox="0 0 15 16">
-                                    <use xlink:href="/app/icons/sprite.svg#prev"></use>
-                                </svg>
-                            </div>
-                            <div class="owl-nav__owl-arrow owl-arrow owl-arrow_next">
-                                <svg class="icon icon-next" viewBox="0 0 16 16">
-                                    <use xlink:href="/app/icons/sprite.svg#next"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="review__nav js-review2-nav owl-nav"></div>
                 </div>
-                <div class="review__slider js-slider-review owl-carousel">
+                <div class="review__slider js-slider" data-settings="{
+					&quot;smartSpeed&quot;: 500,
+					&quot;items&quot;: 2,
+					&quot;center&quot;: false,
+					&quot;nav&quot;: true,
+					&quot;dots&quot;: false,
+					&quot;navContainer&quot;: &quot;.js-review2-nav&quot;,
+					&quot;responsive&quot;: {
+						&quot;0&quot;: {
+							&quot;autoHeight&quot;: true,
+							&quot;items&quot;: 1
+						},
+						&quot;580&quot;: {
+							&quot;autoHeight&quot;: false,
+							&quot;items&quot;: 2
+						}
+					}
+				}">
                     <div class="review__slide">
                         <div class="review__name h6">Василий васильев</div><a class="review__link" href="https://vk.com/id9684968" trget="_blank"><span class="review__link-icon"><svg class="icon icon-vk" viewBox="0 0 33 19"><use xlink:href="/app/icons/sprite.svg#vk"></use></svg></span><span class="review__link-text p">https://vk.com/id9684968</span></a>
                         <div
@@ -454,14 +438,14 @@
                             </div>
                         </div>
                         <div class="contact-form__column flex flex_justify">
-                            <div class="contact-form__file file">
-                                <input class="file__input" type="file" />
+                            <div class="contact-form__file file js-file">
+                                <input class="file__input js-file-input" type="file" name="file" />
                                 <div class="file__icon">
                                     <svg class="icon icon-paperclip" viewBox="0 0 26 28">
                                         <use xlink:href="/app/icons/sprite.svg#paperclip"></use>
                                     </svg>
                                 </div>
-                                <div class="file__text">Прикрепить
+                                <div class="file__text js-file-text">Прикрепить
                                     <br>фото или видео</div>
                             </div>
                             <div class="contact-form__btn-wrap">
@@ -947,7 +931,7 @@
         </form>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/app/js/app.js?v=1605808130255"></script>
+    <script src="/app/js/app.js?v=1605968693368"></script>
 </body>
 
 </html>

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>Карточка</title>
-    <link rel="stylesheet" href="/app/css/app.css?v=1605808125896">
+    <link rel="stylesheet" href="/app/css/app.css?v=1605968690709">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -260,12 +260,41 @@
             </div>
         </div>
         <section class="gallery">
-            <div class="gallery__slider slider js-slider owl-carousel">
+            <div class="gallery__slider slider js-slider" data-settings="{
+					&quot;smartSpeed&quot;: 700,
+					&quot;autoWidth&quot;: true,
+					&quot;center&quot;: true,
+					&quot;nav&quot;: false,
+					&quot;dots&quot;: false,
+					&quot;navContainer&quot;: &quot;.js-slider-nav&quot;,
+					&quot;responsive&quot;: {
+						&quot;0&quot;: {
+							&quot;autoWidth&quot;: false,
+							&quot;center&quot;: false,
+							&quot;items&quot;: 1,
+							&quot;smartSpeed&quot;: 500,
+							&quot;dots&quot;: true
+						},
+						&quot;580&quot;: {
+							&quot;autoWidth&quot;: false,
+							&quot;center&quot;: false,
+							&quot;items&quot;: 1,
+							&quot;smartSpeed&quot;: 500
+						},
+						&quot;1025&quot;: {
+							&quot;autoWidth&quot;: true,
+							&quot;center&quot;: true,
+							&quot;smartSpeed&quot;: 700
+						}
+					}
+				}">
                 <div class="slider__slide">
-                    <picture>
-                        <source type="image/webp" srcset="/app/img/card__slide1.webp">
-                            <img src="/app/img/card__slide1.jpg" class="slider__img" alt="" role="presentation" />
-                    </picture>
+                    <div class="slider__preview">
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/card__slide1.webp">
+                                <img src="/app/img/card__slide1.jpg" class="slider__img object-fit" alt="" role="presentation" />
+                        </picture>
+                    </div>
                     <div class="slider__row flex flex_justify">
                         <div class="slider__content content">
                             <h4>Парковая зона</h4>
@@ -275,10 +304,12 @@
                     </div>
                 </div>
                 <div class="slider__slide">
-                    <picture>
-                        <source type="image/webp" srcset="/app/img/card__slide1.webp">
-                            <img src="/app/img/card__slide1.jpg" class="slider__img" alt="" role="presentation" />
-                    </picture>
+                    <div class="slider__preview">
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/form__bg.webp">
+                                <img src="/app/img/form__bg.jpg" class="slider__img object-fit" alt="" role="presentation" />
+                        </picture>
+                    </div>
                     <div class="slider__row flex flex_justify">
                         <div class="slider__content content">
                             <h4>Парковая зона</h4>
@@ -288,10 +319,12 @@
                     </div>
                 </div>
                 <div class="slider__slide">
-                    <picture>
-                        <source type="image/webp" srcset="/app/img/card__slide1.webp">
-                            <img src="/app/img/card__slide1.jpg" class="slider__img" alt="" role="presentation" />
-                    </picture>
+                    <div class="slider__preview">
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/card__slide1.webp">
+                                <img src="/app/img/card__slide1.jpg" class="slider__img object-fit" alt="" role="presentation" />
+                        </picture>
+                    </div>
                     <div class="slider__row flex flex_justify">
                         <div class="slider__content content">
                             <h4>Парковая зона</h4>
@@ -303,18 +336,7 @@
             </div>
             <div class="gallery__bottom is-visible">
                 <div class="gallery__bottom-wrap wrap wrap_middle">
-                    <div class="gallery__nav owl-nav">
-                        <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
-                            <svg class="icon icon-prev" viewBox="0 0 15 16">
-                                <use xlink:href="/app/icons/sprite.svg#prev"></use>
-                            </svg>
-                        </div>
-                        <div class="owl-nav__owl-arrow owl-arrow owl-arrow_next">
-                            <svg class="icon icon-next" viewBox="0 0 16 16">
-                                <use xlink:href="/app/icons/sprite.svg#next"></use>
-                            </svg>
-                        </div>
-                    </div>
+                    <div class="gallery__nav js-slider-nav owl-nav"></div>
                 </div>
             </div>
         </section>
@@ -482,7 +504,7 @@
         <section class="apartments">
             <div class="apartments__wrap wrap">
                 <h2 class="apartments__title h2 css-text-center"><span class="string is-center"><span class="word"> <span>Квартиры в ЖК </span></span><span class="word stroke"> <span>"название"</span></span></span></h2>
-                <div class="apartments__filter flex">
+                <form class="apartments__filter flex" action="#">
                     <div class="apartments__filter-column">
                         <label class="apartments__checkbox check">
                             <input class="check__input" type="checkbox" value="Студия" name="apartment[]" checked="checked" /><span class="check__icon"><svg class="icon icon-check" viewBox="0 0 15 12"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span><span class="check__text p">Студия</span>
@@ -503,9 +525,11 @@
                             <input class="check__input" type="checkbox" value="2 комнатная квартира" name="apartment[]" /><span class="check__icon"><svg class="icon icon-check" viewBox="0 0 15 12"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span><span class="check__text p">2 комнатная квартира</span>
                         </label>
                     </div>
-                    <div class="apartments__filter-column"><a class="apartments__button btn" href="#"><span class="btn__text"> Найти квартиру</span></a>
+                    <div class="apartments__filter-column">
+                        <button class="apartments__button btn"><span class="btn__text"> Найти квартиру</span>
+                        </button>
                     </div>
-                </div>
+                </form>
             </div>
             <div class="apartments__list flex">
                 <div class="apartments__item apartments-item js-modal" data-modal="#apartment">
@@ -930,12 +954,41 @@
             </div>
         </section>
         <section class="gallery">
-            <div class="gallery__slider slider js-slider owl-carousel">
+            <div class="gallery__slider slider js-slider" data-settings="{
+					&quot;smartSpeed&quot;: 700,
+					&quot;autoWidth&quot;: true,
+					&quot;center&quot;: true,
+					&quot;nav&quot;: false,
+					&quot;dots&quot;: false,
+					&quot;navContainer&quot;: &quot;.js-slider2-nav&quot;,
+					&quot;responsive&quot;: {
+						&quot;0&quot;: {
+							&quot;autoWidth&quot;: false,
+							&quot;center&quot;: false,
+							&quot;items&quot;: 1,
+							&quot;smartSpeed&quot;: 500,
+							&quot;dots&quot;: true
+						},
+						&quot;580&quot;: {
+							&quot;autoWidth&quot;: false,
+							&quot;center&quot;: false,
+							&quot;items&quot;: 1,
+							&quot;smartSpeed&quot;: 500
+						},
+						&quot;1025&quot;: {
+							&quot;autoWidth&quot;: true,
+							&quot;center&quot;: true,
+							&quot;smartSpeed&quot;: 700
+						}
+					}
+				}">
                 <div class="slider__slide">
-                    <picture>
-                        <source type="image/webp" srcset="/app/img/card__slide1.webp">
-                            <img src="/app/img/card__slide1.jpg" class="slider__img" alt="" role="presentation" />
-                    </picture>
+                    <div class="slider__preview">
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/card__slide1.webp">
+                                <img src="/app/img/card__slide1.jpg" class="slider__img object-fit" alt="" role="presentation" />
+                        </picture>
+                    </div>
                     <div class="slider__row flex flex_justify">
                         <div class="slider__content content">
                             <h4>Большие кухни‐гостиные</h4>
@@ -945,10 +998,12 @@
                     </div>
                 </div>
                 <div class="slider__slide">
-                    <picture>
-                        <source type="image/webp" srcset="/app/img/card__slide1.webp">
-                            <img src="/app/img/card__slide1.jpg" class="slider__img" alt="" role="presentation" />
-                    </picture>
+                    <div class="slider__preview">
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/card__slide1.webp">
+                                <img src="/app/img/card__slide1.jpg" class="slider__img object-fit" alt="" role="presentation" />
+                        </picture>
+                    </div>
                     <div class="slider__row flex flex_justify">
                         <div class="slider__content content">
                             <h4>Большие кухни‐гостиные</h4>
@@ -958,10 +1013,12 @@
                     </div>
                 </div>
                 <div class="slider__slide">
-                    <picture>
-                        <source type="image/webp" srcset="/app/img/card__slide1.webp">
-                            <img src="/app/img/card__slide1.jpg" class="slider__img" alt="" role="presentation" />
-                    </picture>
+                    <div class="slider__preview">
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/card__slide1.webp">
+                                <img src="/app/img/card__slide1.jpg" class="slider__img object-fit" alt="" role="presentation" />
+                        </picture>
+                    </div>
                     <div class="slider__row flex flex_justify">
                         <div class="slider__content content">
                             <h4>Большие кухни‐гостиные</h4>
@@ -973,18 +1030,7 @@
             </div>
             <div class="gallery__bottom">
                 <div class="gallery__bottom-wrap wrap wrap_middle">
-                    <div class="gallery__nav owl-nav">
-                        <div class="owl-nav__owl-arrow owl-arrow owl-arrow_prev">
-                            <svg class="icon icon-prev" viewBox="0 0 15 16">
-                                <use xlink:href="/app/icons/sprite.svg#prev"></use>
-                            </svg>
-                        </div>
-                        <div class="owl-nav__owl-arrow owl-arrow owl-arrow_next">
-                            <svg class="icon icon-next" viewBox="0 0 16 16">
-                                <use xlink:href="/app/icons/sprite.svg#next"></use>
-                            </svg>
-                        </div>
-                    </div>
+                    <div class="gallery__nav js-slider2-nav owl-nav"></div>
                 </div>
             </div>
         </section>
@@ -1684,7 +1730,7 @@
     </div>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/app/js/app.js?v=1605808126020"></script>
+    <script src="/app/js/app.js?v=1605968690820"></script>
 </body>
 
 </html>
