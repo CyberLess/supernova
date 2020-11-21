@@ -1,6 +1,20 @@
 import { config } from "../config";
 
 var accordion = {
+	
+	slide: (e) => {
+		
+		let parent = $(e.currentTarget).closest('.js-accordion');
+		
+		if ( parent.hasClass('is-active') ) {
+			parent.removeClass('is-active').find('.js-accordion-body').slideUp(300);
+		} else {
+			$(".js-accordion.is-active").removeClass('is-active');
+			$('.js-accordion-body:visible').slideUp(300);
+			parent.addClass('is-active').find('.js-accordion-body').slideDown(300);
+		}
+	},
+	
 	init: () => {
 		
 		let container = $(".accordion__list");
@@ -14,23 +28,11 @@ var accordion = {
 			}
 			
 			$(this).find('.accordion__number').text(index);
-		}).click(function(){
-			
-			if ( $(this).hasClass('is-active') ) {
-				$(this).removeClass('is-active').find('.accordion__content').slideUp(300);
-			} else {
-				$(".accordion__item.is-active").removeClass('is-active');
-				$('.accordion__content:visible').slideUp(300);
-				$(this).addClass('is-active').find('.accordion__content').slideDown(300);
-			}
-			
 		});
 		
 		$(".accordion__item:first-child").addClass('is-active').find('.accordion__content').show();
 		
-		$(document).on("click", '', function() {
-
-		});
+		$(document).on("click", '.js-accordion-btn', accordion.slide);
 	}
 };
 

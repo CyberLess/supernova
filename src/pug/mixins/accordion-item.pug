@@ -1,9 +1,9 @@
 mixin accordion-item(title, contentClass)
-	+e.item
-		+e.head
+	+e.item.js-accordion
+		+e.head.js-accordion-btn
 			+e.number 01
 			+e.title.h5 !{title}
 			+e.icon
-		+e.content.content(class=contentClass)
+		+e.content.content.js-accordion-body(class=contentClass)
 			if block
 				block
