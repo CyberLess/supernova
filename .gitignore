@@ -1,2 +1,4 @@
 /node_modules/
 /gulp/settings/ftp.json
+.idea/
+package-lock.json
