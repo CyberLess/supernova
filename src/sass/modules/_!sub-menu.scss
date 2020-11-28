@@ -10,10 +10,12 @@
 		}
 	}
 	
-	@include max-screen($large_tablet) {
+	@include max-screen($small_desktop) {
 		&__list {
 			justify-content: flex-end;
 		}
+	}
+	@include max-screen($large_tablet) {
 		&__item {
 			font-size: 1.4rem;
 			line-height: 1;
