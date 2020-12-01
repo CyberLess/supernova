@@ -20,13 +20,13 @@
     }
     to {
      transform: rotateZ(360deg);
-    } 
+    }
 }
 
 @keyframes rotate {
     100% {
         transform: rotate(360deg);
-    }    
+    }
 }
 @keyframes cursor_dash {
     0% {
@@ -40,7 +40,27 @@
     100% {
         stroke-dasharray: 89,200;
         stroke-dashoffset: -124;
-    }    
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
 }
 
 // @keyframes orbit {
@@ -49,7 +69,7 @@
 //     }
 //     to {
 // 		transform: rotateZ(360deg);
-//     } 
+//     }
 // }
 
 @keyframes circleRotation {
@@ -58,7 +78,7 @@
     }
     to {
 		transform: rotate(360deg);
-    } 
+    }
 }
 @keyframes circleRotationItem {
     from {
@@ -68,7 +88,7 @@
     to {
         // opacity: 1;
         transform: rotate(-360deg);
-    } 
+    }
 }
 @keyframes circleOpacityItem {
     from {
@@ -76,7 +96,7 @@
     }
     to {
     	opacity: 1;
-    } 
+    }
 }
 
 @keyframes draw {

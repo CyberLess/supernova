@@ -1,4 +1,39 @@
+-
+	var experts = [
+		{image: 'expert-1.png', title: 'Експерт'},
+		{image: 'expert-2.png', title: 'Експерт'},
+		{image: 'expert-3.png', title: 'Експерт'},
+		{image: 'expert-4.png', title: 'Експерт'},
+		{image: 'expert-5.png', title: 'Експерт'},
+		{image: 'expert-6.png', title: 'Експерт'},
+		{image: 'expert-7.png', title: 'Експерт'},
+		{image: 'expert-8.png', title: 'Експерт'},
+		{image: 'expert-9.png', title: 'Експерт'},
+		{image: 'expert-10.png', title: 'Експерт'},
+		{image: 'expert-11.png', title: 'Експерт'},
+		{image: 'expert-12.png', title: 'Експерт'}
+	];
+
 +b.SECTION.team
 	+e.wrap.wrap
 		+e.box
-			+e.IMG.image(src='/img/team.jpg')
+			+e.title.h2.title.H2
+				| Выбор определяет<br>
+				SPAN.stroke будущее
+
+			+e.experts.flex._center.js-ray.UL
+				each item, index in experts
+					+e.expert.js-ray-hover.LI
+						+e.expert-circle.SPAN
+						+e.expert-overlay.SPAN
+						+e.circle.SPAN
+						if (index <= experts.length / 2)
+							+e.label._left.SPAN
+								+e.label-name.SPAN Имя Фамилия
+								+e.label-text.SPAN Руководитель департамента элитной недвижимости
+						else
+							+e.label._right.SPAN
+								+e.label-name.SPAN Имя Фамилия
+								+e.label-text.SPAN Руководитель департамента элитной недвижимости
+						+e.expert-image.IMG(src="/img/" + item.image, alt=item.title)
+

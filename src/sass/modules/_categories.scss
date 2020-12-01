@@ -16,7 +16,7 @@
 	&__text{
 		line-height: 2.2rem;
 		font-weight: 300;
-		
+
 		&_totop{
 			margin-top: 2rem;
 		}
@@ -90,13 +90,13 @@
 	}
 
 	&__item{
-		-webkit-tap-highlight-color: rgba(255, 255, 255, 0); 
+		-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 		-webkit-tap-highlight-color: transparent;  // i.e. Nexus5/Chrome and Kindle Fire HD 7''
 
 		width: 33.33%;
 		position: relative;
-		border: 1px solid #FFFFFF;
-		border-radius: 50%;
+		//border: 1px solid #FFFFFF;
+		//border-radius: 50%;
 		color: #FFFAFA;
 		cursor: pointer;
 		transition: ease .2s;
@@ -104,6 +104,72 @@
 		-webkit-appearance: none;
 		appearance: none;
 		-moz-appearance: none;
+
+		&:nth-of-type(1) {
+			&::after {
+				position: absolute;
+				bottom: 0;
+
+				width: 100%;
+				height: 1px;
+
+				background-image: linear-gradient(to right, transparent, #fff);
+
+				content: "";
+			}
+		}
+
+		&:nth-of-type(2),
+		&:nth-of-type(5) {
+			&::before,
+			&::after {
+				position: absolute;
+				top: 0;
+
+				width: 1px;
+				height: 100%;
+
+				content: "";
+			}
+
+			&::before {
+				left: 0;
+			}
+
+			&::after {
+				right: 0;
+			}
+		}
+
+		&:nth-of-type(2) {
+			border-bottom: 1px solid #fff;
+
+			&::before,
+			&::after {
+				background-image: linear-gradient(to bottom, transparent, #fff);
+			}
+		}
+
+		&:nth-of-type(5) {
+			&::before,
+			&::after {
+				background-image: linear-gradient(to top, transparent, #fff);
+			}
+		}
+
+		&:nth-of-type(3) {
+			&::after {
+				position: absolute;
+				bottom: 0;
+
+				width: 100%;
+				height: 1px;
+
+				background-image: linear-gradient(to left, transparent, #fff);
+
+				content: "";
+			}
+		}
 
 		&-inner{
 			padding-top: 100%;
@@ -139,37 +205,37 @@
 				&:hover{
 					background: #7F3955;
 					border-color: #7F3955;
-				}			
+				}
 			}
 			&_orange{
 				&:hover{
 					background: #CF7C34;
 					border-color: #CF7C34;
-				}			
+				}
 			}
 			&_green{
 				&:hover{
 					background: #9EBB4D;
 					border-color: #9EBB4D;
-				}			
+				}
 			}
 			&_pink{
 				&:hover{
 					background: $pink;
 					border-color: $pink;
-				}			
+				}
 			}
 			&_blue{
 				&:hover{
 					background: #33799C;
 					border-color: #33799C;
-				}			
+				}
 			}
 			&_purple{
 				&:hover{
 					background: #9F5483;
 					border-color: #9F5483;
-				}			
+				}
 			}
 
 			&:hover{
@@ -217,7 +283,7 @@
 			&_big{
 				font-size: 2rem;
 				line-height: 1em;
-				margin-bottom: 5px;				
+				margin-bottom: 5px;
 			}
 		}
 
@@ -275,7 +341,7 @@
 							}
 						}
 					}
-				}		
+				}
 			}
 			&_green{
 				.categories{
@@ -286,7 +352,7 @@
 							}
 						}
 					}
-				}		
+				}
 			}
 			&_pink{
 				.categories{
@@ -297,7 +363,7 @@
 							}
 						}
 					}
-				}			
+				}
 			}
 			&_blue{
 				.categories{
@@ -308,7 +374,7 @@
 							}
 						}
 					}
-				}			
+				}
 			}
 			&_purple{
 				.categories{
@@ -319,7 +385,7 @@
 							}
 						}
 					}
-				}			
+				}
 			}
 
 			&.is-visible{
@@ -336,7 +402,7 @@
 							}
 						}
 					}
-				}				
+				}
 			}
 		}
 
@@ -350,7 +416,7 @@
 			width: 50%;
 
 			&-part{
-				
+
 				&_default{
 					padding: 0;
 				}

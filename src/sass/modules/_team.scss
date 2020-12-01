@@ -1,6 +1,330 @@
 .team{
-	padding: 10rem 0;
+	position: relative;
 
+	overflow: hidden;
+	padding-top: (823 / 1920 * 100%);
+	background-image:
+		linear-gradient(to bottom, #151515 10%, transparent 25%, transparent 80%, #151515 95%),
+		url("/img/curtains.jpg");
+	background-repeat: no-repeat;
+
+	&__wrap {
+		position: absolute;
+		z-index: 1;
+		top: 4rem;
+		left: 50%;
+
+		width: 100%;
+
+		transform: translateX(-50%);
+
+		&::before {
+			position: absolute;
+			z-index: 15;
+			top: -4rem;
+			left: 0;
+
+			width: 100%;
+			height: 18rem;
+
+			background-image: linear-gradient(to bottom, #151515, transparent);
+
+			content: "";
+		}
+	}
+
+	&__title {
+		position: relative;
+		z-index: 20;
+
+		text-align: center;
+	}
+
+	&__experts {
+		list-style-type: none;
+		align-items: flex-end;
+		padding-top: 6.9rem;
+
+		&::before {
+			position: absolute;
+			z-index: 0;
+			top: 0;
+			left: 0;
+
+			width: 100%;
+			height: 100%;
+
+			background-color: rgba(21, 21, 21, 0.5);
+			opacity: 0;
+
+			transition: opacity .4s ease;
+
+			content: "";
+		}
+
+		&::after {
+			position: absolute;
+			z-index: -1;
+			left: 50%;
+			bottom: -2rem;
+
+			width: 85%;
+			height: 5rem;
+			border-radius: 50%;
+
+			transform: translateX(-50%);
+
+			box-shadow: 0 0 40px 10px rgba(21, 21, 21, 0.91);
+			background-color: rgba(21, 21, 21, 0.91);
+
+			content: "";
+		}
+
+		&.hover {
+			&::before {
+				z-index: 1;
+
+				opacity: 1;
+			}
+		}
+	}
+
+	&__expert {
+		position: relative;
+
+		margin-right: -.7%;
+
+		counter-increment: maskNum;
+
+		&::before {
+			position: absolute;
+			left: 50%;
+			top: -73rem;
+
+			width: 0;
+			height: 110.9rem;
+
+			transform: translateX(-50%);
+			transition: opacity .4s ease;
+
+			background-image: url("/img/ray.png");
+			background-repeat: no-repeat;
+			background-position: top center;
+			opacity: 0;
+
+			content: "";
+		}
+
+		&::after {
+			position: absolute;
+			z-index: -1;
+			left: 50%;
+			bottom: 0;
+
+			width: 130%;
+			height: 3rem;
+			border-radius: 50%;
+
+			box-shadow:
+				inset 0 0 10px 10px rgba(250, 248, 165, 0.1),
+				0 0 10px 10px rgba(250, 248, 165, 0.1);
+			opacity: 0;
+
+			transform: translateX(-50%);
+			transition: .4s ease;
+
+			content: "";
+		}
+
+		&:hover,
+		&:focus {
+			z-index: 5;
+
+			overflow: visible;
+
+			cursor: pointer;
+
+			&::before {
+				width: 23rem;
+			}
+
+			&::before,
+			&::after {
+				opacity: 1;
+			}
+
+			.team {
+				&__label {
+					display: block;
+
+					opacity: 1;
+
+					animation-name: fadeIn;
+					animation-duration: .5s;
+				}
+
+				&__expert-circle {
+					opacity: 1;
+				}
+			}
+		}
+
+		.team {
+			&__expert-overlay {
+				mask-image: url("/img/expert-" + counter(maskNum) + ".png");
+			}
+		}
+
+		&.darken {
+			.team {
+				&__expert-overlay {
+					opacity: 1;
+
+					animation-name: fadeIn;
+					animation-duration: .4s;
+					animation-timing-function: ease;
+				}
+			}
+		}
+
+		&.no-darken {
+			.team {
+				&__expert-overlay {
+					animation-name: fadeOut;
+					animation-duration: .4s;
+					animation-timing-function: ease;
+				}
+			}
+		}
+
+		&:nth-of-type(3) {
+			.team {
+				&__expert-circle {
+					left: 60%;
+				}
+			}
+		}
+
+		&:nth-of-type(4) {
+			.team {
+				&__expert-circle {
+					left: 57%;
+				}
+			}
+		}
+
+		&:nth-of-type(6) {
+			.team {
+				&__expert-circle {
+					left: 45%;
+				}
+			}
+		}
+
+		&:nth-of-type(8) {
+			.team {
+				&__expert-circle {
+					left: 57%;
+				}
+			}
+		}
+
+		&:nth-of-type(9) {
+			.team {
+				&__expert-circle {
+					left: 60%;
+				}
+			}
+		}
+
+		&:nth-of-type(11) {
+			.team {
+				&__expert-circle {
+					left: 40%;
+				}
+			}
+		}
+
+		&:nth-of-type(12) {
+			.team {
+				&__expert-circle {
+					left: 47%;
+				}
+			}
+		}
+	}
+
+	&__expert-circle {
+		position: absolute;
+		top: -1rem;
+		left: 50%;
+
+		width: 10rem;
+		height: 10rem;
+		border-radius: 50%;
+		border: 1px solid rgba(255, 255, 255, 0.6);
+
+		opacity: 0;
+
+		transition: opacity .4s ease;
+
+		transform: translateX(-50%);
+	}
+
+	&__expert-overlay {
+		position: absolute;
+		z-index: 1;
+		left: 0;
+		top: 0;
+
+		width: 100%;
+		height: 100%;
+
+		background-color: rgba(21, 21, 21, 0.5);
+
+		opacity: 0;
+	}
+
+	&__label {
+		position: absolute;
+		top: 18%;
+
+		display: none;
+		width: 29.4rem;
+		padding: 3rem 4rem;
+
+		color: #000;
+
+		background-color: #fff;
+		opacity: 0;
+
+		transition: .4s ease;
+
+		&_left {
+			left: 69%;
+		}
+
+		&_right {
+			right: 69%;
+		}
+	}
+
+	&__label-name {
+		display: block;
+		margin-bottom: 2rem;
+
+		font-family: 'RoadRadio', sans-serif;
+		font-weight: 300;
+		font-size: 1.9rem;
+		text-transform: uppercase;
+	}
+
+	&__label-text {
+		display: block;
+
+		font-family: 'Gotham', sans-serif;
+		font-size: 1.5rem;
+	}
 
 	@include max-screen($large_tablet) {
 		padding: 7rem 0;

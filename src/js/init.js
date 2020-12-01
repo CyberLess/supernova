@@ -13,6 +13,7 @@ import { partners } from "./modules/partners";
 import { accordion } from "./modules/accordion";
 import { calc } from "./modules/calc";
 import { config } from "./config";
+import {ray} from "./modules/ray";
 
 var App = () => {};
 
@@ -32,9 +33,10 @@ App.prototype.init = () => {
 	sliders.init();
 	accordion.init();
 	calc.init();
+	ray.init();
 
 	config.log('app init')
-	
+
 };
 
 export { App };
