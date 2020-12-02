@@ -2,16 +2,16 @@
 	position: relative;
 
 	overflow: hidden;
-	padding-top: (823 / 1920 * 100%);
+	padding-top: 52.3%;
 	background-image:
-		linear-gradient(to bottom, #151515 10%, transparent 25%, transparent 80%, #151515 95%),
+		linear-gradient(to bottom, #151515 10%, transparent 25%, transparent 65%, #151515 75%),
 		url("/img/curtains.jpg");
 	background-repeat: no-repeat;
 
 	&__wrap {
 		position: absolute;
 		z-index: 1;
-		top: 4rem;
+		top: 7rem;
 		left: 50%;
 
 		width: 100%;
@@ -21,7 +21,7 @@
 		&::before {
 			position: absolute;
 			z-index: 15;
-			top: -4rem;
+			top: -7rem;
 			left: 0;
 
 			width: 100%;

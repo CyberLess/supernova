@@ -5,27 +5,27 @@
 			+e.inside
 				+e.circle._contacts
 					+e.inner
-						+e.title.h6 Контакты
+						+e.title.SPAN Контакты
 						+e.list
-							+e.list-item.middle
+							+e.list-item._address.middle.ADDRESS
 								| Санкт-Петербург
 								br
 								| Итальянская 13
-							+e.list-item.middle
+							+e.list-item._working-time.middle
 								| ПН-ПТ 10:00-20:00
 								br
 								| СБ-ВС выходные
-							+e.list-item.middle
-								| +7 812 800 80 80
+							+e.list-item._phone.middle
+								+e.phone.A(href="tel:+78128008080") +7 812 800 80 80
 				+e.circle._recall._right._top.js-modal(data-modal='#popup-form4')
 					+e.inner
 						+e.manager
 							+e.IMG.manager-image.object-fit(src="/img/manager.png")
 						+e.title.h6 остались вопросы?
 						+e.text.p
-							| Закажите обратный 
+							| Закажите обратный
 							br
-							| звонок менеджеру Юлии
+							| звонок менеджеру Наталии
 						+e.arrow
 							+icon('arrow')
 

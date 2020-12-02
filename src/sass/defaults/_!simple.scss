@@ -27,7 +27,7 @@
 	// @include max-screen($large_mobile) {
 	// 	padding: 0 10px;
 	// }
-	
+
 	&_middle {
 		max-width: 147.6rem;
 	}
@@ -43,7 +43,7 @@
 
 html{
 	// scroll-behavior: smooth;
-	
+
 	&.js-lock{
 		overflow: hidden;
 	}
@@ -51,8 +51,8 @@ html{
 }
 
 html, body{
-	
-	font-size: 0.52vw; // 1rem = 10px 
+
+	font-size: 0.52vw; // 1rem = 10px
 
 	@include max-screen($large_desktop) {
 		font-size: 0.56vw;
@@ -72,8 +72,8 @@ html, body{
 }
 
 body{
-	position: relative;	
-	
+	position: relative;
+
 	font-family: 'Gotham';
 	font-weight: 300;
 	color: #fff;
@@ -88,7 +88,7 @@ body{
 		overflow-y: scroll;
 	}
 
-	
+
 }
 
 input {
@@ -238,13 +238,13 @@ img, svg{
 
 	/* Handle */
 	&::-webkit-scrollbar-thumb {
-		background: #eee; 
+		background: #eee;
 	}
 
 	/* Handle on hover */
 	// &::-webkit-scrollbar-thumb:hover {
-	// 	background: #555; 
-	// }	
+	// 	background: #555;
+	// }
 }
 
 .pink{
@@ -307,4 +307,15 @@ img, svg{
 	@include max-screen($large_mobile) {
 		display: block;
 	}
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
 }

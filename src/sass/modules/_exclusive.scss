@@ -22,24 +22,6 @@
 			max-height: 100%;
 			margin: auto;
 		}
-
-		&_loupe{
-			margin-left: -1.5rem;
-			width: 6.2rem;
-
-		}
-
-		&_decoration{
-			width: 4.5rem;
-		}
-
-		&_doc{
-			width: 4rem;
-		}
-
-		&_docs{
-			width: 4.8rem;
-		}
 	}
 
 	&__text{
@@ -97,9 +79,9 @@
 	}
 
 	@include max-screen($large_mobile) {
-		text-align: center;	
+		text-align: center;
 		padding-bottom: 0;
-		
+
 		&__title{
 			margin-bottom: 5.7rem;
 		}

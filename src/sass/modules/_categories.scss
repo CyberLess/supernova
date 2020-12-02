@@ -5,7 +5,8 @@
 	position: relative;
 
 	&__list{
-		width: 1335/1780*100%;
+		//width: 1335/1780*100%;
+		width: 100%;
 		margin: auto;
 	}
 
@@ -172,7 +173,8 @@
 		}
 
 		&-inner{
-			padding-top: 100%;
+			//padding-top: 100%;
+			padding-top: 62%;
 		}
 
 		&-part{

@@ -1,14 +1,20 @@
 +b.SECTION.catalog
-	+e.wrap.wrap._small
+	+e.wrap.wrap
 		+e.title.h2
-			span.stroke топ 20 
-			| предложений 
+			span.stroke топ 20
+			| предложений
 			br
 			| недвижимости
 	+e.wrap.wrap
-		+e.nav.form.FORM(action="")
+		+e.nav.form.FORM(action="/")
 			+e.nav-row.flex
-				+e.nav-cell
+				+e.nav-checkbox.flex._vertical
+					+e.check-text.js-check-listing.SPAN Листинг
+					+e.check-wrap.LABEL
+						+e.check-listing-input.visually-hidden.INPUT(type="checkbox" name="map")
+						+e.toggle.SPAN
+					+e.check-text.js-check-map.SPAN На карте
+				+e.nav-cell._list
 					+e.select.multiply__.js-multiply(data-panel="catalog-panel")
 						+e.top.js-multiply-nav
 							+e.top-inner.flex
@@ -21,6 +27,7 @@
 									+e.LABEL.checkbox.checkbox__
 										+e.INPUT.input(type="checkbox" name="class[]" value="Комфорт")
 										+e.SPAN.text.middle
+											+e.SPAN.box
 											+e.SPAN.box
 												+icon('checkbox')
 											| Комфорт
@@ -39,7 +46,7 @@
 												+icon('checkbox')
 											| Премиум
 							+button Подтвердить
-				+e.nav-cell
+				+e.nav-cell._list
 					+e.select.multiply__.js-multiply(data-panel="catalog-panel")
 						+e.top.js-multiply-nav
 							+e.top-inner.flex
@@ -91,7 +98,7 @@
 												+icon('checkbox')
 											| Все
 							+button Подтвердить
-				+e.nav-cell
+				+e.nav-cell._list
 					+e.select.multiply__.js-multiply(data-panel="catalog-panel")
 						+e.top.js-multiply-nav
 							+e.top-inner.flex
@@ -144,7 +151,8 @@
 											| Не важно
 							+button Подтвердить
 				+e.nav-cell
-					+e.link.link__.BUTTON Показать на карте
+					+e.btn-search.BUTTON(type="submit")
+						+icon('search')
 	+e.list.flex
 		+e.item(data-aos="case-aos")
 			+e.background
@@ -159,7 +167,7 @@
 						+e.content-name.h6._big Пестеля 6
 						+e.content-company.p Донстрой Лимитед
 						+e.content-text.middle
-							| Дом с апартаментами от 27 м² 
+							| Дом с апартаментами от 27 м²
 							br
 							| с гостиничным сервисом на Новом Арбате.
 							br
@@ -180,7 +188,7 @@
 						+e.content-name.h6._big Пестеля 6
 						+e.content-company.p Донстрой Лимитед
 						+e.content-text.middle
-							| Дом с апартаментами от 27 м² 
+							| Дом с апартаментами от 27 м²
 							br
 							| с гостиничным сервисом на Новом Арбате.
 							br
@@ -201,7 +209,7 @@
 						+e.content-name.h6._big Пестеля 6
 						+e.content-company.p Донстрой Лимитед
 						+e.content-text.middle
-							| Дом с апартаментами от 27 м² 
+							| Дом с апартаментами от 27 м²
 							br
 							| с гостиничным сервисом на Новом Арбате.
 							br
@@ -222,7 +230,7 @@
 						+e.content-name.h6._big Пестеля 6
 						+e.content-company.p Донстрой Лимитед
 						+e.content-text.middle
-							| Дом с апартаментами от 27 м² 
+							| Дом с апартаментами от 27 м²
 							br
 							| с гостиничным сервисом на Новом Арбате.
 							br
@@ -243,7 +251,7 @@
 						+e.content-name.h6._big Пестеля 6
 						+e.content-company.p Донстрой Лимитед
 						+e.content-text.middle
-							| Дом с апартаментами от 27 м² 
+							| Дом с апартаментами от 27 м²
 							br
 							| с гостиничным сервисом на Новом Арбате.
 							br
@@ -264,7 +272,7 @@
 						+e.content-name.h6._big Пестеля 6
 						+e.content-company.p Донстрой Лимитед
 						+e.content-text.middle
-							| Дом с апартаментами от 27 м² 
+							| Дом с апартаментами от 27 м²
 							br
 							| с гостиничным сервисом на Новом Арбате.
 							br
@@ -285,7 +293,7 @@
 						+e.content-name._big.h4 Гагарин
 						+e.content-company.p Донстрой Лимитед
 						+e.content-text._big.big
-							| Дом с апартаментами от 27 м² 
+							| Дом с апартаментами от 27 м²
 							br
 							| с гостиничным сервисом на Новом Арбате.
 							br
@@ -306,7 +314,7 @@
 						+e.content-name.h6._big Пестеля 6
 						+e.content-company.p Донстрой Лимитед
 						+e.content-text.middle
-							| Дом с апартаментами от 27 м² 
+							| Дом с апартаментами от 27 м²
 							br
 							| с гостиничным сервисом на Новом Арбате.
 							br
@@ -327,7 +335,7 @@
 						+e.content-name.h6._big Пестеля 6
 						+e.content-company.p Донстрой Лимитед
 						+e.content-text.middle
-							| Дом с апартаментами от 27 м² 
+							| Дом с апартаментами от 27 м²
 							br
 							| с гостиничным сервисом на Новом Арбате.
 							br
@@ -348,7 +356,7 @@
 						+e.content-name.h6._big Пестеля 6
 						+e.content-company.p Донстрой Лимитед
 						+e.content-text.middle
-							| Дом с апартаментами от 27 м² 
+							| Дом с апартаментами от 27 м²
 							br
 							| с гостиничным сервисом на Новом Арбате.
 							br
@@ -369,7 +377,7 @@
 						+e.content-name.h6._big Пестеля 6
 						+e.content-company.p Донстрой Лимитед
 						+e.content-text.middle
-							| Дом с апартаментами от 27 м² 
+							| Дом с апартаментами от 27 м²
 							br
 							| с гостиничным сервисом на Новом Арбате.
 							br
@@ -390,7 +398,7 @@
 						+e.content-name.h6._big Пестеля 6
 						+e.content-company.p Донстрой Лимитед
 						+e.content-text.middle
-							| Дом с апартаментами от 27 м² 
+							| Дом с апартаментами от 27 м²
 							br
 							| с гостиничным сервисом на Новом Арбате.
 							br
@@ -411,7 +419,7 @@
 						+e.content-name._big.h4 Гагарин
 						+e.content-company.p Донстрой Лимитед
 						+e.content-text._big.big
-							| Дом с апартаментами от 27 м² 
+							| Дом с апартаментами от 27 м²
 							br
 							| с гостиничным сервисом на Новом Арбате.
 							br
@@ -432,7 +440,7 @@
 						+e.content-name.h6._big Пестеля 6
 						+e.content-company.p Донстрой Лимитед
 						+e.content-text.middle
-							| Дом с апартаментами от 27 м² 
+							| Дом с апартаментами от 27 м²
 							br
 							| с гостиничным сервисом на Новом Арбате.
 							br
@@ -453,7 +461,7 @@
 						+e.content-name.h6._big Пестеля 6
 						+e.content-company.p Донстрой Лимитед
 						+e.content-text.middle
-							| Дом с апартаментами от 27 м² 
+							| Дом с апартаментами от 27 м²
 							br
 							| с гостиничным сервисом на Новом Арбате.
 							br
@@ -474,7 +482,7 @@
 						+e.content-name.h6._big Пестеля 6
 						+e.content-company.p Донстрой Лимитед
 						+e.content-text.middle
-							| Дом с апартаментами от 27 м² 
+							| Дом с апартаментами от 27 м²
 							br
 							| с гостиничным сервисом на Новом Арбате.
 							br
@@ -495,7 +503,7 @@
 						+e.content-name.h6._big Пестеля 6
 						+e.content-company.p Донстрой Лимитед
 						+e.content-text.middle
-							| Дом с апартаментами от 27 м² 
+							| Дом с апартаментами от 27 м²
 							br
 							| с гостиничным сервисом на Новом Арбате.
 							br
@@ -516,7 +524,7 @@
 						+e.content-name.h6._big Пестеля 6
 						+e.content-company.p Донстрой Лимитед
 						+e.content-text.middle
-							| Дом с апартаментами от 27 м² 
+							| Дом с апартаментами от 27 м²
 							br
 							| с гостиничным сервисом на Новом Арбате.
 							br
@@ -537,7 +545,7 @@
 						+e.content-name._big.h4 Гагарин
 						+e.content-company.p Донстрой Лимитед
 						+e.content-text._big.big
-							| Дом с апартаментами от 27 м² 
+							| Дом с апартаментами от 27 м²
 							br
 							| с гостиничным сервисом на Новом Арбате.
 							br
@@ -558,7 +566,7 @@
 						+e.content-name.h6._big Пестеля 6
 						+e.content-company.p Донстрой Лимитед
 						+e.content-text.middle
-							| Дом с апартаментами от 27 м² 
+							| Дом с апартаментами от 27 м²
 							br
 							| с гостиничным сервисом на Новом Арбате.
 							br
@@ -579,7 +587,7 @@
 						+e.content-name.h6._big Пестеля 6
 						+e.content-company.p Донстрой Лимитед
 						+e.content-text.middle
-							| Дом с апартаментами от 27 м² 
+							| Дом с апартаментами от 27 м²
 							br
 							| с гостиничным сервисом на Новом Арбате.
 							br
@@ -587,3 +595,6 @@
 					+e.bottom
 						+button('подробнее') подробнее
 						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+
+	+e.wrap-bottom.wrap.flex._center._vertical
+		+e.bottom-btn.btn.A(href="#") Показать ещё

@@ -1,0 +1,96 @@
+.profitable-work {
+	&__wrap {
+		max-width: 1200px;
+	}
+
+	&__title {
+		margin-bottom: 14rem;
+
+		text-align: center;
+	}
+
+	&__part {
+		&_left {
+			width: (660 / 1140 * 100%);
+		}
+
+		&_right {
+			display: flex;
+			flex-grow: 1;
+			margin-right: -7%;
+			padding-left: 3rem;
+		}
+	}
+
+	&__cell {
+		margin-bottom: 7.9rem;
+
+		&:nth-of-type(2n) {
+			margin-left: (127 / 660 * 100%);
+		}
+	}
+
+	&__preview {
+		margin-bottom: 5rem;
+
+		svg {
+			fill: none;
+			stroke: #fff
+		}
+
+		&_window {
+			width: 4.9rem;
+
+		}
+
+		&_no-commission {
+			width: 5.4rem;
+		}
+
+		&_honesty {
+			width: 5.6rem;
+		}
+
+		&_mortgage {
+			width: 8rem;
+		}
+
+		&_loupe{
+			margin-left: -1.5rem;
+			width: 6.2rem;
+
+		}
+
+		&_decoration{
+			width: 4.5rem;
+		}
+
+		&_doc{
+			width: 4rem;
+		}
+
+		&_docs{
+			width: 4.8rem;
+		}
+	}
+
+	&__cell-title {
+		display: block;
+		margin-bottom: 2rem;
+
+		font-family: 'RoadRadio', sans-serif;
+		font-size: 2.5rem;
+		line-height: 1;
+		text-transform: uppercase;
+	}
+
+	&__circle {
+		&_second {
+			transform: rotate3d(0, 1, 1, -240deg);
+		}
+
+		&_third {
+			transform: rotate3d(0, -1, -1, -240deg);
+		}
+	}
+}
