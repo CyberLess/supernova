@@ -1,388 +1,395 @@
-.categories{
+.categories {
+	position: relative;
+	z-index: 50;
 	padding-top: 10.4rem;
 	padding-bottom: 10rem;
-	z-index: 50;
-	position: relative;
 
-	&__list{
+	&__list {
 		//width: 1335/1780*100%;
 		width: 100%;
 		margin: auto;
 	}
 
-	&__name{
+	&__name {
 		margin: .3rem 0;
 	}
 
-	&__text{
-		line-height: 2.2rem;
+	&__text {
 		font-weight: 300;
+		line-height: 2.2rem;
 
-		&_totop{
+		&_totop {
 			margin-top: 2rem;
 		}
 
-		&:not(:last-child){
+		&:not(:last-child) {
 			margin-bottom: 2rem;
 		}
 	}
 
-	&__link{
+	&__link {
 		position: absolute;
-		left: 0;
+		z-index: 50;
 		top: 0;
+		left: 0;
 		width: 100%;
 		height: 100%;
-		z-index: 50;
 
 		border-radius: 50%;
 	}
 
-	&__arrow{
+	&__arrow {
 		width: 7rem;
 		margin-top: 1rem;
 		stroke: #fff;
 		fill: transparent;
 	}
 
-	&__close{
-		position: absolute!important;
-		right: 1rem;
-		top: 2rem;
-		display: none;
+	&__close {
+		position: absolute !important;
 		z-index: 500;
+		top: 2rem;
+		right: 1rem;
+		display: none;
 	}
 
-	&__bg{
+	&__bg {
 		position: fixed;
-		left: 0;
+		z-index: 400;
 		top: 0;
+		left: 0;
+		display: none;
+		visibility: hidden;
 		width: 100%;
 		height: 100%;
-		z-index: 400;
-		display: none;
+		transition: ease .25s;
 		background: rgba(#151515, .7);
 		opacity: 0;
-		visibility: hidden;
-		transition: ease .25s;
 	}
 
-	&__mobile-link{
+	&__mobile-link {
 		display: none;
 		margin-top: 1.6rem;
 
-		span{
-			width: 1.7rem;
-			height: 1.4rem;
+		span {
 			position: relative;
 			overflow: hidden;
+			width: 1.7rem;
+			height: 1.4rem;
 			margin-left: .9rem;
 
-			svg{
-				max-width: none;
-				width: 70px;
+			svg {
 				position: absolute;
-				right: -16px;
 				top: 0;
+				right: -16px;
+				width: 70px;
+				max-width: none;
 				height: 100%;
 				stroke: #fff;
 			}
 		}
 	}
 
-	&__item{
-		-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-		-webkit-tap-highlight-color: transparent;  // i.e. Nexus5/Chrome and Kindle Fire HD 7''
-
-		width: 33.33%;
+	&__item {
 		position: relative;
-		//border: 1px solid #FFFFFF;
-		//border-radius: 50%;
+		width: 33.33%;
+
 		color: #FFFAFA;
 		cursor: pointer;
+		//border: 1px solid #FFFFFF;
+		//border-radius: 50%;
 		transition: ease .2s;
 		outline: none;
+		-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+		-webkit-tap-highlight-color: transparent; // i.e. Nexus5/Chrome and Kindle Fire HD 7''
 		-webkit-appearance: none;
 		appearance: none;
 		-moz-appearance: none;
 
-		&:nth-of-type(1) {
-			&::after {
-				position: absolute;
-				bottom: 0;
-
-				width: 100%;
-				height: 1px;
-
-				background-image: linear-gradient(to right, transparent, #fff);
-
-				content: "";
-			}
-		}
-
-		&:nth-of-type(2),
-		&:nth-of-type(5) {
-			&::before,
-			&::after {
-				position: absolute;
-				top: 0;
-
-				width: 1px;
-				height: 100%;
-
-				content: "";
-			}
-
-			&::before {
-				left: 0;
-			}
-
-			&::after {
-				right: 0;
-			}
-		}
-
-		&:nth-of-type(2) {
-			border-bottom: 1px solid #fff;
-
-			&::before,
-			&::after {
-				background-image: linear-gradient(to bottom, transparent, #fff);
-			}
-		}
-
-		&:nth-of-type(5) {
-			&::before,
-			&::after {
-				background-image: linear-gradient(to top, transparent, #fff);
-			}
-		}
-
-		&:nth-of-type(3) {
-			&::after {
-				position: absolute;
-				bottom: 0;
-
-				width: 100%;
-				height: 1px;
-
-				background-image: linear-gradient(to left, transparent, #fff);
-
-				content: "";
-			}
-		}
-
-		&-inner{
+		&-inner {
 			//padding-top: 100%;
 			padding-top: 62%;
 		}
 
-		&-part{
+		&-part {
 			position: absolute;
+			top: 0;
+			left: 0;
+			// flex-wrap: wrap;
 			display: flex;
 			align-items: center;
-			// flex-wrap: wrap;
 			flex-direction: column;
 			justify-content: center;
-			left: 0;
-			top: 0;
 			width: 100%;
 			height: 100%;
 			padding: 4rem;
 			text-align: center;
 			transition: ease .15s;
 
-			&_default{
+			&_default {
 
 			}
 
-			&_hidden{
-				opacity: 0;
+			&_hidden {
 				visibility: hidden;
+				opacity: 0;
 			}
 		}
 
 		@include min-screen($small_tablet+1) {
-			&_darkpink{
-				&:hover{
-					background: #7F3955;
+			&_darkpink {
+				&:hover {
 					border-color: #7F3955;
+					background: #7F3955;
 				}
 			}
-			&_orange{
-				&:hover{
-					background: #CF7C34;
+			&_orange {
+				&:hover {
 					border-color: #CF7C34;
+					background: #CF7C34;
 				}
 			}
-			&_green{
-				&:hover{
-					background: #9EBB4D;
+			&_green {
+				&:hover {
 					border-color: #9EBB4D;
+					background: #9EBB4D;
 				}
 			}
-			&_pink{
-				&:hover{
-					background: $pink;
+			&_pink {
+				&:hover {
 					border-color: $pink;
+					background: $pink;
 				}
 			}
-			&_blue{
-				&:hover{
-					background: #33799C;
+			&_blue {
+				&:hover {
 					border-color: #33799C;
+					background: #33799C;
 				}
 			}
-			&_purple{
-				&:hover{
-					background: #9F5483;
+			&_purple {
+				&:hover {
 					border-color: #9F5483;
+					background: #9F5483;
 				}
 			}
 
-			&:hover{
-				.categories{
-					&__item{
-						&-part{
-							&_default{
-								opacity: 0;
+			&:hover {
+				.categories {
+					&__item {
+						&-part {
+							&_default {
 								visibility: hidden;
+								opacity: 0;
 							}
 
-							&_hidden{
-								opacity: 1;
+							&_hidden {
 								visibility: visible;
+								opacity: 1;
 							}
 						}
 					}
 				}
 			}
 		}
-
-
 	}
 
+	@include min-screen($large_mobile + 1) {
+		&__item {
+			&:nth-of-type(1) {
+				&::after {
+					position: absolute;
+					bottom: 0;
+
+					width: 100%;
+					height: 1px;
+
+					background-image: linear-gradient(to right, transparent, #fff);
+
+					content: "";
+				}
+			}
+
+			&:nth-of-type(2),
+			&:nth-of-type(5) {
+				&::before,
+				&::after {
+					content: "";
+					position: absolute;
+
+					top: 0;
+					width: 1px;
+
+					height: 100%;
+				}
+
+				&::before {
+					left: 0;
+				}
+
+				&::after {
+					right: 0;
+				}
+			}
+
+			&:nth-of-type(2) {
+				border-bottom: 1px solid #fff;
+
+				&::before,
+				&::after {
+					background-image: linear-gradient(to bottom, transparent, #fff);
+				}
+			}
+
+			&:nth-of-type(5) {
+				&::before,
+				&::after {
+					background-image: linear-gradient(to top, transparent, #fff);
+				}
+			}
+
+			&:nth-of-type(3) {
+				&::after {
+					content: "";
+					position: absolute;
+
+					bottom: 0;
+					width: 100%;
+
+					height: 1px;
+
+					background-image: linear-gradient(to left, transparent, #fff);
+				}
+			}
+		}
+	}
 
 	@include max-screen($large_tablet) {
 		padding: 7rem 0;
-		&__list{
+		&__list {
 			width: 95%;
 		}
 	}
 
 	@include max-screen($small_tablet) {
-		&__list{
+		&__list {
 			width: 100%;
 		}
 
-		&__mobile-link{
+		&__mobile-link {
 			display: inline-flex;
 		}
 
-		&__name{
+		&__name {
 
 
-			&_big{
+			&_big {
+				margin-bottom: 5px;
 				font-size: 2rem;
 				line-height: 1em;
-				margin-bottom: 5px;
 			}
 		}
 
-		&__text{
+		&__text {
 			font-size: 1.1rem;
 			line-height: 147.2%;
-			&:not(:last-child){
+
+			&:not(:last-child) {
 				margin-bottom: 1.5rem;
 			}
 		}
 
-		&__arrow{
+		&__arrow {
 			display: none;
 		}
 
-		&__close{
+		&__close {
 			display: block;
 		}
-		&__bg{
+		&__bg {
 			display: block;
 		}
-		&__item{
-			&-part{
-				&_hidden{
-					z-index: 500;
+		&__item {
+			&-part {
+				&_hidden {
 					position: fixed;
-					left: 50%;
+					z-index: 500;
 					top: 50%;
+					left: 50%;
 					width: calc(100vw - 4rem);
 					height: calc(100vw - 4rem);
-					margin-left: calc(-50vw + 2rem);
 					margin-top: calc(-50vw + 2rem);
-					border-radius: 50%;
+					margin-left: calc(-50vw + 2rem);
 					padding: 2rem;
+					border-radius: 50%;
 				}
 			}
 
-			&_darkpink{
-				.categories{
-					&__item{
-						&-part{
-							&_hidden{
+			&_darkpink {
+				.categories {
+					&__item {
+						&-part {
+							&_hidden {
 								background: #7F3955;
 							}
 						}
 					}
 				}
 			}
-			&_orange{
-				.categories{
-					&__item{
-						&-part{
-							&_hidden{
+
+			&_orange {
+				.categories {
+					&__item {
+						&-part {
+							&_hidden {
 								background: #CF7C34;
 							}
 						}
 					}
 				}
 			}
-			&_green{
-				.categories{
-					&__item{
-						&-part{
-							&_hidden{
+
+			&_green {
+				.categories {
+					&__item {
+						&-part {
+							&_hidden {
 								background: #9EBB4D;
 							}
 						}
 					}
 				}
 			}
-			&_pink{
-				.categories{
-					&__item{
-						&-part{
-							&_hidden{
+
+			&_pink {
+				.categories {
+					&__item {
+						&-part {
+							&_hidden {
 								background: $pink;
 							}
 						}
 					}
 				}
 			}
-			&_blue{
-				.categories{
-					&__item{
-						&-part{
-							&_hidden{
+
+			&_blue {
+				.categories {
+					&__item {
+						&-part {
+							&_hidden {
 								background: #33799C;
 							}
 						}
 					}
 				}
 			}
-			&_purple{
-				.categories{
-					&__item{
-						&-part{
-							&_hidden{
+
+			&_purple {
+				.categories {
+					&__item {
+						&-part {
+							&_hidden {
 								background: #9F5483;
 							}
 						}
@@ -390,15 +397,16 @@
 				}
 			}
 
-			&.is-visible{
-				.categories{
-					&__bg{
-						opacity: 1;
+			&.is-visible {
+				.categories {
+					&__bg {
 						visibility: visible;
+						opacity: 1;
 					}
-					&__item{
-						&-part{
-							&_hidden{
+
+					&__item {
+						&-part {
+							&_hidden {
 								visibility: visible;
 								opacity: 1;
 							}
@@ -407,22 +415,81 @@
 				}
 			}
 		}
-
 	}
 
 	@include max-screen($large_mobile) {
 		padding-top: 2.5rem;
 		padding-bottom: 2.5rem;
 
-		&__item{
+		&__item {
 			width: 50%;
 
-			&-part{
+			&-part {
 
-				&_default{
+				&_default {
 					padding: 0;
 				}
 			}
+
+			&:nth-of-type(2n) {
+				&:not(:nth-of-type(2)):not(:last-of-type) {
+					&::before {
+						background-color: #fff;
+					}
+				}
+
+				&::before {
+					position: absolute;
+					left: 0;
+					top: 0;
+
+					width: 1px;
+					height: 100%;
+
+					content: "";
+				}
+			}
+
+			&:nth-of-type(2) {
+				&::before {
+					background-image: linear-gradient(to bottom, transparent, #fff);
+				}
+			}
+
+			&:last-of-type {
+				&::before {
+					background-image: linear-gradient(to top, transparent, #fff);
+				}
+			}
+
+			&:not(:last-of-type):not(:nth-last-of-type(2)) {
+				&::after {
+					position: absolute;
+					bottom: 0;
+					left: 0;
+
+					width: 100%;
+					height: 1px;
+
+					content: "";
+				}
+
+				&:nth-of-type(odd) {
+					&::after {
+						background-image: linear-gradient(to right, transparent, #fff);
+					}
+				}
+
+				&:nth-of-type(even) {
+					&::after {
+						background-image: linear-gradient(to left, transparent, #fff);
+					}
+				}
+			}
+		}
+
+		&__name {
+			font-size: 1.7rem;
 		}
 	}
 }

@@ -21,19 +21,23 @@
 				| Выбор определяет<br>
 				SPAN.stroke будущее
 
-			+e.experts.flex._center.js-ray.UL
-				each item, index in experts
-					+e.expert.js-ray-hover.LI
-						+e.expert-circle.SPAN
-						+e.expert-overlay.SPAN
-						+e.circle.SPAN
-						if (index <= experts.length / 2)
-							+e.label._left.SPAN
-								+e.label-name.SPAN Имя Фамилия
-								+e.label-text.SPAN Руководитель департамента элитной недвижимости
-						else
-							+e.label._right.SPAN
-								+e.label-name.SPAN Имя Фамилия
-								+e.label-text.SPAN Руководитель департамента элитной недвижимости
-						+e.expert-image.IMG(src="/img/" + item.image, alt=item.title)
+			+e.experts-wrap
+				+e.experts.flex._center.js-ray.UL
+					each item, index in experts
+						+e.expert(class="_" + index, tabindex="0").js-ray-hover.LI
+							+e.expert-ray-wrap
+								+e.expert-ray.IMG(src="/img/ray.png")
+							+e.expert-circle.SPAN
+							+e.expert-overlay.SPAN
+							+e.circle.SPAN
+							if (index <= experts.length / 2)
+								+e.label._left.SPAN
+									+e.label-name.SPAN Имя Фамилия
+									+e.label-text.SPAN Руководитель департамента элитной недвижимости
+							else
+								+e.label._right.SPAN
+									+e.label-name.SPAN Имя Фамилия
+									+e.label-text.SPAN Руководитель департамента элитной недвижимости
+							+e.image-wrap
+								+e.expert-image.object-fit.IMG(src="/img/" + item.image, alt=item.title)
 
