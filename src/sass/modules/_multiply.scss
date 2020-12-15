@@ -93,7 +93,7 @@
 
 	@include max-screen($large_tablet) {
 		&__top{
-			padding: 5.4rem 3rem;
+			//padding: 5.4rem 3rem;
 		}
 	}
 
@@ -123,12 +123,18 @@
 
 	@include max-screen($large_mobile) {
 		&__top{
-			padding: 1.9rem 0rem;
+			padding: 1.9rem 0;
+			border-radius: 0;
+			border-top: none;
+			border-left: none;
+			border-right: none;
 		}
 		&__list{
+			padding-top: 2rem;
 			padding-bottom: 1rem;
 			&-inner{
 				padding: 0;
+				border: none;
 			}
 		}
 	}

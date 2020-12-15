@@ -94,7 +94,7 @@
 		}
 	}
 
-	@include max-screen($large_mobile) {
+	@include max-screen($small_tablet) {
 		&__title {
 			margin-bottom: 4.4rem;
 		}
@@ -102,6 +102,12 @@
 		&__part {
 			&_left {
 				width: 100%;
+			}
+
+			&_right {
+				margin-right: 0;
+				padding-left: 1.5rem;
+				padding-right: 1.5rem;
 			}
 		}
 
@@ -142,6 +148,14 @@
 
 			&_mortgage {
 				width: 5.6rem;
+			}
+		}
+
+
+
+		&__button {
+			&.orbit-button {
+				width: 85%;
 			}
 		}
 	}

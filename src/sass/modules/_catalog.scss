@@ -32,6 +32,7 @@
 				margin-right: 1rem;
 			}
 
+
 			//&:not(:last-child){
 			//	&:after{
 			//		content: '';
@@ -207,6 +208,16 @@
 		}
 	}
 
+	@include min-screen($small_tablet + 1) {
+		&__nav-cell {
+			&_search-btn {
+				margin-left: auto;
+				margin-top: 1rem;
+				margin-bottom: 1rem;
+			}
+		}
+	}
+
 	@include min-screen($large_tablet+1) {
 		&__item{
 			&:nth-child(21n+7),
@@ -256,6 +267,12 @@
 					max-height: 2.9*4rem;
 				}
 			}
+		}
+	}
+
+	@include min-screen($large_mobile + 1) {
+		&__btn-text-mobile {
+			display: none;
 		}
 	}
 
@@ -420,6 +437,11 @@
 
 		&__nav{
 			padding-bottom: 3rem;
+
+			&-row {
+				justify-content: center;
+			}
+
 			&-cell{
 				margin-top: 3rem;
 				width: 50% !important;
@@ -430,6 +452,11 @@
 					}
 				}
 			}
+		}
+
+		&__nav-checkbox {
+			width: 100%;
+			justify-content: center;
 		}
 
 		&__item{
@@ -448,6 +475,8 @@
 
 		&__title{
 			margin-bottom: 3rem;
+
+			text-align: left;
 		}
 
 		&__link{
@@ -526,11 +555,88 @@
 				line-height: 1.6rem;
 			}
 		}
-	}
 
-	@include max-screen($small_mobile) {
+		&__nav-row {
+			padding-top: 0;
+		}
 
+		&__nav-cell {
+			margin-right: 0;
 
+			&_search-btn {
+				margin-top: 2rem;
+			}
+		}
+
+		&__btn-search {
+			display: flex;
+			align-items: center;
+			width: 100%;
+			padding: 1.8rem 2rem;
+
+			svg {
+				width: 1.5rem;
+				margin-left: auto;
+			}
+		}
+
+		&__btn-text-mobile {
+			max-width: 80%;
+			color: #fff;
+			text-align: left;
+		}
+
+		&__nav-checkbox {
+			order: 1;
+			justify-content: center;
+			width: 100%;
+			margin-top: 3rem;
+		}
+
+		&__select {
+			&.multiply {
+				border: none;
+			}
+
+			.multiply {
+
+			}
+		}
+
+		&__check-wrap {
+			width: 4.5rem;
+			height: 2.4rem;
+			margin-left: 1rem;
+			margin-right: 1rem;
+		}
+
+		&__toggle {
+			width: 1.6rem;
+			height: 1.6rem;
+		}
+
+		&__check-text {
+			font-size: 1.2rem;
+		}
+
+		&__wrap-bottom {
+			padding-top: 1rem;
+
+			&::before,
+			&::after {
+				display: none;
+			}
+		}
+
+		&__bottom-btn {
+			width: 100%;
+			margin-left: 0;
+			margin-right: 0;
+
+			color: $pink;
+
+			background-color: transparent;
+		}
 	}
 }
 
