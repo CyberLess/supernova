@@ -125,21 +125,33 @@
 			cursor: pointer;
 
 			.team {
-				&__expert-ray-wrap {
-					width: 110%;
+				&__expert {
+					&-ray-wrap {
+						width: 110%;
 
-					opacity: 1;
+						opacity: 1;
 
-					@include max-screen($largest_desktop) {
-						width: 140%;
+						@include max-screen($largest_desktop) {
+							width: 140%;
+						}
+
+						@include max-screen($large_desktop) {
+							width: 180%;
+						}
+
+						@include max-screen($small_desktop) {
+							width: 140%;
+						}
 					}
 
-					@include max-screen($large_desktop) {
-						width: 180%;
-					}
+					&-image {
+						&_static {
+							opacity: 0;
+						}
 
-					@include max-screen($small_desktop) {
-						width: 140%;
+						&_active {
+							opacity: 1;
+						}
 					}
 				}
 			}
@@ -199,6 +211,12 @@
 				&__image-wrap {
 					padding-top: (465 / 102 * 100%);
 				}
+
+				&__expert-image {
+					&_active {
+						left: -8%;
+					}
+				}
 			}
 
 			@include max-screen($large_mobile) {
@@ -213,6 +231,22 @@
 				&__image-wrap {
 					padding-top: (506 / 170 * 100%);
 				}
+
+				&__expert-circle {
+					margin-left: 36%;
+				}
+
+				&__expert-image {
+					&_active {
+						left: -10%;
+					}
+				}
+
+				&__label {
+					&_left {
+						left: 93%;
+					}
+				}
 			}
 
 			@include max-screen($large_mobile) {
@@ -225,7 +259,7 @@
 
 			.team {
 				&__expert-circle {
-					left: 60%;
+					left: 66%;
 				}
 
 				&__image-wrap {
@@ -243,7 +277,7 @@
 
 			.team {
 				&__expert-circle {
-					left: 57%;
+					left: 53%;
 				}
 
 				&__image-wrap {
@@ -260,6 +294,10 @@
 			width: (149 / 1763 * 100%);
 
 			.team {
+				&__expert-circle {
+					left: 45%;
+				}
+
 				&__image-wrap {
 					padding-top: (478 / 149 * 100%);
 				}
@@ -325,7 +363,7 @@
 
 			.team {
 				&__expert-circle {
-					left: 60%;
+					left: 56%;
 				}
 
 				&__image-wrap {
@@ -342,6 +380,10 @@
 			width: (129 / 1763 * 100%);
 
 			.team {
+				&__expert-circle {
+					left: 54%;
+				}
+
 				&__image-wrap {
 					padding-top: (469 / 129 * 100%);
 				}
@@ -357,7 +399,7 @@
 
 			.team {
 				&__expert-circle {
-					left: 40%;
+					left: 56%;
 				}
 
 				&__image-wrap {
@@ -375,7 +417,7 @@
 
 			.team {
 				&__expert-circle {
-					left: 47%;
+					left: 66%;
 				}
 
 				&__image-wrap {
@@ -385,6 +427,27 @@
 
 			@include max-screen($large_mobile) {
 				width: (148 / 1763 * 100%) * 2;
+			}
+		}
+
+		&-image {
+			transition: opacity .4s ease;
+
+			&_static {
+				opacity: 1;
+
+			}
+
+			&_active {
+				position: absolute;
+				top: 0;
+				left: 0;
+
+				width: auto;
+				max-width: 200%;
+				height: 100%;
+
+				opacity: 0;
 			}
 		}
 	}

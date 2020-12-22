@@ -1,17 +1,17 @@
 -
 	var experts = [
-		{image: 'expert-1.png', title: 'Експерт'},
-		{image: 'expert-2.png', title: 'Експерт'},
-		{image: 'expert-3.png', title: 'Експерт'},
-		{image: 'expert-4.png', title: 'Експерт'},
-		{image: 'expert-5.png', title: 'Експерт'},
-		{image: 'expert-6.png', title: 'Експерт'},
-		{image: 'expert-7.png', title: 'Експерт'},
-		{image: 'expert-8.png', title: 'Експерт'},
-		{image: 'expert-9.png', title: 'Експерт'},
-		{image: 'expert-10.png', title: 'Експерт'},
-		{image: 'expert-11.png', title: 'Експерт'},
-		{image: 'expert-12.png', title: 'Експерт'}
+		{image: 'expert-1.png', title: 'Експерт', imageActive: 'expert-active-1.png'},
+		{image: 'expert-2.png', title: 'Експерт', imageActive: 'expert-active-2.png'},
+		{image: 'expert-3.png', title: 'Експерт', imageActive: 'expert-active-3.png'},
+		{image: 'expert-4.png', title: 'Експерт', imageActive: 'expert-active-4.png'},
+		{image: 'expert-5.png', title: 'Експерт', imageActive: 'expert-active-5.png'},
+		{image: 'expert-6.png', title: 'Експерт', imageActive: 'expert-active-6.png'},
+		{image: 'expert-7.png', title: 'Експерт', imageActive: 'expert-active-7.png'},
+		{image: 'expert-8.png', title: 'Експерт', imageActive: 'expert-active-8.png'},
+		{image: 'expert-9.png', title: 'Експерт', imageActive: 'expert-active-9.png'},
+		{image: 'expert-10.png', title: 'Експерт', imageActive: 'expert-active-10.png'},
+		{image: 'expert-11.png', title: 'Експерт', imageActive: 'expert-active-11.png'},
+		{image: 'expert-12.png', title: 'Експерт', imageActive: 'expert-active-12.png'}
 	];
 
 +b.SECTION.team
@@ -39,5 +39,6 @@
 									+e.label-name.SPAN Имя Фамилия
 									+e.label-text.SPAN Руководитель департамента элитной недвижимости
 							+e.image-wrap
-								+e.expert-image.object-fit.IMG(src="/img/" + item.image, alt=item.title)
+								+e.expert-image._static.object-fit.IMG(src="/img/" + item.image, alt=item.title)
+								+e.expert-image._active.IMG(src="/img/" + item.imageActive, alt=item.title)
 
