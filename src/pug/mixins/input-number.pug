@@ -1,0 +1,13 @@
+mixin input-number (params)
+	if (params.adText)
+		+e.input-number.js-number-wrap.input-number__.flex._vertical
+			+e.button._minus.js-number-minus.BUTTON(type="button")
+			+e.adit-text._before.SPAN !{params.adTextBefore}
+			+e.input.js-number-input.INPUT(type="text", name=params.name, value=params.value, class=params.className data-back=params.dataBack)
+			+e.adit-text._after.SPAN !{params.adTextAfter}
+			+e.button._plus.js-number-plus.BUTTON(type="button")
+	else
+		+e.input-number.js-number-wrap.input-number__.flex._vertical
+			+e.button._minus.js-number-minus.BUTTON(type="button")
+			+e.input.js-number-input.INPUT(type="text", name=params.name, value=params.value, class=params.className data-back=params.dataBack)
+			+e.button._plus.js-number-plus.BUTTON(type="button")

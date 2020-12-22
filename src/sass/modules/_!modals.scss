@@ -23,6 +23,7 @@
 
 
 .mfp-container {
+	overflow-y: scroll;
 	padding: 0 2rem;
 }
 
@@ -49,7 +50,7 @@
 			position: relative;
 			padding-top: 785/873*100%;
 		}
-		
+
 		&__decoration {
 			display: inline-flex;
 			align-items: center;
@@ -69,14 +70,14 @@
 				font-weight: normal;
 			}
 		}
-		
+
 		&__quantity, &__area {
 			display: inline-flex;
 			align-items: center;
 			font-size: 2rem;
 			line-height: 1;
 		}
-		
+
 		&__area {
 			&-icon {
 				width: 3.7rem;
@@ -88,7 +89,7 @@
 				margin-right: 2rem;
 			}
 		}
-		
+
 		&__quantity {
 			&-icon {
 				width: 3.2rem;
@@ -99,20 +100,20 @@
 				margin-right: 2rem;
 			}
 		}
-		
+
 		&__form {
 			padding-top: 3rem;
 		}
-		
+
 		&__field {
 			margin-top: 4rem;
 		}
-		
+
 		&__button {
 			margin-top: 12rem;
 			width: 22.4rem;
 		}
-		
+
 		&__link {
 			display: block;
 			background: none;
@@ -125,13 +126,13 @@
 			margin-top: 3rem;
 			cursor: pointer;
 		}
-		
+
 		@include max-screen($large_tablet) {
 			&__right {
 				padding-top: 9rem;
 			}
 		}
-		
+
 		@include max-screen($small_tablet) {
 			max-width: 55rem;
 			&__left {
@@ -140,17 +141,17 @@
 			&__right {
 				width: 100%;
 			}
-			
+
 			&__button {
 				margin-top: 6rem;
 			}
-			
+
 			&__form {
 				padding-top: 0;
 			}
 		}
-		
-		
+
+
 		@include max-screen($large_mobile) {
 			&__right {
 				padding: 60px 2rem 50px;
@@ -185,15 +186,15 @@
 					margin-right: 12px;
 				}
 			}
-			
+
 			&__field {
 				margin-top: 35px;
 			}
-			
+
 			&__form {
 				margin-top: -10px;
 			}
-			
+
 			&__button {
 				margin-top: 40px;
 				width: 100%;
@@ -206,7 +207,7 @@
 			}
 		}
 	}
-	
+
 	&-video {
 		max-width: 133.36rem;
 		height: 60rem;
@@ -220,12 +221,12 @@
 			height: 100%;
 			border: 0;
 		}
-		
+
 		@include max-screen($large_mobile) {
 			height: 320px;
 		}
 	}
-	
+
 	&-form {
 		position: fixed;
 		right: 0;
@@ -237,10 +238,10 @@
 		display: flex;
 		align-items: center;
 		padding-left: 46rem;
-		
+
 		transform: translateX(100%);
 		transition: ease .7s;
-		
+
 		&__img {
 			position: absolute;
 			bottom: 0;
@@ -273,7 +274,7 @@
 		&__form {
 			max-width: 43.5rem;
 		}
-		
+
 		&__messengers {
 			margin-top: 5rem;
 			padding-bottom: 2rem;
@@ -281,16 +282,16 @@
 		&__field {
 			margin-top: 3rem;
 		}
-		
+
 		&__hidden {
 			display: none;
 		}
-		
+
 		&__button {
 			width: 100%;
 			margin-top: 5rem;
 		}
-		
+
 		@include max-screen($large_tablet) {
 			&__title {
 				br {
@@ -298,9 +299,9 @@
 				}
 			}
 		}
-		
+
 		@include max-screen($small_tablet) {
-			
+
 			padding: 50px 20px!important;
 			&__img {
 				display: none;
@@ -311,11 +312,11 @@
 				margin: auto;
 			}
 		}
-		
+
 		@include max-screen($large_desktop) {
 			padding-left: 40rem;
 		}
-		
+
 		@include max-screen($large_mobile) {
 			width: 100%;
 			&__field {
@@ -365,18 +366,18 @@ img.mfp-img {
 			transform: translate(0, 0);
 			opacity: 1;
 		}
-		
+
 		.modals-right {
 			transform: translateX(0);
 			opacity: 1;
 		}
-		
+
 		.modals-apartment {
 			opacity: 1;
 			transform: translateY(0);
 			transition-delay: .2s;
 		}
-		
+
 		.modals-form {
 			transform: translateX(0);
 		}

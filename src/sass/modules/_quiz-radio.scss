@@ -1,0 +1,35 @@
+.quiz-radio {
+	border: 1px solid #373737;
+
+	&__text {
+		display: block;
+		padding: 4rem;
+
+		font-family: 'Gotham', sans-serif;
+		font-size: 1.5rem;
+		font-weight: normal;
+		line-height: 2rem;
+		text-align: center;
+
+		cursor: pointer;
+
+		&:hover,
+		&:focus {
+			color: #151515;
+
+			background-color: #fff;
+
+			transition: .2s ease;
+		}
+	}
+
+	&__input ~ {
+		&:checked .quiz-radio {
+			&__text {
+				color: #151515;
+
+				background-color: #fff;
+			}
+		}
+	}
+}

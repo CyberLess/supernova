@@ -1,11 +1,11 @@
 mixin button(type)
-	if type
+	if (type)
 		+e.BUTTON.button.btn__&attributes(attributes)
-			+e.SPAN.text 
+			+e.SPAN.text
 				if block
 					block
 	else
 		+e.A.button.btn__&attributes(attributes)
-			+e.SPAN.text 
+			+e.SPAN.text
 				if block
 					block

@@ -2,6 +2,7 @@ import Inputmask from "inputmask";
 import validate from 'jquery-validation';
 import { panel } from "./panel";
 import { config } from "../config";
+import 'magnific-popup';
 
 var forms = {
 
@@ -11,9 +12,9 @@ var forms = {
 		var im = new Inputmask({
 			"mask": "+7 (999) 999-99-99",
 			clearMaskOnLostFocus: true,
-			clearIncomplete: false	
+			clearIncomplete: false
 		});
-		
+
 		im.mask(selector);
 	},
 
@@ -26,7 +27,7 @@ var forms = {
 			let $another = $('.js-multiply').not($item);
 
 			forms.multiply.close($another);
-		
+
 			if(ww <= 580){
 				panel.open($item.data('panel'))
 			}else{
@@ -60,8 +61,8 @@ var forms = {
 			var $form = $(el);
 
 			$form.validate({
-				errorPlacement: function(error, element) { 
-					//just nothing, empty  
+				errorPlacement: function(error, element) {
+					//just nothing, empty
 				},
 				highlight: (element, errorClass, validClass) => {
 					$(element).parent().addClass(errorClass).removeClass(validClass);
@@ -78,17 +79,20 @@ var forms = {
 						url: $(form).attr('action'),
 						data: data,
 						success: function(data) {
-							$(form)[0].reset()
+							$(form)[0].reset();
+							$(form).find('label').removeClass('valid');
+							console.log(data);
+							$.magnificPopup.close();
 						}
 					});
 
-				},             
+				},
 				rules: {
 					phone:{
 						required: true,
 						minlength: 10,
-					},  
-				}		
+					},
+				}
 			})
 
 		})
@@ -105,32 +109,32 @@ var forms = {
 
 				if($input.val() == '')
 					$input.parent().removeClass('is-focus')
-		 	})		
+		 	})
 	},
-	
+
 	changeSubj: (e) => {
-		
+
 		let text = $(e.currentTarget).text();
-		
+
 		$(e.currentTarget).closest('form').find('.js-subj-input').val(text);
-		
+
 	},
-	
+
 	toggleEmail: (e) => {
-		
+
 		let text = $(e.currentTarget).val();
-		
+
 		if ( text == 'E-mail' ) {
 			$(e.currentTarget).closest('form').find('.js-email').slideDown(300);
 		} else {
 			$(e.currentTarget).closest('form').find('.js-email').slideUp(300);
 		}
-		
+
 	},
-	
+
 	file: (e) => {
 		let filename = $(e.currentTarget).val().replace(/.*(\/|\\)/, '');
-		
+
 		$(e.currentTarget).closest('.js-file').find('.js-file-text').html( '<span class="file__name">' + filename + '</span><span  class="file__link">Изменить</span> ' )
 	},
 
@@ -152,13 +156,13 @@ var forms = {
 				forms.multiply.close(container);
 			}
 		});
-		
+
 		$(document).on('click', '.js-subj-btn', forms.changeSubj);
-		
+
 		$(document).on('change', '.js-show-email', forms.toggleEmail);
-		
+
 		$(document).on('change', '.js-file-input', forms.file);
-		
+
 		/*$('.field__input').blur(function(){
 			if( $(this).val().length > 0 ) {
 				$(this).parent().addClass('is-complete');

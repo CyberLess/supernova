@@ -1,0 +1,4 @@
+mixin quiz-radio (params)
+	+e.quiz-radio(class=params.labelClass).quiz-radio__.LABEL
+		+e.input.visually-hidden.INPUT(type="radio" name=params.name value=params.value data-back=params.dataBack class=params.inputClass)
+		+e.text.SPAN(class=params.className, data-modal=params.dataModal) !{params.text}

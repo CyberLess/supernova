@@ -1,0 +1,239 @@
++b.quiz
+	+b.modals-quiz.modals.flex._start.mfp-hide.js-quiz#quiz-1
+		+e.text-wrap
+			+e.step Шаг 1
+			+e.title С какой целью <br>планируете покупать <br>в Санкт-Петербурге?
+			+e.radio-wrap.flex
+				+quiz-radio({
+									name: 'target',
+									value: 'life',
+									text: 'Для жизни',
+									labelClass: '_half',
+									className: 'js-modal js-radio js-quiz-check',
+									inputClass: 'js-quiz-field',
+									dataModal: '#quiz-2',
+									dataBack: '1'
+								})
+				+quiz-radio({
+									name: 'target',
+									value: 'investments',
+									text: 'Для Инвестиций',
+									labelClass: '_half',
+									className: 'js-modal js-radio js-quiz-check',
+									inputClass: 'js-quiz-field',
+									dataModal: '#quiz-2',
+									dataBack: '1'
+								})
+			+e.level-wrap.level__.flex._vertical
+				+e.arrow-wrap.js-close-modal.BUTTON(type="button")
+					+icon('arrow')
+				+e.wrap.flex._vertical
+					+e.text.SPAN 14%
+					+e.line._first.DIV
+		+e.image-wrap
+			+e.image.object-fit.IMG(src="/img/quiz__img1.jpg" alt="С какой целью планируете покупать в санкт-петербурге?")
+
+	+b.modals-quiz.modals.flex._start.mfp-hide.js-quiz#quiz-2
+		+e.text-wrap
+			+e.step Шаг 2
+			+e.title Какое количество <br>комнат вам <br>необходимо?
+			+input-number({
+							name: 'rooms-quantity',
+							value: '3',
+							className: 'js-quiz-field',
+							dataBack: '2'
+						})
+
+			+e.level-wrap.level__.flex._vertical
+				+e.arrow-wrap.js-modal.js-quiz-back.BUTTON(type="button" data-modal="#quiz-1" data-back="1")
+					+icon('arrow')
+				+e.wrap.flex._vertical
+					+e.text.SPAN 28%
+					+e.line._second.DIV
+				+e.next-btn.btn.js-modal.js-quiz-check.BUTTON(type="button" data-modal="#quiz-3") Далее
+		+e.image-wrap
+			+e.image.object-fit.IMG(src="/img/quiz__img2.jpg" alt="Какое количество комнат вам необходимо?")
+
+	+b.modals-quiz.modals.flex._start.mfp-hide.js-quiz#quiz-3
+		+e.text-wrap
+			+e.step._small-margin Шаг 3
+			+e.title Какая оптимальная для <br>вас форма оплаты?
+			+e.radio-wrap.flex
+				+quiz-radio({
+									name: 'optimal',
+									value: 'full-percents',
+									text: '100%',
+									labelClass: '_half',
+									className: 'js-modal js-radio js-quiz-check',
+									inputClass: 'js-quiz-field',
+									dataModal: '#quiz-4',
+									dataBack: '3'
+								})
+				+quiz-radio({
+									name: 'optimal',
+									value: 'mortgage',
+									text: 'Ипотека',
+									labelClass: '_half',
+									className: 'js-modal js-radio js-quiz-check',
+									inputClass: 'js-quiz-field',
+									dataModal: '#quiz-4',
+									dataBack: '3'
+								})
+				+quiz-radio({
+									name: 'optimal',
+									value: 'installment-plan',
+									text: 'Рассрочка',
+									labelClass: '_half',
+									className: 'js-modal js-radio js-quiz-check',
+									inputClass: 'js-quiz-field',
+									dataModal: '#quiz-4',
+									dataBack: '3'
+								})
+				+quiz-radio({
+									name: 'optimal',
+									value: 'subsidy',
+									text: 'Субсидия',
+									labelClass: '_half',
+									className: 'js-modal js-radio js-quiz-check',
+									inputClass: 'js-quiz-field',
+									dataModal: '#quiz-4',
+									dataBack: '3'
+								})
+
+			+e.level-wrap.level__.flex._vertical
+				+e.arrow-wrap.js-modal.js-quiz-back.BUTTON(type="button" data-modal="#quiz-2" data-back="2")
+					+icon('arrow')
+				+e.wrap.flex._vertical
+					+e.text.SPAN 42%
+					+e.line._third.DIV
+		+e.image-wrap
+			+e.image.object-fit.IMG(src="/img/quiz__img3.jpg" alt="Какая оптимальная для вас форма оплаты?")
+
+	+b.modals-quiz.modals.flex._start.mfp-hide.js-quiz#quiz-4
+		+e.text-wrap
+			+e.step Шаг 4
+			+e.title Какой вариант отделки <br>вам необходим?
+			+e.radio-wrap.flex
+				+quiz-radio({
+									name: 'finishing',
+									value: 'full-percents',
+									text: 'С отделкой',
+									labelClass: '_third',
+									className: 'js-modal js-radio js-quiz-check',
+									inputClass: 'js-quiz-field',
+									dataModal: '#quiz-5',
+									dataBack: '4'
+								})
+				+quiz-radio({
+									name: 'finishing',
+									value: 'mortgage',
+									text: 'Под чистовую',
+									labelClass: '_third',
+									className: 'js-modal js-radio js-quiz-check',
+									inputClass: 'js-quiz-field',
+									dataModal: '#quiz-5',
+									dataBack: '4'
+								})
+				+quiz-radio({
+									name: 'finishing',
+									value: 'installment-plan',
+									text: 'Без отделки',
+									labelClass: '_third',
+									className: 'js-modal js-radio js-quiz-check',
+									inputClass: 'js-quiz-field',
+									dataModal: '#quiz-5',
+									dataBack: '4'
+								})
+
+			+e.level-wrap.level__.flex._vertical
+				+e.arrow-wrap.js-modal.js-quiz-back.BUTTON(type="button" data-modal="#quiz-3" data-back="3")
+					+icon('arrow')
+				+e.wrap.flex._vertical
+					+e.text.SPAN 56%
+					+e.line._fourth.DIV
+		+e.image-wrap
+			+e.image.object-fit.IMG(src="/img/quiz__img4.jpg" alt="Какой вариант отделки вам необходим?")
+
+	+b.modals-quiz.modals.flex._start.mfp-hide.js-quiz#quiz-5
+		+e.text-wrap
+			+e.step Шаг 5
+			+e.title Когда планируете <br>переезд?
+			+input-number({
+							name: 'year',
+							value: '2021',
+							className: 'js-quiz-field',
+							dataBack: '5'
+						})
+
+			+e.level-wrap.level__.flex._vertical
+				+e.arrow-wrap.js-modal.js-quiz-back.BUTTON(type="button" data-modal="#quiz-4" data-back="4")
+					+icon('arrow')
+				+e.wrap.flex._vertical
+					+e.text.SPAN 70%
+					+e.line._fifth.DIV
+				+e.next-btn.btn.js-modal.js-quiz-check.BUTTON(type="button" data-modal="#quiz-6") Далее
+		+e.image-wrap
+			+e.image.object-fit.IMG(src="/img/quiz__img5.jpg" alt="Когда планируете переезд?")
+
+	+b.modals-quiz.modals.flex._start.mfp-hide.js-quiz#quiz-6
+		+e.text-wrap
+			+e.step Шаг 6
+			+e.title На какой бюджет <br>покупки вы <br>ориентируетесь?
+			+e.radio-wrap.flex
+				+input-number({
+									name: 'budget',
+									value: '5',
+									adText: true,
+									adTextBefore: 'до',
+									adTextAfter: 'млн',
+									className: 'js-quiz-field',
+									dataBack: '6'
+								})
+
+			+e.level-wrap.level__.flex._vertical
+				+e.arrow-wrap.js-modal.js-quiz-back.BUTTON(type="button" data-modal="#quiz-5" data-back="5")
+					+icon('arrow')
+				+e.wrap.flex._vertical
+					+e.text.SPAN 85%
+					+e.line._sixth.DIV
+				+e.next-btn.btn.js-modal.js-quiz-check.BUTTON(type="button" data-modal="#quiz-7") Далее
+		+e.image-wrap
+			+e.image.object-fit.IMG(src="/img/quiz__img6.jpg" alt="Когда планируете переезд?")
+
+	+b.modals-quiz._final.modals.flex._start.mfp-hide.js-quiz#quiz-7
+		+e.text-wrap._full
+			+e.form.js-quiz-form.FORM(action="https://echo.htmlacademy.ru" method="POST")
+				+e.step Шаг 7
+				+e.content-wrap
+					+e.title Спасибо за ответы!
+					+e.text Как вам передать результаты поиска и бесплатный бонус?
+					+e.text.color-pink “Название беспоатного материала”
+					+e.messengers.messengers__
+						+e.LABEL.item
+							+e.INPUT.input.js-show-email(type="radio", name='messenger', value="whatsapp", checked)
+							+e.btn
+								+e.icon
+									+icon('wa')
+								+e.text Whatsapp
+						+e.LABEL.item
+							+e.INPUT.input.js-show-email(type="radio", name='messenger', value="Телефон")
+							+e.btn
+								+e.icon
+									+icon('phone')
+								+e.text Телефон
+						+e.LABEL.item
+							+e.INPUT.input.js-show-email(type="radio", name='messenger', value="E-mail")
+							+e.btn
+								+e.icon
+									+icon('email')
+								+e.text E-mail
+
+					+field('Телефон', 'Введите телефон!')(name="phone" class="js-quiz-phone" placeholder="Телефон")
+					+e.submit.btn.BUTTON(type="submit") Отправить
+					+e.agree-text Нажимая кнопку отпиавить вы соглашаетесь с <a class="pink" href="#"><u>правилами сайта</u></a>
+
+				+e.level-wrap.level__.flex._vertical
+					+e.arrow-wrap.js-modal.js-quiz-back.BUTTON(type="button" data-modal="#quiz-6" data-back="6")
+						+icon('arrow')
+					+e.wrap.flex._vertical
+						+e.text.js-quiz-level-text.SPAN 100%

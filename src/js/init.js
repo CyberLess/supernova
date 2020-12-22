@@ -14,6 +14,8 @@ import { accordion } from "./modules/accordion";
 import { calc } from "./modules/calc";
 import { config } from "./config";
 import {ray} from "./modules/ray";
+import {quiz} from "./modules/quiz";
+import {numberInput} from "./modules/number-input";
 
 var App = () => {};
 
@@ -34,6 +36,8 @@ App.prototype.init = () => {
 	accordion.init();
 	calc.init();
 	ray.init();
+	quiz.init();
+	numberInput.init();
 
 	config.log('app init')
 

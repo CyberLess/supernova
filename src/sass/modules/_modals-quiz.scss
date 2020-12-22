@@ -1,0 +1,266 @@
+.modals-quiz {
+	position: relative;
+
+	max-width: 120rem;
+	width: 80%;
+	margin: 4rem auto;
+	padding: 2rem;
+	border-radius: 10px;
+	border: 1px solid #505050;
+
+	background-color: #151515;
+
+	&__quiz-radio {
+		flex-grow: 1;
+
+		&_half {
+			min-width: 50%;
+		}
+
+		&_third {
+			width: 100% / 3;
+		}
+	}
+
+	&__image-wrap {
+		position: relative;
+
+		overflow: hidden;
+		width: 378 / 1200 * 100%;
+		height: 61rem;
+		margin-left: auto;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+
+	&__text-wrap {
+		width: 700 / 1200 * 100%;
+		padding: 3rem 2rem;
+
+		&_full {
+			width: 100%;
+		}
+	}
+
+	&__step,
+	&__title {
+		font-family: 'RoadRadio', sans-serif;
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+
+	&__step {
+		margin-bottom: 12rem;
+
+		font-size: 2rem;
+
+		&_small-margin {
+			margin-bottom: 9rem;
+		}
+	}
+
+	&__title {
+		margin-bottom: 5rem;
+
+		font-size: 4rem;
+		line-height: 1;
+	}
+
+	&__level-wrap {
+		margin-top: 9.5rem;
+	}
+
+	.modals {
+		&__close {
+			top: 0;
+			right: -5%;
+		}
+	}
+
+	&__content-wrap {
+		width: 61rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&_final {
+		.modals-quiz {
+			&__step {
+				margin-bottom: 4rem;
+			}
+
+			&__title,
+			&__text {
+				text-align: center;
+			}
+
+			&__title {
+				margin-bottom: 3rem;
+			}
+
+			&__text {
+				margin-bottom: 1rem;
+
+				font-size: 1.7rem;
+				line-height: 2rem;
+			}
+
+			&__messengers {
+				margin-top: 5rem;
+				margin-bottom: 5rem;
+				justify-content: center;
+			}
+
+			&__level-wrap {
+				position: absolute;
+				left: 0;
+				bottom: 4rem;
+
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
+				padding-left: 5rem;
+				padding-right: 5rem;
+
+				@include max-screen($small_tablet) {
+					position: relative;
+
+					padding: 0;
+				}
+			}
+		}
+
+		.level__wrap {
+			width: auto;
+			order: 1;
+			margin-bottom: 0;
+		}
+
+		.level__text {
+			margin-left: auto;
+		}
+
+		.field {
+			&__label {
+				display: none;
+			}
+
+			&__input:focus ~ .field {
+				&__label {
+					top: -1.5rem;
+				}
+			}
+
+			&__icon {
+				margin-top: -2.2rem;
+			}
+		}
+	}
+
+	&__field,
+	&__submit,
+	&__agree-text {
+		display: block;
+		width: 43.2rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&__field {
+		margin-bottom: 7rem;
+		font-size: 1.4rem;
+
+		.field {
+			&__label {
+				font-size: 1.4rem;
+			}
+
+			&__input {
+				@include placeholder() {
+					font-size: 1.4rem ;
+					color: #fff;
+					opacity: 1 ;
+				}
+			}
+		}
+	}
+
+	&__submit {
+		margin-bottom: 1.5rem;
+	}
+
+	&__agree-text {
+		font-size: 1.2rem;
+		text-align: center;
+	}
+
+	@include max-screen($middle_tablet) {
+		&__image-wrap {
+			display: none;
+		}
+
+		&__text-wrap {
+			width: 100%;
+		}
+	}
+
+	@include max-screen($small_tablet) {
+		width: 100%;
+
+		.modals__close {
+			top: 1rem;
+			right: 1rem;
+		}
+
+		&__content-wrap {
+			width: 100%;
+		}
+	}
+
+	@include max-screen($large_mobile) {
+		&__text-wrap {
+			padding: 0;
+		}
+
+		&__title {
+			font-size: 2.5rem;
+		}
+
+		&__step {
+			margin-bottom: 4rem;
+		}
+
+		&__arrow-wrap {
+			margin-right: 1rem;
+		}
+
+		&__quiz-radio {
+			width: 100%;
+
+			&_half,
+			&_third {
+				width: 100%;
+			}
+
+			&__text {
+				padding: 3rem;
+			}
+		}
+
+		.messengers {
+			&__item {
+				&:not(:last-child) {
+					margin-right: .6rem;
+				}
+			}
+		}
+
+		&__field {
+			width: 100%;
+		}
+
+		&__agree-text {
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,97 @@
+.input-number {
+	position: relative;
+
+	display: inline-flex;
+	border-bottom: 1px solid rgba(#fff, .6);
+
+	&__adit-text {
+		font-size: 4rem;
+		font-family: 'RoadRadio', sans-serif;
+		font-weight: 300;
+
+		&_before {
+			margin-left: 1rem;
+		}
+
+		&_after {
+			margin-right: 1rem;
+		}
+	}
+
+	&__input {
+		width: 12rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		border: none;
+
+		font-family: 'RoadRadio', sans-serif;
+		font-size: 4rem;
+		line-height: 1;
+		font-weight: 300;
+		text-align: center;
+
+		background-color: transparent;
+	}
+
+	&__button {
+		position: relative;
+
+		width: 3rem;
+		height: 3rem;
+		border: none;
+
+		background-color: transparent;
+		cursor: pointer;
+
+		&:hover,
+		&:focus {
+			&::before,
+			&::after {
+				background-color: $pink;
+			}
+		}
+
+		&::before,
+		&::after {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+
+			background-color: #fff;
+
+			transform: translate(-50%, -50%);
+
+			transition: background-color .2s ease;
+		}
+
+		&::before {
+			width: 1.5rem;
+			height: 2px;
+
+			content: "";
+		}
+
+		&_plus {
+			&::after {
+				width: 2px;
+				height: 1.5rem;
+
+				content: "";
+			}
+		}
+	}
+
+	@include max-screen($large_mobile) {
+		display: flex;
+
+		&__input,
+		&__adit-text {
+			font-size: 2.5rem;
+		}
+
+		&__input {
+			width: 6rem;
+			flex-grow: 1;
+		}
+	}
+}
