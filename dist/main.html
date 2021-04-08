@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>Главная</title>
-    <link rel="stylesheet" href="/app/css/app.css?v=1608653573617">
+    <link rel="stylesheet" href="/app/css/app.css?v=1617884023584">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -23,162 +23,14 @@
             </defs>
         </svg>
     </div>
+    <script>
+        window.onbeforeunload = function () {
+        	window.scrollTo(0, 0);
+        }
+        document.querySelector('body').classList.add("js-lock")
+        document.querySelector('html').classList.add("js-lock")
+    </script>
     <main>
-        <div class="panel" id="catalog-panel">
-            <div class="panel__inner">
-                <div class="panel__close hamburger is-active js-panel-close">
-                    <div class="hamburger__line"></div>
-                    <div class="hamburger__line"></div>
-                </div>
-                <div class="panel__wrap wrap">
-                    <div class="panel__title h2"><span class="stroke">топ 20 </span>предложений
-                        <br>недвижимости</div>
-                    <form class="panel__nav form" action="">
-                        <div class="panel__nav-row flex">
-                            <div class="panel__nav-cell">
-                                <div class="panel__select multiply is-static">
-                                    <div class="multiply__top">
-                                        <div class="multiply__top-inner flex">
-                                            <div class="multiply__name multiply__name_big p">Класс жилья</div>
-                                            <div class="multiply__arrow">
-                                                <svg class="icon icon-down" viewBox="0 0 16 9">
-                                                    <use xlink:href="/app/icons/sprite.svg#down"></use>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="multiply__list">
-                                        <div class="multiply__list-inner">
-                                            <div class="multiply__list-item">
-                                                <label class="multiply__checkbox checkbox">
-                                                    <input class="checkbox__input" type="checkbox" name="class[]" value="Комфорт" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Комфорт</span>
-                                                </label>
-                                            </div>
-                                            <div class="multiply__list-item">
-                                                <label class="multiply__checkbox checkbox">
-                                                    <input class="checkbox__input" type="checkbox" name="class[]" value="Бизнес" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Бизнес</span>
-                                                </label>
-                                            </div>
-                                            <div class="multiply__list-item">
-                                                <label class="multiply__checkbox checkbox">
-                                                    <input class="checkbox__input" type="checkbox" name="class[]" value="Премиум" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Премиум</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel__nav-cell">
-                                <div class="panel__select multiply is-static">
-                                    <div class="multiply__top">
-                                        <div class="multiply__top-inner flex">
-                                            <div class="multiply__name multiply__name_big p">Направление</div>
-                                            <div class="multiply__arrow">
-                                                <svg class="icon icon-down" viewBox="0 0 16 9">
-                                                    <use xlink:href="/app/icons/sprite.svg#down"></use>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="multiply__list">
-                                        <div class="multiply__list-inner">
-                                            <div class="multiply__list-item">
-                                                <label class="multiply__checkbox checkbox">
-                                                    <input class="checkbox__input" type="checkbox" name="direction[]" value="Север" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Север</span>
-                                                </label>
-                                            </div>
-                                            <div class="multiply__list-item">
-                                                <label class="multiply__checkbox checkbox">
-                                                    <input class="checkbox__input" type="checkbox" name="direction[]" value="Юг" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Юг</span>
-                                                </label>
-                                            </div>
-                                            <div class="multiply__list-item">
-                                                <label class="multiply__checkbox checkbox">
-                                                    <input class="checkbox__input" type="checkbox" name="direction[]" value="Центр" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Центр</span>
-                                                </label>
-                                            </div>
-                                            <div class="multiply__list-item">
-                                                <label class="multiply__checkbox checkbox">
-                                                    <input class="checkbox__input" type="checkbox" name="direction[]" value="Запад" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Запад</span>
-                                                </label>
-                                            </div>
-                                            <div class="multiply__list-item">
-                                                <label class="multiply__checkbox checkbox">
-                                                    <input class="checkbox__input" type="checkbox" name="direction[]" value="Восток" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Восток</span>
-                                                </label>
-                                            </div>
-                                            <div class="multiply__list-item">
-                                                <label class="multiply__checkbox checkbox">
-                                                    <input class="checkbox__input" type="checkbox" name="direction[]" value="Все" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Все</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel__nav-cell">
-                                <div class="panel__select multiply is-static">
-                                    <div class="multiply__top">
-                                        <div class="multiply__top-inner flex">
-                                            <div class="multiply__name multiply__name_big p">Срок сдачи</div>
-                                            <div class="multiply__arrow">
-                                                <svg class="icon icon-down" viewBox="0 0 16 9">
-                                                    <use xlink:href="/app/icons/sprite.svg#down"></use>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="multiply__list">
-                                        <div class="multiply__list-inner">
-                                            <div class="multiply__list-item">
-                                                <label class="multiply__checkbox checkbox">
-                                                    <input class="checkbox__input" type="checkbox" name="time[]" value="Сдан" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Сдан</span>
-                                                </label>
-                                            </div>
-                                            <div class="multiply__list-item">
-                                                <label class="multiply__checkbox checkbox">
-                                                    <input class="checkbox__input" type="checkbox" name="time[]" value="2020" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>2020</span>
-                                                </label>
-                                            </div>
-                                            <div class="multiply__list-item">
-                                                <label class="multiply__checkbox checkbox">
-                                                    <input class="checkbox__input" type="checkbox" name="time[]" value="2021" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>2021</span>
-                                                </label>
-                                            </div>
-                                            <div class="multiply__list-item">
-                                                <label class="multiply__checkbox checkbox">
-                                                    <input class="checkbox__input" type="checkbox" name="time[]" value="2022" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>2022</span>
-                                                </label>
-                                            </div>
-                                            <div class="multiply__list-item">
-                                                <label class="multiply__checkbox checkbox">
-                                                    <input class="checkbox__input" type="checkbox" name="time[]" value="2023" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>2023</span>
-                                                </label>
-                                            </div>
-                                            <div class="multiply__list-item">
-                                                <label class="multiply__checkbox checkbox">
-                                                    <input class="checkbox__input" type="checkbox" name="time[]" value="Не важно" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Не важно</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="panel__bottom">
-                <div class="panel__wrap wrap">
-                    <div class="panel__row flex">
-                        <div class="panel__cell"><a class="panel__button btn btn_white js-panel-close"><span class="btn__text">отменить</span></a>
-                        </div>
-                        <div class="panel__cell"><a class="panel__button btn js-panel-close"><span class="btn__text">применить</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <section class="mobile">
             <div class="mobile__center">
                 <ul class="mobile__list">
@@ -200,10 +52,11 @@
                 </div>
             </div>
         </section>
-        <header class="header is-fluid">
+        <header class="header is-fluid" data-aos="head">
+            <div class="preloader-screen"></div>
             <div class="header__wrap wrap">
                 <div class="header__row flex flex_vertical flex_justify">
-                    <div class="header__cell header__cell_left">
+                    <div class="header__cell header__cell_left aos--fade">
                         <ul class="header__menu menu flex flex_vertical">
                             <li class="menu__item"><a class="menu__link middle" href="#">Услуги</a>
                             </li>
@@ -215,11 +68,14 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="header__cell header__cell_center"><a class="header__logo logo" href="#"><span class="logo__img js-lottie" data-file="logoDefault"></span><img class="logo__img" src="/app/img/logo_full.svg" alt="" role="presentation"/></a>
+                    <div class="header__cell header__cell_center">
+                        <a class="header__logo logo" href="#">
+                            <img class="logo__img js-site-logo" src="/app/img/logo_full.svg" alt="" role="presentation" />
+                        </a>
                     </div>
-                    <div class="header__cell header__cell_right flex flex_vertical flex_right"><a class="header__phone phone h5" href="tel:+74594583693">+7 459 458 36 93</a><a class="header__link middle js-modal" href="#popup-form1">Обратный звонок</a>
+                    <div class="header__cell header__cell_right flex flex_vertical flex_right aos--fade"><a class="header__phone phone h5" href="tel:+74594583693">+7 459 458 36 93</a><a class="header__link middle js-modal" href="#popup-form1">Обратный звонок</a>
                     </div>
-                    <div class="header__cell header__cell_hamburger">
+                    <div class="header__cell header__cell_hamburger aos--fade">
                         <div class="hamburger js-mobile">
                             <div class="hamburger__line"></div>
                             <div class="hamburger__line"></div>
@@ -230,11 +86,13 @@
         </header>
         <section class="main" data-aos="main-aos">
             <div class="main__wrap wrap">
-                <div class="main__title h1"><span class="string is-center"><span class="word"> <span>Эксперты&nbsp;</span></span><span class="word"> <span>рынка&nbsp;</span></span><span class="word"> <span>недвижимости&nbsp;</span></span><span class="word stroke"> <span>Санкт-ПетерБурга&nbsp;</span></span>
-                    </span>
-                </div><a class="main__button btn js-modal" href="#popup-form2"><span class="btn__text">Подберите недвижимость</span></a>
+                <div class="main__title h1 aos--top"><span class="string is-center">Эксперты рынка
+недвижимости<br><span class="stroke">Санкт-ПетерБурга</span></span>
+                </div>
+                <div class="main__parent aos--top"><a class="main__button btn js-modal" href="#popup-form2"><span class="btn__text">Подберите недвижимость</span></a>
+                </div>
                 <div class="main__list flex flex_center">
-                    <div class="main__list-item">
+                    <div class="main__list-item aos--top">
                         <div class="main__list-icon main__list-icon_home circle-parent">
                             <div class="main__circle circle">
                                 <svg width="84" height="99" viewBox="25 25 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -247,15 +105,13 @@
                                     </defs>
                                 </svg>
                             </div>
-                            <svg class="icon icon-home" viewBox="0 0 62 55">
-                                <use xlink:href="/app/icons/sprite.svg#home"></use>
-                            </svg>
+                            <img src="/app/img/home.svg" alt="" role="presentation" />
                         </div>
                         <div class="main__list-text p">Купля / продажа
                             <br>/ ипотека /
                             <br>инвестиции</div>
                     </div>
-                    <div class="main__list-item">
+                    <div class="main__list-item aos--top">
                         <div class="main__list-icon main__list-icon_key circle-parent">
                             <div class="main__circle circle circle_second">
                                 <svg width="84" height="99" viewBox="25 25 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -268,15 +124,13 @@
                                     </defs>
                                 </svg>
                             </div>
-                            <svg class="icon icon-key" viewBox="0 0 59.876232 42.376991">
-                                <use xlink:href="/app/icons/sprite.svg#key"></use>
-                            </svg>
+                            <img src="/app/img/key.svg" alt="" role="presentation" />
                         </div>
                         <div class="main__list-text p">150 лучших домов
                             <br>от 20 надежных
                             <br>застройщиков</div>
                     </div>
-                    <div class="main__list-item">
+                    <div class="main__list-item aos--top">
                         <div class="main__list-icon main__list-icon_doc circle-parent">
                             <div class="main__circle circle circle_third">
                                 <svg width="84" height="99" viewBox="25 25 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -289,9 +143,7 @@
                                     </defs>
                                 </svg>
                             </div>
-                            <svg class="icon icon-doc" viewBox="0 0 55 56">
-                                <use xlink:href="/app/icons/sprite.svg#doc"></use>
-                            </svg>
+                            <img src="/app/img/doc.svg" alt="" role="presentation" />
                         </div>
                         <div class="main__list-text p">Более 10 000
                             <br>сделок за
@@ -355,7 +207,7 @@
                         <div class="categories__bg js-categories-close"></div>
                         <div class="categories__item-inner">
                             <div class="categories__item-part categories__item-part_default">
-                                <div class="categories__name h4">квартира в зачет</div>
+                                <div class="categories__name h4">квартира в&nbsp;зачет</div>
                             </div>
                             <div class="categories__item-part categories__item-part_hidden">
                                 <div class="categories__close hamburger is-active js-categories-close">
@@ -778,7 +630,7 @@
                                 <br>ипотеки в 95% случаев</div>
                         </div>
                     </div>
-                    <div class="profitable-work__part profitable-work__part_right"><a class="profitable-work__button orbit-button" href="#"><span class="orbit-button__border"><span class="orbit-button__border-wrap"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="49"></circle></svg></span></span><span class="orbit-button__bottom"></span><span class="orbit-button__inner"><span class="orbit-button__center"><span class="orbit-button__part is-desktop"><span class="orbit-button__bold">Записаться <br>на консультацию</span><span class="orbit-button__text p">по любым вопросам</span></span><span class="orbit-button__part is-mobile"><span class="orbit-button__bold">Записаться<br>на консультацию</span></span><span class="orbit-button__arrow"><svg class="icon icon-arrow" viewBox="0 0 72 26"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></span></span></a>
+                    <div class="profitable-work__part profitable-work__part_right"><a class="profitable-work__button orbit-button" href="#"><span class="orbit-button__border"><span class="orbit-button__border-wrap"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="49"></circle></svg></span></span><span class="orbit-button__bottom"></span><span class="orbit-button__inner"><span class="orbit-button__center"><span class="orbit-button__part"><span class="orbit-button__bold">Записаться <br>на консультацию</span><span class="orbit-button__text p">по любым вопросам</span></span><span class="orbit-button__arrow"><svg class="icon icon-arrow" viewBox="0 0 72 26"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></span></span></a>
                     </div>
                 </div>
             </div>
@@ -791,9 +643,9 @@
             <div class="catalog__wrap wrap">
                 <form class="catalog__nav form" action="/">
                     <div class="catalog__nav-row flex">
-                        <div class="catalog__nav-checkbox flex flex_vertical"><span class="catalog__check-text js-check-listing">Листинг</span>
+                        <div class="catalog__nav-checkbox flex flex_vertical js-parent-checkbox"><span class="catalog__check-text js-check-listing">Листинг</span>
                             <label class="catalog__check-wrap">
-                                <input class="catalog__check-listing-input visually-hidden" type="checkbox" name="map" /><span class="catalog__toggle"></span>
+                                <input class="catalog__check-listing-input visually-hidden js-toggle-objects" type="checkbox" name="map" /><span class="catalog__toggle"></span>
                             </label><span class="catalog__check-text js-check-map">На карте</span>
                         </div>
                         <div class="catalog__nav-cell catalog__nav-cell_list">
@@ -944,23 +796,21 @@
                         </picture>
                     </div>
                     <div class="catalog__item-inner">
+                        <div class="catalog__item-name h5">ЛЭК Премиум</div>
                         <div class="catalog__item-logo">
-                            <div>
-                                <img src="/app/img/BUNIN.svg" alt="" role="presentation" />
-                            </div>
+                            <img src="/app/img/BUNIN.svg" alt="" role="presentation" />
                         </div>
-                        <div class="catalog__item-name p">ЛЭК Премиум</div>
                         <div class="catalog__item-hover">
                             <div class="catalog__content">
                                 <div class="catalog__content-name h6 h6_big">Пестеля 6</div>
-                                <div class="catalog__content-company p">Донстрой Лимитед</div>
+                                <div class="catalog__content-company middle">Донстрой Лимитед</div>
                                 <div class="catalog__content-text middle">Дом с апартаментами от 27 м²
                                     <br>с гостиничным сервисом на Новом Арбате.
                                     <br>Сдача — 2019 год.</div>
                             </div>
                             <div class="catalog__bottom">
                                 <button class="catalog__button btn"><span class="btn__text">подробнее</span>
-                                </button><a class="catalog__bottom-presa link big" href="#">скачать презентацию</a>
+                                </button><a class="catalog__bottom-presa link" href="#">скачать презентацию</a>
                             </div>
                         </div>
                     </div>
@@ -978,18 +828,18 @@
                                 <img src="/app/img/kurtapp.svg" alt="" role="presentation" />
                             </div>
                         </div>
-                        <div class="catalog__item-name p">ЮИТ Блэк</div>
+                        <div class="catalog__item-name h5">ЮИТ Блэк</div>
                         <div class="catalog__item-hover">
                             <div class="catalog__content">
                                 <div class="catalog__content-name h6 h6_big">Пестеля 6</div>
-                                <div class="catalog__content-company p">Донстрой Лимитед</div>
+                                <div class="catalog__content-company middle">Донстрой Лимитед</div>
                                 <div class="catalog__content-text middle">Дом с апартаментами от 27 м²
                                     <br>с гостиничным сервисом на Новом Арбате.
                                     <br>Сдача — 2019 год.</div>
                             </div>
                             <div class="catalog__bottom">
                                 <button class="catalog__button btn"><span class="btn__text">подробнее</span>
-                                </button><a class="catalog__bottom-presa link big" href="#">скачать презентацию</a>
+                                </button><a class="catalog__bottom-presa link" href="#">скачать презентацию</a>
                             </div>
                         </div>
                     </div>
@@ -1007,18 +857,18 @@
                                 <img src="/app/img/BUNIN.svg" alt="" role="presentation" />
                             </div>
                         </div>
-                        <div class="catalog__item-name p">ЛЭК Премиум</div>
+                        <div class="catalog__item-name h5">ЛЭК Премиум</div>
                         <div class="catalog__item-hover">
                             <div class="catalog__content">
                                 <div class="catalog__content-name h6 h6_big">Пестеля 6</div>
-                                <div class="catalog__content-company p">Донстрой Лимитед</div>
+                                <div class="catalog__content-company middle">Донстрой Лимитед</div>
                                 <div class="catalog__content-text middle">Дом с апартаментами от 27 м²
                                     <br>с гостиничным сервисом на Новом Арбате.
                                     <br>Сдача — 2019 год.</div>
                             </div>
                             <div class="catalog__bottom">
                                 <button class="catalog__button btn"><span class="btn__text">подробнее</span>
-                                </button><a class="catalog__bottom-presa link big" href="#">скачать презентацию</a>
+                                </button><a class="catalog__bottom-presa link" href="#">скачать презентацию</a>
                             </div>
                         </div>
                     </div>
@@ -1036,18 +886,18 @@
                                 <img src="/app/img/unona.svg" alt="" role="presentation" />
                             </div>
                         </div>
-                        <div class="catalog__item-name p">Рейкьямен Золт</div>
+                        <div class="catalog__item-name h5">Рейкьямен Золт</div>
                         <div class="catalog__item-hover">
                             <div class="catalog__content">
                                 <div class="catalog__content-name h6 h6_big">Пестеля 6</div>
-                                <div class="catalog__content-company p">Донстрой Лимитед</div>
+                                <div class="catalog__content-company middle">Донстрой Лимитед</div>
                                 <div class="catalog__content-text middle">Дом с апартаментами от 27 м²
                                     <br>с гостиничным сервисом на Новом Арбате.
                                     <br>Сдача — 2019 год.</div>
                             </div>
                             <div class="catalog__bottom">
                                 <button class="catalog__button btn"><span class="btn__text">подробнее</span>
-                                </button><a class="catalog__bottom-presa link big" href="#">скачать презентацию</a>
+                                </button><a class="catalog__bottom-presa link" href="#">скачать презентацию</a>
                             </div>
                         </div>
                     </div>
@@ -1065,18 +915,18 @@
                                 <img src="/app/img/pestelya.svg" alt="" role="presentation" />
                             </div>
                         </div>
-                        <div class="catalog__item-name p">Донстрой Лимитед</div>
+                        <div class="catalog__item-name h5">Донстрой Лимитед</div>
                         <div class="catalog__item-hover">
                             <div class="catalog__content">
                                 <div class="catalog__content-name h6 h6_big">Пестеля 6</div>
-                                <div class="catalog__content-company p">Донстрой Лимитед</div>
+                                <div class="catalog__content-company middle">Донстрой Лимитед</div>
                                 <div class="catalog__content-text middle">Дом с апартаментами от 27 м²
                                     <br>с гостиничным сервисом на Новом Арбате.
                                     <br>Сдача — 2019 год.</div>
                             </div>
                             <div class="catalog__bottom">
                                 <button class="catalog__button btn"><span class="btn__text">подробнее</span>
-                                </button><a class="catalog__bottom-presa link big" href="#">скачать презентацию</a>
+                                </button><a class="catalog__bottom-presa link" href="#">скачать презентацию</a>
                             </div>
                         </div>
                     </div>
@@ -1094,18 +944,18 @@
                                 <img src="/app/img/BUNIN.svg" alt="" role="presentation" />
                             </div>
                         </div>
-                        <div class="catalog__item-name p">ЛЭК Премиум</div>
+                        <div class="catalog__item-name h5">ЛЭК Премиум</div>
                         <div class="catalog__item-hover">
                             <div class="catalog__content">
                                 <div class="catalog__content-name h6 h6_big">Пестеля 6</div>
-                                <div class="catalog__content-company p">Донстрой Лимитед</div>
+                                <div class="catalog__content-company middle">Донстрой Лимитед</div>
                                 <div class="catalog__content-text middle">Дом с апартаментами от 27 м²
                                     <br>с гостиничным сервисом на Новом Арбате.
                                     <br>Сдача — 2019 год.</div>
                             </div>
                             <div class="catalog__bottom">
                                 <button class="catalog__button btn"><span class="btn__text">подробнее</span>
-                                </button><a class="catalog__bottom-presa link big" href="#">скачать презентацию</a>
+                                </button><a class="catalog__bottom-presa link" href="#">скачать презентацию</a>
                             </div>
                         </div>
                     </div>
@@ -1123,12 +973,12 @@
                                 <img src="/app/img/gagarin.svg" alt="" role="presentation" />
                             </div>
                         </div>
-                        <div class="catalog__item-name p">РайфайХаус Корпорейшн</div>
+                        <div class="catalog__item-name h5">РайфайХаус Корпорейшн</div>
                         <div class="catalog__item-hover">
                             <div class="catalog__content">
                                 <div class="catalog__content-name catalog__content-name_big h4">Гагарин</div>
-                                <div class="catalog__content-company p">Донстрой Лимитед</div>
-                                <div class="catalog__content-text catalog__content-text_big big">Дом с апартаментами от 27 м²
+                                <div class="catalog__content-company middle">Донстрой Лимитед</div>
+                                <div class="catalog__content-text middle">Дом с апартаментами от 27 м²
                                     <br>с гостиничным сервисом на Новом Арбате.
                                     <br>Сдача — 2019 год.</div>
                             </div>
@@ -1152,18 +1002,18 @@
                                 <img src="/app/img/BUNIN.svg" alt="" role="presentation" />
                             </div>
                         </div>
-                        <div class="catalog__item-name p">ЛЭК Премиум</div>
+                        <div class="catalog__item-name h5">ЛЭК Премиум</div>
                         <div class="catalog__item-hover">
                             <div class="catalog__content">
                                 <div class="catalog__content-name h6 h6_big">Пестеля 6</div>
-                                <div class="catalog__content-company p">Донстрой Лимитед</div>
+                                <div class="catalog__content-company middle">Донстрой Лимитед</div>
                                 <div class="catalog__content-text middle">Дом с апартаментами от 27 м²
                                     <br>с гостиничным сервисом на Новом Арбате.
                                     <br>Сдача — 2019 год.</div>
                             </div>
                             <div class="catalog__bottom">
                                 <button class="catalog__button btn"><span class="btn__text">подробнее</span>
-                                </button><a class="catalog__bottom-presa link big" href="#">скачать презентацию</a>
+                                </button><a class="catalog__bottom-presa link" href="#">скачать презентацию</a>
                             </div>
                         </div>
                     </div>
@@ -1181,18 +1031,18 @@
                                 <img src="/app/img/BUNIN.svg" alt="" role="presentation" />
                             </div>
                         </div>
-                        <div class="catalog__item-name p">ЛЭК Премиум</div>
+                        <div class="catalog__item-name h5">ЛЭК Премиум</div>
                         <div class="catalog__item-hover">
                             <div class="catalog__content">
                                 <div class="catalog__content-name h6 h6_big">Пестеля 6</div>
-                                <div class="catalog__content-company p">Донстрой Лимитед</div>
+                                <div class="catalog__content-company middle">Донстрой Лимитед</div>
                                 <div class="catalog__content-text middle">Дом с апартаментами от 27 м²
                                     <br>с гостиничным сервисом на Новом Арбате.
                                     <br>Сдача — 2019 год.</div>
                             </div>
                             <div class="catalog__bottom">
                                 <button class="catalog__button btn"><span class="btn__text">подробнее</span>
-                                </button><a class="catalog__bottom-presa link big" href="#">скачать презентацию</a>
+                                </button><a class="catalog__bottom-presa link" href="#">скачать презентацию</a>
                             </div>
                         </div>
                     </div>
@@ -1210,18 +1060,18 @@
                                 <img src="/app/img/BUNIN.svg" alt="" role="presentation" />
                             </div>
                         </div>
-                        <div class="catalog__item-name p">ЛЭК Премиум</div>
+                        <div class="catalog__item-name h5">ЛЭК Премиум</div>
                         <div class="catalog__item-hover">
                             <div class="catalog__content">
                                 <div class="catalog__content-name h6 h6_big">Пестеля 6</div>
-                                <div class="catalog__content-company p">Донстрой Лимитед</div>
+                                <div class="catalog__content-company middle">Донстрой Лимитед</div>
                                 <div class="catalog__content-text middle">Дом с апартаментами от 27 м²
                                     <br>с гостиничным сервисом на Новом Арбате.
                                     <br>Сдача — 2019 год.</div>
                             </div>
                             <div class="catalog__bottom">
                                 <button class="catalog__button btn"><span class="btn__text">подробнее</span>
-                                </button><a class="catalog__bottom-presa link big" href="#">скачать презентацию</a>
+                                </button><a class="catalog__bottom-presa link" href="#">скачать презентацию</a>
                             </div>
                         </div>
                     </div>
@@ -1239,18 +1089,18 @@
                                 <img src="/app/img/BUNIN.svg" alt="" role="presentation" />
                             </div>
                         </div>
-                        <div class="catalog__item-name p">ЛЭК Премиум</div>
+                        <div class="catalog__item-name h5">ЛЭК Премиум</div>
                         <div class="catalog__item-hover">
                             <div class="catalog__content">
                                 <div class="catalog__content-name h6 h6_big">Пестеля 6</div>
-                                <div class="catalog__content-company p">Донстрой Лимитед</div>
+                                <div class="catalog__content-company middle">Донстрой Лимитед</div>
                                 <div class="catalog__content-text middle">Дом с апартаментами от 27 м²
                                     <br>с гостиничным сервисом на Новом Арбате.
                                     <br>Сдача — 2019 год.</div>
                             </div>
                             <div class="catalog__bottom">
                                 <button class="catalog__button btn"><span class="btn__text">подробнее</span>
-                                </button><a class="catalog__bottom-presa link big" href="#">скачать презентацию</a>
+                                </button><a class="catalog__bottom-presa link" href="#">скачать презентацию</a>
                             </div>
                         </div>
                     </div>
@@ -1268,18 +1118,18 @@
                                 <img src="/app/img/BUNIN.svg" alt="" role="presentation" />
                             </div>
                         </div>
-                        <div class="catalog__item-name p">ЛЭК Премиум</div>
+                        <div class="catalog__item-name h5">ЛЭК Премиум</div>
                         <div class="catalog__item-hover">
                             <div class="catalog__content">
                                 <div class="catalog__content-name h6 h6_big">Пестеля 6</div>
-                                <div class="catalog__content-company p">Донстрой Лимитед</div>
+                                <div class="catalog__content-company middle">Донстрой Лимитед</div>
                                 <div class="catalog__content-text middle">Дом с апартаментами от 27 м²
                                     <br>с гостиничным сервисом на Новом Арбате.
                                     <br>Сдача — 2019 год.</div>
                             </div>
                             <div class="catalog__bottom">
                                 <button class="catalog__button btn"><span class="btn__text">подробнее</span>
-                                </button><a class="catalog__bottom-presa link big" href="#">скачать презентацию</a>
+                                </button><a class="catalog__bottom-presa link" href="#">скачать презентацию</a>
                             </div>
                         </div>
                     </div>
@@ -1297,12 +1147,12 @@
                                 <img src="/app/img/gagarin.svg" alt="" role="presentation" />
                             </div>
                         </div>
-                        <div class="catalog__item-name p">РайфайХаус Корпорейшн</div>
+                        <div class="catalog__item-name h5">РайфайХаус Корпорейшн</div>
                         <div class="catalog__item-hover">
                             <div class="catalog__content">
                                 <div class="catalog__content-name catalog__content-name_big h4">Гагарин</div>
-                                <div class="catalog__content-company p">Донстрой Лимитед</div>
-                                <div class="catalog__content-text catalog__content-text_big big">Дом с апартаментами от 27 м²
+                                <div class="catalog__content-company middle">Донстрой Лимитед</div>
+                                <div class="catalog__content-text middle">Дом с апартаментами от 27 м²
                                     <br>с гостиничным сервисом на Новом Арбате.
                                     <br>Сдача — 2019 год.</div>
                             </div>
@@ -1326,18 +1176,18 @@
                                 <img src="/app/img/kurtapp.svg" alt="" role="presentation" />
                             </div>
                         </div>
-                        <div class="catalog__item-name p">ЮИТ Блэк</div>
+                        <div class="catalog__item-name h5">ЮИТ Блэк</div>
                         <div class="catalog__item-hover">
                             <div class="catalog__content">
                                 <div class="catalog__content-name h6 h6_big">Пестеля 6</div>
-                                <div class="catalog__content-company p">Донстрой Лимитед</div>
+                                <div class="catalog__content-company middle">Донстрой Лимитед</div>
                                 <div class="catalog__content-text middle">Дом с апартаментами от 27 м²
                                     <br>с гостиничным сервисом на Новом Арбате.
                                     <br>Сдача — 2019 год.</div>
                             </div>
                             <div class="catalog__bottom">
                                 <button class="catalog__button btn"><span class="btn__text">подробнее</span>
-                                </button><a class="catalog__bottom-presa link big" href="#">скачать презентацию</a>
+                                </button><a class="catalog__bottom-presa link" href="#">скачать презентацию</a>
                             </div>
                         </div>
                     </div>
@@ -1355,18 +1205,18 @@
                                 <img src="/app/img/BUNIN.svg" alt="" role="presentation" />
                             </div>
                         </div>
-                        <div class="catalog__item-name p">ЛЭК Премиум</div>
+                        <div class="catalog__item-name h5">ЛЭК Премиум</div>
                         <div class="catalog__item-hover">
                             <div class="catalog__content">
                                 <div class="catalog__content-name h6 h6_big">Пестеля 6</div>
-                                <div class="catalog__content-company p">Донстрой Лимитед</div>
+                                <div class="catalog__content-company middle">Донстрой Лимитед</div>
                                 <div class="catalog__content-text middle">Дом с апартаментами от 27 м²
                                     <br>с гостиничным сервисом на Новом Арбате.
                                     <br>Сдача — 2019 год.</div>
                             </div>
                             <div class="catalog__bottom">
                                 <button class="catalog__button btn"><span class="btn__text">подробнее</span>
-                                </button><a class="catalog__bottom-presa link big" href="#">скачать презентацию</a>
+                                </button><a class="catalog__bottom-presa link" href="#">скачать презентацию</a>
                             </div>
                         </div>
                     </div>
@@ -1384,18 +1234,18 @@
                                 <img src="/app/img/unona.svg" alt="" role="presentation" />
                             </div>
                         </div>
-                        <div class="catalog__item-name p">Рейкьямен Золт</div>
+                        <div class="catalog__item-name h5">Рейкьямен Золт</div>
                         <div class="catalog__item-hover">
                             <div class="catalog__content">
                                 <div class="catalog__content-name h6 h6_big">Пестеля 6</div>
-                                <div class="catalog__content-company p">Донстрой Лимитед</div>
+                                <div class="catalog__content-company middle">Донстрой Лимитед</div>
                                 <div class="catalog__content-text middle">Дом с апартаментами от 27 м²
                                     <br>с гостиничным сервисом на Новом Арбате.
                                     <br>Сдача — 2019 год.</div>
                             </div>
                             <div class="catalog__bottom">
                                 <button class="catalog__button btn"><span class="btn__text">подробнее</span>
-                                </button><a class="catalog__bottom-presa link big" href="#">скачать презентацию</a>
+                                </button><a class="catalog__bottom-presa link" href="#">скачать презентацию</a>
                             </div>
                         </div>
                     </div>
@@ -1413,18 +1263,18 @@
                                 <img src="/app/img/pestelya.svg" alt="" role="presentation" />
                             </div>
                         </div>
-                        <div class="catalog__item-name p">Донстрой Лимитед</div>
+                        <div class="catalog__item-name h5">Донстрой Лимитед</div>
                         <div class="catalog__item-hover">
                             <div class="catalog__content">
                                 <div class="catalog__content-name h6 h6_big">Пестеля 6</div>
-                                <div class="catalog__content-company p">Донстрой Лимитед</div>
+                                <div class="catalog__content-company middle">Донстрой Лимитед</div>
                                 <div class="catalog__content-text middle">Дом с апартаментами от 27 м²
                                     <br>с гостиничным сервисом на Новом Арбате.
                                     <br>Сдача — 2019 год.</div>
                             </div>
                             <div class="catalog__bottom">
                                 <button class="catalog__button btn"><span class="btn__text">подробнее</span>
-                                </button><a class="catalog__bottom-presa link big" href="#">скачать презентацию</a>
+                                </button><a class="catalog__bottom-presa link" href="#">скачать презентацию</a>
                             </div>
                         </div>
                     </div>
@@ -1442,18 +1292,18 @@
                                 <img src="/app/img/BUNIN.svg" alt="" role="presentation" />
                             </div>
                         </div>
-                        <div class="catalog__item-name p">ЛЭК Премиум</div>
+                        <div class="catalog__item-name h5">ЛЭК Премиум</div>
                         <div class="catalog__item-hover">
                             <div class="catalog__content">
                                 <div class="catalog__content-name h6 h6_big">Пестеля 6</div>
-                                <div class="catalog__content-company p">Донстрой Лимитед</div>
+                                <div class="catalog__content-company middle">Донстрой Лимитед</div>
                                 <div class="catalog__content-text middle">Дом с апартаментами от 27 м²
                                     <br>с гостиничным сервисом на Новом Арбате.
                                     <br>Сдача — 2019 год.</div>
                             </div>
                             <div class="catalog__bottom">
                                 <button class="catalog__button btn"><span class="btn__text">подробнее</span>
-                                </button><a class="catalog__bottom-presa link big" href="#">скачать презентацию</a>
+                                </button><a class="catalog__bottom-presa link" href="#">скачать презентацию</a>
                             </div>
                         </div>
                     </div>
@@ -1471,12 +1321,12 @@
                                 <img src="/app/img/gagarin.svg" alt="" role="presentation" />
                             </div>
                         </div>
-                        <div class="catalog__item-name p">РайфайХаус Корпорейшн</div>
+                        <div class="catalog__item-name h5">РайфайХаус Корпорейшн</div>
                         <div class="catalog__item-hover">
                             <div class="catalog__content">
                                 <div class="catalog__content-name catalog__content-name_big h4">Гагарин</div>
-                                <div class="catalog__content-company p">Донстрой Лимитед</div>
-                                <div class="catalog__content-text catalog__content-text_big big">Дом с апартаментами от 27 м²
+                                <div class="catalog__content-company middle">Донстрой Лимитед</div>
+                                <div class="catalog__content-text middle">Дом с апартаментами от 27 м²
                                     <br>с гостиничным сервисом на Новом Арбате.
                                     <br>Сдача — 2019 год.</div>
                             </div>
@@ -1500,18 +1350,18 @@
                                 <img src="/app/img/BUNIN.svg" alt="" role="presentation" />
                             </div>
                         </div>
-                        <div class="catalog__item-name p">ЛЭК Премиум</div>
+                        <div class="catalog__item-name h5">ЛЭК Премиум</div>
                         <div class="catalog__item-hover">
                             <div class="catalog__content">
                                 <div class="catalog__content-name h6 h6_big">Пестеля 6</div>
-                                <div class="catalog__content-company p">Донстрой Лимитед</div>
+                                <div class="catalog__content-company middle">Донстрой Лимитед</div>
                                 <div class="catalog__content-text middle">Дом с апартаментами от 27 м²
                                     <br>с гостиничным сервисом на Новом Арбате.
                                     <br>Сдача — 2019 год.</div>
                             </div>
                             <div class="catalog__bottom">
                                 <button class="catalog__button btn"><span class="btn__text">подробнее</span>
-                                </button><a class="catalog__bottom-presa link big" href="#">скачать презентацию</a>
+                                </button><a class="catalog__bottom-presa link" href="#">скачать презентацию</a>
                             </div>
                         </div>
                     </div>
@@ -1529,18 +1379,18 @@
                                 <img src="/app/img/BUNIN.svg" alt="" role="presentation" />
                             </div>
                         </div>
-                        <div class="catalog__item-name p">ЛЭК Премиум</div>
+                        <div class="catalog__item-name h5">ЛЭК Премиум</div>
                         <div class="catalog__item-hover">
                             <div class="catalog__content">
                                 <div class="catalog__content-name h6 h6_big">Пестеля 6</div>
-                                <div class="catalog__content-company p">Донстрой Лимитед</div>
+                                <div class="catalog__content-company middle">Донстрой Лимитед</div>
                                 <div class="catalog__content-text middle">Дом с апартаментами от 27 м²
                                     <br>с гостиничным сервисом на Новом Арбате.
                                     <br>Сдача — 2019 год.</div>
                             </div>
                             <div class="catalog__bottom">
                                 <button class="catalog__button btn"><span class="btn__text">подробнее</span>
-                                </button><a class="catalog__bottom-presa link big" href="#">скачать презентацию</a>
+                                </button><a class="catalog__bottom-presa link" href="#">скачать презентацию</a>
                             </div>
                         </div>
                     </div>
@@ -1672,7 +1522,7 @@
                                 <br>на квартиру</div>
                         </div>
                     </div>
-                    <div class="profitable-work__part profitable-work__part_right"><a class="profitable-work__button orbit-button js-modal" href="#quiz-1"><span class="orbit-button__border"><span class="orbit-button__border-wrap"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="49"></circle></svg></span></span><span class="orbit-button__bottom"></span><span class="orbit-button__inner"><span class="orbit-button__center"><span class="orbit-button__part is-desktop"><span class="orbit-button__bold">Пройди тест</span><span class="orbit-button__text p">и получи скидку</span></span><span class="orbit-button__part is-mobile"><span class="orbit-button__bold">Пройди тест</span></span><span class="orbit-button__arrow"><svg class="icon icon-arrow" viewBox="0 0 72 26"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></span></span></a>
+                    <div class="profitable-work__part profitable-work__part_right"><a class="profitable-work__button orbit-button js-modal" href="#quiz-1"><span class="orbit-button__border"><span class="orbit-button__border-wrap"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="49"></circle></svg></span></span><span class="orbit-button__bottom"></span><span class="orbit-button__inner"><span class="orbit-button__center"><span class="orbit-button__part"><span class="orbit-button__bold">Пройди тест</span><span class="orbit-button__text p">и получи скидку</span></span><span class="orbit-button__arrow"><svg class="icon icon-arrow" viewBox="0 0 72 26"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></span></span></a>
                     </div>
                 </div>
             </div>
@@ -2040,6 +1890,9 @@
                 </div>
             </div>
         </div>
+        <div class="modals-map mfp-hide" id="modal-map-objects">
+            <div class="modals-map__map js-object-map" id="map-objects" data-lat="55.751574" data-lon="37.573856"></div>
+        </div>
         <footer class="footer">
             <div class="footer__wrap wrap">
                 <div class="footer__row flex flex_justify">
@@ -2071,7 +1924,10 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="footer__cell footer__cell_center"><a class="footer__logo logo" href="#"><span class="logo__img js-lottie" data-file="logoDefault"></span><img class="logo__img" src="/app/img/logo_full.svg" alt="" role="presentation"/></a>
+                    <div class="footer__cell footer__cell_center">
+                        <a class="footer__logo logo" href="#">
+                            <img class="logo__img" src="/app/img/logo_full.svg" alt="" role="presentation" />
+                        </a>
                     </div>
                     <div class="footer__cell footer__cell_big footer__cell_right">
                         <ul class="footer__socials socials flex flex_vertical flex_right">
@@ -2512,7 +2368,7 @@
     </div>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/app/js/app.js?v=1608653573900"></script>
+    <script src="/app/js/app.js?v=1617884023653"></script>
 </body>
 
 </html>

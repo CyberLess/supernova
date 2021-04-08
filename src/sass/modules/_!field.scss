@@ -17,14 +17,16 @@
 		transition: ease .2s;
 		position: relative;
 		z-index: 2;
+
+		
 		&::placeholder {
 			opacity: 0;
 		}
-		&:focus {
+		&:focus, &:hover {
 			& + .field__label {
 				top: 0;
 				font-size: 1.4rem;
-				color: rgba(#fff, .3);
+				// color: rgba(#fff, .3);
 			}
 		}
 	}

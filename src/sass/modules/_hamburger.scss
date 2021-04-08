@@ -1,5 +1,6 @@
 .hamburger{
 	position: relative;
+	
 
 	&:before{
 		content: '';
@@ -35,7 +36,8 @@
 	}
 
 	&.is-active{
-
+		z-index: 1100;
+		
 		&:before{
 			transform: scale(1);
 			opacity: 1;	

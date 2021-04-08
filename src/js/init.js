@@ -1,10 +1,11 @@
 // import { preloader } from "./modules/preloader";
+import screen from "./modules/preloader-screen";
 import { defaults } from "./modules/defaults";
 import { forms } from "./modules/forms";
 import { stars } from "./modules/stars";
 import { panel } from "./modules/panel";
 // import { lines } from "./modules/lines";
-// import { scrolling } from "./modules/scrolling";
+import { scrolling } from "./modules/scrolling";
 // import { svglottie } from "./modules/lottie";
 import { modals } from "./modules/modals";
 import { sliders } from "./modules/slider";
@@ -16,19 +17,28 @@ import { config } from "./config";
 import {ray} from "./modules/ray";
 import {quiz} from "./modules/quiz";
 import {numberInput} from "./modules/number-input";
+import store from "./modules/store";
+import mp from "./modules/map-objects";
+import par from "./modules/parallax";
+
 
 var App = () => {};
 
 App.prototype.init = () => {
-
+	screen.init();
 	// preloader.init();
 	defaults.init();
 	forms.init();
 	panel.init();
 	stars.init();
+
+	mp.init();
+	par.init();
+
 	// lines.init();
 	// scrolling.init();
 	// svglottie.init();
+	
 	partners.init();
 	map.init();
 	modals.init();
@@ -38,6 +48,9 @@ App.prototype.init = () => {
 	ray.init();
 	quiz.init();
 	numberInput.init();
+
+	store.init()
+	
 
 	config.log('app init')
 

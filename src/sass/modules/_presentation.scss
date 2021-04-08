@@ -1,4 +1,8 @@
 .presentation {
+
+	&_first{
+		padding: 10rem 0;
+	}
 	&_second {
 		padding-bottom: 21rem;
 	}
@@ -8,8 +12,8 @@
 	&__img {
 		&_first {
 			max-width: none;
-			width: 1323/668*100%;
-			margin-left: -90%;
+			width: 804/881*100%;
+			// margin-left: -90%;
 		}
 		&_second {
 			display: block;
@@ -57,7 +61,8 @@
 	}
 	@include max-screen($large_mobile) {
 		&_first {
-			padding-top: 3rem;
+			padding-top: 4rem;
+			padding-bottom: 0;
 		}
 		&_second {
 			padding-bottom: 10rem;
@@ -67,9 +72,10 @@
 		}
 		&__img {
 			&_first {
-				width: 110%;
-				margin-right: -10%;
+				// width: 110%;
+				// margin-right: -10%;
 				transform: rotate(10deg);
+				margin-bottom: 3rem;
 			}
 			&_second {
 				transform: translateY(0);

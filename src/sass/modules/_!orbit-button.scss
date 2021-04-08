@@ -7,7 +7,43 @@
 	display: block;
 	position: relative;
 	background-color: $pink;
+	animation: orbitButtonFlying 5s ease-in-out infinite alternate-reverse;
+	// &:before{
+	// 	content: '';
+	// 	display: block;
+	// 	position: absolute;
+	// 	left: 0px;
+	// 	right: 0px;
+	// 	bottom: 0px;
+	// 	top: 0px;
+	// 	z-index: 20;
+
+	// 	background: #7F3955;
+	// 	transition: ease .4s;
+	// 	border-radius: 50%;
+	// 	transform: scale(0);
+	// }
 	
+	// &:hover{
+	// 	&:before{
+	// 		transform: scale(1);
+	// 	}
+	// }
+
+	&:hover{
+		animation-play-state: paused;
+
+		.orbit-button{
+			&__arrow{
+				transform: translateX(1.5rem);
+			}
+			&__border{
+				transform: matrix(.66,-.75,1.05,-.2,0,0) scale(1.2);
+				// transform: matrix(.76,-.55,.95,-.1,0,0) scale(1.2);
+			}
+			
+		}
+	}
 
 	&__border{
 		position: absolute;
@@ -17,6 +53,7 @@
 		height: 100%;
 		perspective: 400px;
 		display: block;
+		transition: ease .4s;
 		// transform: matrix(0.26, -0.95, 0.99, -0.2, 0, 0);
 		transform: matrix(.26,-.85,1.05,-.2,0,0);
 
@@ -31,8 +68,8 @@
 
 		circle{
 			stroke: #fff;
-			stroke-width: .2;
-			stroke-dasharray: 1; 
+			stroke-width: .5;
+			stroke-dasharray: 5;
 			stroke-linecap: round;
 		}
 
@@ -46,7 +83,7 @@
 			width: 410/375*100%;
 			padding-top: 410/375*100%;		
 
-			animation: orbitButton .5s linear infinite;	
+			animation: orbitButton 3.5s linear infinite;	
 		}
 
 		// &:before{
@@ -132,17 +169,19 @@
 		margin-top: 3rem;
 		fill: transparent;
 		stroke: #fff;
+		transition: ease .2s;
 	}
 
 	@include max-screen($large_mobile) {
-
+		width: 215px;
 		&__bold{
 			font-size: 1.5rem;
 			line-height: 1.6rem;
 		}
 		&__arrow{
-			width: 1.8rem;
-			margin-top: 1.5rem;
+			width: 2rem;
+			stroke-width: 3px;
+			margin-top: 2rem;
 		}
 		&__border{
 			&:before{

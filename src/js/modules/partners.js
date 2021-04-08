@@ -64,8 +64,8 @@ var partners = {
 	init: () => {
 
 		// partners.dom.items.find('img').on('load', defaults.logoLoading)
-
-
+		if (!partners.dom.container.length) return false;
+ 
 
 		$(window).on('load resize', e => {
 			partners.setup();

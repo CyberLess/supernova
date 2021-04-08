@@ -67,7 +67,10 @@
 }
 
 @include max-screen($large_mobile) {
+	
 	.gallery {
+		overflow: visible;
+
 		&__line {
 			margin-top: 2rem;
 			height: 1px;
@@ -80,11 +83,17 @@
 
 		&__bottom {
 			height: auto;
+			position: absolute;
+			left: 0;
+			width: 100%;
+			bottom: 100%;
 			&-wrap {
-				display: block;
+				display: flex;
+				justify-content: flex-end;
 			}
 			&.is-visible {
-				margin-top: 2rem;
+				// margin-top: 2rem;
+				margin-bottom: 3.2rem;
 			}
 		}
 		&__head {

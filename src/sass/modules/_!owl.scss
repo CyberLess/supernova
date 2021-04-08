@@ -4,6 +4,9 @@
 		justify-content: space-between;
 		width: 16rem;
 		min-width: 16rem;
+		// &.disabled{
+		// 	display: none;
+		// }
 	}
 	&-prev, &-next {
 		display: inline-flex;
@@ -78,6 +81,20 @@
 		}
 		&-next {
 			margin-left: 5px;
+		}
+	}
+}
+.js-slider{
+
+
+	&:not(.owl-carousel){
+		display: flex;
+		overflow: hidden;
+		align-items: flex-start;
+
+		&>*{
+			width: 100%;
+			flex: none;
 		}
 	}
 }

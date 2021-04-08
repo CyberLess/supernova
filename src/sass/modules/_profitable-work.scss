@@ -25,7 +25,12 @@
 	&__cell {
 		margin-bottom: 7.9rem;
 
-		&:nth-of-type(2n) {
+		&:nth-child(odd){
+			width: 241 / 613 * 100%;
+		}
+
+		&:nth-of-type(even) {
+			width: 200 / 613 * 100%;
 			margin-left: (127 / 660 * 100%);
 		}
 	}
@@ -102,6 +107,8 @@
 		&__part {
 			&_left {
 				width: 100%;
+				margin: 2rem 0;
+				justify-content: center;
 			}
 
 			&_right {
@@ -115,19 +122,26 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			width: 100%;
+			// width: 100%;
 			margin-bottom: 3.9rem;
 
 			text-align: center;
 
-			&:nth-of-type(2n) {
-				margin-left: 0;
+			&:nth-child(odd){
+				width: 200 / 613 * 100%;
+			}
+
+			&:nth-of-type(even) {
+				width: 200 / 613 * 100%;
+				margin-left: (60 / 660 * 100%);
 			}
 
 			&-title {
-				margin-bottom: 0.8rem;
+				margin-bottom: 1rem;
+				line-height: 1.7rem;
+				font-weight: 400;
 
-				font-size: 1.2rem;
+				font-size: 1.5rem;
 			}
 		}
 
@@ -155,8 +169,25 @@
 
 		&__button {
 			&.orbit-button {
-				width: 85%;
+				width: 360px;
 			}
+		}
+	}
+
+	@include max-screen($large_mobile) {
+		&__button {
+			&.orbit-button {
+				width: 215px;
+			}
+		}		
+		&__part {
+			&_left {
+				margin: 0;
+			}
+		}
+		&__cell {
+			width: 100%!important;
+			margin-left: 0!important;
 		}
 	}
 }

@@ -228,22 +228,12 @@ block content
 					"navContainer": ".js-slider-nav",
 					"responsive": {
 						"0": {
-							"autoWidth": false,
-							"center": false,
-							"items": 1,
-							"smartSpeed": 500,
-							"dots": true
-						},
-						"580": {
-							"autoWidth": false,
-							"center": false,
-							"items": 1,
-							"smartSpeed": 500
+							"margin": 0,
+							"autoWidth": true
 						},
 						"1025": {
-							"autoWidth": true,
-							"center": true,
-							"smartSpeed": 700
+							"margin": 30,
+							"autoWidth": true
 						}
 					}
 				}`)
@@ -390,22 +380,12 @@ block content
 					"navContainer": ".js-slider2-nav",
 					"responsive": {
 						"0": {
-							"autoWidth": false,
-							"center": false,
-							"items": 1,
-							"smartSpeed": 500,
-							"dots": true
-						},
-						"580": {
-							"autoWidth": false,
-							"center": false,
-							"items": 1,
-							"smartSpeed": 500
+							"margin": 0,
+							"autoWidth": true
 						},
 						"1025": {
-							"autoWidth": true,
-							"center": true,
-							"smartSpeed": 700
+							"margin": 30,
+							"autoWidth": true
 						}
 					}
 				}`)
@@ -430,7 +410,11 @@ block content
 		+e.bottom
 			+e.bottom-wrap.wrap._middle
 				+e.nav.js-slider2-nav.owl-nav
+	
+	include ../layouts/squad
+
 	include ../layouts/contacts
+	
 block scripts
 	script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
 	script(src="https://code.jquery.com/jquery-3.3.1.min.js")

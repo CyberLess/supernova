@@ -68,8 +68,11 @@ html(class=html.classList)&attributes(html.attrs)
 
 		main
 			block header 
+				.spinner-screen.js-preloader-screen
+					.spinner-wave-in
 				include panel
-				include header
+				//- include header
+				+header
 			block content
 			block footer 
 				include footer

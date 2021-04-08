@@ -7,11 +7,22 @@ var scrolling = {
 			duration: 200,
 			offset: 100,
 			once: true,
+			
 			disable: () => {
 				let maxWidth = 1025;
 				return window.innerWidth < maxWidth;
 			}
 		});		
+		// if($(window).width() > 1024){
+		
+		// }
+
+		// setTimeout(() => {
+		// 	$('.header').css({
+		// 		position: 'relative'
+		// 	})	
+		// }, 100)
+
 	},
 
 	init: () => {

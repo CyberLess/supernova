@@ -2,26 +2,59 @@
 	display: flex;
 	
 	&__btn {
-		width: 7rem;
+		min-width: 7rem;
 		height: 7rem;
+		max-width: 0;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		border-radius: 100%;
-		border: 1px solid rgba(#fff, .3);
-		transition: ease .3s;
+		
+		// transition: .5s ease .5s;
+		transition: ease .5s;
+		position: relative;
 		border-radius: 3.5rem;
 		cursor: pointer;
+
+		&:before{
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: inherit;
+			transition: ease .3s;
+			box-sizing: border-box;
+			border: 1px solid rgba(#fff, .3);
+		}
+
+		&:hover{
+			&:before{
+				border-color: #fff;
+				transform: scale(1.1)
+			}
+		}
 	}
 	
 	&__input {
 		display: none;
 		&:checked + .messengers__btn {
-			border-color: #fff;
-			width: auto;
+			
+			// width: auto;
+			max-width: 20rem;
 			padding-right: 3rem;
+			// transition: ease .5s;
+
+			&:before{
+				border-color: #fff;
+			}
+			
 			.messengers__text {
-				display: block;
+				// display: block;
+				font-size: 1.4rem;
+				opacity: 1;
 			}
 		}
 	}
@@ -63,19 +96,21 @@
 	}
 	
 	&__text {
-		font-size: 1.4rem;
+		font-size: 0;
 		line-height: 1;
-		display: none;
+		transition: font-size .5s ease, opacity .4s ease;
+		// opacity: 0;
+		// display: none;
 	}
 	
 	@include max-screen($large_mobile) {
 		&__btn, &__icon {
-			width: 50px;
+			// width: 50px;
 			min-width: 50px;
 			height: 50px;
 		}
 		&__text {
-			font-size: 12px;
+			// font-size: 12px;
 		}
 		&__icon {
 			svg {

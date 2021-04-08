@@ -1,0 +1,38 @@
+.balloon{
+	&-header{
+		padding-right: 2rem;
+		font-family: RoadRadio;
+		font-size: 1.9rem;
+		line-height: 1em;
+		margin-bottom: 1.5rem;
+		font-weight: 300;
+		padding-left: 2.8rem;
+		padding-top: 3rem;
+		max-width: 27rem;
+	}
+	&-link{
+		color: $pink;
+		text-transform: uppercase;
+		font-weight: 300;
+		font-size: 2rem;
+		line-height: 1em;
+		font-family: RoadRadio;
+		margin-left: 2.8rem;
+		display: inline-block;
+		margin-bottom: 3rem;
+
+		border-bottom: 1px solid transparent;
+
+		&:hover{
+			border-bottom-color: $pink;
+		}
+	}
+}
+
+.ymaps-2-1-78-b-cluster-tabs__menu-item-text{
+	.balloon-header{
+		font-size: 1.6rem;
+		padding: 5px;
+		margin: 0;
+	}
+}

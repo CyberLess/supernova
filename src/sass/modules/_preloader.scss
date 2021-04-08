@@ -1,19 +1,15 @@
-.preloader{
+.preloader-screen{
 	position: fixed;
 	left: 0;
 	top: 0;
 	width: 100%;
-	height: 100vh;
+	height: 100%;
+	background-color: #000;
 
-	&__orbit{
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100%;
-	}
-
-	&__logo{
-
+	display: none;
+	
+	@include max-screen($large_tablet) {
+		display: block;
+		z-index: 800;
 	}
 }

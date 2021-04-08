@@ -2,7 +2,7 @@ var panel = {
 
 	close: (e) => {
 
-		e.preventDefault();
+		// e.preventDefault();
 
 		let $this = $(e.currentTarget),
 			$container = $('html, body'),

@@ -26,8 +26,8 @@ var sliders = {
 		smartSpeed: 600,
 		margin: 20,
 		navText: [
-			'<svg class="icon icon-prev" viewBox="0 0 15 16"><use xlink:href="/app/icons/sprite.svg#prev"></use></svg>',
-			'<svg class="icon icon-next" viewBox="0 0 16 16"><use xlink:href="/app/icons/sprite.svg#next"></use></svg>',
+			'<svg class="icon icon-prev" viewBox="0 0 15 16"><use xlink:href="/wp-content/themes/karanikola-supernova/app/icons/sprite.svg#prev"></use></svg>',
+			'<svg class="icon icon-next" viewBox="0 0 16 16"><use xlink:href="/wp-content/themes/karanikola-supernova/app/icons/sprite.svg#next"></use></svg>',
 		],
 	},
 

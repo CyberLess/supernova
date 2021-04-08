@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>Карточка</title>
-    <link rel="stylesheet" href="/app/css/app.css?v=1608653564357">
+    <link rel="stylesheet" href="/app/css/app.css?v=1617884021377">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -24,6 +24,9 @@
         </svg>
     </div>
     <main>
+        <div class="spinner-screen js-preloader-screen">
+            <div class="spinner-wave-in"></div>
+        </div>
         <div class="panel" id="catalog-panel">
             <div class="panel__inner">
                 <div class="panel__close hamburger is-active js-panel-close">
@@ -215,7 +218,10 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="header__cell header__cell_center"><a class="header__logo logo" href="#"><span class="logo__img js-lottie" data-file="logoDefault"></span><img class="logo__img" src="/app/img/logo_full.svg" alt="" role="presentation"/></a>
+                    <div class="header__cell header__cell_center">
+                        <a class="header__logo logo" href="#">
+                            <img class="logo__img" src="/app/img/logo_full.svg" alt="" role="presentation" />
+                        </a>
                     </div>
                     <div class="header__cell header__cell_right flex flex_vertical flex_right"><a class="header__phone phone h5" href="tel:+74594583693">+7 459 458 36 93</a><a class="header__link middle js-modal" href="#popup-form1">Обратный звонок</a>
                     </div>
@@ -259,7 +265,7 @@
                 </div>
             </div>
         </div>
-        <section class="gallery">
+        <section class="gallery" data-aos="gallery">
             <div class="gallery__slider slider js-slider" data-settings="{
 					&quot;smartSpeed&quot;: 700,
 					&quot;autoWidth&quot;: true,
@@ -269,22 +275,12 @@
 					&quot;navContainer&quot;: &quot;.js-slider-nav&quot;,
 					&quot;responsive&quot;: {
 						&quot;0&quot;: {
-							&quot;autoWidth&quot;: false,
-							&quot;center&quot;: false,
-							&quot;items&quot;: 1,
-							&quot;smartSpeed&quot;: 500,
-							&quot;dots&quot;: true
-						},
-						&quot;580&quot;: {
-							&quot;autoWidth&quot;: false,
-							&quot;center&quot;: false,
-							&quot;items&quot;: 1,
-							&quot;smartSpeed&quot;: 500
+							&quot;margin&quot;: 0,
+							&quot;autoWidth&quot;: true
 						},
 						&quot;1025&quot;: {
-							&quot;autoWidth&quot;: true,
-							&quot;center&quot;: true,
-							&quot;smartSpeed&quot;: 700
+							&quot;margin&quot;: 30,
+							&quot;autoWidth&quot;: true
 						}
 					}
 				}">
@@ -452,13 +448,15 @@
             </div>
         </section>
         <section class="presentation presentation_first">
-            <div class="presentation__wrap wrap wrap_middle">
+            <div class="presentation__wrap wrap">
                 <div class="presentation__row flex flex_justify flex_vertical">
-                    <div class="presentation__left">
-                        <picture>
-                            <source type="image/webp" srcset="/app/img/presentation__img1.webp">
-                                <img src="/app/img/presentation__img1.png" class="presentation__img presentation__img_first" alt="" role="presentation" />
-                        </picture>
+                    <div class="presentation__left js-parallax-scene">
+                        <div class="parallax-item" data-depth="0.6">
+                            <picture>
+                                <source type="image/webp" srcset="/app/img/presentation__img3.webp">
+                                    <img src="/app/img/presentation__img3.png" class="presentation__img presentation__img_first" alt="" role="presentation" />
+                            </picture>
+                        </div>
                     </div>
                     <div class="presentation__right">
                         <h2 class="presentation__title h2"><span class="string is-center"><span class="word"> <span>Презентация ЖК </span></span><br><span class="word stroke"> <span>"НАЗВАНИЕ"</span></span></span></h2>
@@ -537,7 +535,7 @@
                         <div class="apartments-item__preview-img">
                             <picture>
                                 <source type="image/webp" srcset="/app/img/card__img.webp">
-                                    <img src="/app/img/card__img.jpg" class="object-fit" />
+                                    <img src="/app/img/card__img.jpg" />
                             </picture>
                         </div>
                     </div>
@@ -573,7 +571,7 @@
                         <div class="apartments-item__preview-img">
                             <picture>
                                 <source type="image/webp" srcset="/app/img/card__img.webp">
-                                    <img src="/app/img/card__img.jpg" class="object-fit" />
+                                    <img src="/app/img/card__img.jpg" />
                             </picture>
                         </div>
                     </div>
@@ -601,7 +599,7 @@
                         <div class="apartments-item__preview-img">
                             <picture>
                                 <source type="image/webp" srcset="/app/img/card__img.webp">
-                                    <img src="/app/img/card__img.jpg" class="object-fit" />
+                                    <img src="/app/img/card__img.jpg" />
                             </picture>
                         </div>
                     </div>
@@ -637,7 +635,7 @@
                         <div class="apartments-item__preview-img">
                             <picture>
                                 <source type="image/webp" srcset="/app/img/card__img.webp">
-                                    <img src="/app/img/card__img.jpg" class="object-fit" />
+                                    <img src="/app/img/card__img.jpg" />
                             </picture>
                         </div>
                     </div>
@@ -665,7 +663,7 @@
                         <div class="apartments-item__preview-img">
                             <picture>
                                 <source type="image/webp" srcset="/app/img/card__img.webp">
-                                    <img src="/app/img/card__img.jpg" class="object-fit" />
+                                    <img src="/app/img/card__img.jpg" />
                             </picture>
                         </div>
                     </div>
@@ -701,7 +699,7 @@
                         <div class="apartments-item__preview-img">
                             <picture>
                                 <source type="image/webp" srcset="/app/img/card__img.webp">
-                                    <img src="/app/img/card__img.jpg" class="object-fit" />
+                                    <img src="/app/img/card__img.jpg" />
                             </picture>
                         </div>
                     </div>
@@ -729,7 +727,7 @@
                         <div class="apartments-item__preview-img">
                             <picture>
                                 <source type="image/webp" srcset="/app/img/card__img.webp">
-                                    <img src="/app/img/card__img.jpg" class="object-fit" />
+                                    <img src="/app/img/card__img.jpg" />
                             </picture>
                         </div>
                     </div>
@@ -765,7 +763,7 @@
                         <div class="apartments-item__preview-img">
                             <picture>
                                 <source type="image/webp" srcset="/app/img/card__img.webp">
-                                    <img src="/app/img/card__img.jpg" class="object-fit" />
+                                    <img src="/app/img/card__img.jpg" />
                             </picture>
                         </div>
                     </div>
@@ -793,7 +791,7 @@
                         <div class="apartments-item__preview-img">
                             <picture>
                                 <source type="image/webp" srcset="/app/img/card__img.webp">
-                                    <img src="/app/img/card__img.jpg" class="object-fit" />
+                                    <img src="/app/img/card__img.jpg" />
                             </picture>
                         </div>
                     </div>
@@ -829,7 +827,7 @@
                         <div class="apartments-item__preview-img">
                             <picture>
                                 <source type="image/webp" srcset="/app/img/card__img.webp">
-                                    <img src="/app/img/card__img.jpg" class="object-fit" />
+                                    <img src="/app/img/card__img.jpg" />
                             </picture>
                         </div>
                     </div>
@@ -857,7 +855,7 @@
                         <div class="apartments-item__preview-img">
                             <picture>
                                 <source type="image/webp" srcset="/app/img/card__img.webp">
-                                    <img src="/app/img/card__img.jpg" class="object-fit" />
+                                    <img src="/app/img/card__img.jpg" />
                             </picture>
                         </div>
                     </div>
@@ -893,7 +891,7 @@
                         <div class="apartments-item__preview-img">
                             <picture>
                                 <source type="image/webp" srcset="/app/img/card__img.webp">
-                                    <img src="/app/img/card__img.jpg" class="object-fit" />
+                                    <img src="/app/img/card__img.jpg" />
                             </picture>
                         </div>
                     </div>
@@ -953,7 +951,7 @@
                 </form>
             </div>
         </section>
-        <section class="gallery">
+        <section class="gallery" data-aos="gallery">
             <div class="gallery__slider slider js-slider" data-settings="{
 					&quot;smartSpeed&quot;: 700,
 					&quot;autoWidth&quot;: true,
@@ -963,22 +961,12 @@
 					&quot;navContainer&quot;: &quot;.js-slider2-nav&quot;,
 					&quot;responsive&quot;: {
 						&quot;0&quot;: {
-							&quot;autoWidth&quot;: false,
-							&quot;center&quot;: false,
-							&quot;items&quot;: 1,
-							&quot;smartSpeed&quot;: 500,
-							&quot;dots&quot;: true
-						},
-						&quot;580&quot;: {
-							&quot;autoWidth&quot;: false,
-							&quot;center&quot;: false,
-							&quot;items&quot;: 1,
-							&quot;smartSpeed&quot;: 500
+							&quot;margin&quot;: 0,
+							&quot;autoWidth&quot;: true
 						},
 						&quot;1025&quot;: {
-							&quot;autoWidth&quot;: true,
-							&quot;center&quot;: true,
-							&quot;smartSpeed&quot;: 700
+							&quot;margin&quot;: 30,
+							&quot;autoWidth&quot;: true
 						}
 					}
 				}">
@@ -991,9 +979,24 @@
                     </div>
                     <div class="slider__row flex flex_justify">
                         <div class="slider__content content">
-                            <h4>Большие кухни‐гостиные</h4>
-                            <p>Идеальное пространство для совместного проведения времени.
-                                <br>Здесь можно устраивать и вечерние семейные посиделки, и шумные вечеринки с друзьями</p>
+                            <h4>Парковая зона</h4>
+                            <p>ХХХХ м2 зеленых насаждений и газонов 4
+                                <br>маршрута на 3,5 км прогулочных тропинок</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__slide">
+                    <div class="slider__preview">
+                        <picture>
+                            <source type="image/webp" srcset="/app/img/form__bg.webp">
+                                <img src="/app/img/form__bg.jpg" class="slider__img object-fit" alt="" role="presentation" />
+                        </picture>
+                    </div>
+                    <div class="slider__row flex flex_justify">
+                        <div class="slider__content content">
+                            <h4>Парковая зона</h4>
+                            <p>ХХХХ м2 зеленых насаждений и газонов 4
+                                <br>маршрута на 3,5 км прогулочных тропинок</p>
                         </div>
                     </div>
                 </div>
@@ -1006,29 +1009,14 @@
                     </div>
                     <div class="slider__row flex flex_justify">
                         <div class="slider__content content">
-                            <h4>Большие кухни‐гостиные</h4>
-                            <p>Идеальное пространство для совместного проведения времени.
-                                <br>Здесь можно устраивать и вечерние семейные посиделки, и шумные вечеринки с друзьями</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider__slide">
-                    <div class="slider__preview">
-                        <picture>
-                            <source type="image/webp" srcset="/app/img/card__slide1.webp">
-                                <img src="/app/img/card__slide1.jpg" class="slider__img object-fit" alt="" role="presentation" />
-                        </picture>
-                    </div>
-                    <div class="slider__row flex flex_justify">
-                        <div class="slider__content content">
-                            <h4>Большие кухни‐гостиные</h4>
-                            <p>Идеальное пространство для совместного проведения времени.
-                                <br>Здесь можно устраивать и вечерние семейные посиделки, и шумные вечеринки с друзьями</p>
+                            <h4>Парковая зона</h4>
+                            <p>ХХХХ м2 зеленых насаждений и газонов 4
+                                <br>маршрута на 3,5 км прогулочных тропинок</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="gallery__bottom">
+            <div class="gallery__bottom is-visible">
                 <div class="gallery__bottom-wrap wrap wrap_middle">
                     <div class="gallery__nav js-slider2-nav owl-nav"></div>
                 </div>
@@ -1052,9 +1040,11 @@
                                         </defs>
                                     </svg>
                                 </div>
-                                <svg class="icon icon-map" viewBox="0 0 64 64">
-                                    <use xlink:href="/app/icons/sprite.svg#map"></use>
-                                </svg>
+                                <div class="icon">
+                                    <svg class="icon icon-map" viewBox="0 0 64 64">
+                                        <use xlink:href="/app/icons/sprite.svg#map"></use>
+                                    </svg>
+                                </div>
                             </div>
                             <div class="discount__item-price h4">50 000 <span class="discount__rub"><svg class="icon icon-rub" viewBox="0 0 18 23"><use xlink:href="/app/icons/sprite.svg#rub"></use></svg></span>
                             </div>
@@ -1077,9 +1067,11 @@
                                         </defs>
                                     </svg>
                                 </div>
-                                <svg class="icon icon-partner" viewBox="0 0 60.2 66">
-                                    <use xlink:href="/app/icons/sprite.svg#partner"></use>
-                                </svg>
+                                <div class="icon">
+                                    <svg class="icon icon-partner" viewBox="0 0 60.2 66">
+                                        <use xlink:href="/app/icons/sprite.svg#partner"></use>
+                                    </svg>
+                                </div>
                             </div>
                             <div class="discount__item-price h4"><span class="discount__before">до </span>350 000<span class="discount__rub"><svg class="icon icon-rub" viewBox="0 0 18 23"><use xlink:href="/app/icons/sprite.svg#rub"></use></svg></span>
                             </div>
@@ -1102,9 +1094,11 @@
                                         </defs>
                                     </svg>
                                 </div>
-                                <svg class="icon icon-roller" viewBox="0 0 64 63">
-                                    <use xlink:href="/app/icons/sprite.svg#roller"></use>
-                                </svg>
+                                <div class="icon">
+                                    <svg class="icon icon-roller" viewBox="0 0 64 63">
+                                        <use xlink:href="/app/icons/sprite.svg#roller"></use>
+                                    </svg>
+                                </div>
                             </div>
                             <div class="discount__item-price h4"><span class="discount__before">до </span>30 %</div>
                             <div class="discount__item-title p20">Стартовая</div>
@@ -1195,11 +1189,13 @@
         <section class="presentation presentation_second">
             <div class="presentation__wrap wrap">
                 <div class="presentation__row flex flex_justify flex_vertical">
-                    <div class="presentation__left presentation__left_second">
-                        <picture>
-                            <source type="image/webp" srcset="/app/img/presentation__img2.webp">
-                                <img src="/app/img/presentation__img2.png" class="presentation__img presentation__img_second" alt="" role="presentation" />
-                        </picture>
+                    <div class="presentation__left presentation__left_second js-parallax-scene">
+                        <div class="parallax-item" data-depth="0.6">
+                            <picture>
+                                <source type="image/webp" srcset="/app/img/presentation__img2.webp">
+                                    <img src="/app/img/presentation__img2.png" class="presentation__img presentation__img_second" alt="" role="presentation" />
+                            </picture>
+                        </div>
                     </div>
                     <div class="presentation__right presentation__right_second">
                         <h2 class="presentation__title h3"><span class="string is-center"><span class="word stroke"> <span>топ 10 предложений</span></span><br><span class="word"> <span>по коммерческим помещениям</span></span></span></h2>
@@ -1216,7 +1212,7 @@
                     <div class="docs__desc p">Мы заранее заботимся о спокойствии наших клиентов и перепроверяем все разрешительные документы каждого объекта который добавляем в свой каталог</div>
                 </div>
                 <div class="docs__list">
-                    <div class="docs__item flex flex_vertical flex_justify">
+                    <a class="docs__item flex flex_vertical flex_justify" href="#">
                         <div class="docs__item-left flex flex_vertical">
                             <div class="docs__item-icon">
                                 <svg class="icon icon-docsFirst" viewBox="0 0 53 68">
@@ -1226,10 +1222,18 @@
                             <div class="docs__item-text p20">Разрешение
                                 <br>на строительство</div>
                         </div>
-                        <div class="docs__item-right"><a class="docs__download download" href="#test"><span class="download__text">Скачать</span><span class="download__icon"><svg class="icon icon-download" viewBox="0 0 14 11"><use xlink:href="/app/icons/sprite.svg#download"></use></svg></span></a>
+                        <div class="docs__item-right">
+                            <div class="docs__download download">
+                                <div class="download__text">Скачать</div>
+                                <div class="download__icon">
+                                    <svg class="icon icon-download" viewBox="0 0 14 11">
+                                        <use xlink:href="/app/icons/sprite.svg#download"></use>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="docs__item flex flex_vertical flex_justify">
+                    </a>
+                    <a class="docs__item flex flex_vertical flex_justify" href="#">
                         <div class="docs__item-left flex flex_vertical">
                             <div class="docs__item-icon">
                                 <svg class="icon icon-docsSecond" viewBox="0 0 53 68">
@@ -1239,10 +1243,18 @@
                             <div class="docs__item-text p20">Проектная
                                 <br>декларация</div>
                         </div>
-                        <div class="docs__item-right"><a class="docs__download download" href="#test"><span class="download__text">Скачать</span><span class="download__icon"><svg class="icon icon-download" viewBox="0 0 14 11"><use xlink:href="/app/icons/sprite.svg#download"></use></svg></span></a>
+                        <div class="docs__item-right">
+                            <div class="docs__download download">
+                                <div class="download__text">Скачать</div>
+                                <div class="download__icon">
+                                    <svg class="icon icon-download" viewBox="0 0 14 11">
+                                        <use xlink:href="/app/icons/sprite.svg#download"></use>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="docs__item flex flex_vertical flex_justify">
+                    </a>
+                    <a class="docs__item flex flex_vertical flex_justify" href="#">
                         <div class="docs__item-left flex flex_vertical">
                             <div class="docs__item-icon">
                                 <svg class="icon icon-docsThird" viewBox="0 0 53 69">
@@ -1252,9 +1264,17 @@
                             <div class="docs__item-text p20">Свидетельство
                                 <br>на участок</div>
                         </div>
-                        <div class="docs__item-right"><a class="docs__download download" href="#test"><span class="download__text">Скачать</span><span class="download__icon"><svg class="icon icon-download" viewBox="0 0 14 11"><use xlink:href="/app/icons/sprite.svg#download"></use></svg></span></a>
+                        <div class="docs__item-right">
+                            <div class="docs__download download">
+                                <div class="download__text">Скачать</div>
+                                <div class="download__icon">
+                                    <svg class="icon icon-download" viewBox="0 0 14 11">
+                                        <use xlink:href="/app/icons/sprite.svg#download"></use>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -1289,7 +1309,10 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="footer__cell footer__cell_center"><a class="footer__logo logo" href="#"><span class="logo__img js-lottie" data-file="logoDefault"></span><img class="logo__img" src="/app/img/logo_full.svg" alt="" role="presentation"/></a>
+                    <div class="footer__cell footer__cell_center">
+                        <a class="footer__logo logo" href="#">
+                            <img class="logo__img" src="/app/img/logo_full.svg" alt="" role="presentation" />
+                        </a>
                     </div>
                     <div class="footer__cell footer__cell_big footer__cell_right">
                         <ul class="footer__socials socials flex flex_vertical flex_right">
@@ -1730,7 +1753,7 @@
     </div>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/app/js/app.js?v=1608653564493"></script>
+    <script src="/app/js/app.js?v=1617884021553"></script>
 </body>
 
 </html>

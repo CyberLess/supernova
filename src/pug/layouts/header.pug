@@ -1,9 +1,9 @@
 include mobile
 
-+b.HEADER.header.is-fluid
++b.HEADER.header.is-fluid(data-aos="head")
 	+e.wrap.wrap
 		+e.row.flex._vertical._justify
-			+e.cell._left
+			+e.cell._left.aos--fade
 				+e.UL.menu.menu__.flex._vertical
 					+e.LI.item
 						+e.A.link.middle(href="#") Услуги
@@ -15,16 +15,12 @@ include mobile
 						+e.A.link.middle(href="#") Контакты
 			+e.cell._center
 				+logo
-					+e.parent
-						+e.logo._show.js-lottie#pls(data-file="logoShow" data-loop="false" data-next="pld")
-						+e.logo._default.js-lottie.js-hidden#pld(data-file="logoDefault" data-autoplay="false")
-
-			+e.cell._right.flex._vertical._right
+			+e.cell._right.flex._vertical._right.aos--fade
 				+e.phone.phone__.h5.A(href="tel:+74594583693")
 					| +7 459 458 36 93
 				+e.A.link.middle.js-modal(href="#popup-form1")
 					| Обратный звонок
-			+e.cell._hamburger
+			+e.cell._hamburger.aos--fade
 				+b.hamburger.js-mobile
 					+e.line
 					+e.line

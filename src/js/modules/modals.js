@@ -51,14 +51,11 @@ var modals = {
 			// call update method to refresh counters (if required)
 			mfp.updateItemHTML();
 		} else {
-			// if (e && $(e.currentTarget).attr("data-youtube")) {
-			// 	$(modal + " iframe").attr(
-			// 		"src",
-			// 		"https://www.youtube.com/embed/" +
-			// 			$(e.currentTarget).data("youtube") +
-			// 			"?autoplay=1&showinfo=0&rel=0&controls=0"
-			// 	);
-			// }
+			if (e && $(e.currentTarget).attr("data-youtube")) {
+
+				$(modal).append(`<iframe class="js-iframe-video" width="1331" height="599" frameborder="0" src="${$(e.currentTarget).data("youtube")}?autoplay=1&showinfo=0&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`)
+				
+			}
 
 			// if (e && $(e.currentTarget).attr("data-input")) {
 			// 	$(modal + ' input[name="form"]').val(
@@ -74,7 +71,7 @@ var modals = {
 					fixedBgPos: true,
 					overflowY: "hidden",
 					closeMarkup:
-						'<div class="modals__close close js-close-modal"><svg class="icon icon-close close2" viewBox="0 0 612 612"><use xlink:href="/app/icons/sprite.svg#close"></use></svg></div>',
+						'<div class="modals__close close js-close-modal"><svg class="icon icon-close close2" viewBox="0 0 612 612"><use xlink:href="/wp-content/themes/karanikola-supernova/app/icons/sprite.svg#close"></use></svg></div>',
 					mainClass: "css-modal-animate",
 					items: {
 						src: modal,
@@ -92,8 +89,14 @@ var modals = {
 							// 	button.run($(modal).find(button.selector)[0]);
 							// }
 						},
+						close: () => {
+							$('.js-toggle-objects').prop('checked', false).trigger('change')
+							
+						},
 
-						beforeClose: () => {},
+						afterClose: () => {
+							$(modal).find('.js-iframe-video').remove()
+						},
 					},
 				},
 				0
@@ -133,7 +136,7 @@ var modals = {
 			type: "image",
 			closeOnContentClick: true,
 			closeBtnInside: true,
-			closeMarkup: '<div class="modals__close close js-close-modal"><svg class="icon icon-close" viewBox="0 0 14 14"><use xlink:href="/app/icons/sprite.svg#close"></use></svg></div>',
+			closeMarkup: '<div class="modals__close close js-close-modal"><svg class="icon icon-close" viewBox="0 0 14 14"><use xlink:href="/wp-content/themes/karanikola-supernova/app/icons/sprite.svg#close"></use></svg></div>',
 			mainClass: 'css-modal-animate',
 			image: {
 				verticalFit: true,

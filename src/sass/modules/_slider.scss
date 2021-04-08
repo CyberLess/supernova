@@ -42,32 +42,40 @@
 @include max-screen($large_tablet) {
 	.slider {
 		&__slide {
-			padding: 0 7rem;
-			width: auto;
+			padding: 0 1.5px;
+			width: 281.5 / 320 * 100vw;
 		}
 		&__content {
 			min-height: inherit;
+			// visibility: hidden;
+			// opacity: 0;
+			// transition: ease .3s;
+			// transform: translateY(2rem);
 		}
-		&__row {
-			transform: translateY(0);
-			opacity: 1;
-		}
+		// &__row {
+		// 	transform: translateY(0);
+		// 	opacity: 1;
+		// }
 	}
+	// .center{
+	// 	.slider {
+	// 		&__content {
+	// 			visibility: visible;
+	// 			opacity: 1;
+	// 			// transform: translateY(0);				
+	// 		}
+	// 	}
+	// }
 }
 
-@include max-screen($small_tablet) {
-	.slider {
-		&__slide {
-			padding: 0 2rem;
-			width: auto;
-		}
-	}
-}
 
 @include max-screen($large_mobile) {
 	.slider {
 		&__content {
 			width: 100%;
+			p{
+				color: #fff
+			}
 		}
 		&__row {
 			flex-wrap: wrap;

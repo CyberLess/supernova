@@ -1,0 +1,53 @@
+mixin header(frontpage = false)
+	include ../layouts/mobile
+	if(frontpage)
+		+b.HEADER.header.is-fluid(data-aos="head")
+			+b.preloader-screen
+			+e.wrap.wrap
+				+e.row.flex._vertical._justify
+					+e.cell._left.aos--fade
+						+e.UL.menu.menu__.flex._vertical
+							+e.LI.item
+								+e.A.link.middle(href="#") Услуги
+							+e.LI.item
+								+e.A.link.middle(href="#") О нас
+							+e.LI.item
+								+e.A.link.middle(href="#") Отзывы
+							+e.LI.item
+								+e.A.link.middle(href="#") Контакты
+					+e.cell._center
+						+logo(true)
+					+e.cell._right.flex._vertical._right.aos--fade
+						+e.phone.phone__.h5.A(href="tel:+74594583693")
+							| +7 459 458 36 93
+						+e.A.link.middle.js-modal(href="#popup-form1")
+							| Обратный звонок
+					+e.cell._hamburger.aos--fade
+						+b.hamburger.js-mobile
+							+e.line
+							+e.line
+	else 
+		+b.HEADER.header.is-fluid
+			+e.wrap.wrap
+				+e.row.flex._vertical._justify
+					+e.cell._left
+						+e.UL.menu.menu__.flex._vertical
+							+e.LI.item
+								+e.A.link.middle(href="#") Услуги
+							+e.LI.item
+								+e.A.link.middle(href="#") О нас
+							+e.LI.item
+								+e.A.link.middle(href="#") Отзывы
+							+e.LI.item
+								+e.A.link.middle(href="#") Контакты
+					+e.cell._center
+						+logo
+					+e.cell._right.flex._vertical._right
+						+e.phone.phone__.h5.A(href="tel:+74594583693")
+							| +7 459 458 36 93
+						+e.A.link.middle.js-modal(href="#popup-form1")
+							| Обратный звонок
+					+e.cell._hamburger
+						+b.hamburger.js-mobile
+							+e.line
+							+e.line

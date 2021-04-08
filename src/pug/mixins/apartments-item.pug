@@ -7,7 +7,7 @@ mixin apartments-item(image, quantity, area, decoration)
 						+icon('decoration')
 					+e.decoration-text !{decoration}
 			+e.preview-img
-				img.object-fit(src=`/img/${image}`)
+				img(src=`/img/${image}`)
 		+e.bottom.flex._justify
 			+e.quantity
 				+e.quantity-text.p !{quantity}

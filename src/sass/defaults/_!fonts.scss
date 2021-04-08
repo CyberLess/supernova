@@ -2,8 +2,8 @@
 // @font-face {
 //     font-family: 'Museo Sans Cyrl';
 //     src: local('MuseoSansCyrl-300'),
-//         url('/app/fonts/MuseoSansCyrl-300.woff2') format('woff2'),
-//         url('/app/fonts/MuseoSansCyrl-300.woff') format('woff');
+//         url('../fonts/MuseoSansCyrl-300.woff2') format('woff2'),
+//         url('../fonts/MuseoSansCyrl-300.woff') format('woff');
 //     font-weight: 300;
 //     font-style: normal;
 // }
@@ -12,8 +12,8 @@
 // @font-face {
 //     font-family: 'Museo Sans Cyrl';
 //     src: local('MuseoSansCyrl-500'),
-//         url('/app/fonts/MuseoSansCyrl-500.woff2') format('woff2'),
-//         url('/app/fonts/MuseoSansCyrl-500.woff') format('woff');
+//         url('../fonts/MuseoSansCyrl-500.woff2') format('woff2'),
+//         url('../fonts/MuseoSansCyrl-500.woff') format('woff');
 //     font-weight: normal;
 //     font-style: normal;
 // }
@@ -21,16 +21,16 @@
 // @font-face {
 //     font-family: 'Museo Sans Cyrl';
 //     src: local('MuseoSansCyrl-700'),
-//         url('/app/fonts/MuseoSansCyrl-700.woff2') format('woff2'),
-//         url('/app/fonts/MuseoSansCyrl-700.woff') format('woff');
+//         url('../fonts/MuseoSansCyrl-700.woff2') format('woff2'),
+//         url('../fonts/MuseoSansCyrl-700.woff') format('woff');
 //     font-weight: bold;
 //     font-style: normal;
 // }
 
 @font-face {
     font-family: 'Gotham';
-    src: url('/app/fonts/Gotham-Light.woff2') format('woff2'),
-        url('/app/fonts/Gotham-Light.woff') format('woff');
+    src: url('../fonts/Gotham-Light.woff2') format('woff2'),
+        url('../fonts/Gotham-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -38,8 +38,8 @@
 
 @font-face {
     font-family: 'Gotham';
-    src: url('/app/fonts/Gotham-Bold.woff2') format('woff2'),
-        url('/app/fonts/Gotham-Bold.woff') format('woff');
+    src: url('../fonts/Gotham-Bold.woff2') format('woff2'),
+        url('../fonts/Gotham-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -47,8 +47,8 @@
 
 @font-face {
     font-family: 'Gotham';
-    src: url('/app/fonts/Gotham-Book.woff2') format('woff2'),
-        url('/app/fonts/Gotham-Book.woff') format('woff');
+    src: url('../fonts/Gotham-Book.woff2') format('woff2'),
+        url('../fonts/Gotham-Book.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -64,8 +64,8 @@
 @font-face {
     font-family: 'RoadRadio';
     src: local('RoadRadio-Light'),
-        url('/app/fonts/RoadRadio-Light.woff2') format('woff2'),
-        url('/app/fonts/RoadRadio-Light.woff') format('woff');
+        url('../fonts/RoadRadio-Light.woff2') format('woff2'),
+        url('../fonts/RoadRadio-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
@@ -73,8 +73,8 @@
 @font-face {
     font-family: 'RoadRadio';
     src: local('RoadRadio-Bold'),
-        url('/app/fonts/RoadRadio-Bold.woff2') format('woff2'),
-        url('/app/fonts/RoadRadio-Bold.woff') format('woff');
+        url('../fonts/RoadRadio-Bold.woff2') format('woff2'),
+        url('../fonts/RoadRadio-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
@@ -82,8 +82,8 @@
 @font-face {
     font-family: 'RoadRadio';
     src: local('RoadRadio-Thin'),
-        url('/app/fonts/RoadRadio-Thin.woff2') format('woff2'),
-        url('/app/fonts/RoadRadio-Thin.woff') format('woff');
+        url('../fonts/RoadRadio-Thin.woff2') format('woff2'),
+        url('../fonts/RoadRadio-Thin.woff') format('woff');
     font-weight: 100;
     font-style: normal;
 }
@@ -91,8 +91,8 @@
 @font-face {
     font-family: 'RoadRadio';
     src: local('RoadRadio'),
-        url('/app/fonts/RoadRadio.woff2') format('woff2'),
-        url('/app/fonts/RoadRadio.woff') format('woff');
+        url('../fonts/RoadRadio.woff2') format('woff2'),
+        url('../fonts/RoadRadio.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }

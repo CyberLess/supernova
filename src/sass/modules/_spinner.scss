@@ -1,0 +1,35 @@
+$inactive: rgba(255,255,255,.2);
+$active: $pink;
+$speed: 1.2s;
+$size: 10rem;
+$unit: $size / 16;
+
+%spinner {  
+//   display: block;
+//   float: left;
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  border: $unit solid $inactive;
+  animation: spinner $speed linear infinite;
+}
+
+%spinner-wave-in,
+.spinner-wave-in {
+  @extend %spinner;
+  box-shadow: inset (-$unit/2) (-$unit/2) 0 ($unit/2) $active;
+}
+
+.spinner-screen{
+	
+	position: fixed;
+	z-index: 5000;
+	left: 0;
+	width: 100%;
+	top: 0;
+	height: 100%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0,0,0,.6);
+}

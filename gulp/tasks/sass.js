@@ -24,7 +24,9 @@ module.exports = (gulp, plugins, browserSync) => {
 
                             let selector = replaced.substr(0, replaced.indexOf('{')).replace(/}/g, '').trim(); 
 
-                            let bg =  replaced.match(/\b(?:background\s*?([^;>]*?)(?=[;">}]);)/g).join(" ").replace('/img/','/app/img/')
+                            let bg =  replaced.match(/\b(?:background\s*?([^;>]*?)(?=[;">}]);)/g).join(" ")
+                            
+                            // .replace('/img/','/app/img/')
 
                             input += ".ws "+selector+"{"+bg.replace(/(gif|jpg|jpeg|tiff|png)/g,'webp')+"} .wn "+selector+"{"+bg+"}"
                         }

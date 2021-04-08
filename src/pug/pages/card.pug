@@ -39,7 +39,7 @@ block content
 				+button Подберите квартиру
 				+play('https://www.youtube.com/embed/tWkodax0vKE')
 					| Видео о "ЖК"
-	+b.SECTION.gallery
+	+b.SECTION.gallery(data-aos="gallery" )
 		+e.slider.slider__.js-slider(
 				data-settings=`{
 					"smartSpeed": 700,
@@ -50,22 +50,12 @@ block content
 					"navContainer": ".js-slider-nav",
 					"responsive": {
 						"0": {
-							"autoWidth": false,
-							"center": false,
-							"items": 1,
-							"smartSpeed": 500,
-							"dots": true
-						},
-						"580": {
-							"autoWidth": false,
-							"center": false,
-							"items": 1,
-							"smartSpeed": 500
+							"margin": 0,
+							"autoWidth": true
 						},
 						"1025": {
-							"autoWidth": true,
-							"center": true,
-							"smartSpeed": 700
+							"margin": 30,
+							"autoWidth": true
 						}
 					}
 				}`)
@@ -138,10 +128,11 @@ block content
 							p
 								| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus.
 	+b.SECTION.presentation._first
-		+e.wrap.wrap._middle
+		+e.wrap.wrap
 			+e.row.flex._justify._vertical
-				+e.left
-					+e.IMG.img._first(src="/img/presentation__img1.png")
+				+e.left.js-parallax-scene
+					.parallax-item( data-depth="0.6" )
+						+e.IMG.img._first(src="/img/presentation__img3.png")
 				+e.right
 					+e.H2.title.h2
 						span.string.is-center
@@ -214,7 +205,7 @@ block content
 					+field('Телефон', 'Введите телефон!')(name="phone")
 					+button("submit") Получить доступ
 					
-	+b.SECTION.gallery
+	+b.SECTION.gallery(data-aos="gallery")
 		+e.slider.slider__.js-slider(
 				data-settings=`{
 					"smartSpeed": 700,
@@ -225,44 +216,34 @@ block content
 					"navContainer": ".js-slider2-nav",
 					"responsive": {
 						"0": {
-							"autoWidth": false,
-							"center": false,
-							"items": 1,
-							"smartSpeed": 500,
-							"dots": true
-						},
-						"580": {
-							"autoWidth": false,
-							"center": false,
-							"items": 1,
-							"smartSpeed": 500
+							"margin": 0,
+							"autoWidth": true
 						},
 						"1025": {
-							"autoWidth": true,
-							"center": true,
-							"smartSpeed": 700
+							"margin": 30,
+							"autoWidth": true
 						}
 					}
 				}`)
 			+slide('card__slide1.jpg')
-				h4 Большие кухни‐гостиные
+				h4 Парковая зона
 				p
-					| Идеальное пространство для совместного проведения времени.
+					| ХХХХ м2 зеленых насаждений и газонов 4 
 					br
-					| Здесь можно устраивать и вечерние семейные посиделки, и шумные вечеринки с друзьями
+					| маршрута на 3,5 км прогулочных тропинок
+			+slide('form__bg.jpg')
+				h4 Парковая зона
+				p
+					| ХХХХ м2 зеленых насаждений и газонов 4 
+					br
+					| маршрута на 3,5 км прогулочных тропинок
 			+slide('card__slide1.jpg')
-				h4 Большие кухни‐гостиные
+				h4 Парковая зона
 				p
-					| Идеальное пространство для совместного проведения времени.
+					| ХХХХ м2 зеленых насаждений и газонов 4 
 					br
-					| Здесь можно устраивать и вечерние семейные посиделки, и шумные вечеринки с друзьями
-			+slide('card__slide1.jpg')
-				h4 Большие кухни‐гостиные
-				p
-					| Идеальное пространство для совместного проведения времени.
-					br
-					| Здесь можно устраивать и вечерние семейные посиделки, и шумные вечеринки с друзьями
-		+e.bottom
+					| маршрута на 3,5 км прогулочных тропинок
+		+e.bottom.is-visible
 			+e.bottom-wrap.wrap._middle
 				+e.nav.js-slider2-nav.owl-nav
 	
@@ -273,8 +254,9 @@ block content
 	+b.SECTION.presentation._second
 		+e.wrap.wrap
 			+e.row.flex._justify._vertical
-				+e.left._second
-					+e.IMG.img._second(src="/img/presentation__img2.png")
+				+e.left._second.js-parallax-scene
+					.parallax-item( data-depth="0.6" )
+						+e.IMG.img._second(src="/img/presentation__img2.png")
 				+e.right._second
 					+e.H2.title.h3
 						span.string.is-center

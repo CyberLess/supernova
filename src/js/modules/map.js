@@ -20,7 +20,7 @@ var map = {
 	        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
 	        }, {
 	            iconLayout: 'default#image',
-	            iconImageHref: '/app/img/mark.png',
+					iconImageHref: '/wp-content/themes/karanikola-supernova/app/img/mark.png',
 	            iconImageSize: [40, 58],
 	            iconImageOffset: [-20, -58]
 	        });

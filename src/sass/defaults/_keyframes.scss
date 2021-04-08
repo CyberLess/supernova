@@ -14,6 +14,15 @@
     }
 }
 
+@keyframes orbitButtonFlying {
+    from {
+     transform: translateY(-3rem);
+    }
+    to {
+     transform: translateY(3rem);
+    }
+}
+
 @keyframes orbitButton {
     from {
      transform: rotateZ(0deg);
@@ -105,3 +114,31 @@
     }
 }
 
+@keyframes bgMoving {
+    0% {
+        background-position: 0% 0%;
+        background-size: auto 100%;
+    }  
+    25% {
+        background-position: 100% 100%;
+        background-size: auto 105%;
+    }
+    50% {
+        background-position: 100% 0%;
+        background-size: auto 115%;
+    }    
+
+    75% {
+        background-position: 0% 100%;
+        background-size: auto 110%;
+    }        
+    100% {
+        background-position: 0% 0%;
+        background-size: auto 100%;
+    }
+}
+
+@keyframes spinner {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}

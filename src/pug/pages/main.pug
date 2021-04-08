@@ -3,22 +3,23 @@ extends ../layouts/base
 append vars
 	- title = 'Главная';
 
+block header 
+	+header(true)
 
-//- block body-start
-//- 	script.
-//- 		window.onbeforeunload = function () {
-//- 			window.scrollTo(0, 0);
-//- 		}
-//- 		document.querySelector('body').classList.add("js-lock")
-//- 		document.querySelector('html').classList.add("js-lock")
-//- 	include ../layouts/preloader
+block body-start
+	script.
+		window.onbeforeunload = function () {
+			window.scrollTo(0, 0);
+		}
+		document.querySelector('body').classList.add("js-lock")
+		document.querySelector('html').classList.add("js-lock")
+	//- include ../layouts/preloader
 
 block content
 
 	//- +b.stars-bg
 	//- +b.custom-lines.js-lottie(data-file="lines")
-
-
+	
 
 	include ../layouts/main
 	include ../layouts/categories
@@ -33,6 +34,9 @@ block content
 	include ../layouts/partners
 	include ../layouts/contacts
 	include ../layouts/quiz-popups/quiz
+
+	+b.modals-map.mfp-hide#modal-map-objects
+		+e.map.js-object-map#map-objects(data-lat="55.751574" data-lon="37.573856")
 
 block scripts
 	script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")

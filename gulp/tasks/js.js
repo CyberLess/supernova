@@ -12,6 +12,7 @@ module.exports = (gulp, plugins, browserSync) => {
 			// -------------------------------------------- Start Task
 			    gulp.src(path.src.js)
 		        .pipe(webpackStream({
+					// mode: "development",
 		            output: {
 		                filename: 'app.js',
 		            },

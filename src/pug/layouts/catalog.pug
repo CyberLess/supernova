@@ -8,10 +8,10 @@
 	+e.wrap.wrap
 		+e.nav.form.FORM(action="/")
 			+e.nav-row.flex
-				+e.nav-checkbox.flex._vertical
+				+e.nav-checkbox.flex._vertical.js-parent-checkbox
 					+e.check-text.js-check-listing.SPAN Листинг
 					+e.check-wrap.LABEL
-						+e.check-listing-input.visually-hidden.INPUT(type="checkbox" name="map")
+						+e.check-listing-input.visually-hidden.js-toggle-objects.INPUT(type="checkbox" name="map")
 						+e.toggle.SPAN
 					+e.check-text.js-check-map.SPAN На карте
 				+e.nav-cell._list
@@ -159,14 +159,13 @@
 			+e.background
 				+e.IMG.bg.object-fit(src="/img/case_1.jpg")
 			+e.item-inner
+				+e.item-name.h5 ЛЭК Премиум
 				+e.item-logo
-					div
 						+e.IMG(src="/app/img/BUNIN.svg")
-				+e.item-name.p ЛЭК Премиум
 				+e.item-hover
 					+e.content
 						+e.content-name.h6._big Пестеля 6
-						+e.content-company.p Донстрой Лимитед
+						+e.content-company.middle Донстрой Лимитед
 						+e.content-text.middle
 							| Дом с апартаментами от 27 м²
 							br
@@ -175,7 +174,7 @@
 							| Сдача — 2019 год.
 					+e.bottom
 						+button('подробнее') подробнее
-						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+						+e.bottom-presa.link__.A(href='#') скачать презентацию
 		+e.item(data-aos="case-aos")
 			+e.background
 				+e.IMG.bg.object-fit(src="/img/case_2.jpg")
@@ -183,11 +182,11 @@
 				+e.item-logo
 					div
 						+e.IMG(src="/app/img/kurtapp.svg")
-				+e.item-name.p ЮИТ Блэк
+				+e.item-name.h5 ЮИТ Блэк
 				+e.item-hover
 					+e.content
 						+e.content-name.h6._big Пестеля 6
-						+e.content-company.p Донстрой Лимитед
+						+e.content-company.middle Донстрой Лимитед
 						+e.content-text.middle
 							| Дом с апартаментами от 27 м²
 							br
@@ -196,7 +195,7 @@
 							| Сдача — 2019 год.
 					+e.bottom
 						+button('подробнее') подробнее
-						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+						+e.bottom-presa.link__.A(href='#') скачать презентацию
 		+e.item(data-aos="case-aos")
 			+e.background
 				+e.IMG.bg.object-fit(src="/img/case_1.jpg")
@@ -204,11 +203,11 @@
 				+e.item-logo
 					div
 						+e.IMG(src="/app/img/BUNIN.svg")
-				+e.item-name.p ЛЭК Премиум
+				+e.item-name.h5 ЛЭК Премиум
 				+e.item-hover
 					+e.content
 						+e.content-name.h6._big Пестеля 6
-						+e.content-company.p Донстрой Лимитед
+						+e.content-company.middle Донстрой Лимитед
 						+e.content-text.middle
 							| Дом с апартаментами от 27 м²
 							br
@@ -217,7 +216,7 @@
 							| Сдача — 2019 год.
 					+e.bottom
 						+button('подробнее') подробнее
-						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+						+e.bottom-presa.link__.A(href='#') скачать презентацию
 		+e.item(data-aos="case-aos")
 			+e.background
 				+e.IMG.bg.object-fit(src="/img/case_3.jpg")
@@ -225,11 +224,11 @@
 				+e.item-logo
 					div
 						+e.IMG(src="/app/img/unona.svg")
-				+e.item-name.p Рейкьямен Золт
+				+e.item-name.h5 Рейкьямен Золт
 				+e.item-hover
 					+e.content
 						+e.content-name.h6._big Пестеля 6
-						+e.content-company.p Донстрой Лимитед
+						+e.content-company.middle Донстрой Лимитед
 						+e.content-text.middle
 							| Дом с апартаментами от 27 м²
 							br
@@ -238,7 +237,7 @@
 							| Сдача — 2019 год.
 					+e.bottom
 						+button('подробнее') подробнее
-						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+						+e.bottom-presa.link__.A(href='#') скачать презентацию
 		+e.item(data-aos="case-aos")
 			+e.background
 				+e.IMG.bg.object-fit(src="/img/case_4.jpg")
@@ -246,11 +245,11 @@
 				+e.item-logo
 					div
 						+e.IMG(src="/app/img/pestelya.svg")
-				+e.item-name.p Донстрой Лимитед
+				+e.item-name.h5 Донстрой Лимитед
 				+e.item-hover
 					+e.content
 						+e.content-name.h6._big Пестеля 6
-						+e.content-company.p Донстрой Лимитед
+						+e.content-company.middle Донстрой Лимитед
 						+e.content-text.middle
 							| Дом с апартаментами от 27 м²
 							br
@@ -259,7 +258,7 @@
 							| Сдача — 2019 год.
 					+e.bottom
 						+button('подробнее') подробнее
-						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+						+e.bottom-presa.link__.A(href='#') скачать презентацию
 		+e.item(data-aos="case-aos")
 			+e.background
 				+e.IMG.bg.object-fit(src="/img/case_1.jpg")
@@ -267,11 +266,11 @@
 				+e.item-logo
 					div
 						+e.IMG(src="/app/img/BUNIN.svg")
-				+e.item-name.p ЛЭК Премиум
+				+e.item-name.h5 ЛЭК Премиум
 				+e.item-hover
 					+e.content
 						+e.content-name.h6._big Пестеля 6
-						+e.content-company.p Донстрой Лимитед
+						+e.content-company.middle Донстрой Лимитед
 						+e.content-text.middle
 							| Дом с апартаментами от 27 м²
 							br
@@ -280,7 +279,7 @@
 							| Сдача — 2019 год.
 					+e.bottom
 						+button('подробнее') подробнее
-						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+						+e.bottom-presa.link__.A(href='#') скачать презентацию
 		+e.item(data-aos="case-aos")
 			+e.background
 				+e.IMG.bg.object-fit(src="/img/case_5.jpg")
@@ -288,12 +287,12 @@
 				+e.item-logo
 					div
 						+e.IMG(src="/app/img/gagarin.svg")
-				+e.item-name.p РайфайХаус Корпорейшн
+				+e.item-name.h5 РайфайХаус Корпорейшн
 				+e.item-hover
 					+e.content
 						+e.content-name._big.h4 Гагарин
-						+e.content-company.p Донстрой Лимитед
-						+e.content-text._big.big
+						+e.content-company.middle Донстрой Лимитед
+						+e.content-text.middle
 							| Дом с апартаментами от 27 м²
 							br
 							| с гостиничным сервисом на Новом Арбате.
@@ -309,11 +308,11 @@
 				+e.item-logo
 					div
 						+e.IMG(src="/app/img/BUNIN.svg")
-				+e.item-name.p ЛЭК Премиум
+				+e.item-name.h5 ЛЭК Премиум
 				+e.item-hover
 					+e.content
 						+e.content-name.h6._big Пестеля 6
-						+e.content-company.p Донстрой Лимитед
+						+e.content-company.middle Донстрой Лимитед
 						+e.content-text.middle
 							| Дом с апартаментами от 27 м²
 							br
@@ -322,7 +321,7 @@
 							| Сдача — 2019 год.
 					+e.bottom
 						+button('подробнее') подробнее
-						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+						+e.bottom-presa.link__.A(href='#') скачать презентацию
 		+e.item(data-aos="case-aos")
 			+e.background
 				+e.IMG.bg.object-fit(src="/img/case_1.jpg")
@@ -330,11 +329,11 @@
 				+e.item-logo
 					div
 						+e.IMG(src="/app/img/BUNIN.svg")
-				+e.item-name.p ЛЭК Премиум
+				+e.item-name.h5 ЛЭК Премиум
 				+e.item-hover
 					+e.content
 						+e.content-name.h6._big Пестеля 6
-						+e.content-company.p Донстрой Лимитед
+						+e.content-company.middle Донстрой Лимитед
 						+e.content-text.middle
 							| Дом с апартаментами от 27 м²
 							br
@@ -343,7 +342,7 @@
 							| Сдача — 2019 год.
 					+e.bottom
 						+button('подробнее') подробнее
-						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+						+e.bottom-presa.link__.A(href='#') скачать презентацию
 		+e.item(data-aos="case-aos")
 			+e.background
 				+e.IMG.bg.object-fit(src="/img/case_1.jpg")
@@ -351,11 +350,11 @@
 				+e.item-logo
 					div
 						+e.IMG(src="/app/img/BUNIN.svg")
-				+e.item-name.p ЛЭК Премиум
+				+e.item-name.h5 ЛЭК Премиум
 				+e.item-hover
 					+e.content
 						+e.content-name.h6._big Пестеля 6
-						+e.content-company.p Донстрой Лимитед
+						+e.content-company.middle Донстрой Лимитед
 						+e.content-text.middle
 							| Дом с апартаментами от 27 м²
 							br
@@ -364,7 +363,7 @@
 							| Сдача — 2019 год.
 					+e.bottom
 						+button('подробнее') подробнее
-						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+						+e.bottom-presa.link__.A(href='#') скачать презентацию
 		+e.item(data-aos="case-aos")
 			+e.background
 				+e.IMG.bg.object-fit(src="/img/case_1.jpg")
@@ -372,11 +371,11 @@
 				+e.item-logo
 					div
 						+e.IMG(src="/app/img/BUNIN.svg")
-				+e.item-name.p ЛЭК Премиум
+				+e.item-name.h5 ЛЭК Премиум
 				+e.item-hover
 					+e.content
 						+e.content-name.h6._big Пестеля 6
-						+e.content-company.p Донстрой Лимитед
+						+e.content-company.middle Донстрой Лимитед
 						+e.content-text.middle
 							| Дом с апартаментами от 27 м²
 							br
@@ -385,7 +384,7 @@
 							| Сдача — 2019 год.
 					+e.bottom
 						+button('подробнее') подробнее
-						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+						+e.bottom-presa.link__.A(href='#') скачать презентацию
 		+e.item(data-aos="case-aos")
 			+e.background
 				+e.IMG.bg.object-fit(src="/img/case_1.jpg")
@@ -393,11 +392,11 @@
 				+e.item-logo
 					div
 						+e.IMG(src="/app/img/BUNIN.svg")
-				+e.item-name.p ЛЭК Премиум
+				+e.item-name.h5 ЛЭК Премиум
 				+e.item-hover
 					+e.content
 						+e.content-name.h6._big Пестеля 6
-						+e.content-company.p Донстрой Лимитед
+						+e.content-company.middle Донстрой Лимитед
 						+e.content-text.middle
 							| Дом с апартаментами от 27 м²
 							br
@@ -406,7 +405,7 @@
 							| Сдача — 2019 год.
 					+e.bottom
 						+button('подробнее') подробнее
-						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+						+e.bottom-presa.link__.A(href='#') скачать презентацию
 		+e.item(data-aos="case-aos")
 			+e.background
 				+e.IMG.bg.object-fit(src="/img/case_5.jpg")
@@ -414,12 +413,12 @@
 				+e.item-logo
 					div
 						+e.IMG(src="/app/img/gagarin.svg")
-				+e.item-name.p РайфайХаус Корпорейшн
+				+e.item-name.h5 РайфайХаус Корпорейшн
 				+e.item-hover
 					+e.content
 						+e.content-name._big.h4 Гагарин
-						+e.content-company.p Донстрой Лимитед
-						+e.content-text._big.big
+						+e.content-company.middle Донстрой Лимитед
+						+e.content-text.middle
 							| Дом с апартаментами от 27 м²
 							br
 							| с гостиничным сервисом на Новом Арбате.
@@ -435,11 +434,11 @@
 				+e.item-logo
 					div
 						+e.IMG(src="/app/img/kurtapp.svg")
-				+e.item-name.p ЮИТ Блэк
+				+e.item-name.h5 ЮИТ Блэк
 				+e.item-hover
 					+e.content
 						+e.content-name.h6._big Пестеля 6
-						+e.content-company.p Донстрой Лимитед
+						+e.content-company.middle Донстрой Лимитед
 						+e.content-text.middle
 							| Дом с апартаментами от 27 м²
 							br
@@ -448,7 +447,7 @@
 							| Сдача — 2019 год.
 					+e.bottom
 						+button('подробнее') подробнее
-						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+						+e.bottom-presa.link__.A(href='#') скачать презентацию
 		+e.item(data-aos="case-aos")
 			+e.background
 				+e.IMG.bg.object-fit(src="/img/case_1.jpg")
@@ -456,11 +455,11 @@
 				+e.item-logo
 					div
 						+e.IMG(src="/app/img/BUNIN.svg")
-				+e.item-name.p ЛЭК Премиум
+				+e.item-name.h5 ЛЭК Премиум
 				+e.item-hover
 					+e.content
 						+e.content-name.h6._big Пестеля 6
-						+e.content-company.p Донстрой Лимитед
+						+e.content-company.middle Донстрой Лимитед
 						+e.content-text.middle
 							| Дом с апартаментами от 27 м²
 							br
@@ -469,7 +468,7 @@
 							| Сдача — 2019 год.
 					+e.bottom
 						+button('подробнее') подробнее
-						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+						+e.bottom-presa.link__.A(href='#') скачать презентацию
 		+e.item(data-aos="case-aos")
 			+e.background
 				+e.IMG.bg.object-fit(src="/img/case_3.jpg")
@@ -477,11 +476,11 @@
 				+e.item-logo
 					div
 						+e.IMG(src="/app/img/unona.svg")
-				+e.item-name.p Рейкьямен Золт
+				+e.item-name.h5 Рейкьямен Золт
 				+e.item-hover
 					+e.content
 						+e.content-name.h6._big Пестеля 6
-						+e.content-company.p Донстрой Лимитед
+						+e.content-company.middle Донстрой Лимитед
 						+e.content-text.middle
 							| Дом с апартаментами от 27 м²
 							br
@@ -490,7 +489,7 @@
 							| Сдача — 2019 год.
 					+e.bottom
 						+button('подробнее') подробнее
-						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+						+e.bottom-presa.link__.A(href='#') скачать презентацию
 		+e.item(data-aos="case-aos")
 			+e.background
 				+e.IMG.bg.object-fit(src="/img/case_4.jpg")
@@ -498,11 +497,11 @@
 				+e.item-logo
 					div
 						+e.IMG(src="/app/img/pestelya.svg")
-				+e.item-name.p Донстрой Лимитед
+				+e.item-name.h5 Донстрой Лимитед
 				+e.item-hover
 					+e.content
 						+e.content-name.h6._big Пестеля 6
-						+e.content-company.p Донстрой Лимитед
+						+e.content-company.middle Донстрой Лимитед
 						+e.content-text.middle
 							| Дом с апартаментами от 27 м²
 							br
@@ -511,7 +510,7 @@
 							| Сдача — 2019 год.
 					+e.bottom
 						+button('подробнее') подробнее
-						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+						+e.bottom-presa.link__.A(href='#') скачать презентацию
 		+e.item(data-aos="case-aos")
 			+e.background
 				+e.IMG.bg.object-fit(src="/img/case_1.jpg")
@@ -519,11 +518,11 @@
 				+e.item-logo
 					div
 						+e.IMG(src="/app/img/BUNIN.svg")
-				+e.item-name.p ЛЭК Премиум
+				+e.item-name.h5 ЛЭК Премиум
 				+e.item-hover
 					+e.content
 						+e.content-name.h6._big Пестеля 6
-						+e.content-company.p Донстрой Лимитед
+						+e.content-company.middle Донстрой Лимитед
 						+e.content-text.middle
 							| Дом с апартаментами от 27 м²
 							br
@@ -532,7 +531,7 @@
 							| Сдача — 2019 год.
 					+e.bottom
 						+button('подробнее') подробнее
-						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+						+e.bottom-presa.link__.A(href='#') скачать презентацию
 		+e.item(data-aos="case-aos")
 			+e.background
 				+e.IMG.bg.object-fit(src="/img/case_5.jpg")
@@ -540,12 +539,12 @@
 				+e.item-logo
 					div
 						+e.IMG(src="/app/img/gagarin.svg")
-				+e.item-name.p РайфайХаус Корпорейшн
+				+e.item-name.h5 РайфайХаус Корпорейшн
 				+e.item-hover
 					+e.content
 						+e.content-name._big.h4 Гагарин
-						+e.content-company.p Донстрой Лимитед
-						+e.content-text._big.big
+						+e.content-company.middle Донстрой Лимитед
+						+e.content-text.middle
 							| Дом с апартаментами от 27 м²
 							br
 							| с гостиничным сервисом на Новом Арбате.
@@ -561,11 +560,11 @@
 				+e.item-logo
 					div
 						+e.IMG(src="/app/img/BUNIN.svg")
-				+e.item-name.p ЛЭК Премиум
+				+e.item-name.h5 ЛЭК Премиум
 				+e.item-hover
 					+e.content
 						+e.content-name.h6._big Пестеля 6
-						+e.content-company.p Донстрой Лимитед
+						+e.content-company.middle Донстрой Лимитед
 						+e.content-text.middle
 							| Дом с апартаментами от 27 м²
 							br
@@ -574,7 +573,7 @@
 							| Сдача — 2019 год.
 					+e.bottom
 						+button('подробнее') подробнее
-						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+						+e.bottom-presa.link__.A(href='#') скачать презентацию
 		+e.item(data-aos="case-aos")
 			+e.background
 				+e.IMG.bg.object-fit(src="/img/case_1.jpg")
@@ -582,11 +581,11 @@
 				+e.item-logo
 					div
 						+e.IMG(src="/app/img/BUNIN.svg")
-				+e.item-name.p ЛЭК Премиум
+				+e.item-name.h5 ЛЭК Премиум
 				+e.item-hover
 					+e.content
 						+e.content-name.h6._big Пестеля 6
-						+e.content-company.p Донстрой Лимитед
+						+e.content-company.middle Донстрой Лимитед
 						+e.content-text.middle
 							| Дом с апартаментами от 27 м²
 							br
@@ -595,7 +594,7 @@
 							| Сдача — 2019 год.
 					+e.bottom
 						+button('подробнее') подробнее
-						+e.bottom-presa.link__.big.A(href='#') скачать презентацию
+						+e.bottom-presa.link__.A(href='#') скачать презентацию
 
 	+e.wrap-bottom.wrap.flex._center._vertical
 		+e.bottom-btn.btn.A(href="#") Показать ещё

@@ -1,10 +1,27 @@
 .logo{
 	display: inline-block;
 	width: 23rem;
+	height: 9rem;
+	position: relative;
+	z-index: 1000;
 
 	&__image{
 		width: 6.5rem;
 		margin-right: .97rem;
+	}
+
+	&__img{
+		width: 100%;
+		&.js-site-logo{
+			position: absolute;
+			left: 0;
+			// left: 50%;
+			// margin-left: -25vw;
+			top: 0;
+			width: 25vw;
+			max-width: none;
+			visibility: hidden;
+		}
 	}
 
 	&__name{
@@ -26,5 +43,12 @@
 
 	@include max-screen($large_mobile) {
 		width: 105px;
+		height: 41px;
+		&__img{
+			&.js-site-logo{
+				width: 70vw;
+			}
+		}
+
 	}
 }

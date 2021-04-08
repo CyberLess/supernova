@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="59.876232"
+   height="42.376991"
+   viewBox="0 0 59.876232 42.376991"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="key.svg"
+   style="fill:none"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata14">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs12" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1538"
+     inkscape:window-height="877"
+     id="namedview10"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="3.1891892"
+     inkscape:cx="31.335045"
+     inkscape:cy="31.434976"
+     inkscape:window-x="54"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8" />
+  <path
+     d="m 30.300229,17.829602 -28.4051999,16.6065 -1.38809997,5.2955 m 0,0 25.63099987,-15.157 m -25.63099987,15.157 9.01499997,2.1454 1.3247999,-4.2238 4.2237,1.3249 3.3418,-1.9537 0.789,-4.2554 7.5655,-0.6289 8.922,-5.3885"
+     id="path2"
+     inkscape:connector-curvature="0"
+     style="stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round" />
+  <circle
+     r="2.7208598"
+     transform="matrix(0.0589307,-0.99826208,-0.99826208,-0.0589307,0,0)"
+     id="circle4"
+     cx="-7.7540598"
+     cy="-52.901421"
+     style="stroke:#ffffff" />
+  <circle
+     r="14.530699"
+     transform="matrix(0.0589307,-0.99826208,-0.99826208,-0.0589307,0,0)"
+     id="circle6"
+     cx="-12.362224"
+     cy="-45.652985"
+     style="stroke:#ffffff" />
+</svg>

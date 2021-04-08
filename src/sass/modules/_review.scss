@@ -59,7 +59,7 @@
 	}
 	
 	&-bg {
-		background: url(/img/review__bg.png) top no-repeat;
+		background: url(../img/review__bg.png) top no-repeat;
 		background-size: auto 100%;
 		min-height: 100rem;
 		width: 100%;
@@ -67,6 +67,7 @@
 		left: 0;
 		top: 0;
 		width: 100%;
+		// animation: bgMoving 30s ease-in-out infinite;
 	}
 	&-main {
 		margin-top: 17rem;

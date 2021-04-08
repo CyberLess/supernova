@@ -16,6 +16,11 @@
 
 	}
 
+	&__parent{
+		
+		transition-delay: .2s!important;
+	}
+
 	&__back{
 		
 		&_first{
@@ -53,6 +58,12 @@
 		&-item{
 			margin-left: 7rem;
 			margin-right: 7rem;
+
+			@for $i from 1 through 3 {
+				&:nth-child(#{$i}) {
+					transition-delay: #{$i * .1 + 0.2}s!important; 
+				}
+			}			
 		}
 
 		&-icon{
@@ -129,8 +140,8 @@
 			}
 
 			&-text{
-				font-size: .9rem;
-				line-height: 1rem;
+				font-size: 1.1rem;
+				line-height: 1.3rem;
 			}
 		}
 

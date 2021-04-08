@@ -12,6 +12,23 @@
 	}
 	&__item {
 		padding: 4rem 0;
+		position: relative;
+		stroke: #fff;
+		color: #fff;
+		transition: ease .35s;
+		&:before{
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			background: #fff;
+			transition: ease .55s;
+			transform-origin: 0% 50%;
+			transform: scale(0, 1);
+		}
 		&:not(:last-child) {
 			border-bottom: 1px solid rgba(#fff, .3);
 		}
@@ -20,7 +37,7 @@
 			min-width: 5.2rem;
 			height: 6.7rem;
 			fill: none;
-			stroke: #fff;
+			
 			margin-right: 5rem;
 		}
 		&-text {
@@ -28,9 +45,24 @@
 		}
 		&-left {
 			width: 71%;
+			position: relative;
+			z-index: 15;
+			transition: ease .35s;
 		}
 		&-right {
 			width: 29%;
+			position: relative;
+			z-index: 15;
+		}
+		&:hover{
+			stroke: #BA5B80;
+			color: #BA5B80;
+			.docs__item-left{
+				padding-left: 5rem;
+			}
+			&:before{
+				transform: scale(1, 1);
+			}
 		}
 	}
 	@include max-screen($large_mobile) {

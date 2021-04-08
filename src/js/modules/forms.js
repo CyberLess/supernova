@@ -3,6 +3,7 @@ import validate from 'jquery-validation';
 import { panel } from "./panel";
 import { config } from "../config";
 import 'magnific-popup';
+import store from "./store";
 
 var forms = {
 
@@ -28,7 +29,7 @@ var forms = {
 
 			forms.multiply.close($another);
 
-			if(ww <= 580){
+			if(ww <= 700){
 				panel.open($item.data('panel'))
 			}else{
 				$item.toggleClass('is-active');
@@ -40,7 +41,7 @@ var forms = {
 
 			let ww = $(window).width();
 
-			if(ww <= 580){
+			if(ww <= 700){
 				panel.open($item.data('panel'))
 			}else{
 				$item.addClass('is-active')
@@ -57,7 +58,7 @@ var forms = {
 	},
 
 	validate: () => {
-		$("form").each((i, el) => {
+		$("form:not(.js-without-valid)").each((i, el) => {
 			var $form = $(el);
 
 			$form.validate({
@@ -162,6 +163,11 @@ var forms = {
 		$(document).on('change', '.js-show-email', forms.toggleEmail);
 
 		$(document).on('change', '.js-file-input', forms.file);
+
+		$('.js-close-filter').on('click', function(){
+			let $parent = $(this).closest('.js-multiply');
+			forms.multiply.close($parent)
+		}) 
 
 		/*$('.field__input').blur(function(){
 			if( $(this).val().length > 0 ) {

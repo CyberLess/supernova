@@ -66,7 +66,8 @@
 		min-width: 20rem;
 
 		&-image{
-			max-height: 4.5rem;
+			max-width: 20rem;
+			max-height: 8.5rem;
 			display: block;
 		}
 
@@ -152,7 +153,7 @@
 		    min-width: 10rem;
 
 		    &-image{
-		    	max-height: 3.5rem;
+		    	max-height: 5rem;
 		    }
 		}
 
@@ -197,7 +198,7 @@
 		position: relative;
 		border-radius: 50%;
 		color: snow;
-		cursor: pointer;
+		// cursor: pointer;
 		-webkit-transition: ease .2s;
 		transition: ease .2s;
 		outline: 0;
