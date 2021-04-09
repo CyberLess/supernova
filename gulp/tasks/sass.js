@@ -9,6 +9,7 @@ module.exports = (gulp, plugins, browserSync) => {
 
         let input = "";
         let errorHandler = plugins.notify.onError('<%= error.message %>');
+        let reload = browserSync.reload;
 
         return Promise.all([
             new Promise((resolve, reject)=> {
@@ -59,8 +60,10 @@ module.exports = (gulp, plugins, browserSync) => {
                 .pipe(plugins.injectString.append(input))
                 .pipe(plugins.autoprefixer(['last 2 versions', '> 1%', 'ie 8'], { cascade: true })) 
                 .pipe(plugins.cssmin())            
-                .pipe(gulp.dest(path.build.css)) 
-                .pipe(browserSync.stream());
+                .pipe(gulp.dest(path.build.css))
+                .pipe(reload({
+                    stream: true
+                }));
 
         });  
 

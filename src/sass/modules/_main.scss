@@ -53,50 +53,6 @@
 		}
 	}
 
-	&__list{
-		margin-top: 10.8rem;
-		&-item{
-			margin-left: 7rem;
-			margin-right: 7rem;
-
-			@for $i from 1 through 3 {
-				&:nth-child(#{$i}) {
-					transition-delay: #{$i * .1 + 0.2}s!important; 
-				}
-			}			
-		}
-
-		&-icon{
-			margin: auto;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			height: 7.2rem;
-			margin-bottom: 2.2rem;
-			fill: transparent;
-			stroke: #fff;
-
-			&_home{
-				width: 6.2rem;
-			}
-			&_key{
-				width: 6.2rem;
-			}
-			&_doc{
-				width: 5.3rem;
-			}
-
-			svg{
-				max-height: 100%;
-			}
-		}
-
-		&-text{
-			font-family: RoadRadio;
-			font-weight: 300;
-		}
-	}
-
 	@include max-screen($small_desktop) {
 	    padding-top: 11.8rem;
 	    padding-bottom: 8.4rem;
@@ -108,42 +64,11 @@
 		}
 	}
 
-	@include max-screen($small_tablet) {
-		&__list{
-			justify-content: space-around;
-
-			&-item{
-				margin-left: 0;
-				margin-right: 0;
-				max-width: 33.33%;
-			}
-		}
-	}
 
 	@include max-screen($large_mobile) {
 		padding-top: 6.8rem;
 		padding-bottom: 2.5rem;
 
-		&__list{
-			margin-top: 5rem;
-			justify-content: space-between;
-
-			&-icon{
-				height: 3.2rem;
-
-				&_key{
-					.icon{
-						height: 2.6rem;
-					}
-					
-				}
-			}
-
-			&-text{
-				font-size: 1.1rem;
-				line-height: 1.3rem;
-			}
-		}
 
 		&__title{
 			margin-bottom: 5rem;
