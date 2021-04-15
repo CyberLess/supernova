@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>Главная</title>
-    <link rel="stylesheet" href="/app/css/app.css?v=1618495633868">
+    <link rel="stylesheet" href="/app/css/app.css?v=1618501109933">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -588,8 +588,12 @@
         </section>
         <section class="catalog">
             <div class="catalog__wrap wrap">
-                <div class="catalog__title h2"><span class="stroke">топ 20</span>предложений
-                    <br>недвижимости</div>
+                <div class="catalog__title h2">Комиссия на покупку
+                    <br>новостроек <span class="stroke">всегда 0%</span>
+                </div>
+                <div class="catalog__wrap-bottom wrap flex flex_center flex_vertical">
+                    <div class="catalog__subtitle">Выбирайте из 100 домов от 30 надежных застройщиков</div>
+                </div>
             </div>
             <div class="catalog__wrap wrap">
                 <form class="catalog__nav form" action="/">
@@ -599,39 +603,38 @@
                                 <input class="catalog__check-listing-input visually-hidden js-toggle-objects" type="checkbox" name="map" /><span class="catalog__toggle"></span>
                             </label><span class="catalog__check-text js-check-map">На карте</span>
                         </div>
-                        <div class="catalog__nav-cell catalog__nav-cell_list">
-                            <div class="catalog__select multiply js-multiply" data-panel="catalog-panel">
-                                <div class="multiply__top js-multiply-nav">
-                                    <div class="multiply__top-inner flex">
-                                        <div class="multiply__name p">Класс жилья</div>
-                                        <div class="multiply__arrow">
-                                            <svg class="icon icon-down" viewBox="0 0 16 9">
-                                                <use xlink:href="/app/icons/sprite.svg#down"></use>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="multiply__list">
-                                    <div class="multiply__list-inner">
-                                        <div class="multiply__list-item">
-                                            <label class="multiply__checkbox checkbox">
-                                                <input class="checkbox__input" type="checkbox" name="class[]" value="Комфорт" /><span class="checkbox__text middle"><span class="checkbox__box"></span><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Комфорт</span>
-                                            </label>
-                                        </div>
-                                        <div class="multiply__list-item">
-                                            <label class="multiply__checkbox checkbox">
-                                                <input class="checkbox__input" type="checkbox" name="class[]" value="Бизнес" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Бизнес</span>
-                                            </label>
-                                        </div>
-                                        <div class="multiply__list-item">
-                                            <label class="multiply__checkbox checkbox">
-                                                <input class="checkbox__input" type="checkbox" name="class[]" value="Премиум" /><span class="checkbox__text middle"><span class="checkbox__box"><svg class="icon icon-checkbox" viewBox="0 0 9 6"><use xlink:href="/app/icons/sprite.svg#checkbox"></use></svg></span>Премиум</span>
-                                            </label>
-                                        </div>
-                                    </div><a class="multiply__button btn"><span class="btn__text">Подтвердить</span></a>
-                                </div>
-                            </div>
-                        </div>
+                        <!--+e.nav-cell._list-->
+                        <!--	+e.select.multiply__.js-multiply(data-panel="catalog-panel")-->
+                        <!--		+e.top.js-multiply-nav-->
+                        <!--			+e.top-inner.flex-->
+                        <!--				+e.name.p Класс жилья-->
+                        <!--				+e.arrow-->
+                        <!--					+icon('down')-->
+                        <!--		+e.list-->
+                        <!--			+e.list-inner-->
+                        <!--				+e.list-item-->
+                        <!--					+e.LABEL.checkbox.checkbox__-->
+                        <!--						+e.INPUT.input(type="checkbox" name="class[]" value="Комфорт")-->
+                        <!--						+e.SPAN.text.middle-->
+                        <!--							+e.SPAN.box-->
+                        <!--							+e.SPAN.box-->
+                        <!--								+icon('checkbox')-->
+                        <!--							| Комфорт-->
+                        <!--				+e.list-item-->
+                        <!--					+e.LABEL.checkbox.checkbox__-->
+                        <!--						+e.INPUT.input(type="checkbox" name="class[]" value="Бизнес")-->
+                        <!--						+e.SPAN.text.middle-->
+                        <!--							+e.SPAN.box-->
+                        <!--								+icon('checkbox')-->
+                        <!--							| Бизнес-->
+                        <!--				+e.list-item-->
+                        <!--					+e.LABEL.checkbox.checkbox__-->
+                        <!--						+e.INPUT.input(type="checkbox" name="class[]" value="Премиум")-->
+                        <!--						+e.SPAN.text.middle-->
+                        <!--							+e.SPAN.box-->
+                        <!--								+icon('checkbox')-->
+                        <!--							| Премиум-->
+                        <!--			+button Подтвердить-->
                         <div class="catalog__nav-cell catalog__nav-cell_list">
                             <div class="catalog__select multiply js-multiply" data-panel="catalog-panel">
                                 <div class="multiply__top js-multiply-nav">
@@ -729,7 +732,7 @@
                             </div>
                         </div>
                         <div class="catalog__nav-cell catalog__nav-cell_search-btn">
-                            <button class="catalog__btn-search" type="submit"><span class="catalog__btn-text-mobile">Найти</span>
+                            <button class="catalog__btn-search" type="submit"><span class="catalog__btn-text">Найти квартиру</span>
                                 <svg class="icon icon-search" viewBox="0 0 20 20">
                                     <use xlink:href="/app/icons/sprite.svg#search"></use>
                                 </svg>
@@ -2319,7 +2322,7 @@
     </div>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/app/js/app.js?v=1618495633943"></script>
+    <script src="/app/js/app.js?v=1618501110034"></script>
 </body>
 
 </html>

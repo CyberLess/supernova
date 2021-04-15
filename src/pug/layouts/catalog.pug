@@ -1,10 +1,11 @@
 +b.SECTION.catalog
 	+e.wrap.wrap
 		+e.title.h2
-			span.stroke топ 20
-			| предложений
+			| Комиссия на покупку
 			br
-			| недвижимости
+			| новостроек <span class="stroke">всегда 0%</span>
+		+e.wrap-bottom.wrap.flex._center._vertical
+			+e.subtitle Выбирайте из 100 домов от 30 надежных застройщиков
 	+e.wrap.wrap
 		+e.nav.form.FORM(action="/")
 			+e.nav-row.flex
@@ -14,38 +15,38 @@
 						+e.check-listing-input.visually-hidden.js-toggle-objects.INPUT(type="checkbox" name="map")
 						+e.toggle.SPAN
 					+e.check-text.js-check-map.SPAN На карте
-				+e.nav-cell._list
-					+e.select.multiply__.js-multiply(data-panel="catalog-panel")
-						+e.top.js-multiply-nav
-							+e.top-inner.flex
-								+e.name.p Класс жилья
-								+e.arrow
-									+icon('down')
-						+e.list
-							+e.list-inner
-								+e.list-item
-									+e.LABEL.checkbox.checkbox__
-										+e.INPUT.input(type="checkbox" name="class[]" value="Комфорт")
-										+e.SPAN.text.middle
-											+e.SPAN.box
-											+e.SPAN.box
-												+icon('checkbox')
-											| Комфорт
-								+e.list-item
-									+e.LABEL.checkbox.checkbox__
-										+e.INPUT.input(type="checkbox" name="class[]" value="Бизнес")
-										+e.SPAN.text.middle
-											+e.SPAN.box
-												+icon('checkbox')
-											| Бизнес
-								+e.list-item
-									+e.LABEL.checkbox.checkbox__
-										+e.INPUT.input(type="checkbox" name="class[]" value="Премиум")
-										+e.SPAN.text.middle
-											+e.SPAN.box
-												+icon('checkbox')
-											| Премиум
-							+button Подтвердить
+				//+e.nav-cell._list
+				//	+e.select.multiply__.js-multiply(data-panel="catalog-panel")
+				//		+e.top.js-multiply-nav
+				//			+e.top-inner.flex
+				//				+e.name.p Класс жилья
+				//				+e.arrow
+				//					+icon('down')
+				//		+e.list
+				//			+e.list-inner
+				//				+e.list-item
+				//					+e.LABEL.checkbox.checkbox__
+				//						+e.INPUT.input(type="checkbox" name="class[]" value="Комфорт")
+				//						+e.SPAN.text.middle
+				//							+e.SPAN.box
+				//							+e.SPAN.box
+				//								+icon('checkbox')
+				//							| Комфорт
+				//				+e.list-item
+				//					+e.LABEL.checkbox.checkbox__
+				//						+e.INPUT.input(type="checkbox" name="class[]" value="Бизнес")
+				//						+e.SPAN.text.middle
+				//							+e.SPAN.box
+				//								+icon('checkbox')
+				//							| Бизнес
+				//				+e.list-item
+				//					+e.LABEL.checkbox.checkbox__
+				//						+e.INPUT.input(type="checkbox" name="class[]" value="Премиум")
+				//						+e.SPAN.text.middle
+				//							+e.SPAN.box
+				//								+icon('checkbox')
+				//							| Премиум
+				//			+button Подтвердить
 				+e.nav-cell._list
 					+e.select.multiply__.js-multiply(data-panel="catalog-panel")
 						+e.top.js-multiply-nav
@@ -152,7 +153,7 @@
 							+button Подтвердить
 				+e.nav-cell._search-btn
 					+e.btn-search.BUTTON(type="submit")
-						+e.btn-text-mobile.SPAN Найти
+						+e.btn-text.SPAN Найти квартиру
 						+icon('search')
 	+e.list.flex
 		+e.item(data-aos="case-aos")

@@ -3,8 +3,6 @@
 	padding-bottom: 10rem;
 
 	&__title{
-		margin-bottom: 10rem;
-
 		text-align: center;
 	}
 
@@ -13,9 +11,47 @@
 		width: 100%;
 	}
 
+	&__btn-text {
+		font-family: 'RoadRadio', sans-serif;
+		font-size: 2rem;
+		font-weight: 400;
+		color: #ffffff;
+		padding-right: 10.75rem;
+	}
+
+	&__wrap-bottom {
+		padding-bottom: 12.5rem;
+		padding-top: 3.75rem;
+
+		&::before,
+		&::after {
+			width: 14rem;
+			height: 1px;
+
+			background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), transparent);
+
+			content: "";
+		}
+
+		&::before {
+			transform: rotate(180deg);
+		}
+	}
+
+	&__subtitle {
+		font-size: 2rem;
+		padding: 0 2rem;
+		font-weight: 400;
+
+		span {
+			font-weight: 700;
+		}
+	}
+
 	&__nav-row {
 		padding-top: 4rem;
 		padding-bottom: 4rem;
+		justify-content: center;
 	}
 
 	&__nav{
@@ -28,7 +64,7 @@
 			justify-content: center;
 
 			&_list {
-				width: 410/1780*100%;
+				width: 29.25%;
 				margin-right: 1rem;
 			}
 
@@ -103,7 +139,7 @@
 			width: 100%;
 			height: 100%;
 			z-index: 2;
-			background: rgba(0, 0, 0, 0.67);
+			background: rgba(0, 0, 0, 0.45);
 			// background: linear-gradient(0deg, rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67));
 		}
 	}
@@ -310,15 +346,11 @@
 			}
 		}
 	}
-
-
-	
-
-	@include min-screen($large_mobile + 1) {
-		&__btn-text-mobile {
-			display: none;
-		}
-	}
+	//@include min-screen($large_mobile + 1) {
+	//	&__btn-textbtn-text {
+	//		display: none;
+	//	}
+	//}
 
 	&__btn-search {
 		padding: 2.5rem 4rem;
@@ -383,25 +415,6 @@
 		left: 2.2rem;
 	}
 
-	&__wrap-bottom {
-		padding-top: 10rem;
-
-		&::before,
-		&::after {
-			flex-grow: 1;
-			width: 4rem;
-			height: 1px;
-
-			background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), transparent);
-
-			content: "";
-		}
-
-		&::before {
-			transform: rotate(180deg);
-		}
-	}
-
 	&__bottom-btn {
 		margin-left: 6rem;
 		margin-right: 6rem;
@@ -429,6 +442,17 @@
 	}
 
 	@include max-screen($small_desktop) {
+
+		&__nav{
+			border-top: 1px solid rgba(255, 255, 255, .2);
+
+			&-cell{
+				&_list {
+					width: 410/1780*100%;
+				}
+			}
+		}
+
 		&__item{
 			&-logo{
 				margin-top: 5rem;
@@ -450,9 +474,6 @@
 					width: 245 / 916 * 100%;
 					margin-right: 10 / 916 * 100%;
 				}
-				&_search-btn{
-					width: 150 / 916 * 100%;
-				}
 			}
 
 			&-checkbox{
@@ -464,8 +485,6 @@
 
 		&__btn-search{
 			width: 100%;
-			padding-left: 0;
-			padding-right: 0;
 		}
 
 		&__item{
@@ -494,6 +513,10 @@
 	}
 
 	@include max-screen($small_tablet) {
+
+		&__btn-text {
+			font-size: 1.5rem;
+		}
 
 		&__list{
 			border: none;
@@ -595,126 +618,7 @@
 	}
 
 	@include max-screen($large_mobile) {
-		padding-top: 5rem;
-		padding-bottom: 5rem;
-
-		&__title{
-			margin-bottom: 3rem;
-
-			text-align: left;
-		}
-
-		&__link{
-			padding: 2rem 0rem;
-			font-size: 1.4rem;
-		}
-
-
-
-		&__item{
-			width: 100%;
-
-			// &-name{
-			// 	margin-bottom: 2.3rem;
-			// }
-
-			&-parent{
-				width: 100% !important;
-			}
-
-			// &-logo{
-
-			// 	margin: auto;
-			// 	padding-top: 12rem;
-
-
-
-			// 	img{
-			// 		max-width: 160px;
-			// 		height: 4.3rem;
-
-			// 	}
-			// }
-
-			&-hover{
-				padding: 3.3rem 2rem;
-			}
-
-			&-inner{
-				padding-top: 0;
-			}
-		}
-
-		&__bottom{
-			text-align: center;
-			&-presa{
-				margin-top: 2rem;
-			}
-		}
-
-		&__content{
-			&-name{
-				margin-bottom: 1.5rem;
-			}
-			&-text{
-				font-size: 1.1rem;
-				margin-top: 1rem;
-				padding-bottom: 2.1rem;
-				line-height: 1.6rem;
-			}
-		}
-
-		&__nav-row {
-			padding-top: 0;
-		}
-
-
-
-
-		&__select {
-			&.multiply {
-				border: none;
-			}
-
-			.multiply {
-
-			}
-		}
-
-		&__check-wrap {
-			width: 4.5rem;
-			height: 2.4rem;
-			margin-left: 1rem;
-			margin-right: 1rem;
-		}
-
-		&__toggle {
-			width: 1.6rem;
-			height: 1.6rem;
-		}
-
-		&__check-text {
-			font-size: 1.2rem;
-		}
-
-		&__wrap-bottom {
-			padding-top: 1rem;
-
-			&::before,
-			&::after {
-				display: none;
-			}
-		}
-
-		&__bottom-btn {
-			width: 100%;
-			margin-left: 0;
-			margin-right: 0;
-
-			color: $pink;
-
-			background-color: transparent;
-		}
+		display: none;
 	}
 }
 
