@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>Главная</title>
-    <link rel="stylesheet" href="/app/css/app.css?v=1618501109933">
+    <link rel="stylesheet" href="/app/css/app.css?v=1618507450099">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -1353,39 +1353,10 @@
             <div class="catalog__wrap-bottom wrap flex flex_center flex_vertical"><a class="catalog__bottom-btn btn" href="#">Показать ещё</a>
             </div>
         </section>
-        <section class="access">
-            <div class="access__wrap wrap">
-                <div class="access__box">
-                    <div class="access__box-inner">
-                        <div class="access__lock">
-                            <svg class="icon icon-lock" viewBox="0 0 77 88">
-                                <use xlink:href="/app/icons/sprite.svg#lock"></use>
-                            </svg>
-                        </div>
-                        <div class="access__title h2">Открыть полный доступ
-                            <br>к осеннему каталогу
-                            <br>элитной недвижимости</div>
-                        <form class="access__form" action="/" method="POST">
-                            <div class="access__field field">
-                                <input class="field__input" name="phone" type="text" />
-                                <div class="field__label">Телефон*</div>
-                                <div class="field__icon">
-                                    <svg class="icon icon-sucsess" viewBox="0 0 31 28">
-                                        <use xlink:href="/app/icons/sprite.svg#sucsess"></use>
-                                    </svg>
-                                </div>
-                                <div class="field__error">Введите телефон!</div>
-                            </div>
-                            <button class="access__button btn btn_white" type="submit"><span class="btn__text">Открыть доступ</span>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!--include ../layouts/access-->
         <section class="profitable-work">
             <div class="profitable-work__wrap wrap">
-                <div class="profitable-work__title h2"><span class="stroke">Эксклюзивно</span>
+                <div class="profitable-work__title profitable-work__title_without h2"><span class="stroke">Эксклюзивно</span>
                     <br>для наших клиентов</div>
                 <div class="profitable-work__row flex">
                     <div class="profitable-work__part profitable-work__part_left flex">
@@ -1406,10 +1377,10 @@
                                     <use xlink:href="/app/icons/sprite.svg#louope"></use>
                                 </svg>
                             </div>
-                            <div class="profitable-work__text p">Бесплатная приемка
-                                <br>квартиры от ведущих
-                                <br>экспертов компании
-                                <br>Cityprof</div>
+                            <div class="profitable-work__cell-text-container"><span class="profitable-work__cell-title">Бесплатная<br>приемка квартиры</span>
+                                <div class="profitable-work__text p">Приемка квартиры с профессионалом
+                                    <br>компании «Cityprof»</div>
+                            </div>
                         </div>
                         <div class="profitable-work__cell">
                             <div class="profitable-work__preview profitable-work__preview_decoration circle-parent">
@@ -1426,10 +1397,10 @@
                                 </div>
                                 <img src="/app/img/otdelka.svg" alt="" role="presentation" />
                             </div>
-                            <div class="profitable-work__text p">Скидка до 30%
-                                <br>на ремонтные работы
-                                <br>и на отделочные
-                                <br>материалы</div>
+                            <div class="profitable-work__cell-text-container"><span class="profitable-work__cell-title">Скидка<br>на ремонт</span>
+                                <div class="profitable-work__text p">Создание дизайн проекта и скидка
+                                    <br>на смету от Елизоветы Пестовой</div>
+                            </div>
                         </div>
                         <div class="profitable-work__cell">
                             <div class="profitable-work__preview profitable-work__preview_doc circle-parent">
@@ -1448,10 +1419,10 @@
                                     <use xlink:href="/app/icons/sprite.svg#docSecond"></use>
                                 </svg>
                             </div>
-                            <div class="profitable-work__text p">Сбор и заполнение
-                                <br>документов для
-                                <br>оформления
-                                <br>налогового вычета</div>
+                            <div class="profitable-work__cell-text-container"><span class="profitable-work__cell-title">Оформление<br>налогового вычета</span>
+                                <div class="profitable-work__text p">Сбор и оформление документов
+                                    <br>для получение налогового вычета</div>
+                            </div>
                         </div>
                         <div class="profitable-work__cell">
                             <div class="profitable-work__preview profitable-work__preview_docs circle-parent">
@@ -1470,10 +1441,10 @@
                                     <use xlink:href="/app/icons/sprite.svg#docThird"></use>
                                 </svg>
                             </div>
-                            <div class="profitable-work__text p">Бесплатное
-                                <br>оформление
-                                <br>права собственности
-                                <br>на квартиру</div>
+                            <div class="profitable-work__cell-text-container"><span class="profitable-work__cell-title">Оформление<br>права собственности</span>
+                                <div class="profitable-work__text p">Сбор и оформление документов для
+                                    <br>оформления права собственности</div>
+                            </div>
                         </div>
                     </div>
                     <div class="profitable-work__part profitable-work__part_right"><a class="profitable-work__button orbit-button js-modal" href="#quiz-1"><span class="orbit-button__border"><span class="orbit-button__border-wrap"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="49"></circle></svg></span></span><span class="orbit-button__bottom"></span><span class="orbit-button__inner"><span class="orbit-button__center"><span class="orbit-button__part"><span class="orbit-button__bold">Пройди тест</span><span class="orbit-button__text p">и получи скидку</span></span><span class="orbit-button__arrow"><svg class="icon icon-arrow" viewBox="0 0 72 26"><use xlink:href="/app/icons/sprite.svg#arrow"></use></svg></span></span></span></a>
@@ -2322,7 +2293,7 @@
     </div>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/app/js/app.js?v=1618501110034"></script>
+    <script src="/app/js/app.js?v=1618507450177"></script>
 </body>
 
 </html>

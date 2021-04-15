@@ -1,12 +1,16 @@
 .profitable-work {
 	&__wrap {
-		max-width: 1200px;
+		max-width: 1280px;
 	}
 
 	&__title {
 		margin-bottom: 4rem;
 
 		text-align: center;
+
+		&_without {
+			padding-bottom: 12.5rem;
+		}
 	}
 
 	&__subtitle {
