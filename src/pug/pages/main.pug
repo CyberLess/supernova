@@ -31,7 +31,124 @@ block content
 	include ../layouts/profitable-work-1
 	//-include ../layouts/test
 	//-include ../layouts/benefit
-	include ../layouts/partners
+	//include ../layouts/partners
+	+b.SECTION.partner
+			+e.wrap._five.wrap
+				+e.head
+					+e.H2.title.h2
+						span.string.is-center
+							span.word
+								span Наши
+								br
+							span.word.stroke
+								span партнеры
+					+e.nav.js-partner-nav.owl-nav
+				+e.slider.js-slider(
+						data-settings=`{
+							"smartSpeed": 500,
+							"items": 1,
+							"center": false,
+							"nav": false,
+							"margin": 0,
+							"dots": false,
+							"navContainer": ".js-partner-nav",
+							"responsive": {
+								"0": {
+									"autoWidth": true,
+									"center": false,
+									"items": 1,
+									"smartSpeed": 300
+								},
+								"580": {
+									"autoWidth": false,
+									"center": false,
+									"items": 1,
+									"smartSpeed": 500
+								}
+							}
+						}`)
+					+e.list.flex
+						+e.item._five
+							+e.A.logo(href="#")
+								img(src="/img/partner1.png")
+							+e.item-inner
+						+e.item._five
+							+e.A.logo(href="#")
+								img(src="/img/partner2.png")
+							+e.item-inner
+						+e.item._five
+							+e.A.logo(href="#")
+								img(src="/img/partner3.png")
+							+e.item-inner
+						+e.item._five
+							+e.A.logo(href="#")
+								img(src="/img/partner4.png")
+							+e.item-inner
+						+e.item._five
+							+e.A.logo(href="#")
+								img(src="/img/partner5.png")
+							+e.item-inner
+						+e.item._five
+							+e.A.logo(href="#")
+								img(src="/img/partner6.png")
+							+e.item-inner
+						+e.item._five
+							+e.A.logo(href="#")
+								img(src="/img/partner7.png")
+							+e.item-inner
+						+e.item._five
+							+e.A.logo(href="#")
+								img(src="/img/partner8.png")
+							+e.item-inner
+						+e.item._five
+							+e.A.logo(href="#")
+								img(src="/img/partner8.png")
+							+e.item-inner
+						+e.item._five
+							+e.A.logo(href="#")
+								img(src="/img/partner8.png")
+							+e.item-inner
+					+e.list.flex
+						+e.item._five
+							+e.A.logo(href="#")
+								img(src="/img/partner1.png")
+							+e.item-inner
+						+e.item._five
+							+e.A.logo(href="#")
+								img(src="/img/partner2.png")
+							+e.item-inner
+						+e.item._five
+							+e.A.logo(href="#")
+								img(src="/img/partner3.png")
+							+e.item-inner
+						+e.item._five
+							+e.A.logo(href="#")
+								img(src="/img/partner4.png")
+							+e.item-inner
+						+e.item._five
+							+e.A.logo(href="#")
+								img(src="/img/partner5.png")
+							+e.item-inner
+						+e.item._five
+							+e.A.logo(href="#")
+								img(src="/img/partner6.png")
+							+e.item-inner
+						+e.item._five
+							+e.A.logo(href="#")
+								img(src="/img/partner7.png")
+							+e.item-inner
+						+e.item._five
+							+e.A.logo(href="#")
+								img(src="/img/partner8.png")
+							+e.item-inner
+						+e.item._five
+							+e.A.logo(href="#")
+								img(src="/img/partner8.png")
+							+e.item-inner
+						+e.item._five
+							+e.A.logo(href="#")
+								img(src="/img/partner8.png")
+							+e.item-inner
 	include ../layouts/contacts
 	include ../layouts/quiz-popups/quiz
 

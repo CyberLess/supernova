@@ -5,7 +5,6 @@
 	position: relative;
 	overflow: hidden;
 
-
 	&:before{
 		content: '';
 		display: block;
@@ -79,7 +78,7 @@
 		width: 100%;
 		margin: auto;
 		position: absolute;
-		left: 0%;
+		left: 0;
 		top: 0;
 		height: inherit;
 		overflow: hidden;
@@ -140,7 +139,7 @@
 				width: 200%;
 				padding-top: 200%;
 				margin-left: -50%;
-				margin-top: 0%;		
+				margin-top: 0;
 			}
 		}
 
@@ -180,6 +179,12 @@
 
 .partner {
 	margin-top: 20rem;
+
+	&__wrap {
+		&_five {
+			max-width: 181.065rem;
+		}
+	}
 	
 	&__head {
 		display: flex;
@@ -204,6 +209,10 @@
 		outline: 0;
 		appearance: none;
 		-moz-appearance: none;
+
+		&_five {
+			width: 20%;
+		}
 		
 		&-inner {
 			padding-top: 100%;

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>Главная</title>
-    <link rel="stylesheet" href="/app/css/app.css?v=1618507450099">
+    <link rel="stylesheet" href="/app/css/app.css?v=1618510147334">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -1452,90 +1452,222 @@
                 </div>
             </div>
         </section>
-        <section class="group">
-            <section class="partners partners_without">
-                <div class="partners__title h2">наши <span class="stroke">партнеры</span>
+        <!--include ../layouts/partners-->
+        <section class="partner">
+            <div class="partner__wrap partner__wrap_five wrap">
+                <div class="partner__head">
+                    <h2 class="partner__title h2"><span class="string is-center"><span class="word"><span>Наши</span><br></span><span class="word stroke"><span>партнеры</span></span></span></h2>
+                    <div class="partner__nav js-partner-nav owl-nav"></div>
                 </div>
-            </section>
-            <section class="partners">
-                <div class="partners__wrap wrap">
-                    <div class="partners__box">
-                        <div class="partners__circle"></div>
-                        <div class="partners__list">
-                            <div class="partners__item">
-                                <div class="partners__item-preview">
-                                    <img class="partners__item-image" src="/app/img/partner_1.svg" alt="" role="presentation" />
-                                </div>
-                            </div>
-                            <div class="partners__item">
-                                <div class="partners__item-preview">
-                                    <img class="partners__item-image" src="/app/img/partner_2.svg" alt="" role="presentation" />
-                                </div>
-                            </div>
-                            <div class="partners__item">
-                                <div class="partners__item-preview">
-                                    <img class="partners__item-image" src="/app/img/partner_3.svg" alt="" role="presentation" />
-                                </div>
-                            </div>
-                            <div class="partners__item">
-                                <div class="partners__item-preview">
-                                    <img class="partners__item-image" src="/app/img/partner_4.svg" alt="" role="presentation" />
-                                </div>
-                            </div>
-                            <div class="partners__item">
-                                <div class="partners__item-preview">
-                                    <img class="partners__item-image" src="/app/img/partner_5.svg" alt="" role="presentation" />
-                                </div>
-                            </div>
-                            <div class="partners__item">
-                                <div class="partners__item-preview">
-                                    <img class="partners__item-image" src="/app/img/partner_6.svg" alt="" role="presentation" />
-                                </div>
-                            </div>
-                            <div class="partners__item">
-                                <div class="partners__item-preview">
-                                    <img class="partners__item-image" src="/app/img/partner_7.svg" alt="" role="presentation" />
-                                </div>
-                            </div>
-                            <div class="partners__item">
-                                <div class="partners__item-preview">
-                                    <img class="partners__item-image" src="/app/img/partner_1.svg" alt="" role="presentation" />
-                                </div>
-                            </div>
-                            <div class="partners__item">
-                                <div class="partners__item-preview">
-                                    <img class="partners__item-image" src="/app/img/partner_2.svg" alt="" role="presentation" />
-                                </div>
-                            </div>
-                            <div class="partners__item">
-                                <div class="partners__item-preview">
-                                    <img class="partners__item-image" src="/app/img/partner_3.svg" alt="" role="presentation" />
-                                </div>
-                            </div>
-                            <div class="partners__item">
-                                <div class="partners__item-preview">
-                                    <img class="partners__item-image" src="/app/img/partner_4.svg" alt="" role="presentation" />
-                                </div>
-                            </div>
-                            <div class="partners__item">
-                                <div class="partners__item-preview">
-                                    <img class="partners__item-image" src="/app/img/partner_5.svg" alt="" role="presentation" />
-                                </div>
-                            </div>
-                            <div class="partners__item">
-                                <div class="partners__item-preview">
-                                    <img class="partners__item-image" src="/app/img/partner_6.svg" alt="" role="presentation" />
-                                </div>
-                            </div>
-                            <div class="partners__item">
-                                <div class="partners__item-preview">
-                                    <img class="partners__item-image" src="/app/img/partner_7.svg" alt="" role="presentation" />
-                                </div>
-                            </div>
+                <div class="partner__slider js-slider" data-settings="{
+							&quot;smartSpeed&quot;: 500,
+							&quot;items&quot;: 1,
+							&quot;center&quot;: false,
+							&quot;nav&quot;: false,
+							&quot;margin&quot;: 0,
+							&quot;dots&quot;: false,
+							&quot;navContainer&quot;: &quot;.js-partner-nav&quot;,
+							&quot;responsive&quot;: {
+								&quot;0&quot;: {
+									&quot;autoWidth&quot;: true,
+									&quot;center&quot;: false,
+									&quot;items&quot;: 1,
+									&quot;smartSpeed&quot;: 300
+								},
+								&quot;580&quot;: {
+									&quot;autoWidth&quot;: false,
+									&quot;center&quot;: false,
+									&quot;items&quot;: 1,
+									&quot;smartSpeed&quot;: 500
+								}
+							}
+						}">
+                    <div class="partner__list flex">
+                        <div class="partner__item partner__item_five">
+                            <a class="partner__logo" href="#">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/partner1.webp">
+                                        <img src="/app/img/partner1.png" />
+                                </picture>
+                            </a>
+                            <div class="partner__item-inner"></div>
+                        </div>
+                        <div class="partner__item partner__item_five">
+                            <a class="partner__logo" href="#">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/partner2.webp">
+                                        <img src="/app/img/partner2.png" />
+                                </picture>
+                            </a>
+                            <div class="partner__item-inner"></div>
+                        </div>
+                        <div class="partner__item partner__item_five">
+                            <a class="partner__logo" href="#">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/partner3.webp">
+                                        <img src="/app/img/partner3.png" />
+                                </picture>
+                            </a>
+                            <div class="partner__item-inner"></div>
+                        </div>
+                        <div class="partner__item partner__item_five">
+                            <a class="partner__logo" href="#">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/partner4.webp">
+                                        <img src="/app/img/partner4.png" />
+                                </picture>
+                            </a>
+                            <div class="partner__item-inner"></div>
+                        </div>
+                        <div class="partner__item partner__item_five">
+                            <a class="partner__logo" href="#">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/partner5.webp">
+                                        <img src="/app/img/partner5.png" />
+                                </picture>
+                            </a>
+                            <div class="partner__item-inner"></div>
+                        </div>
+                        <div class="partner__item partner__item_five">
+                            <a class="partner__logo" href="#">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/partner6.webp">
+                                        <img src="/app/img/partner6.png" />
+                                </picture>
+                            </a>
+                            <div class="partner__item-inner"></div>
+                        </div>
+                        <div class="partner__item partner__item_five">
+                            <a class="partner__logo" href="#">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/partner7.webp">
+                                        <img src="/app/img/partner7.png" />
+                                </picture>
+                            </a>
+                            <div class="partner__item-inner"></div>
+                        </div>
+                        <div class="partner__item partner__item_five">
+                            <a class="partner__logo" href="#">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/partner8.webp">
+                                        <img src="/app/img/partner8.png" />
+                                </picture>
+                            </a>
+                            <div class="partner__item-inner"></div>
+                        </div>
+                        <div class="partner__item partner__item_five">
+                            <a class="partner__logo" href="#">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/partner8.webp">
+                                        <img src="/app/img/partner8.png" />
+                                </picture>
+                            </a>
+                            <div class="partner__item-inner"></div>
+                        </div>
+                        <div class="partner__item partner__item_five">
+                            <a class="partner__logo" href="#">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/partner8.webp">
+                                        <img src="/app/img/partner8.png" />
+                                </picture>
+                            </a>
+                            <div class="partner__item-inner"></div>
+                        </div>
+                    </div>
+                    <div class="partner__list flex">
+                        <div class="partner__item partner__item_five">
+                            <a class="partner__logo" href="#">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/partner1.webp">
+                                        <img src="/app/img/partner1.png" />
+                                </picture>
+                            </a>
+                            <div class="partner__item-inner"></div>
+                        </div>
+                        <div class="partner__item partner__item_five">
+                            <a class="partner__logo" href="#">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/partner2.webp">
+                                        <img src="/app/img/partner2.png" />
+                                </picture>
+                            </a>
+                            <div class="partner__item-inner"></div>
+                        </div>
+                        <div class="partner__item partner__item_five">
+                            <a class="partner__logo" href="#">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/partner3.webp">
+                                        <img src="/app/img/partner3.png" />
+                                </picture>
+                            </a>
+                            <div class="partner__item-inner"></div>
+                        </div>
+                        <div class="partner__item partner__item_five">
+                            <a class="partner__logo" href="#">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/partner4.webp">
+                                        <img src="/app/img/partner4.png" />
+                                </picture>
+                            </a>
+                            <div class="partner__item-inner"></div>
+                        </div>
+                        <div class="partner__item partner__item_five">
+                            <a class="partner__logo" href="#">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/partner5.webp">
+                                        <img src="/app/img/partner5.png" />
+                                </picture>
+                            </a>
+                            <div class="partner__item-inner"></div>
+                        </div>
+                        <div class="partner__item partner__item_five">
+                            <a class="partner__logo" href="#">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/partner6.webp">
+                                        <img src="/app/img/partner6.png" />
+                                </picture>
+                            </a>
+                            <div class="partner__item-inner"></div>
+                        </div>
+                        <div class="partner__item partner__item_five">
+                            <a class="partner__logo" href="#">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/partner7.webp">
+                                        <img src="/app/img/partner7.png" />
+                                </picture>
+                            </a>
+                            <div class="partner__item-inner"></div>
+                        </div>
+                        <div class="partner__item partner__item_five">
+                            <a class="partner__logo" href="#">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/partner8.webp">
+                                        <img src="/app/img/partner8.png" />
+                                </picture>
+                            </a>
+                            <div class="partner__item-inner"></div>
+                        </div>
+                        <div class="partner__item partner__item_five">
+                            <a class="partner__logo" href="#">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/partner8.webp">
+                                        <img src="/app/img/partner8.png" />
+                                </picture>
+                            </a>
+                            <div class="partner__item-inner"></div>
+                        </div>
+                        <div class="partner__item partner__item_five">
+                            <a class="partner__logo" href="#">
+                                <picture>
+                                    <source type="image/webp" srcset="/app/img/partner8.webp">
+                                        <img src="/app/img/partner8.png" />
+                                </picture>
+                            </a>
+                            <div class="partner__item-inner"></div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </section>
         <section class="contacts">
             <div class="contacts__wrap wrap">
@@ -2293,7 +2425,7 @@
     </div>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/app/js/app.js?v=1618507450177"></script>
+    <script src="/app/js/app.js?v=1618510147420"></script>
 </body>
 
 </html>
