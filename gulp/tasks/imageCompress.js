@@ -33,7 +33,7 @@ module.exports = (gulp, plugins) => {
 				destination: path.build.img,
 				plugins: [
 	                imageminWebp({
-	                    quality: 70
+	                    quality: 100
 	                })
 				]
 			})
